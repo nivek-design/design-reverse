@@ -1,0 +1,1501 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Adicionar animação para a barra de carregamento */
+@keyframes loading-bar {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 70%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-loading-bar {
+  animation: loading-bar 0.8s ease-in-out forwards;
+}
+
+/* Estilo para o corpo durante a navegação */
+.navigation-in-progress {
+  cursor: wait;
+}
+
+/* Prevenir interações durante a navegação */
+.navigation-in-progress * {
+  pointer-events: none;
+}
+
+/* Reverse Mode Styles */
+.reverse-mode {
+  /* Inverter cores principais */
+  --primary: 30 100% 50%; /* Laranja vibrante */
+  --primary-foreground: 0 0% 100%;
+  --background: 30 5% 95%;
+  --foreground: 30 5% 10%;
+  --card: 30 5% 93%;
+  --card-foreground: 30 5% 15%;
+
+  /* Animação de transição */
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reverse-mode.dark {
+  --primary: 30 100% 50%;
+  --primary-foreground: 30 5% 10%;
+  --background: 30 5% 10%;
+  --foreground: 30 5% 95%;
+  --card: 30 5% 15%;
+  --card-foreground: 30 5% 90%;
+}
+
+/* Animação de rotação para elementos */
+@keyframes reverseRotate {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.8);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+/* Inverter layouts */
+.reverse-mode .container {
+  animation: reverseRotate 0.6s ease-in-out;
+}
+
+.reverse-mode .flex-row {
+  flex-direction: row-reverse;
+}
+
+.reverse-mode .grid {
+  direction: rtl;
+}
+
+.reverse-mode .grid > * {
+  direction: ltr;
+}
+
+/* Efeitos especiais para textos */
+.reverse-mode h1,
+.reverse-mode h2,
+.reverse-mode h3 {
+  background: linear-gradient(45deg, #ff6b35, #f7931e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Inverter gradientes */
+.reverse-mode .bg-gradient-to-r {
+  background: linear-gradient(to left, var(--tw-gradient-stops));
+}
+
+.reverse-mode .bg-gradient-to-b {
+  background: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+/* Animação de entrada para reverse mode */
+.reverse-mode * {
+  animation: reverseEntry 0.3s ease-out;
+}
+
+@keyframes reverseEntry {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Inverter sombras */
+.reverse-mode .shadow-lg {
+  box-shadow: -10px -10px 15px -3px rgba(0, 0, 0, 0.1), -4px -4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Botões em reverse mode */
+.reverse-mode .bg-blue-500,
+.reverse-mode .bg-blue-600 {
+  background-color: #ff6b35 !important;
+}
+
+.reverse-mode .hover\:bg-blue-600:hover,
+.reverse-mode .hover\:bg-blue-700:hover {
+  background-color: #f7931e !important;
+}
+
+.reverse-mode .text-blue-400 {
+  color: #ff6b35 !important;
+}
+
+.reverse-mode .border-blue-400 {
+  border-color: #ff6b35 !important;
+}
+
+.reverse-mode .bg-blue-400 {
+  background-color: #ff6b35 !important;
+}
+
+/* Animação especial para o botão reverse */
+.reverse-button-active {
+  animation: reverseButtonPulse 0.6s ease-in-out;
+}
+
+@keyframes reverseButtonPulse {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.1) rotate(90deg);
+  }
+  50% {
+    transform: scale(0.9) rotate(180deg);
+  }
+  75% {
+    transform: scale(1.1) rotate(270deg);
+  }
+}
+
+/* Inverter ordem de elementos específicos */
+.reverse-mode .flex-col {
+  flex-direction: column-reverse;
+}
+
+.reverse-mode .space-y-4 > * + * {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Efeito espelho para imagens */
+.reverse-mode img {
+  transform: scaleX(-1);
+  transition: transform 0.6s ease-in-out;
+}
+
+.reverse-mode img:hover {
+  transform: scaleX(1);
+}
+
+/* Animação de onda para backgrounds */
+@keyframes reverseWave {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.reverse-mode .animated-background {
+  background: linear-gradient(-45deg, #ff6b35, #f7931e, #ff6b35, #f7931e);
+  background-size: 400% 400%;
+  animation: reverseWave 15s ease infinite;
+}
+
+/* NOVOS EFEITOS VISUAIS */
+
+/* Efeito de partículas flutuantes */
+@keyframes floatParticle {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Formas de partículas */
+.shape-square {
+  border-radius: 0 !important;
+}
+
+.shape-triangle {
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
+}
+
+.shape-diamond {
+  transform: rotate(45deg) !important;
+}
+
+/* Efeito de ondulação (ripple) */
+@keyframes rippleEffect {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* Animações de flutuação para elementos decorativos */
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-15px) translateX(15px);
+  }
+  50% {
+    transform: translateY(10px) translateX(-10px);
+  }
+  75% {
+    transform: translateY(-5px) translateX(5px);
+  }
+}
+
+@keyframes float-medium {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+  33% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  66% {
+    transform: translateY(15px) translateX(-15px);
+  }
+}
+
+@keyframes float-fast {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-25px) translateX(25px);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 15s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float-medium 12s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float-fast 8s ease-in-out infinite;
+}
+
+/* Efeito de glitch para textos */
+.glitch-text {
+  position: relative;
+  display: inline-block;
+}
+
+.glitch-text.active {
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+}
+
+.glitch-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.glitch-text.active .glitch-before {
+  animation: glitch-before 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  opacity: 0.8;
+  color: #ff6b35;
+  transform: translateX(-2px);
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+}
+
+.glitch-text.active .glitch-after {
+  animation: glitch-after 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  opacity: 0.8;
+  color: #ffd700;
+  transform: translateX(2px);
+  clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes glitch-before {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2px);
+  }
+}
+
+@keyframes glitch-after {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(2px);
+  }
+}
+
+/* Efeito de parallax */
+.parallax-element {
+  transition: transform 0.2s ease-out;
+  will-change: transform;
+}
+
+/* Efeito de 3D tilt para cards */
+.tilt-card {
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.tilt-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(45deg, rgba(255, 107, 53, 0.2), rgba(255, 215, 0, 0.2));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: inherit;
+}
+
+.tilt-card:hover::before {
+  opacity: 1;
+}
+
+/* Efeito de neon para textos */
+.reverse-mode .neon-text,
+.reverse-mode .navbar a,
+.reverse-mode button:not(.bg-orange-500):not(.bg-blue-500):not(.bg-blue-600) {
+  text-shadow: 0 0 5px rgba(255, 107, 53, 0.5), 0 0 10px rgba(255, 107, 53, 0.3), 0 0 15px rgba(255, 107, 53, 0.2);
+  transition: text-shadow 0.3s ease;
+}
+
+.reverse-mode .neon-text:hover,
+.reverse-mode .navbar a:hover,
+.reverse-mode button:not(.bg-orange-500):not(.bg-blue-500):not(.bg-blue-600):hover {
+  text-shadow: 0 0 5px rgba(255, 107, 53, 0.8), 0 0 10px rgba(255, 107, 53, 0.5), 0 0 15px rgba(255, 107, 53, 0.3), 0 0
+    20px rgba(255, 107, 53, 0.2);
+}
+
+/* Efeito de distorção para imagens */
+.reverse-mode .distort-image {
+  filter: hue-rotate(180deg) contrast(1.2);
+  transition: filter 0.5s ease;
+}
+
+.reverse-mode .distort-image:hover {
+  filter: hue-rotate(0deg) contrast(1);
+}
+
+/* Efeito de pixel para imagens */
+.reverse-mode .pixel-effect {
+  image-rendering: pixelated;
+  filter: brightness(1.2) contrast(1.2);
+}
+
+/* Efeito de cursor personalizado */
+.custom-cursor {
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+.cursor-dot {
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+/* Efeito de texto digitando */
+.reverse-mode .typing-text {
+  border-right: 2px solid #ff6b35;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ff6b35;
+  }
+}
+
+/* Efeito de vidro (glassmorphism) */
+.reverse-mode .glass-effect {
+  background: rgba(255, 107, 53, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(255, 107, 53, 0.1);
+}
+
+/* Efeito de perspectiva 3D para o site inteiro */
+.reverse-mode main {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.reverse-mode section {
+  transform: translateZ(0);
+  transition: transform 0.5s ease;
+}
+
+.reverse-mode section:hover {
+  transform: translateZ(50px);
+}
+
+/* Efeito de texto com borda */
+.reverse-mode .outline-text {
+  -webkit-text-stroke: 1px #ff6b35;
+  color: transparent;
+}
+
+/* Efeito de texto com sombra longa */
+.reverse-mode .long-shadow-text {
+  text-shadow: 1px 1px 0 #ff6b35, 2px 2px 0 #ff6b35, 3px 3px 0 #ff6b35, 4px 4px 0 #ff6b35, 5px 5px 0 #ff6b35, 6px 6px 0
+    #ff6b35;
+}
+
+/* Efeito de texto com gradiente animado */
+.reverse-mode .gradient-text {
+  background: linear-gradient(45deg, #ff6b35, #f7931e, #ffd700, #ff6b35);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientText 5s ease infinite;
+}
+
+@keyframes gradientText {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Efeito de texto com distorção */
+.reverse-mode .distorted-text {
+  display: inline-block;
+  animation: distortText 5s ease-in-out infinite;
+}
+
+@keyframes distortText {
+  0%,
+  100% {
+    transform: skewX(0deg) skewY(0deg);
+  }
+  25% {
+    transform: skewX(3deg) skewY(1deg);
+  }
+  50% {
+    transform: skewX(-3deg) skewY(-1deg);
+  }
+  75% {
+    transform: skewX(3deg) skewY(-1deg);
+  }
+}
+
+/* Efeito de botão com brilho */
+.reverse-mode button {
+  position: relative;
+  overflow: hidden;
+}
+
+.reverse-mode button::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.reverse-mode button:hover::after {
+  opacity: 1;
+  left: 100%;
+  top: 100%;
+  transition: all 0.7s ease;
+}
+
+/* Efeito de scroll suave */
+.reverse-mode {
+  scroll-behavior: smooth;
+}
+
+.reverse-mode::-webkit-scrollbar {
+  width: 10px;
+}
+
+.reverse-mode::-webkit-scrollbar-track {
+  background: rgba(255, 107, 53, 0.1);
+}
+
+.reverse-mode::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #ff6b35, #f7931e);
+  border-radius: 5px;
+}
+
+/* Efeito de fundo com padrão */
+.reverse-mode::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at 25px 25px, rgba(255, 107, 53, 0.1) 2%, transparent 0%),
+    radial-gradient(circle at 75px 75px, rgba(255, 107, 53, 0.1) 2%, transparent 0%);
+  background-size: 100px 100px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Efeito de texto com reflexo */
+.reverse-mode .reflection-text {
+  position: relative;
+}
+
+.reverse-mode .reflection-text::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  transform: scaleY(-0.3) scaleX(0.95);
+  opacity: 0.3;
+  background: linear-gradient(to bottom, rgba(255, 107, 53, 0.5), transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: blur(1px);
+}
+
+/* NOVOS EFEITOS VISUAIS AVANÇADOS */
+
+/* Animações para partículas 3D */
+@keyframes float3d {
+  0% {
+    transform: translateZ(var(--depth)) rotate(0deg);
+  }
+  50% {
+    transform: translateZ(calc(var(--depth) + 100px)) rotate(180deg);
+  }
+  100% {
+    transform: translateZ(var(--depth)) rotate(360deg);
+  }
+}
+
+/* Animações para elementos decorativos */
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes float-reverse {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+  33% {
+    transform: translateY(20px) translateX(-15px) rotate(5deg);
+  }
+  66% {
+    transform: translateY(-15px) translateX(20px) rotate(-5deg);
+  }
+}
+
+@keyframes rotate-slow {
+  0% {
+    transform: rotate(45deg) scale(1);
+  }
+  50% {
+    transform: rotate(225deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(405deg) scale(1);
+  }
+}
+
+@keyframes float-rotate {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-30px) rotate(180deg);
+  }
+}
+
+/* Efeito de escaneamento */
+@keyframes scan-vertical {
+  0% {
+    top: -5px;
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.5;
+  }
+  95% {
+    opacity: 0.5;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+.animate-scan-vertical {
+  animation: scan-vertical 8s linear infinite;
+}
+
+/* Formas geométricas */
+.clip-triangle {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* Efeito de texto scramble */
+.scramble-text {
+  position: relative;
+  cursor: pointer;
+  transition: text-shadow 0.3s ease;
+}
+
+.scramble-text:hover {
+  text-shadow: 0 0 8px rgba(255, 107, 53, 0.8);
+}
+
+/* Efeito de distorção de imagem avançado */
+.reverse-mode .distortion-effect {
+  filter: contrast(1.2) hue-rotate(25deg);
+  transition: filter 0.5s ease;
+  animation: distortion-pulse 5s ease-in-out infinite;
+}
+
+@keyframes distortion-pulse {
+  0%,
+  100% {
+    filter: contrast(1.2) hue-rotate(25deg) brightness(1);
+  }
+  50% {
+    filter: contrast(1.3) hue-rotate(35deg) brightness(1.1);
+  }
+}
+
+/* Efeito de rastro de mouse */
+.mouse-trail {
+  transition: transform 0.1s ease-out, opacity 0.2s ease-out;
+}
+
+/* Efeito de texto com borda pulsante */
+.reverse-mode .pulse-border-text {
+  position: relative;
+  display: inline-block;
+}
+
+.reverse-mode .pulse-border-text::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-text-stroke: 2px #ff6b35;
+  color: transparent;
+  opacity: 0.5;
+  animation: pulse-border 2s ease-in-out infinite;
+}
+
+@keyframes pulse-border {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+/* Efeito de texto com sombra dinâmica */
+.reverse-mode .dynamic-shadow-text {
+  position: relative;
+  text-shadow: 2px 2px 0 #ff6b35;
+  animation: dynamic-shadow 5s ease-in-out infinite;
+}
+
+@keyframes dynamic-shadow {
+  0%,
+  100% {
+    text-shadow: 2px 2px 0 #ff6b35;
+  }
+  25% {
+    text-shadow: -2px 2px 0 #ff6b35;
+  }
+  50% {
+    text-shadow: -2px -2px 0 #ff6b35;
+  }
+  75% {
+    text-shadow: 2px -2px 0 #ff6b35;
+  }
+}
+
+/* Efeito de texto com ruído */
+.reverse-mode .noise-text {
+  position: relative;
+}
+
+.reverse-mode .noise-text::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  opacity: 0.1;
+  mix-blend-mode: overlay;
+  animation: noise-animation 0.5s linear infinite;
+}
+
+@keyframes noise-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-1px, 1px);
+  }
+  20% {
+    transform: translate(1px, -1px);
+  }
+  30% {
+    transform: translate(-1px, -1px);
+  }
+  40% {
+    transform: translate(1px, 1px);
+  }
+  50% {
+    transform: translate(-1px, 1px);
+  }
+  60% {
+    transform: translate(1px, -1px);
+  }
+  70% {
+    transform: translate(-1px, -1px);
+  }
+  80% {
+    transform: translate(1px, 1px);
+  }
+  90% {
+    transform: translate(-1px, 1px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Efeito de texto com corte (slice) */
+.reverse-mode .slice-text {
+  position: relative;
+  overflow: hidden;
+}
+
+.reverse-mode .slice-text::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, #ff6b35 50%, transparent 100%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: slice-animation 5s linear infinite;
+}
+
+@keyframes slice-animation {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+/* Efeito de botão com energia */
+.reverse-mode .energy-button {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.reverse-mode .energy-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(255, 107, 53, 0.8) 0%, rgba(255, 107, 53, 0) 70%);
+  transform: scale(0);
+  opacity: 0;
+  z-index: -1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.reverse-mode .energy-button:hover::before {
+  transform: scale(2);
+  opacity: 1;
+}
+
+/* Efeito de imagem com glitch */
+.reverse-mode .glitch-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.reverse-mode .glitch-image::before,
+.reverse-mode .glitch-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  background-size: cover;
+  background-position: center;
+}
+
+.reverse-mode .glitch-image::before {
+  transform: translateX(5px);
+  filter: hue-rotate(90deg);
+  mix-blend-mode: hard-light;
+  opacity: 0;
+}
+
+.reverse-mode .glitch-image::after {
+  transform: translateX(-5px);
+  filter: hue-rotate(-90deg);
+  mix-blend-mode: hard-light;
+  opacity: 0;
+}
+
+.reverse-mode .glitch-image:hover::before,
+.reverse-mode .glitch-image:hover::after {
+  animation: glitch-image 0.3s linear infinite alternate-reverse;
+  opacity: 0.5;
+}
+
+@keyframes glitch-image {
+  0% {
+    transform: translateX(-5px) translateY(2px);
+    opacity: 0.5;
+  }
+  25% {
+    transform: translateX(5px) translateY(-2px);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateX(-2px) translateY(5px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateX(2px) translateY(-5px);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateX(-5px) translateY(2px);
+    opacity: 0.5;
+  }
+}
+
+/* Efeito de texto com holografia */
+.reverse-mode .holographic-text {
+  background: linear-gradient(90deg, #ff6b35, #f7931e, #ffd700, #f7931e, #ff6b35);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: holographic 5s linear infinite;
+  position: relative;
+}
+
+.reverse-mode .holographic-text::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 107, 53, 0), rgba(255, 107, 53, 0.5), rgba(255, 107, 53, 0));
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: holographic-shine 2s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes holographic {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+@keyframes holographic-shine {
+  0% {
+    background-position: -100% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+/* Efeito de card com borda energizada */
+.reverse-mode .energized-border {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.reverse-mode .energized-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: inherit;
+  background: linear-gradient(45deg, #ff6b35, #f7931e, #ffd700, #f7931e, #ff6b35);
+  background-size: 200% 200%;
+  animation: energized-border 5s linear infinite;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+@keyframes energized-border {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Efeito de texto com corte digital */
+.reverse-mode .digital-slice-text {
+  position: relative;
+  overflow: hidden;
+}
+
+.reverse-mode .digital-slice-text::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #ff6b35;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 20%,
+    0% 20%,
+    0% 40%,
+    100% 40%,
+    100% 60%,
+    0% 60%,
+    0% 80%,
+    100% 80%,
+    100% 100%,
+    0% 100%
+  );
+  animation: digital-slice 5s steps(10) infinite;
+}
+
+@keyframes digital-slice {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 20%,
+      0% 20%,
+      0% 40%,
+      100% 40%,
+      100% 60%,
+      0% 60%,
+      0% 80%,
+      100% 80%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  25% {
+    clip-path: polygon(
+      0% 5%,
+      100% 5%,
+      100% 25%,
+      0% 25%,
+      0% 45%,
+      100% 45%,
+      100% 65%,
+      0% 65%,
+      0% 85%,
+      100% 85%,
+      100% 95%,
+      0% 95%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0% 10%,
+      100% 10%,
+      100% 30%,
+      0% 30%,
+      0% 50%,
+      100% 50%,
+      100% 70%,
+      0% 70%,
+      0% 90%,
+      100% 90%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  75% {
+    clip-path: polygon(
+      0% 15%,
+      100% 15%,
+      100% 35%,
+      0% 35%,
+      0% 55%,
+      100% 55%,
+      100% 75%,
+      0% 75%,
+      0% 95%,
+      100% 95%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+/* Efeito de imagem com zoom dinâmico */
+.reverse-mode .dynamic-zoom {
+  overflow: hidden;
+}
+
+.reverse-mode .dynamic-zoom img {
+  transition: transform 0.5s ease;
+  animation: dynamic-zoom 10s ease-in-out infinite alternate;
+}
+
+@keyframes dynamic-zoom {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.05) rotate(1deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(0deg);
+  }
+  75% {
+    transform: scale(1.05) rotate(-1deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+/* Efeito de texto com sombra de néon */
+.reverse-mode .neon-shadow-text {
+  text-shadow: 0 0 5px rgba(255, 107, 53, 1), 0 0 10px rgba(255, 107, 53, 0.8), 0 0 15px rgba(255, 107, 53, 0.6), 0 0
+    20px rgba(255, 107, 53, 0.4), 0 0 25px rgba(255, 107, 53, 0.2);
+  animation: neon-pulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes neon-pulse {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 107, 53, 1), 0 0 10px rgba(255, 107, 53, 0.8), 0 0 15px rgba(255, 107, 53, 0.6), 0 0
+      20px rgba(255, 107, 53, 0.4), 0 0 25px rgba(255, 107, 53, 0.2);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 107, 53, 1), 0 0 20px rgba(255, 107, 53, 0.8), 0 0 30px rgba(255, 107, 53, 0.6), 0 0
+      40px rgba(255, 107, 53, 0.4), 0 0 50px rgba(255, 107, 53, 0.2);
+  }
+}
+
+/* Aplicar classes automaticamente no modo reverse */
+.reverse-mode h1 {
+  text-shadow: 0 0 5px rgba(255, 107, 53, 1), 0 0 10px rgba(255, 107, 53, 0.8), 0 0 15px rgba(255, 107, 53, 0.6), 0 0
+    20px rgba(255, 107, 53, 0.4), 0 0 25px rgba(255, 107, 53, 0.2);
+  animation: neon-pulse 2s ease-in-out infinite alternate;
+}
+
+.reverse-mode h2 {
+  background: linear-gradient(45deg, #ff6b35, #f7931e, #ffd700, #ff6b35);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientText 5s ease infinite;
+  position: relative;
+}
+
+.reverse-mode h2::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 107, 53, 0), rgba(255, 107, 53, 0.5), rgba(255, 107, 53, 0));
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: holographic-shine 2s linear infinite;
+  opacity: 0.7;
+}
+
+.reverse-mode h3 {
+  text-shadow: 1px 1px 0 #ff6b35, 2px 2px 0 #ff6b35, 3px 3px 0 #ff6b35, 4px 4px 0 #ff6b35, 5px 5px 0 #ff6b35, 6px 6px 0
+    #ff6b35;
+  animation: dynamic-shadow 5s ease-in-out infinite;
+}
+
+.reverse-mode .card {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.reverse-mode .card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: inherit;
+  background: linear-gradient(45deg, #ff6b35, #f7931e, #ffd700, #f7931e, #ff6b35);
+  background-size: 200% 200%;
+  animation: energized-border 5s linear infinite;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.reverse-mode img:not(.no-effects) {
+  overflow: hidden;
+  transition: transform 0.5s ease;
+  animation: dynamic-zoom 10s ease-in-out infinite alternate;
+}
+
+.reverse-mode button:not(.no-effects) {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.reverse-mode button:not(.no-effects)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(255, 107, 53, 0.8) 0%, rgba(255, 107, 53, 0) 70%);
+  transform: scale(0);
+  opacity: 0;
+  z-index: -1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.reverse-mode button:not(.no-effects):hover::before {
+  transform: scale(2);
+  opacity: 1;
+}
+
+/* Efeito de texto com corte de dados */
+.reverse-mode .data-cut-text {
+  position: relative;
+  overflow: hidden;
+}
+
+.reverse-mode .data-cut-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 107, 53, 0.8) 50%, transparent 100%);
+  opacity: 0.5;
+  transform: translateX(-100%);
+  animation: data-cut 3s ease-in-out infinite;
+}
+
+@keyframes data-cut {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Efeito de texto com distorção de onda */
+.reverse-mode .wave-text {
+  display: inline-block;
+  animation: wave-text 2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes wave-text {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+}
+
+/* Aplicar efeito de onda em caracteres individuais */
+.reverse-mode .wave-text-chars span {
+  display: inline-block;
+  animation: wave-text 1s ease-in-out infinite;
+  animation-delay: calc(var(--char-index) * 0.05s);
+}
+
+/* Efeito de fundo com grade digital */
+.reverse-mode .digital-grid-bg {
+  position: relative;
+}
+
+.reverse-mode .digital-grid-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(255, 107, 53, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 107, 53, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: center center;
+  z-index: -1;
+  opacity: 0.5;
+  animation: grid-pulse 5s ease-in-out infinite;
+}
+
+@keyframes grid-pulse {
+  0%,
+  100% {
+    opacity: 0.3;
+    background-size: 20px 20px;
+  }
+  50% {
+    opacity: 0.5;
+    background-size: 25px 25px;
+  }
+}
+
+/* Efeito de texto com corte de dados */
+.reverse-mode .data-corruption-text {
+  position: relative;
+}
+
+.reverse-mode .data-corruption-text::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #ff6b35;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: data-corruption 0.3s steps(1) infinite;
+}
+
+@keyframes data-corruption {
+  0%,
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+  10% {
+    clip-path: inset(10% 0 80% 0);
+  }
+  20% {
+    clip-path: inset(30% 0 40% 0);
+  }
+  30% {
+    clip-path: inset(50% 0 30% 0);
+  }
+  40% {
+    clip-path: inset(70% 0 10% 0);
+  }
+  50% {
+    clip-path: inset(10% 0 60% 0);
+  }
+  60% {
+    clip-path: inset(40% 0 30% 0);
+  }
+  70% {
+    clip-path: inset(20% 0 50% 0);
+  }
+  80% {
+    clip-path: inset(60% 0 20% 0);
+  }
+  90% {
+    clip-path: inset(30% 0 40% 0);
+  }
+}
