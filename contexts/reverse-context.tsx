@@ -12,22 +12,30 @@ const ReverseContext = createContext<ReverseContextType | undefined>(undefined)
 
 export function ReverseProvider({ children }: { children: React.ReactNode }) {
   const [isReversed, setIsReversed] = useState(false)
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
-    // Recuperar preferência salva
-    const saved = localStorage.getItem("reverseMode")
-    if (saved === "true") {
-      setIsReversed(true)
-      document.documentElement.classList.add("reverse-mode")
+    setMounted(true)
+    // Recuperar preferência salva apenas no cliente
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem("reverseMode")
+      if (saved === "true") {
+        setIsReversed(true)
+        document.documentElement.classList.add("reverse-mode")
+      }
     }
   }, [])
 
   const toggleReverse = () => {
+    if (!mounted) return
+
     const newState = !isReversed
     setIsReversed(newState)
 
-    // Salvar preferência
-    localStorage.setItem("reverseMode", newState.toString())
+    // Salvar preferência apenas no cliente
+    if (typeof window !== "undefined") {
+      localStorage.setItem("reverseMode", newState.toString())
+    }
 
     // Adicionar ou remover classe do HTML
     if (newState) {
@@ -37,13 +45,22 @@ export function ReverseProvider({ children }: { children: React.ReactNode }) {
     }
   }
 
+  // Não renderizar até estar montado para evitar hidration mismatch
+  if (!mounted) {
+    return <>{children}</>
+  }
+
   return <ReverseContext.Provider value={{ isReversed, toggleReverse }}>{children}</ReverseContext.Provider>
 }
 
 export function useReverse() {
   const context = useContext(ReverseContext)
   if (context === undefined) {
-    throw new Error("useReverse must be used within a ReverseProvider")
+    // Fallback seguro para quando o contexto não está disponível
+    return {
+      isReversed: false,
+      toggleReverse: () => {},
+    }
   }
   return context
 }
