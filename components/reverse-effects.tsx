@@ -5,187 +5,9 @@ import { useReverse } from "@/contexts/reverse-context"
 import { useAnimation } from "framer-motion"
 
 export function ReverseEffects() {
-  const { isReverse: isReversed } = useReverse()
-  const containerRef = useRef<HTMLDivElement>(null)
-  const particlesRef = useRef<HTMLDivElement[]>([])
-  const mouseTrailRef = useRef<HTMLDivElement[]>([])
-  const mouseTrailRefOriginal = useRef<HTMLDivElement>(null)
-  const particlesRefOriginal = useRef<HTMLDivElement>(null)
-  const distortionRef = useRef<HTMLDivElement>(null)
+  const { isReversed } = useReverse()
   const controls = useAnimation()
   const particleContainerRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    if (!isReversed) {
-      // Limpar todos os efeitos quando não estiver no modo reverse
-      particlesRef.current.forEach((particle) => particle.remove())
-      mouseTrailRef.current.forEach((trail) => trail.remove())
-      particlesRef.current = []
-      mouseTrailRef.current = []
-      return
-    }
-
-    // Criar partículas 3D
-    const createParticles = () => {
-      const container = document.body
-      for (let i = 0; i < 50; i++) {
-        const particle = document.createElement("div")
-        particle.className = "reverse-particle"
-        particle.style.cssText = `
-          position: fixed;
-          width: 4px;
-          height: 4px;
-          background: linear-gradient(45deg, #ff6b35, #f7931e);
-          border-radius: 50%;
-          pointer-events: none;
-          z-index: 1000;
-          left: ${Math.random() * 100}vw;
-          top: ${Math.random() * 100}vh;
-          animation: float ${3 + Math.random() * 4}s ease-in-out infinite alternate;
-          opacity: 0.7;
-        `
-        container.appendChild(particle)
-        particlesRef.current.push(particle)
-      }
-    }
-
-    // Criar rastro do mouse
-    const createMouseTrail = (e: MouseEvent) => {
-      const trail = document.createElement("div")
-      trail.className = "mouse-trail"
-      trail.style.cssText = `
-        position: fixed;
-        width: 8px;
-        height: 8px;
-        background: radial-gradient(circle, #ff6b35, transparent);
-        border-radius: 50%;
-        pointer-events: none;
-        z-index: 999;
-        left: ${e.clientX - 4}px;
-        top: ${e.clientY - 4}px;
-        animation: trailFade 0.8s ease-out forwards;
-      `
-      document.body.appendChild(trail)
-      mouseTrailRef.current.push(trail)
-
-      // Remover após animação
-      setTimeout(() => {
-        trail.remove()
-        const index = mouseTrailRef.current.indexOf(trail)
-        if (index > -1) {
-          mouseTrailRef.current.splice(index, 1)
-        }
-      }, 800)
-    }
-
-    // Adicionar estilos de animação
-    const style = document.createElement("style")
-    style.textContent = `
-      @keyframes float {
-        0% { transform: translateY(0px) rotate(0deg); }
-        100% { transform: translateY(-20px) rotate(180deg); }
-      }
-      @keyframes trailFade {
-        0% { opacity: 1; transform: scale(1); }
-        100% { opacity: 0; transform: scale(0.5); }
-      }
-    `
-    document.head.appendChild(style)
-
-    createParticles()
-    document.addEventListener("mousemove", createMouseTrail)
-
-    return () => {
-      document.removeEventListener("mousemove", createMouseTrail)
-      document.head.removeChild(style)
-    }
-  }, [isReversed])
-
-  useEffect(() => {
-    if (!isReversed) return
-
-    // Mouse trail effect
-    const handleMouseMove = (e: MouseEvent) => {
-      if (!mouseTrailRefOriginal.current) return
-
-      const trail = document.createElement("div")
-      trail.className = "mouse-trail-dot"
-      trail.style.left = e.clientX + "px"
-      trail.style.top = e.clientY + "px"
-
-      mouseTrailRefOriginal.current.appendChild(trail)
-
-      setTimeout(() => {
-        if (trail.parentNode) {
-          trail.parentNode.removeChild(trail)
-        }
-      }, 1000)
-    }
-
-    // Create particles
-    const createParticlesOriginal = () => {
-      if (!particlesRefOriginal.current) return
-
-      for (let i = 0; i < 50; i++) {
-        const particle = document.createElement("div")
-        particle.className = "floating-particle"
-        particle.style.left = Math.random() * 100 + "%"
-        particle.style.top = Math.random() * 100 + "%"
-        particle.style.animationDelay = Math.random() * 10 + "s"
-        particle.style.animationDuration = Math.random() * 10 + 10 + "s"
-
-        particlesRefOriginal.current.appendChild(particle)
-      }
-    }
-
-    // Text scramble effect
-    const scrambleText = (element: HTMLElement) => {
-      const originalText = element.textContent || ""
-      const chars = "!@#$%^&*()_+-=[]{}|;:,.<>?"
-      let iterations = 0
-
-      const interval = setInterval(() => {
-        element.textContent = originalText
-          .split("")
-          .map((char, index) => {
-            if (index < iterations) {
-              return originalText[index]
-            }
-            return chars[Math.floor(Math.random() * chars.length)]
-          })
-          .join("")
-
-        if (iterations >= originalText.length) {
-          clearInterval(interval)
-          element.textContent = originalText
-        }
-
-        iterations += 1 / 3
-      }, 30)
-    }
-
-    // Apply text scramble to headings
-    const applyTextScramble = () => {
-      const headings = document.querySelectorAll("h1, h2, h3")
-      headings.forEach((heading) => {
-        const element = heading as HTMLElement
-        element.addEventListener("mouseenter", () => scrambleText(element))
-      })
-    }
-
-    // Initialize effects
-    document.addEventListener("mousemove", handleMouseMove)
-    createParticlesOriginal()
-    applyTextScramble()
-
-    // Cleanup
-    return () => {
-      document.removeEventListener("mousemove", handleMouseMove)
-      if (particlesRefOriginal.current) {
-        particlesRefOriginal.current.innerHTML = ""
-      }
-    }
-  }, [isReversed])
 
   // Efeito de glitch para textos
   useEffect(() => {
@@ -905,51 +727,7 @@ export function ReverseEffects() {
   }, [isReversed])
 
   return (
-    <div ref={containerRef} className="reverse-effects-container">
-      {/* Mouse Trail Container */}
-      <div
-        ref={mouseTrailRefOriginal}
-        className="fixed inset-0 pointer-events-none z-50"
-        style={{ mixBlendMode: "screen" }}
-      />
-
-      {/* Floating Particles Container */}
-      <div ref={particlesRefOriginal} className="fixed inset-0 pointer-events-none z-10" />
-
-      {/* Page Distortion Grid */}
-      <div
-        ref={distortionRef}
-        className="fixed inset-0 pointer-events-none z-20 opacity-20"
-        style={{
-          background: `
-            linear-gradient(90deg, transparent 98%, rgba(255, 107, 53, 0.3) 100%),
-            linear-gradient(0deg, transparent 98%, rgba(255, 107, 53, 0.3) 100%)
-          `,
-          backgroundSize: "20px 20px",
-        }}
-      />
-
-      {/* Vignette Effect */}
-      <div
-        className="fixed inset-0 pointer-events-none z-30"
-        style={{
-          background: "radial-gradient(circle at center, transparent 60%, rgba(0, 0, 0, 0.4) 100%)",
-          mixBlendMode: "multiply",
-        }}
-      />
-
-      {/* Chromatic Aberration Overlay */}
-      <div
-        className="fixed inset-0 pointer-events-none z-40 opacity-30"
-        style={{
-          background: `
-            radial-gradient(circle at 20% 80%, rgba(255, 0, 0, 0.1) 0%, transparent 50%),
-            radial-gradient(circle at 80% 20%, rgba(0, 255, 0, 0.1) 0%, transparent 50%),
-            radial-gradient(circle at 40% 40%, rgba(0, 0, 255, 0.1) 0%, transparent 50%)
-          `,
-          animation: "chromatic-shift 4s ease-in-out infinite alternate",
-        }}
-      />
+    <>
       {isReversed && (
         <div ref={particleContainerRef} className="fixed inset-0 pointer-events-none overflow-hidden z-0" />
       )}
@@ -1000,6 +778,6 @@ export function ReverseEffects() {
           <div className="fixed inset-0 pointer-events-none border border-orange-500/20 z-10 animate-pulse-slow"></div>
         </>
       )}
-    </div>
+    </>
   )
 }
