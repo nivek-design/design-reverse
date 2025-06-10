@@ -123,7 +123,7 @@ export default function GoogleAdsServicePage() {
                       <div>
                         <div className="flex justify-between mb-1">
                           <span className="text-sm font-medium text-gray-700">ROI Médio</span>
-                          <span className="text-sm font-medium text-green-600">780%</span>
+                          <span className="text-sm font-medium text-green-600">180%</span>
                         </div>
                         <div className="w-full bg-gray-200 rounded-full h-2">
                           <div className="bg-green-500 h-2 rounded-full" style={{ width: "90%" }}></div>
@@ -133,11 +133,11 @@ export default function GoogleAdsServicePage() {
 
                     <div className="mt-6 grid grid-cols-2 gap-4">
                       <div className="bg-gray-50 p-4 rounded-lg text-center">
-                        <div className="text-3xl font-bold text-purple-600">15M+</div>
+                        <div className="text-3xl font-bold text-purple-600">500Mil+</div>
                         <div className="text-sm text-gray-600">Impressões Gerenciadas</div>
                       </div>
                       <div className="bg-gray-50 p-4 rounded-lg text-center">
-                        <div className="text-3xl font-bold text-purple-600">R$5M+</div>
+                        <div className="text-3xl font-bold text-purple-600">R$50Mil+</div>
                         <div className="text-sm text-gray-600">Em Mídia Gerenciada</div>
                       </div>
                     </div>
@@ -154,7 +154,7 @@ export default function GoogleAdsServicePage() {
             <FadeIn direction="up" className="text-center">
               <h2 className="text-3xl font-bold mb-12 text-purple-900">Nossos Serviços de Google Ads</h2>
             </FadeIn>
-            <StaggerChildren className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-3 md:grid-cols-3 gap-8">
               <HoverCard className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
                 <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
                   <Search className="h-8 w-8 text-purple-700" />
@@ -236,7 +236,7 @@ export default function GoogleAdsServicePage() {
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-center">Campanhas para Aplicativos</h3>
                 <p className="text-gray-600 mb-4 text-center">
-                  Anúncios específicos para promover o download e uso de aplicativos móveis, aumentando a base de
+                  Anúncios específicos para promover o download e uso de aplicativos m��veis, aumentando a base de
                   usuários e o engajamento.
                 </p>
                 <div className="space-y-2">
@@ -304,7 +304,7 @@ export default function GoogleAdsServicePage() {
                   </div>
                 </div>
               </HoverCard>
-            </StaggerChildren>
+            </div>
           </div>
         </section>
 
@@ -315,7 +315,7 @@ export default function GoogleAdsServicePage() {
               <h2 className="text-3xl font-bold mb-12 text-purple-900">Nosso Processo de Gestão</h2>
             </FadeIn>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-              <StaggerChildren className="col-span-1 md:col-span-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+              <div className="col-span-1 md:col-span-4 grid grid-cols-1 md:grid-cols-4 gap-8">
                 <HoverCard className="bg-white p-6 rounded-lg shadow-lg border border-gray-100 text-center">
                   <div className="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
                     <span className="text-purple-700 font-bold text-xl">1</span>
@@ -359,7 +359,7 @@ export default function GoogleAdsServicePage() {
                     acionáveis para contínua evolução da estratégia.
                   </p>
                 </HoverCard>
-              </StaggerChildren>
+              </div>
             </div>
           </div>
         </section>

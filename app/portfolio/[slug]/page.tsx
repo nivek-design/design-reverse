@@ -14,7 +14,7 @@ import { PageTransition } from "@/components/page-transition"
 const projects = {
   "ecommerce-redesign": {
     title: "Redesign de E-commerce",
-    client: "Fashion Store",
+    client: "Londrina Epi`s",
     category: "Website",
     challenge:
       "A Fashion Store enfrentava problemas com altas taxas de abandono de carrinho e baixa conversão em dispositivos móveis. O site antigo tinha uma interface desatualizada e problemas de usabilidade que afetavam diretamente as vendas.",
@@ -29,16 +29,16 @@ const projects = {
     testimonial: {
       quote:
         "O redesign do nosso e-commerce transformou completamente nosso negócio online. A equipe da Cuttital entendeu perfeitamente nossas necessidades e entregou um site que não apenas é bonito, mas também converte muito melhor. Nossos clientes adoraram a nova experiência!",
-      author: "Maria Silva",
-      position: "Diretora de Marketing, Fashion Store",
+      author: "Kevin Araujo",
+      position: "Desenvolvimento",
     },
     images: [
       {
-        src: "/portfolio-ecommerce-1.png",
+        src: "/londrina-epis-product.png",
         alt: "Homepage do e-commerce",
       },
       {
-        src: "/portfolio-ecommerce-2.png",
+        src: "/londrina-epis-category.png",
         alt: "Página de produto",
       },
       {
@@ -156,7 +156,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
         {/* Project Images */}
         <section className="py-12 bg-gray-50">
           <div className="container mx-auto px-4">
-            <StaggerChildren className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <StaggerChildren className="  gap-6">
               {project.images.map((image, index) => (
                 <div
                   key={index}
@@ -165,8 +165,8 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
                   <Image
                     src={image.src || "/placeholder.svg"}
                     alt={image.alt}
-                    width={400}
-                    height={300}
+                    width={800}
+                    height={500}
                     className="w-full h-64 object-cover"
                   />
                 </div>

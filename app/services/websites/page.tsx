@@ -95,7 +95,7 @@ export default function WebsitesServicePage() {
             <FadeIn direction="up" className="text-center">
               <h2 className="text-3xl font-bold mb-12 text-blue-900">Nosso Processo</h2>
             </FadeIn>
-            <StaggerChildren className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <StaggerChildren className="">
               <HoverCard className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
                 <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
                   <span className="text-blue-700 font-bold text-xl">1</span>

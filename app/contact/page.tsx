@@ -216,7 +216,7 @@ export default function ContactPage() {
                       </a>
                     </div>
                   </div>
-                  <div className="flex items-center gap-3 group">
+                  {/* <div className="flex items-center gap-3 group">
                     <div className="bg-blue-800/50 p-2 rounded-full transition-transform duration-300 group-hover:scale-110">
                       <MapPin className="text-blue-400 h-5 w-5" />
                     </div>
@@ -228,7 +228,7 @@ export default function ContactPage() {
                         Londrina, PR - Brasil
                       </address>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="flex items-center gap-3 group">
                     <div className="bg-blue-800/50 p-2 rounded-full transition-transform duration-300 group-hover:scale-110">
                       <Clock className="text-blue-400 h-5 w-5" />
@@ -288,8 +288,8 @@ export default function ContactPage() {
                   Agende uma Reunião
                 </h3>
                 <Button
-                  onClick={() => window.open("https://calendly.com/cuttital/30min", "_blank")}
-                  className="bg-transparent border border-white/30 hover:bg-white/10 w-full transition-all duration-300 hover:border-white/60"
+                  onClick={() => window.open("https://calendly.com/designreverse/30min", "_blank")}
+                  className="bg-transparent border border-white/30 hover:bg-white/10 w-full transition-all duration-300 hover:border-white/60 text-white"
                 >
                   AGENDAR UMA REUNIÃO
                 </Button>
@@ -440,8 +440,8 @@ export default function ContactPage() {
 
                     <form onSubmit={handleSubmit} className="space-y-4">
                       <StaggerChildren staggerDelay={0.05}>
-                        <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
-                          <div>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                          <div className="w-full">
                             <Label htmlFor="name" className="block text-sm mb-1">
                               Nome Completo*
                             </Label>
@@ -474,9 +474,6 @@ export default function ContactPage() {
                               disabled={formState === "submitting"}
                             />
                           </div>
-                        </div>
-
-                        <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
                           <div>
                             <Label htmlFor="phone" className="block text-sm mb-1">
                               Telefone/WhatsApp*
@@ -493,6 +490,9 @@ export default function ContactPage() {
                               disabled={formState === "submitting"}
                             />
                           </div>
+                        </div>
+
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
 
                           <div>
                             <Label htmlFor="company" className="block text-sm mb-1">
@@ -509,70 +509,50 @@ export default function ContactPage() {
                               disabled={formState === "submitting"}
                             />
                           </div>
+                          <div>
+                            <Label htmlFor="service" className="block text-sm mb-1">
+                              Serviço de Interesse*
+                            </Label>
+                            <select
+                              id="service"
+                              name="service"
+                              className="w-full h-10 px-3 py-2 bg-white text-gray-900 rounded-md transition-all duration-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                              required
+                              value={formData.service}
+                              onChange={handleChange}
+                              disabled={formState === "submitting"}
+                            >
+                              <option value="">Selecione um serviço</option>
+                              <option value="website">Criação de Site</option>
+                              <option value="google-ads">Google Ads</option>
+                              <option value="seo">SEO</option>
+                              <option value="social-media">Redes Sociais</option>
+                              <option value="other">Outro</option>
+                            </select>
+                          </div>
+                          <div>
+                            <Label htmlFor="howDidYouFindUs" className="block text-sm mb-1">
+                              Como nos conheceu?*
+                            </Label>
+                            <select
+                              id="howDidYouFindUs"
+                              name="howDidYouFindUs"
+                              className="w-full h-10 px-3 py-2 bg-white text-gray-900 rounded-md transition-all duration-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                              required
+                              value={formData.howDidYouFindUs}
+                              onChange={handleChange}
+                              disabled={formState === "submitting"}
+                            >
+                              <option value="">Selecione uma opção</option>
+                              <option value="google">Google</option>
+                              <option value="social-media">Redes Sociais</option>
+                              <option value="referral">Indicação</option>
+                              <option value="other">Outro</option>
+                            </select>
+                          </div>
                         </div>
 
-                        <div>
-                          <Label htmlFor="service" className="block text-sm mb-1">
-                            Serviço de Interesse*
-                          </Label>
-                          <select
-                            id="service"
-                            name="service"
-                            className="w-full h-10 px-3 py-2 bg-white text-gray-900 rounded-md transition-all duration-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                            required
-                            value={formData.service}
-                            onChange={handleChange}
-                            disabled={formState === "submitting"}
-                          >
-                            <option value="">Selecione um serviço</option>
-                            <option value="website">Criação de Site</option>
-                            <option value="google-ads">Google Ads</option>
-                            <option value="seo">SEO</option>
-                            <option value="social-media">Redes Sociais</option>
-                            <option value="other">Outro</option>
-                          </select>
-                        </div>
-
-                        <div>
-                          <Label htmlFor="howDidYouFindUs" className="block text-sm mb-1">
-                            Como nos conheceu?*
-                          </Label>
-                          <select
-                            id="howDidYouFindUs"
-                            name="howDidYouFindUs"
-                            className="w-full h-10 px-3 py-2 bg-white text-gray-900 rounded-md transition-all duration-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                            required
-                            value={formData.howDidYouFindUs}
-                            onChange={handleChange}
-                            disabled={formState === "submitting"}
-                          >
-                            <option value="">Selecione uma opção</option>
-                            <option value="google">Google</option>
-                            <option value="social-media">Redes Sociais</option>
-                            <option value="referral">Indicação</option>
-                            <option value="other">Outro</option>
-                          </select>
-                        </div>
-
-                        <div>
-                          <Label htmlFor="bestTimeToContact" className="block text-sm mb-1">
-                            Melhor horário para contato
-                          </Label>
-                          <select
-                            id="bestTimeToContact"
-                            name="bestTimeToContact"
-                            className="w-full h-10 px-3 py-2 bg-white text-gray-900 rounded-md transition-all duration-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                            value={formData.bestTimeToContact}
-                            onChange={handleChange}
-                            disabled={formState === "submitting"}
-                          >
-                            <option value="">Qualquer horário</option>
-                            <option value="morning">Manhã (9h - 12h)</option>
-                            <option value="afternoon">Tarde (12h - 18h)</option>
-                          </select>
-                        </div>
-
-                        <div>
+                        <div className="">
                           <Label htmlFor="message" className="block text-sm mb-1">
                             Mensagem*
                           </Label>
@@ -580,64 +560,66 @@ export default function ContactPage() {
                             id="message"
                             name="message"
                             placeholder="Descreva seu projeto ou necessidade..."
-                            className="bg-white text-gray-900 border-0 transition-all duration-300 focus:ring-2 focus:ring-blue-500"
+                            className="bg-white text-gray-900 border-0 transition-all duration-300 focus:ring-2 focus:ring-blue-500 resize-none"
                             rows={5}
+                            cols={80}
                             required
                             value={formData.message}
                             onChange={handleChange}
                             disabled={formState === "submitting"}
                           />
                         </div>
+                        <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
 
-                        <div className="flex items-center space-x-2">
-                          <Checkbox
-                            id="newsletter"
-                            checked={formData.newsletter}
-                            onCheckedChange={handleCheckboxChange}
-                            disabled={formState === "submitting"}
-                          />
-                          <label
-                            htmlFor="newsletter"
-                            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                          >
-                            Desejo receber a newsletter com dicas e novidades sobre marketing digital
-                          </label>
-                        </div>
+                          <div className="flex items-center space-x-2">
+                            <Checkbox
+                              id="newsletter"
+                              checked={formData.newsletter}
+                              onCheckedChange={handleCheckboxChange}
+                              disabled={formState === "submitting"}
+                            />
+                            <label
+                              htmlFor="newsletter"
+                              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                            >
+                              Desejo receber a newsletter com dicas e novidades sobre marketing digital
+                            </label>
+                          </div>
 
-                        <div>
-                          <Label className="block text-sm mb-2">Urgência do contato</Label>
-                          <RadioGroup
-                            value={formData.urgency}
-                            onValueChange={handleRadioChange}
-                            disabled={formState === "submitting"}
-                            className="flex space-x-4"
-                          >
-                            <div className="flex items-center space-x-2">
-                              <RadioGroupItem value="low" id="low" />
-                              <Label htmlFor="low">Baixa</Label>
-                            </div>
-                            <div className="flex items-center space-x-2">
-                              <RadioGroupItem value="normal" id="normal" />
-                              <Label htmlFor="normal">Normal</Label>
-                            </div>
-                            <div className="flex items-center space-x-2">
-                              <RadioGroupItem value="high" id="high" />
-                              <Label htmlFor="high">Alta</Label>
-                            </div>
-                          </RadioGroup>
+                          <div>
+                            <Label className="block text-sm mb-2">Urgência do contato</Label>
+                            <RadioGroup
+                              value={formData.urgency}
+                              onValueChange={handleRadioChange}
+                              disabled={formState === "submitting"}
+                              className="flex space-x-4"
+                            >
+                              <div className="flex items-center space-x-2">
+                                <RadioGroupItem value="low" id="low" />
+                                <Label htmlFor="low">Baixa</Label>
+                              </div>
+                              <div className="flex items-center space-x-2">
+                                <RadioGroupItem value="normal" id="normal" />
+                                <Label htmlFor="normal">Normal</Label>
+                              </div>
+                              <div className="flex items-center space-x-2">
+                                <RadioGroupItem value="high" id="high" />
+                                <Label htmlFor="high">Alta</Label>
+                              </div>
+                            </RadioGroup>
+                          </div>
                         </div>
 
                         <Button
                           type="submit"
-                          className={`w-full transition-all duration-300 ${
-                            formState === "submitting"
-                              ? "bg-blue-700 cursor-wait"
-                              : formState === "success"
-                                ? "bg-green-600 hover:bg-green-700"
-                                : formState === "error"
-                                  ? "bg-red-600 hover:bg-red-700"
-                                  : "bg-blue-600 hover:bg-blue-700"
-                          }`}
+                          className={`w-full transition-all duration-300 ${formState === "submitting"
+                            ? "bg-blue-700 cursor-wait"
+                            : formState === "success"
+                              ? "bg-green-600 hover:bg-green-700"
+                              : formState === "error"
+                                ? "bg-red-600 hover:bg-red-700"
+                                : "bg-blue-600 hover:bg-blue-700"
+                            }`}
                           disabled={formState === "submitting"}
                         >
                           {formState === "submitting" ? (
@@ -714,7 +696,7 @@ export default function ContactPage() {
 
                     <form onSubmit={handleProjectFormSubmit} className="space-y-4">
                       <StaggerChildren staggerDelay={0.05}>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                           <div>
                             <Label htmlFor="project-name" className="block text-sm mb-1">
                               Nome Completo*
@@ -746,9 +728,6 @@ export default function ContactPage() {
                               onChange={handleProjectFormChange}
                             />
                           </div>
-                        </div>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                           <div>
                             <Label htmlFor="project-phone" className="block text-sm mb-1">
                               Telefone/WhatsApp*
@@ -764,6 +743,9 @@ export default function ContactPage() {
                               onChange={handleProjectFormChange}
                             />
                           </div>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
 
                           <div>
                             <Label htmlFor="project-company" className="block text-sm mb-1">
@@ -780,39 +762,39 @@ export default function ContactPage() {
                               onChange={handleProjectFormChange}
                             />
                           </div>
+                          <div>
+                            <Label htmlFor="websiteUrl" className="block text-sm mb-1">
+                              Website atual (opcional)
+                            </Label>
+                            <Input
+                              id="websiteUrl"
+                              name="websiteUrl"
+                              type="url"
+                              placeholder="https://www.seusite.com.br"
+                              className="bg-white text-gray-900 border-0 transition-all duration-300 focus:ring-2 focus:ring-blue-500"
+                              value={projectFormData.websiteUrl}
+                              onChange={handleProjectFormChange}
+                            />
+                          </div>
+                          <div>
+                            <Label htmlFor="competitors" className="block text-sm mb-1">
+                              Principais concorrentes
+                            </Label>
+                            <Input
+                              id="competitors"
+                              name="competitors"
+                              type="text"
+                              placeholder="Concorrente 1, Concorrente 2"
+                              className="bg-white text-gray-900 border-0 transition-all duration-300 focus:ring-2 focus:ring-blue-500"
+                              value={projectFormData.competitors}
+                              onChange={handleProjectFormChange}
+                            />
+                          </div>
                         </div>
 
-                        <div>
-                          <Label htmlFor="websiteUrl" className="block text-sm mb-1">
-                            Website atual (opcional)
-                          </Label>
-                          <Input
-                            id="websiteUrl"
-                            name="websiteUrl"
-                            type="url"
-                            placeholder="https://www.seusite.com.br"
-                            className="bg-white text-gray-900 border-0 transition-all duration-300 focus:ring-2 focus:ring-blue-500"
-                            value={projectFormData.websiteUrl}
-                            onChange={handleProjectFormChange}
-                          />
-                        </div>
 
-                        <div>
-                          <Label htmlFor="competitors" className="block text-sm mb-1">
-                            Principais concorrentes
-                          </Label>
-                          <Input
-                            id="competitors"
-                            name="competitors"
-                            type="text"
-                            placeholder="Concorrente 1, Concorrente 2"
-                            className="bg-white text-gray-900 border-0 transition-all duration-300 focus:ring-2 focus:ring-blue-500"
-                            value={projectFormData.competitors}
-                            onChange={handleProjectFormChange}
-                          />
-                        </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                           <div>
                             <Label htmlFor="project-type" className="block text-sm mb-1">
                               Tipo de Projeto*
@@ -866,25 +848,7 @@ export default function ContactPage() {
                           </div>
                         </div>
 
-                        <div>
-                          <Label htmlFor="project-deadline" className="block text-sm mb-1">
-                            Prazo Desejado
-                          </Label>
-                          <select
-                            id="project-deadline"
-                            name="projectDeadline"
-                            className="w-full h-10 px-3 py-2 bg-white text-gray-900 rounded-md transition-all duration-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                            value={projectFormData.projectDeadline}
-                            onChange={handleProjectFormChange}
-                          >
-                            <option value="">Selecione um prazo</option>
-                            <option value="urgente">Urgente (até 15 dias)</option>
-                            <option value="30-dias">Até 30 dias</option>
-                            <option value="60-dias">Até 60 dias</option>
-                            <option value="90-dias">Até 90 dias</option>
-                            <option value="flexivel">Flexível</option>
-                          </select>
-                        </div>
+
 
                         <div>
                           <Label htmlFor="specificObjectives" className="block text-sm mb-1">
@@ -896,6 +860,7 @@ export default function ContactPage() {
                             placeholder="Quais são os objetivos específicos que você deseja alcançar com este projeto?"
                             className="bg-white text-gray-900 border-0 transition-all duration-300 focus:ring-2 focus:ring-blue-500"
                             rows={3}
+                            cols={80}
                             value={projectFormData.specificObjectives}
                             onChange={handleProjectFormChange}
                           />
@@ -911,6 +876,7 @@ export default function ContactPage() {
                             placeholder="Descreva detalhadamente seu projeto, objetivos, referências e expectativas..."
                             className="bg-white text-gray-900 border-0 transition-all duration-300 focus:ring-2 focus:ring-blue-500"
                             rows={5}
+                            cols={80}
                             required
                             value={projectFormData.projectDescription}
                             onChange={handleProjectFormChange}
@@ -987,7 +953,7 @@ export default function ContactPage() {
 
                     <form onSubmit={handleSupportFormSubmit} className="space-y-4">
                       <StaggerChildren staggerDelay={0.05}>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                           <div>
                             <Label htmlFor="support-name" className="block text-sm mb-1">
                               Nome Completo*
@@ -1019,9 +985,6 @@ export default function ContactPage() {
                               onChange={handleSupportFormChange}
                             />
                           </div>
-                        </div>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                           <div>
                             <Label htmlFor="orderNumber" className="block text-sm mb-1">
                               Número do pedido/contrato
@@ -1036,6 +999,9 @@ export default function ContactPage() {
                               onChange={handleSupportFormChange}
                             />
                           </div>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
 
                           <div>
                             <Label htmlFor="problemDate" className="block text-sm mb-1">
@@ -1050,48 +1016,48 @@ export default function ContactPage() {
                               onChange={handleSupportFormChange}
                             />
                           </div>
-                        </div>
+                          <div>
+                            <Label htmlFor="support-id" className="block text-sm mb-1">
+                              ID do Cliente ou Projeto*
+                            </Label>
+                            <Input
+                              id="support-id"
+                              name="supportId"
+                              type="text"
+                              placeholder="Ex: CL-12345 ou PR-6789"
+                              className="bg-white text-gray-900 border-0 transition-all duration-300 focus:ring-2 focus:ring-blue-500"
+                              required
+                              value={supportFormData.supportId}
+                              onChange={handleSupportFormChange}
+                            />
+                          </div>
 
-                        <div>
-                          <Label htmlFor="support-id" className="block text-sm mb-1">
-                            ID do Cliente ou Projeto*
-                          </Label>
-                          <Input
-                            id="support-id"
-                            name="supportId"
-                            type="text"
-                            placeholder="Ex: CL-12345 ou PR-6789"
-                            className="bg-white text-gray-900 border-0 transition-all duration-300 focus:ring-2 focus:ring-blue-500"
-                            required
-                            value={supportFormData.supportId}
-                            onChange={handleSupportFormChange}
-                          />
-                        </div>
-
-                        <div>
-                          <Label htmlFor="support-type" className="block text-sm mb-1">
-                            Tipo de Suporte*
-                          </Label>
-                          <select
-                            id="support-type"
-                            name="supportType"
-                            className="w-full h-10 px-3 py-2 bg-white text-gray-900 rounded-md transition-all duration-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                            required
-                            value={supportFormData.supportType}
-                            onChange={handleSupportFormChange}
-                          >
-                            <option value="">Selecione o tipo de suporte</option>
-                            <option value="technical">Problema Técnico</option>
-                            <option value="billing">Dúvida sobre Faturamento</option>
-                            <option value="account">Problemas com Conta/Acesso</option>
-                            <option value="general">Dúvidas Gerais</option>
-                            <option value="feedback">Feedback/Sugestões</option>
-                            <option value="complaint">Reclamação</option>
-                          </select>
+                          <div>
+                            <Label htmlFor="support-type" className="block text-sm mb-1">
+                              Tipo de Suporte*
+                            </Label>
+                            <select
+                              id="support-type"
+                              name="supportType"
+                              className="w-full h-10 px-3 py-2 bg-white text-gray-900 rounded-md transition-all duration-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                              required
+                              value={supportFormData.supportType}
+                              onChange={handleSupportFormChange}
+                            >
+                              <option value="">Selecione o tipo de suporte</option>
+                              <option value="technical">Problema Técnico</option>
+                              <option value="billing">Dúvida sobre Faturamento</option>
+                              <option value="account">Problemas com Conta/Acesso</option>
+                              <option value="general">Dúvidas Gerais</option>
+                              <option value="feedback">Feedback/Sugestões</option>
+                              <option value="complaint">Reclamação</option>
+                            </select>
+                          </div>
                         </div>
 
                         {supportFormData.supportType === "technical" && (
                           <>
+
                             <div>
                               <Label htmlFor="browserDevice" className="block text-sm mb-1">
                                 Navegador/Dispositivo
@@ -1124,7 +1090,27 @@ export default function ContactPage() {
                           </>
                         )}
 
+                        
+
                         <div>
+                          <Label htmlFor="support-message" className="block text-sm mb-1">
+                            Descrição do Problema*
+                          </Label>
+                          <Textarea
+                            id="support-message"
+                            name="supportMessage"
+                            placeholder="Descreva detalhadamente o problema, incluindo quando começou, passos para reproduzir e qualquer mensagem de erro..."
+                            className="bg-white text-gray-900 border-0 transition-all duration-300 focus:ring-2 focus:ring-blue-500"
+                            rows={5}
+                            cols={80}
+                            required
+                            value={supportFormData.supportMessage}
+                            onChange={handleSupportFormChange}
+                          />
+                        </div>
+                        
+                        <div  className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          <div className="">
                           <Label htmlFor="support-priority" className="block text-sm mb-1">
                             Prioridade*
                           </Label>
@@ -1144,51 +1130,35 @@ export default function ContactPage() {
                           </select>
                         </div>
 
-                        <div>
-                          <Label htmlFor="support-message" className="block text-sm mb-1">
-                            Descrição do Problema*
-                          </Label>
-                          <Textarea
-                            id="support-message"
-                            name="supportMessage"
-                            placeholder="Descreva detalhadamente o problema, incluindo quando começou, passos para reproduzir e qualquer mensagem de erro..."
-                            className="bg-white text-gray-900 border-0 transition-all duration-300 focus:ring-2 focus:ring-blue-500"
-                            rows={5}
-                            required
-                            value={supportFormData.supportMessage}
-                            onChange={handleSupportFormChange}
-                          />
-                        </div>
-
-                        <div>
-                          <Label htmlFor="support-attachment" className="block text-sm mb-1">
-                            Anexar Arquivo (opcional)
-                          </Label>
-                          <Input
-                            id="support-attachment"
-                            name="supportAttachment"
-                            type="file"
-                            className="bg-white text-gray-900 border-0 transition-all duration-300 focus:ring-2 focus:ring-blue-500"
-                            onChange={(e) => {
-                              if (e.target.files && e.target.files[0]) {
-                                setSupportFormData((prev) => ({ ...prev, supportAttachment: e.target.files[0] }))
-                              }
-                            }}
-                          />
-                          {supportFormData.supportAttachment && (
+                          <div>
+                            <Label htmlFor="support-attachment" className="block text-sm mb-1">
+                              Anexar Arquivo (opcional)
+                            </Label>
+                            <Input
+                              id="support-attachment"
+                              name="supportAttachment"
+                              type="file"
+                              className="bg-white text-gray-900 border-0 transition-all duration-300 focus:ring-2 focus:ring-blue-500"
+                              onChange={(e) => {
+                                if (e.target.files && e.target.files[0]) {
+                                  setSupportFormData((prev) => ({ ...prev, supportAttachment: e.target.files[0] }))
+                                }
+                              }}
+                            />
+                            {supportFormData.supportAttachment && (
+                              <p className="text-xs text-blue-300 mt-1">
+                                Arquivo anexado: {supportFormData.supportAttachment.name}
+                              </p>
+                            )}
                             <p className="text-xs text-blue-300 mt-1">
-                              Arquivo anexado: {supportFormData.supportAttachment.name}
+                              Formatos aceitos: JPG, PNG, PDF, DOC, DOCX. Tamanho máximo: 5MB
                             </p>
-                          )}
-                          <p className="text-xs text-blue-300 mt-1">
-                            Formatos aceitos: JPG, PNG, PDF, DOC, DOCX. Tamanho máximo: 5MB
-                          </p>
+                          </div>
                         </div>
-
                         <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700">
-                          <Headphones className="mr-2 h-5 w-5" />
-                          Enviar Solicitação de Suporte
-                        </Button>
+                            <Headphones className="mr-2 h-5 w-5" />
+                            Enviar Solicitação de Suporte
+                          </Button>
                       </StaggerChildren>
                     </form>
                   </div>
@@ -1270,13 +1240,7 @@ export default function ContactPage() {
                   </svg>
                   Fale pelo WhatsApp
                 </a>
-                <Button
-                  onClick={() => window.open("https://calendly.com/cuttital/30min", "_blank")}
-                  className="bg-white text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-full transition-all duration-300"
-                >
-                  <Calendar className="mr-2 h-5 w-5" />
-                  Agendar Reunião
-                </Button>
+                
                 <a
                   href="tel:+551199999999"
                   className="inline-flex items-center bg-blue-800 hover:bg-blue-900 text-white px-6 py-3 rounded-full transition-all duration-300"

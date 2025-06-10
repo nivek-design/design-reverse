@@ -113,7 +113,7 @@ export function DiferenciaisSection() {
       title: "Foco em Resultados",
       description:
         "Trabalhamos com metas claras e mensuráveis, garantindo que cada ação gere retorno para seu negócio.",
-      stats: "+45%",
+      stats: "+38%",
       statsLabel: "ROI médio para clientes",
       accentColor: "#3b82f6",
     },
@@ -122,7 +122,7 @@ export function DiferenciaisSection() {
       title: "Atendimento Personalizado",
       description:
         "Cada cliente é único. Desenvolvemos estratégias sob medida para atender às necessidades específicas do seu negócio.",
-      stats: "97%",
+      stats: "94%",
       statsLabel: "taxa de satisfação",
       accentColor: "#10b981",
     },
@@ -131,7 +131,7 @@ export function DiferenciaisSection() {
       title: "Tecnologia de Ponta",
       description:
         "Utilizamos as ferramentas e tecnologias mais avançadas do mercado para garantir os melhores resultados.",
-      stats: "12+",
+      stats: "8+",
       statsLabel: "ferramentas premium",
       accentColor: "#f59e0b",
     },
@@ -158,7 +158,7 @@ export function DiferenciaisSection() {
       title: "Equipe Especializada",
       description:
         "Profissionais altamente qualificados e certificados nas principais plataformas de marketing digital.",
-      stats: "5+",
+      stats: "3+",
       statsLabel: "especialistas certificados",
       accentColor: "#06b6d4",
     },
@@ -199,7 +199,6 @@ export function DiferenciaisSection() {
       </div>
 
       <div className="container mx-auto px-4">
-
         <div className="text-center mb-16 relative z-10">
           <FadeIn direction="up">
             <motion.div
@@ -246,11 +245,11 @@ export function DiferenciaisSection() {
               </div>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <StatsCounter value={20} suffix="+" label="Clientes Atendidos" color="#3b82f6" delay={0.1} />
-                <StatsCounter value={95} suffix="%" label="Taxa de Retenção" color="#10b981" delay={0.2} />
-                <StatsCounter value={11} suffix="+" label="Campanhas Gerenciadas" color="#f59e0b" delay={0.3} />
+                <StatsCounter value={12} suffix="+" label="Clientes Atendidos" color="#3b82f6" delay={0.1} />
+                <StatsCounter value={92} suffix="%" label="Taxa de Retenção" color="#10b981" delay={0.2} />
+                <StatsCounter value={8} suffix="+" label="Campanhas Gerenciadas" color="#f59e0b" delay={0.3} />
                 <StatsCounter
-                  value={55}
+                  value={25}
                   suffix="Mil"
                   label="Investimento Gerenciado"
                   color="#8b5cf6"

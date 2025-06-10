@@ -37,11 +37,11 @@ export default function AboutPage() {
                     Nossa História
                   </span>
                   <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                    <TextReveal text="Transformando negócios através do marketing digital" />
+                    <TextReveal text="Ajudamos pequenas e médias empresas a crescerem no digital" />
                   </h1>
                   <p className="text-xl text-blue-200 mb-8">
-                    Nós desconstruímos o marketing digital padrão para desenhar estratégias personalizadas que projetam
-                    seu negócio ao extraordinário
+                    Somos uma agência boutique especializada em criar soluções digitais personalizadas para empresas que
+                    querem crescer de forma inteligente e sustentável
                   </p>
                 </FadeIn>
               </div>
@@ -113,21 +113,22 @@ export default function AboutPage() {
                     Nossa Jornada
                   </span>
                   <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-                    <TextReveal text="Uma história de inovação e resultados" />
+                    <TextReveal text="Uma agência que entende pequenos negócios" />
                   </h2>
                   <div className="space-y-4 text-lg text-gray-700">
                     <p>
-                      Fundada em 2023, a Design Reverse nasceu da visão de transformar a maneira como as empresas se
-                      conectam com seus clientes no ambiente digital. Começamos pelo marketing digital, determinados a
-                      criar estratégias que realmente funcionam.
+                      Fundada em 2023, a Design Reverse nasceu da paixão por ajudar pequenas e médias empresas a
+                      competirem no ambiente digital. Começamos focando no que realmente importa: resultados práticos e
+                      acessíveis.
                     </p>
                     <p>
-                      Ao longo dos anos, crescemos consistentemente. Nossa abordagem baseada em dados e resultados nos
-                      permitiu construir relacionamentos duradouros com clientes de diversos segmentos.
+                      Nossa abordagem é diferente das grandes agências. Trabalhamos de forma próxima e pessoal com cada
+                      cliente, entendendo suas necessidades específicas e criando soluções sob medida que cabem no
+                      orçamento.
                     </p>
                     <p>
-                      Hoje, somos reconhecidos, ajudando empresas de todos os portes a alcançarem seus objetivos de
-                      negócio através de estratégias personalizadas e inovadoras.
+                      Hoje, somos reconhecidos por nossa dedicação e pelos resultados consistentes que entregamos. Cada
+                      projeto é tratado com o cuidado e atenção que seu negócio merece.
                     </p>
                   </div>
                 </FadeIn>
@@ -138,7 +139,7 @@ export default function AboutPage() {
                   <div className="relative">
                     <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg opacity-10 blur-lg"></div>
                     <div className="relative bg-white rounded-lg shadow-xl overflow-hidden border border-gray-100 p-6">
-                      <h3 className="text-2xl font-bold mb-6 text-blue-600">Marcos Importantes</h3>
+                      <h3 className="text-2xl font-bold mb-6 text-blue-600">Nossa Evolução</h3>
 
                       <div className="space-y-6">
                         <div className="flex gap-4">
@@ -147,9 +148,9 @@ export default function AboutPage() {
                             <div className="h-full w-px bg-blue-200 mx-auto mt-2"></div>
                           </div>
                           <div>
-                            <h4 className="font-semibold text-gray-900">Fundação da Design Reverse</h4>
+                            <h4 className="font-semibold text-gray-900">Início da Design Reverse</h4>
                             <p className="text-gray-600">
-                              Início das operações com foco em gestão de mídias sociais e SEO.
+                              Primeiros clientes focando em websites e presença digital básica.
                             </p>
                           </div>
                         </div>
@@ -160,9 +161,9 @@ export default function AboutPage() {
                             <div className="h-full w-px bg-blue-200 mx-auto mt-2"></div>
                           </div>
                           <div>
-                            <h4 className="font-semibold text-gray-900">Expansão de Serviços</h4>
+                            <h4 className="font-semibold text-gray-900">Expansão dos Serviços</h4>
                             <p className="text-gray-600">
-                              Inclusão de desenvolvimento web e gestão de campanhas Google Ads.
+                              Adicionamos Google Ads e estratégias de marketing digital integradas.
                             </p>
                           </div>
                         </div>
@@ -173,8 +174,8 @@ export default function AboutPage() {
                             <div className="h-full w-px bg-blue-200 mx-auto mt-2"></div>
                           </div>
                           <div>
-                            <h4 className="font-semibold text-gray-900">Primeiro Grande Projeto</h4>
-                            <p className="text-gray-600">Aumentando o nosso faturamento mensal.</p>
+                            <h4 className="font-semibold text-gray-900">Crescimento Sustentável</h4>
+                            <p className="text-gray-600">Consolidação como referência em marketing para PMEs.</p>
                           </div>
                         </div>
                       </div>
@@ -196,7 +197,7 @@ export default function AboutPage() {
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">Missão, Visão e Valores</h2>
                 <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                  Os princípios que guiam nossas decisões e definem quem somos como empresa.
+                  Os princípios que guiam nosso trabalho e definem como ajudamos pequenas empresas a crescerem.
                 </p>
               </FadeIn>
             </div>
@@ -209,8 +210,8 @@ export default function AboutPage() {
                   </div>
                   <h3 className="text-2xl font-bold mb-4 text-gray-900">Missão</h3>
                   <p className="text-gray-700">
-                    Transformar a presença digital de nossos clientes em resultados concretos, impulsionando seu
-                    crescimento através de estratégias inovadoras e personalizadas de marketing digital.
+                    Democratizar o marketing digital para pequenas e médias empresas, oferecendo soluções eficazes e
+                    acessíveis que geram resultados reais e sustentáveis.
                   </p>
                 </div>
               </FadeIn>
@@ -222,8 +223,8 @@ export default function AboutPage() {
                   </div>
                   <h3 className="text-2xl font-bold mb-4 text-gray-900">Visão</h3>
                   <p className="text-gray-700">
-                    Ser reconhecida como a agência de marketing digital mais inovadora e eficiente do mercado,
-                    estabelecendo novos padrões de excelência e resultados para nossos clientes em todo o mundo.
+                    Ser a agência de referência para pequenas empresas que buscam crescer no digital, conhecida pela
+                    proximidade, qualidade e resultados consistentes.
                   </p>
                 </div>
               </FadeIn>
@@ -237,23 +238,23 @@ export default function AboutPage() {
                   <ul className="text-gray-700 space-y-2">
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <span>Excelência em tudo o que fazemos</span>
+                      <span>Proximidade e atendimento pessoal</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <span>Transparência e ética nas relações</span>
+                      <span>Transparência total nos processos</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <span>Inovação constante</span>
+                      <span>Soluções práticas e eficazes</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <span>Foco em resultados mensuráveis</span>
+                      <span>Preços justos e acessíveis</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <span>Compromisso com o crescimento dos clientes</span>
+                      <span>Compromisso com o sucesso do cliente</span>
                     </li>
                   </ul>
                 </div>
@@ -270,10 +271,9 @@ export default function AboutPage() {
                 <span className="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium mb-4">
                   Nossa Equipe
                 </span>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Conheça os especialistas</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">Conheça quem faz acontecer</h2>
                 <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                  Profissionais apaixonados e altamente qualificados que trabalham incansavelmente para entregar os
-                  melhores resultados para nossos clientes.
+                  Uma equipe enxuta e especializada, focada em entregar resultados excepcionais para cada cliente.
                 </p>
               </FadeIn>
             </div>
@@ -320,9 +320,8 @@ export default function AboutPage() {
                   </div>
 
                   <p className="text-gray-600 mb-4">
-                    Com mais de 5 anos de experiência na área de ti, especialista em desenvolvimento web e soluções
-                    tecnológicas e com uma vaga excelência em marketing digital, Kevin lidera nossa equipe com visão
-                    estratégica e paixão por inovação.
+                    Especialista em desenvolvimento web e marketing digital com foco em pequenas empresas. Kevin combina
+                    conhecimento técnico com visão estratégica para criar soluções que realmente funcionam.
                   </p>
 
                   <div className="flex gap-3 mt-4">
@@ -401,13 +400,13 @@ export default function AboutPage() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-gray-900">André Araujo</h3>
-                      <p className="text-purple-600 font-medium">Diretor de Mídia</p>
+                      <p className="text-purple-600 font-medium">Especialista em Google Ads</p>
                     </div>
                   </div>
 
                   <p className="text-gray-600 mb-4">
-                    Especialista em planejamento estratégico em campanhas de mídia paga, André desenvolve soluções
-                    personalizadas e otimiza investimentos para maximizar o retorno nossos clientes.
+                    Focado em campanhas de mídia paga que geram resultados reais. André entende como otimizar cada real
+                    investido para maximizar o retorno dos nossos clientes.
                   </p>
 
                   <div className="flex gap-3 mt-4">
@@ -486,13 +485,13 @@ export default function AboutPage() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-gray-900">Laura Rossini</h3>
-                      <p className="text-teal-600 font-medium">Jurídico</p>
+                      <p className="text-teal-600 font-medium">Consultora Jurídica</p>
                     </div>
                   </div>
 
                   <p className="text-gray-600 mb-4">
-                    Experiência específica com agências de marketing digital ou empresas de tecnologia, Conhecimento
-                    prático da LGPD e elaboração e revisão de contratos de prestação de serviços.
+                    Garante que todos os nossos projetos estejam em conformidade legal, especialmente com LGPD e
+                    contratos digitais, protegendo nossos clientes e seus negócios.
                   </p>
 
                   <div className="flex gap-3 mt-4">
@@ -542,11 +541,11 @@ export default function AboutPage() {
             <div className="mt-12 text-center">
               <FadeIn direction="up" delay={0.5}>
                 <p className="text-lg text-gray-700 mb-6">
-                  Nossa equipe é composta em diversas áreas, todos comprometidos com a excelência e a inovação.
+                  Uma equipe pequena, mas com grande experiência e dedicação total ao sucesso dos nossos clientes.
                 </p>
                 <Link href="/contact">
                   <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-md">
-                    Entre em contato com nossa equipe
+                    Converse com nossa equipe
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
@@ -565,7 +564,7 @@ export default function AboutPage() {
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">Nossos diferenciais</h2>
                 <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                  O que nos torna a escolha certa para impulsionar seu negócio no ambiente digital.
+                  O que nos torna a escolha ideal para pequenas e médias empresas que querem crescer no digital.
                 </p>
               </FadeIn>
             </div>
@@ -576,15 +575,15 @@ export default function AboutPage() {
                   <div className="bg-blue-100 p-3 rounded-full inline-flex mb-4">
                     <TrendingUp className="h-6 w-6 text-blue-600" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3">Foco em Resultados</h3>
+                  <h3 className="text-xl font-bold mb-3">Resultados Práticos</h3>
                   <p className="text-gray-700 mb-4">
-                    Trabalhamos com metas claras e mensuráveis, garantindo que cada ação gere retorno para seu negócio.
-                    Nosso compromisso é com resultados concretos, não apenas métricas vazias.
+                    Focamos no que realmente importa: gerar mais vendas, leads e visibilidade para seu negócio. Cada
+                    estratégia é pensada para trazer retorno real.
                   </p>
                   <div className="text-blue-600 font-medium">
                     <div className="flex items-center gap-2">
                       <Star className="h-4 w-4" />
-                      <span>ROI médio de 320% para nossos clientes</span>
+                      <span>ROI médio de 38% para nossos clientes</span>
                     </div>
                   </div>
                 </div>
@@ -595,15 +594,15 @@ export default function AboutPage() {
                   <div className="bg-blue-100 p-3 rounded-full inline-flex mb-4">
                     <Users className="h-6 w-6 text-blue-600" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3">Atendimento Personalizado</h3>
+                  <h3 className="text-xl font-bold mb-3">Atendimento Próximo</h3>
                   <p className="text-gray-700 mb-4">
-                    Cada cliente é único. Desenvolvemos estratégias sob medida para atender às necessidades específicas
-                    do seu negócio, com acompanhamento próximo e comunicação constante.
+                    Você não é apenas mais um número. Conhecemos seu negócio pessoalmente e estamos sempre disponíveis
+                    para tirar dúvidas e ajustar estratégias.
                   </p>
                   <div className="text-blue-600 font-medium">
                     <div className="flex items-center gap-2">
                       <Star className="h-4 w-4" />
-                      <span>97% de taxa de satisfação dos clientes</span>
+                      <span>94% de taxa de satisfação dos clientes</span>
                     </div>
                   </div>
                 </div>
@@ -614,15 +613,15 @@ export default function AboutPage() {
                   <div className="bg-blue-100 p-3 rounded-full inline-flex mb-4">
                     <Globe className="h-6 w-6 text-blue-600" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3">Abordagem Integrada</h3>
+                  <h3 className="text-xl font-bold mb-3">Preços Justos</h3>
                   <p className="text-gray-700 mb-4">
-                    Integramos diferentes canais e estratégias para criar uma presença digital coesa e eficiente.
-                    Trabalhamos com uma visão holística do seu negócio e do mercado.
+                    Oferecemos soluções profissionais com preços acessíveis para pequenas empresas. Qualidade sem
+                    comprometer o orçamento.
                   </p>
                   <div className="text-blue-600 font-medium">
                     <div className="flex items-center gap-2">
                       <Star className="h-4 w-4" />
-                      <span>Aumento médio de 85% em conversões</span>
+                      <span>Planos a partir de R$ 800/mês</span>
                     </div>
                   </div>
                 </div>
@@ -633,15 +632,15 @@ export default function AboutPage() {
                   <div className="bg-blue-100 p-3 rounded-full inline-flex mb-4">
                     <Award className="h-6 w-6 text-blue-600" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3">Equipe Especializada</h3>
+                  <h3 className="text-xl font-bold mb-3">Experiência Comprovada</h3>
                   <p className="text-gray-700 mb-4">
-                    Nossos profissionais são altamente qualificados e certificados nas principais plataformas de
-                    marketing digital, garantindo expertise técnica e estratégica.
+                    Nossa equipe tem experiência prática em ajudar pequenas empresas a crescerem. Sabemos os desafios
+                    que você enfrenta.
                   </p>
                   <div className="text-blue-600 font-medium">
                     <div className="flex items-center gap-2">
                       <Star className="h-4 w-4" />
-                      <span>15+ especialistas certificados</span>
+                      <span>12+ clientes ativos e satisfeitos</span>
                     </div>
                   </div>
                 </div>
@@ -652,15 +651,15 @@ export default function AboutPage() {
                   <div className="bg-blue-100 p-3 rounded-full inline-flex mb-4">
                     <Zap className="h-6 w-6 text-blue-600" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3">Tecnologia de Ponta</h3>
+                  <h3 className="text-xl font-bold mb-3">Agilidade</h3>
                   <p className="text-gray-700 mb-4">
-                    Utilizamos as ferramentas e tecnologias mais avançadas do mercado para garantir os melhores
-                    resultados, mantendo-nos sempre atualizados com as últimas tendências.
+                    Como somos uma equipe enxuta, conseguimos ser mais ágeis nas decisões e implementações. Seu projeto
+                    não fica parado em burocracias.
                   </p>
                   <div className="text-blue-600 font-medium">
                     <div className="flex items-center gap-2">
                       <Star className="h-4 w-4" />
-                      <span>12+ ferramentas premium de análise</span>
+                      <span>Projetos entregues em até 30 dias</span>
                     </div>
                   </div>
                 </div>
@@ -673,13 +672,13 @@ export default function AboutPage() {
                   </div>
                   <h3 className="text-xl font-bold mb-3">Transparência Total</h3>
                   <p className="text-gray-700 mb-4">
-                    Relatórios detalhados e comunicação clara para que você acompanhe cada etapa do processo e os
-                    resultados obtidos, sem caixas-pretas ou métricas confusas.
+                    Você sempre saberá exatamente o que estamos fazendo e quais resultados estamos obtendo. Relatórios
+                    claros e comunicação constante.
                   </p>
                   <div className="text-blue-600 font-medium">
                     <div className="flex items-center gap-2">
                       <Star className="h-4 w-4" />
-                      <span>Acesso 24/7 a dashboards em tempo real</span>
+                      <span>Relatórios semanais detalhados</span>
                     </div>
                   </div>
                 </div>
@@ -694,12 +693,12 @@ export default function AboutPage() {
             <div className="text-center mb-16">
               <FadeIn direction="up">
                 <span className="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium mb-4">
-                  Parceiros
+                  Nossos Clientes
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">Empresas que confiam em nós</h2>
                 <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                  Orgulhosamente trabalhamos com empresas de diversos segmentos, ajudando-as a alcançar seus objetivos
-                  de negócio.
+                  Pequenas e médias empresas de diversos segmentos que escolheram a Design Reverse para crescer no
+                  digital.
                 </p>
               </FadeIn>
             </div>
@@ -750,15 +749,15 @@ export default function AboutPage() {
           <div className="container mx-auto px-4 text-center">
             <FadeIn direction="up">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                <TextReveal text="Pronto para transformar sua presença digital?" />
+                <TextReveal text="Pronto para fazer seu negócio crescer no digital?" />
               </h2>
               <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-                Entre em contato conosco hoje mesmo para uma consulta gratuita e descubra como podemos ajudar seu
-                negócio a alcançar novos patamares no ambiente digital.
+                Vamos conversar sobre como podemos ajudar sua empresa a alcançar mais clientes e aumentar as vendas
+                através do marketing digital.
               </p>
               <Link href="/contact">
                 <Button className="bg-white text-blue-600 hover:bg-blue-50 text-lg px-8 py-6 rounded-full transition-all duration-300 hover:shadow-lg hover:translate-y-[-2px]">
-                  Fale com um especialista
+                  Conversar com nossa equipe
                 </Button>
               </Link>
             </FadeIn>

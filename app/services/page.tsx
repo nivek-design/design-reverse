@@ -34,19 +34,19 @@ export default function ServicesPage() {
             <div className="max-w-4xl mx-auto text-center">
               <FadeIn direction="up">
                 <span className="inline-block px-3 py-1 bg-blue-600/30 text-blue-300 rounded-full text-sm font-medium mb-4">
-                  Soluções Digitais Completas
+                  Soluções para Pequenas Empresas
                 </span>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                  Transformamos sua presença digital em resultados concretos
+                  Marketing digital que cabe no seu orçamento e gera resultados reais
                 </h1>
                 <p className="text-xl text-blue-200 mb-8 max-w-3xl mx-auto">
-                  Oferecemos serviços especializados em criação de websites e gestão de campanhas Google Ads que
-                  impulsionam seu negócio com estratégias personalizadas e foco em ROI.
+                  Especializados em ajudar pequenas e médias empresas a crescerem no digital com estratégias eficazes,
+                  preços justos e atendimento personalizado.
                 </p>
                 <div className="flex flex-wrap gap-4 justify-center">
                   <Link href="#websites">
                     <Button className="bg-blue-600 hover:bg-blue-700 rounded-full px-6 py-6 text-lg transition-all duration-300 hover:translate-y-[-2px] hover:shadow-lg">
-                      Criação de Websites
+                      Sites Profissionais
                     </Button>
                   </Link>
                   <Link href="#google-ads">
@@ -91,18 +91,18 @@ export default function ServicesPage() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                 <FadeIn direction="up" delay={0.1} className="text-center">
                   <div className="text-4xl font-bold text-blue-600 mb-2">2+</div>
-                  <div className="text-gray-600">Anos de experiência</div>
+                  <div className="text-gray-600">Anos ajudando PMEs</div>
                 </FadeIn>
                 <FadeIn direction="up" delay={0.2} className="text-center">
-                  <div className="text-4xl font-bold text-blue-600 mb-2">11+</div>
-                  <div className="text-gray-600">Projetos entregues</div>
+                  <div className="text-4xl font-bold text-blue-600 mb-2">12+</div>
+                  <div className="text-gray-600">Clientes ativos</div>
                 </FadeIn>
                 <FadeIn direction="up" delay={0.3} className="text-center">
-                  <div className="text-4xl font-bold text-blue-600 mb-2">R$50Mil+</div>
+                  <div className="text-4xl font-bold text-blue-600 mb-2">R$25Mil+</div>
                   <div className="text-gray-600">Em mídia gerenciada</div>
                 </FadeIn>
                 <FadeIn direction="up" delay={0.4} className="text-center">
-                  <div className="text-4xl font-bold text-blue-600 mb-2">100%</div>
+                  <div className="text-4xl font-bold text-blue-600 mb-2">94%</div>
                   <div className="text-gray-600">Clientes satisfeitos</div>
                 </FadeIn>
               </div>
@@ -116,15 +116,14 @@ export default function ServicesPage() {
                 <div className="md:w-1/2">
                   <FadeIn direction="right">
                     <span className="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium mb-4">
-                      Criação de Websites
+                      Sites Profissionais
                     </span>
                     <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-                      Sites que convertem visitantes em clientes
+                      Sites que vendem 24 horas por dia para sua empresa
                     </h2>
                     <p className="text-lg text-gray-700 mb-8">
-                      Desenvolvemos websites profissionais, responsivos e otimizados para SEO que não apenas
-                      impressionam visualmente, mas também são estrategicamente projetados para gerar resultados
-                      concretos para seu negócio.
+                      Criamos sites profissionais, rápidos e otimizados que funcionam como um vendedor incansável para
+                      seu negócio. Cada site é pensado para converter visitantes em clientes.
                     </p>
 
                     <div className="space-y-4 mb-8">
@@ -133,10 +132,9 @@ export default function ServicesPage() {
                           <CheckCircle2 className="h-5 w-5" />
                         </div>
                         <div>
-                          <h3 className="font-semibold text-gray-900">Design Personalizado</h3>
+                          <h3 className="font-semibold text-gray-900">Design Profissional</h3>
                           <p className="text-gray-600">
-                            Layouts exclusivos que refletem a identidade da sua marca e atendem às necessidades
-                            específicas do seu negócio.
+                            Visual moderno e profissional que transmite credibilidade e confiança para seus clientes.
                           </p>
                         </div>
                       </div>
@@ -146,10 +144,9 @@ export default function ServicesPage() {
                           <CheckCircle2 className="h-5 w-5" />
                         </div>
                         <div>
-                          <h3 className="font-semibold text-gray-900">Otimização para Conversão</h3>
+                          <h3 className="font-semibold text-gray-900">Foco em Vendas</h3>
                           <p className="text-gray-600">
-                            Estrutura e elementos estrategicamente posicionados para maximizar a taxa de conversão de
-                            visitantes em leads ou vendas.
+                            Cada elemento é posicionado estrategicamente para guiar o visitante até a compra ou contato.
                           </p>
                         </div>
                       </div>
@@ -159,10 +156,9 @@ export default function ServicesPage() {
                           <CheckCircle2 className="h-5 w-5" />
                         </div>
                         <div>
-                          <h3 className="font-semibold text-gray-900">SEO Integrado</h3>
+                          <h3 className="font-semibold text-gray-900">Aparece no Google</h3>
                           <p className="text-gray-600">
-                            Otimização técnica e de conteúdo para melhor posicionamento nos mecanismos de busca,
-                            aumentando sua visibilidade online.
+                            Otimização para mecanismos de busca para que seus clientes encontrem você facilmente.
                           </p>
                         </div>
                       </div>
@@ -170,7 +166,7 @@ export default function ServicesPage() {
 
                     <Link href="/services/websites">
                       <Button className="bg-blue-600 hover:bg-blue-700 rounded-md px-6 py-3 text-white">
-                        Conheça nossos serviços de websites
+                        Ver mais sobre sites
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </Button>
                     </Link>
@@ -194,14 +190,14 @@ export default function ServicesPage() {
                         <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm p-3 rounded-lg shadow-lg">
                           <div className="flex items-center gap-2">
                             <Code className="h-5 w-5 text-blue-600" />
-                            <span className="text-sm font-medium text-gray-800">Design Responsivo</span>
+                            <span className="text-sm font-medium text-gray-800">Responsivo</span>
                           </div>
                         </div>
 
                         <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm p-3 rounded-lg shadow-lg">
                           <div className="flex items-center gap-2">
                             <Zap className="h-5 w-5 text-blue-600" />
-                            <span className="text-sm font-medium text-gray-800">Alta Performance</span>
+                            <span className="text-sm font-medium text-gray-800">Rápido</span>
                           </div>
                         </div>
                       </div>
@@ -214,9 +210,9 @@ export default function ServicesPage() {
               <div className="mt-20">
                 <div className="text-center mb-12">
                   <FadeIn direction="up">
-                    <h3 className="text-2xl font-bold mb-4">Tipos de Sites que Desenvolvemos</h3>
+                    <h3 className="text-2xl font-bold mb-4">Tipos de Sites que Criamos</h3>
                     <p className="text-gray-600 max-w-2xl mx-auto">
-                      Criamos diferentes tipos de websites para atender às necessidades específicas de cada negócio.
+                      Soluções sob medida para diferentes tipos de negócios e necessidades.
                     </p>
                   </FadeIn>
                 </div>
@@ -225,32 +221,31 @@ export default function ServicesPage() {
                   {[
                     {
                       icon: <Globe className="h-6 w-6 text-white" />,
-                      title: "Sites Institucionais",
+                      title: "Site Institucional",
                       description:
-                        "Apresente sua empresa, valores e serviços de forma profissional e atrativa para seus potenciais clientes.",
-                      idealFor: "Empresas e prestadores de serviços",
+                        "Apresente sua empresa de forma profissional e conquiste a confiança dos seus clientes.",
+                      idealFor: "Empresas de serviços",
                       color: "#3b82f6",
-                      features: ["Design personalizado", "Páginas otimizadas", "Integração com redes sociais"],
+                      features: ["Design profissional", "Páginas otimizadas", "Formulário de contato"],
                       bgImage: "/abstract-network-blue.png",
                     },
                     {
                       icon: <ShoppingCart className="h-6 w-6 text-white" />,
-                      title: "E-commerce",
-                      description:
-                        "Lojas virtuais completas com gestão de produtos, pagamentos seguros e experiência de compra otimizada.",
-                      idealFor: "Lojas e comércio eletrônico",
+                      title: "Loja Virtual",
+                      description: "Venda online 24 horas por dia com uma loja virtual completa e fácil de gerenciar.",
+                      idealFor: "Comércio e varejo",
                       color: "#10b981",
-                      features: ["Catálogo de produtos", "Gateway de pagamento", "Gestão de estoque"],
+                      features: ["Catálogo de produtos", "Pagamento online", "Gestão de pedidos"],
                       bgImage: "/network-visualization.png",
                     },
                     {
                       icon: <Rocket className="h-6 w-6 text-white" />,
-                      title: "Landing Pages",
+                      title: "Landing Page",
                       description:
-                        "Páginas estratégicas focadas em conversão para campanhas específicas, produtos ou serviços.",
-                      idealFor: "Campanhas e lançamentos",
+                        "Páginas focadas em conversão para campanhas específicas ou lançamentos de produtos.",
+                      idealFor: "Campanhas e promoções",
                       color: "#f59e0b",
-                      features: ["Alta conversão", "Call-to-action estratégicos", "Integração com CRM"],
+                      features: ["Alta conversão", "Carregamento rápido", "Integração com WhatsApp"],
                       bgImage: "/mechanical-object.png",
                     },
                   ].map((item, index) => (
@@ -342,12 +337,12 @@ export default function ServicesPage() {
                       Google Ads
                     </span>
                     <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-                      Campanhas que maximizam seu retorno sobre investimento
+                      Apareça no Google quando seus clientes estão procurando
                     </h2>
                     <p className="text-lg text-gray-700 mb-8">
-                      Gerenciamos campanhas de Google Ads com estratégias avançadas de segmentação, otimização contínua
-                      e análise de dados para garantir o melhor custo-benefício e resultados mensuráveis para seu
-                      negócio.
+                      Gerenciamos suas campanhas no Google Ads para que você apareça exatamente quando seus clientes
+                      estão buscando seus produtos ou serviços. Cada real investido é otimizado para gerar o máximo
+                      retorno.
                     </p>
 
                     <div className="space-y-4 mb-8">
@@ -356,10 +351,9 @@ export default function ServicesPage() {
                           <CheckCircle2 className="h-5 w-5" />
                         </div>
                         <div>
-                          <h3 className="font-semibold text-gray-900">Segmentação Precisa</h3>
+                          <h3 className="font-semibold text-gray-900">Público Certo</h3>
                           <p className="text-gray-600">
-                            Direcionamos seus anúncios para o público certo no momento certo, maximizando a relevância e
-                            as chances de conversão.
+                            Direcionamos seus anúncios para pessoas que realmente têm interesse no que você oferece.
                           </p>
                         </div>
                       </div>
@@ -369,10 +363,10 @@ export default function ServicesPage() {
                           <CheckCircle2 className="h-5 w-5" />
                         </div>
                         <div>
-                          <h3 className="font-semibold text-gray-900">Otimização Contínua</h3>
+                          <h3 className="font-semibold text-gray-900">Controle Total do Orçamento</h3>
                           <p className="text-gray-600">
-                            Monitoramento e ajustes constantes para melhorar o desempenho das campanhas e reduzir o
-                            custo por aquisição.
+                            Você define quanto quer investir e nós otimizamos cada centavo para gerar o máximo de
+                            resultados.
                           </p>
                         </div>
                       </div>
@@ -382,10 +376,10 @@ export default function ServicesPage() {
                           <CheckCircle2 className="h-5 w-5" />
                         </div>
                         <div>
-                          <h3 className="font-semibold text-gray-900">Relatórios Transparentes</h3>
+                          <h3 className="font-semibold text-gray-900">Resultados Transparentes</h3>
                           <p className="text-gray-600">
-                            Relatórios detalhados e de fácil compreensão para que você acompanhe o desempenho e os
-                            resultados de suas campanhas.
+                            Relatórios simples e claros para que você veja exatamente quantos clientes suas campanhas
+                            estão trazendo.
                           </p>
                         </div>
                       </div>
@@ -393,7 +387,7 @@ export default function ServicesPage() {
 
                     <Link href="/services/google-ads">
                       <Button className="bg-purple-600 hover:bg-purple-700 rounded-md px-6 py-3 text-white">
-                        Conheça nossos serviços de Google Ads
+                        Saiba mais sobre Google Ads
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </Button>
                     </Link>
@@ -410,15 +404,15 @@ export default function ServicesPage() {
                             <Image src="/google-ads-logo.png" alt="Google Ads" width={40} height={40} />
                             <div>
                               <h3 className="font-bold text-gray-900">Campanhas Otimizadas</h3>
-                              <div className="text-sm text-gray-600">Resultados mensuráveis</div>
+                              <div className="text-sm text-gray-600">Resultados que você pode ver</div>
                             </div>
                           </div>
 
                           <div className="space-y-6">
                             <div>
                               <div className="flex justify-between mb-1">
-                                <span className="text-sm font-medium text-gray-700">Taxa de Conversão</span>
-                                <span className="text-sm font-medium text-green-600">+12.5%</span>
+                                <span className="text-sm font-medium text-gray-700">Mais Clientes</span>
+                                <span className="text-sm font-medium text-green-600">+85%</span>
                               </div>
                               <div className="w-full bg-gray-200 rounded-full h-2">
                                 <div className="bg-green-500 h-2 rounded-full" style={{ width: "75%" }}></div>
@@ -427,8 +421,8 @@ export default function ServicesPage() {
 
                             <div>
                               <div className="flex justify-between mb-1">
-                                <span className="text-sm font-medium text-gray-700">Custo por Aquisição</span>
-                                <span className="text-sm font-medium text-green-600">-18.3%</span>
+                                <span className="text-sm font-medium text-gray-700">Custo por Cliente</span>
+                                <span className="text-sm font-medium text-green-600">-25%</span>
                               </div>
                               <div className="w-full bg-gray-200 rounded-full h-2">
                                 <div className="bg-green-500 h-2 rounded-full" style={{ width: "65%" }}></div>
@@ -437,8 +431,8 @@ export default function ServicesPage() {
 
                             <div>
                               <div className="flex justify-between mb-1">
-                                <span className="text-sm font-medium text-gray-700">ROI</span>
-                                <span className="text-sm font-medium text-green-600">320%</span>
+                                <span className="text-sm font-medium text-gray-700">Retorno do Investimento</span>
+                                <span className="text-sm font-medium text-green-600">280%</span>
                               </div>
                               <div className="w-full bg-gray-200 rounded-full h-2">
                                 <div className="bg-green-500 h-2 rounded-full" style={{ width: "85%" }}></div>
@@ -449,11 +443,11 @@ export default function ServicesPage() {
                           <div className="mt-6 grid grid-cols-2 gap-4">
                             <div className="bg-gray-50 p-3 rounded-lg">
                               <div className="text-sm text-gray-600">Cliques</div>
-                              <div className="text-xl font-bold text-gray-900">12,450</div>
+                              <div className="text-xl font-bold text-gray-900">2,450</div>
                             </div>
                             <div className="bg-gray-50 p-3 rounded-lg">
                               <div className="text-sm text-gray-600">Impressões</div>
-                              <div className="text-xl font-bold text-gray-900">245,800</div>
+                              <div className="text-xl font-bold text-gray-900">45,800</div>
                             </div>
                           </div>
                         </div>
@@ -467,26 +461,24 @@ export default function ServicesPage() {
               <div className="mt-20">
                 <div className="text-center mb-12">
                   <FadeIn direction="up">
-                    <h3 className="text-2xl font-bold mb-4">Tipos de Campanhas que Gerenciamos</h3>
+                    <h3 className="text-2xl font-bold mb-4">Como Ajudamos Você a Aparecer no Google</h3>
                     <p className="text-gray-600 max-w-2xl mx-auto">
-                      Desenvolvemos e otimizamos diferentes tipos de campanhas no Google Ads para atender aos objetivos
-                      específicos do seu negócio.
+                      Diferentes estratégias para diferentes objetivos do seu negócio.
                     </p>
                   </FadeIn>
                 </div>
 
-                <StaggerChildren className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   <HoverCard className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
                     <div className="bg-purple-100 p-4 rounded-full inline-flex items-center justify-center mb-4">
                       <Search className="h-6 w-6 text-purple-600" />
                     </div>
-                    <h4 className="text-xl font-bold mb-2">Campanhas de Pesquisa</h4>
+                    <h4 className="text-xl font-bold mb-2">Anúncios de Busca</h4>
                     <p className="text-gray-600 mb-4">
-                      Anúncios de texto exibidos nos resultados de pesquisa do Google quando usuários buscam por
-                      palavras-chave relevantes.
+                      Apareça no topo do Google quando alguém busca exatamente o que você oferece.
                     </p>
                     <div className="text-sm text-purple-600 font-medium">
-                      Ideal para: Captar clientes com intenção de compra
+                      Ideal para: Captar clientes prontos para comprar
                     </div>
                   </HoverCard>
 
@@ -494,13 +486,12 @@ export default function ServicesPage() {
                     <div className="bg-purple-100 p-4 rounded-full inline-flex items-center justify-center mb-4">
                       <Layers className="h-6 w-6 text-purple-600" />
                     </div>
-                    <h4 className="text-xl font-bold mb-2">Campanhas de Display</h4>
+                    <h4 className="text-xl font-bold mb-2">Anúncios Visuais</h4>
                     <p className="text-gray-600 mb-4">
-                      Anúncios visuais exibidos em sites parceiros do Google, aplicativos e YouTube para aumentar o
-                      reconhecimento da marca.
+                      Mostre sua marca em sites e aplicativos que seus clientes visitam diariamente.
                     </p>
                     <div className="text-sm text-purple-600 font-medium">
-                      Ideal para: Aumentar visibilidade e reconhecimento
+                      Ideal para: Aumentar conhecimento da marca
                     </div>
                   </HoverCard>
 
@@ -508,15 +499,13 @@ export default function ServicesPage() {
                     <div className="bg-purple-100 p-4 rounded-full inline-flex items-center justify-center mb-4">
                       <MousePointerClick className="h-6 w-6 text-purple-600" />
                     </div>
-                    <h4 className="text-xl font-bold mb-2">Campanhas de Remarketing</h4>
+                    <h4 className="text-xl font-bold mb-2">Remarketing</h4>
                     <p className="text-gray-600 mb-4">
-                      Anúncios direcionados a usuários que já visitaram seu site, aumentando as chances de conversão.
+                      Reconquiste visitantes que já conhecem sua empresa mas ainda não compraram.
                     </p>
-                    <div className="text-sm text-purple-600 font-medium">
-                      Ideal para: Recuperar visitantes e aumentar conversões
-                    </div>
+                    <div className="text-sm text-purple-600 font-medium">Ideal para: Aumentar vendas e conversões</div>
                   </HoverCard>
-                </StaggerChildren>
+                </div>
               </div>
             </div>
           </section>
@@ -527,12 +516,11 @@ export default function ServicesPage() {
               <div className="text-center mb-16">
                 <FadeIn direction="up">
                   <span className="inline-block px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm font-medium mb-4">
-                    Nosso Processo
+                    Como Trabalhamos
                   </span>
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6">Como trabalhamos</h2>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-6">Processo simples e transparente</h2>
                   <p className="text-gray-600 max-w-2xl mx-auto">
-                    Seguimos uma metodologia estruturada para garantir resultados consistentes e de alta qualidade em
-                    todos os nossos projetos.
+                    Um processo claro e direto para que você saiba exatamente o que esperar em cada etapa.
                   </p>
                 </FadeIn>
               </div>
@@ -546,10 +534,10 @@ export default function ServicesPage() {
                   <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 md:pr-12 md:text-right order-2 md:order-1">
                       <FadeIn direction="right">
-                        <h3 className="text-xl font-bold mb-3">1. Análise e Planejamento</h3>
+                        <h3 className="text-xl font-bold mb-3">1. Conversa Inicial</h3>
                         <p className="text-gray-600">
-                          Entendemos profundamente seu negócio, objetivos, público-alvo e concorrência para desenvolver
-                          uma estratégia personalizada que atenda às suas necessidades específicas.
+                          Conhecemos seu negócio, seus objetivos e desafios. Entendemos o que você precisa para criar a
+                          estratégia perfeita.
                         </p>
                       </FadeIn>
                     </div>
@@ -564,17 +552,17 @@ export default function ServicesPage() {
                   {/* Step 2 */}
                   <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 md:pr-12 order-2"></div>
-                    <div className="md:w-12 flex justify-center my-4 md:my-0 order-1 relative z-10">
+                    <div className="md:w-12 flex justify-center my-4 md:my-0 order-2 relative z-10">
                       <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
                         2
                       </div>
                     </div>
                     <div className="md:w-1/2 md:pl-12 md:text-left order-3">
                       <FadeIn direction="left">
-                        <h3 className="text-xl font-bold mb-3">2. Desenvolvimento e Implementação</h3>
+                        <h3 className="text-xl font-bold mb-3">2. Criação e Implementação</h3>
                         <p className="text-gray-600">
-                          Criamos e implementamos soluções de alta qualidade, seja um website profissional ou campanhas
-                          estratégicas de Google Ads, seguindo as melhores práticas do mercado.
+                          Colocamos a mão na massa! Criamos seu site ou configuramos suas campanhas seguindo as melhores
+                          práticas do mercado.
                         </p>
                       </FadeIn>
                     </div>
@@ -584,10 +572,10 @@ export default function ServicesPage() {
                   <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 md:pr-12 md:text-right order-2 md:order-1">
                       <FadeIn direction="right">
-                        <h3 className="text-xl font-bold mb-3">3. Otimização Contínua</h3>
+                        <h3 className="text-xl font-bold mb-3">3. Acompanhamento e Otimização</h3>
                         <p className="text-gray-600">
-                          Monitoramos constantemente o desempenho, analisamos dados e realizamos ajustes estratégicos
-                          para melhorar continuamente os resultados e maximizar o retorno sobre investimento.
+                          Monitoramos os resultados constantemente e fazemos ajustes para melhorar ainda mais o
+                          desempenho.
                         </p>
                       </FadeIn>
                     </div>
@@ -602,17 +590,17 @@ export default function ServicesPage() {
                   {/* Step 4 */}
                   <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 md:pr-12 order-2"></div>
-                    <div className="md:w-12 flex justify-center my-4 md:my-0 order-1 relative z-10">
+                    <div className="md:w-12 flex justify-center my-4 md:my-0 order-2 relative z-10">
                       <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
                         4
                       </div>
                     </div>
-                    <div className="md:w-1/2 md:pl-12 md:text-left order-3">
+                    <div className="md:w-1/2 md:pl-12 md:text-left order-2">
                       <FadeIn direction="left">
-                        <h3 className="text-xl font-bold mb-3">4. Relatórios e Transparência</h3>
+                        <h3 className="text-xl font-bold mb-3">4. Relatórios e Comunicação</h3>
                         <p className="text-gray-600">
-                          Fornecemos relatórios detalhados e transparentes sobre o desempenho e os resultados, mantendo
-                          uma comunicação clara e constante durante todo o processo.
+                          Você recebe relatórios claros sobre os resultados e mantemos comunicação constante sobre o
+                          progresso do seu projeto.
                         </p>
                       </FadeIn>
                     </div>
@@ -626,15 +614,15 @@ export default function ServicesPage() {
           <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
             <div className="container mx-auto px-4 text-center">
               <FadeIn direction="up">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Pronto para transformar sua presença digital?</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">Pronto para fazer seu negócio crescer?</h2>
                 <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-                  Entre em contato conosco hoje mesmo para uma consulta gratuita e descubra como podemos ajudar seu
-                  negócio a alcançar novos patamares no ambiente digital.
+                  Vamos conversar sobre como podemos ajudar sua empresa a ter mais clientes e aumentar as vendas através
+                  do marketing digital.
                 </p>
                 <div className="flex flex-wrap gap-4 justify-center">
                   <Link href="/contact">
                     <Button className="bg-white text-blue-600 hover:bg-blue-50 rounded-full px-8 py-6 text-lg transition-all duration-300 hover:translate-y-[-2px] hover:shadow-lg">
-                      Solicitar Orçamento Gratuito
+                      Conversar com nossa equipe
                     </Button>
                   </Link>
                   <Link href="/portfolio">
@@ -642,7 +630,7 @@ export default function ServicesPage() {
                       variant="outline"
                       className="bg-transparent border-white text-white hover:bg-white/10 rounded-full px-8 py-6 text-lg transition-all duration-300 hover:translate-y-[-2px]"
                     >
-                      Ver Nosso Portfólio
+                      Ver Nossos Casos de Sucesso
                     </Button>
                   </Link>
                 </div>

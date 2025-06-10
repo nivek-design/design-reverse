@@ -34,30 +34,30 @@ const projetos: Projeto[] = [
   {
     id: "ecommerce-redesign",
     titulo: "Redesign de E-commerce",
-    cliente: "Fashion Store",
+    cliente: "Londrina Epi`s",
     categoria: "Website",
     descricao:
       "Redesign completo da plataforma de e-commerce com foco em experiência do usuário e otimização da jornada de compra, resultando em aumento significativo nas conversões.",
-    imagem: "/dashboard-ui.png",
-    imagensAdicionais: ["/portfolio-ecommerce-1.png", "/portfolio-ecommerce-2.png"],
+    imagem: "/londrina-epis-logo.png",
+    imagensAdicionais: ["/londrina-epis-logo.png", "/londrina-epis-logo.png"],
     metricas: [
       {
-        valor: "+65%",
-        label: "Aumento nas vendas mobile",
+        valor: "+45%",
+        label: "Aumento nas vendas ",
         icone: <TrendingUp className="h-4 w-4 text-emerald-500" />,
       },
       {
-        valor: "-40%",
+        valor: "-25%",
         label: "Redução no abandono de carrinho",
         icone: <BarChart2 className="h-4 w-4 text-blue-500" />,
       },
       {
-        valor: "+52%",
+        valor: "+35%",
         label: "Melhoria no tempo de carregamento",
         icone: <Award className="h-4 w-4 text-amber-500" />,
       },
     ],
-    tags: ["UX/UI Design", "Desenvolvimento Web", "Otimização de Conversão"],
+    tags: ["UX/UI Design", "Desenvolvimento e-commerce", "Otimização de Conversão"],
   },
   {
     id: "gaming-portal",
@@ -70,17 +70,17 @@ const projetos: Projeto[] = [
     imagensAdicionais: ["/portfolio-gaming-1.png", "/portfolio-gaming-2.png"],
     metricas: [
       {
-        valor: "+120%",
+        valor: "+85%",
         label: "Aumento no tempo de permanência",
         icone: <TrendingUp className="h-4 w-4 text-emerald-500" />,
       },
       {
-        valor: "+85%",
+        valor: "+60%",
         label: "Crescimento na base de usuários",
         icone: <Users className="h-4 w-4 text-blue-500" />,
       },
       {
-        valor: "-60%",
+        valor: "-40%",
         label: "Redução na taxa de rejeição",
         icone: <Award className="h-4 w-4 text-amber-500" />,
       },
@@ -98,17 +98,17 @@ const projetos: Projeto[] = [
     imagensAdicionais: ["/portfolio-fashion-1.png", "/portfolio-fashion-2.png"],
     metricas: [
       {
-        valor: "780%",
+        valor: "420%",
         label: "ROI sobre investimento em ads",
         icone: <TrendingUp className="h-4 w-4 text-emerald-500" />,
       },
       {
-        valor: "-35%",
+        valor: "-25%",
         label: "Redução no custo por aquisição",
         icone: <BarChart2 className="h-4 w-4 text-blue-500" />,
       },
       {
-        valor: "+150%",
+        valor: "+95%",
         label: "Crescimento nas vendas da coleção",
         icone: <Award className="h-4 w-4 text-amber-500" />,
       },
@@ -125,12 +125,12 @@ const projetos: Projeto[] = [
     imagem: "/portfolio-restaurant.png",
     metricas: [
       {
-        valor: "+200%",
+        valor: "+120%",
         label: "Aumento nas reservas online",
         icone: <TrendingUp className="h-4 w-4 text-emerald-500" />,
       },
       {
-        valor: "+45%",
+        valor: "+35%",
         label: "Crescimento no faturamento",
         icone: <BarChart2 className="h-4 w-4 text-blue-500" />,
       },
@@ -144,25 +144,25 @@ const projetos: Projeto[] = [
   },
   {
     id: "saas-landing",
-    titulo: "Landing Page SaaS",
-    cliente: "TechCloud",
+    titulo: "Landing Page",
+    cliente: "Laura Rossini Advocacia",
     categoria: "Website",
     descricao:
-      "Design e desenvolvimento de landing page de alta conversão para produto SaaS B2B, com testes A/B e otimização contínua para maximizar leads qualificados.",
-    imagem: "/portfolio-saas.png",
+      "Design e desenvolvimento de landing page de alta conversão e otimização contínua para maximizar leads qualificados.",
+    imagem: "/laura-rossini-site.png",
     metricas: [
       {
-        valor: "+320%",
+        valor: "+180%",
         label: "Aumento na geração de leads",
         icone: <TrendingUp className="h-4 w-4 text-emerald-500" />,
       },
       {
-        valor: "-28%",
+        valor: "-20%",
         label: "Redução no custo por lead",
         icone: <BarChart2 className="h-4 w-4 text-blue-500" />,
       },
       {
-        valor: "+42%",
+        valor: "+32%",
         label: "Melhoria na taxa de conversão",
         icone: <Award className="h-4 w-4 text-amber-500" />,
       },
@@ -179,17 +179,17 @@ const projetos: Projeto[] = [
     imagem: "/portfolio-fitness.png",
     metricas: [
       {
-        valor: "+175%",
+        valor: "+110%",
         label: "Aumento em novas matrículas",
         icone: <TrendingUp className="h-4 w-4 text-emerald-500" />,
       },
       {
-        valor: "3.2x",
+        valor: "2.8x",
         label: "Retorno sobre investimento",
         icone: <BarChart2 className="h-4 w-4 text-blue-500" />,
       },
       {
-        valor: "+68%",
+        valor: "+45%",
         label: "Crescimento em visitas às unidades",
         icone: <Award className="h-4 w-4 text-amber-500" />,
       },
@@ -471,28 +471,28 @@ export function ProjetosSection({ showAll = false }: { showAll?: boolean }) {
                     <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 mb-3">
                       <TrendingUp className="h-6 w-6 text-blue-400" />
                     </div>
-                    <div className="text-3xl font-bold text-white mb-1">+127%</div>
+                    <div className="text-3xl font-bold text-white mb-1">+85%</div>
                     <div className="text-sm text-blue-200">Aumento médio em conversões</div>
                   </div>
                   <div className="text-center">
                     <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 mb-3">
                       <BarChart2 className="h-6 w-6 text-emerald-400" />
                     </div>
-                    <div className="text-3xl font-bold text-white mb-1">3.8x</div>
+                    <div className="text-3xl font-bold text-white mb-1">2.9x</div>
                     <div className="text-sm text-blue-200">ROI médio para clientes</div>
                   </div>
                   <div className="text-center">
                     <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 mb-3">
                       <Users className="h-6 w-6 text-amber-400" />
                     </div>
-                    <div className="text-3xl font-bold text-white mb-1">+85%</div>
+                    <div className="text-3xl font-bold text-white mb-1">+65%</div>
                     <div className="text-sm text-blue-200">Aumento em engajamento</div>
                   </div>
                   <div className="text-center">
                     <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 mb-3">
                       <Award className="h-6 w-6 text-purple-400" />
                     </div>
-                    <div className="text-3xl font-bold text-white mb-1">97%</div>
+                    <div className="text-3xl font-bold text-white mb-1">94%</div>
                     <div className="text-sm text-blue-200">Satisfação dos clientes</div>
                   </div>
                 </div>
