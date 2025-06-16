@@ -210,7 +210,7 @@ export default function WebsitesServicePage() {
               <div className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                 <div className="h-48 overflow-hidden">
                   <Image
-                    src="/portfolio-saas.png"
+                    src="/sites-responsivos.png"
                     alt="Site Institucional"
                     width={600}
                     height={400}
@@ -273,11 +273,11 @@ export default function WebsitesServicePage() {
               <div className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                 <div className="h-48 overflow-hidden">
                   <Image
-                    src="/portfolio-fitness.png"
+                    src="/landingpage-image.png"
                     alt="Landing Page"
                     width={600}
                     height={400}
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="h-full w-full object-cover object-[25%_15%] transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
                 <div className="p-6">
@@ -333,7 +333,7 @@ export default function WebsitesServicePage() {
               <div className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                 <div className="h-48 overflow-hidden">
                   <Image
-                    src="/portfolio-ecommerce-1.png"
+                    src="/ecommerce-service.PNG"
                     alt="E-commerce"
                     width={600}
                     height={400}
@@ -396,11 +396,11 @@ export default function WebsitesServicePage() {
               <div className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                 <div className="h-48 overflow-hidden">
                   <Image
-                    src="/portfolio-fashion-2.png"
+                    src="/blogs-services.png"
                     alt="Blog e Portal"
                     width={600}
                     height={400}
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="h-full w-full object-cover object-[25%_85%] transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
                 <div className="p-6">
@@ -454,7 +454,7 @@ export default function WebsitesServicePage() {
               <div className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                 <div className="h-48 overflow-hidden">
                   <Image
-                    src="/dashboard-ui.png"
+                    src="/web-apps-services.png"
                     alt="Aplicação Web"
                     width={600}
                     height={400}
@@ -513,11 +513,11 @@ export default function WebsitesServicePage() {
               <div className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                 <div className="h-48 overflow-hidden">
                   <Image
-                    src="/gaming-mobile.png"
+                    src="/site-mobile-app-services.png"
                     alt="Site Responsivo"
                     width={600}
                     height={400}
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="h-full w-full object-cover object-[25%_85%] transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
                 <div className="p-6">

@@ -92,7 +92,7 @@ export default function GoogleAdsServicePage() {
                 <ScaleIn delay={0.3}>
                   <div className="bg-white p-6 rounded-lg shadow-xl border border-gray-200">
                     <div className="flex items-center gap-3 mb-6">
-                      <Image src="/google-ads-logo.png" alt="Google Ads" width={50} height={50} />
+                      <Image src="/icone-resultados-reais.png" alt="Google Ads" width={50} height={50} />
                       <div>
                         <h3 className="font-bold text-gray-900">Resultados Reais</h3>
                         <div className="text-sm text-gray-600">Média dos nossos clientes</div>
@@ -137,7 +137,7 @@ export default function GoogleAdsServicePage() {
                         <div className="text-sm text-gray-600">Impressões Gerenciadas</div>
                       </div>
                       <div className="bg-gray-50 p-4 rounded-lg text-center">
-                        <div className="text-3xl font-bold text-purple-600">R$50Mil+</div>
+                        <div className="text-3xl font-bold text-purple-600">R$25Mil+</div>
                         <div className="text-sm text-gray-600">Em Mídia Gerenciada</div>
                       </div>
                     </div>

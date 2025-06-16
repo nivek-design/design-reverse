@@ -13,27 +13,33 @@ import { PageTransition } from "@/components/page-transition"
 
 // This would normally come from a database or CMS
 const projects = {
-  "ecommerce-redesign": {
-    title: "Redesign de E-commerce",
+  "ecommerce-londrina-epis": {
+    title: "E-commerce",
     client: "Londrina Epi`s",
     category: "Website",
     challenge:
-      "A Fashion Store enfrentava problemas com altas taxas de abandono de carrinho e baixa conversão em dispositivos móveis. O site antigo tinha uma interface desatualizada e problemas de usabilidade que afetavam diretamente as vendas.",
+      " Nosso objetivo é desenvolver um e-commerce para a empresa de EPIs de Londrina que reflita fielmente a identidade da marca, incorporando suas cores e elementos visuais.",
     solution:
-      "Desenvolvemos um novo e-commerce completamente responsivo com foco na experiência do usuário. Implementamos um checkout simplificado, melhoramos a navegação por categorias e criamos páginas de produto otimizadas para conversão. Integramos sistemas de pagamento seguros e implementamos recursos de cross-selling inteligentes.",
+      "Realizamos um Planejamento e Estratégia para entender as necessidades do cliente e do público-alvo. Em seguida, criamos um Design Visual que incorpora as cores e elementos da marca, construimos o catálogo de produtos",
     results: [
-      { text: "Aumento de 65% nas vendas via dispositivos móveis", value: 65 },
-      { text: "Redução de 40% na taxa de abandono de carrinho", value: 40 },
-      { text: "Crescimento de 28% no valor médio dos pedidos", value: 28 },
-      { text: "Melhoria de 52% no tempo de carregamento das páginas", value: 52 },
+      { text: "Estruturamos o 100 catálogo de produtos por categorias e com Certificados de Aprovação ", value: 100},
+      { text: "Integração dos meios de pagamentos: Vindi, PIX, Boleto ", value: 100 },
+      { text: "Configurado frete: Integrar com Melhor Envio e/ou Frenet, e ativar a opção de Retirada no Local ", value: 100 },
+      { text: "Configurar SEO (títulos e descrições) em páginas e produtos ", value: 100 },
+      { text: "Integrar com ferramentas de marketing (E-mail, Instagram Shopping). ", value: 100 },
+
     ],
     testimonial: {
       quote:
-        "O redesign do nosso e-commerce transformou completamente nosso negócio online. A equipe da Cuttital entendeu perfeitamente nossas necessidades e entregou um site que não apenas é bonito, mas também converte muito melhor. Nossos clientes adoraram a nova experiência!",
-      author: "Kevin Araujo",
-      position: "Desenvolvimento",
+        "O redesign do nosso e-commerce transformou completamente nosso negócio online. A equipe da Reverse entendeu perfeitamente nossas necessidades e entregou um site que não apenas é bonito, mas também converte muito melhor. Nossos clientes adoraram a nova experiência!",
+      author: "Ademir",
+      position: "CEO, Londrina Epi`s",
     },
     images: [
+      {
+        src: "/ecommerce-londrinaepis.png",
+        alt: "e-commerce londrina epi`s",
+      },
       {
         src: "/londrina-epis-product.png",
         alt: "Homepage do e-commerce",
@@ -43,34 +49,32 @@ const projects = {
         alt: "Página de produto",
       },
       {
-        src: "/portfolio-ecommerce-3.png",
-        alt: "Checkout mobile",
+        src: "/londrina-epis-google.png",
+        alt: "pesquisa londrain epi`s google",
       },
     ],
   },
-  "gaming-portal": {
-    title: "Portal de Jogos Online",
-    client: "GameZone",
+  "odontologia-zorzzela": {
+    title: "Landing Page Odontologia",
+    client: "Odontologia Zorzzela",
     category: "Website",
     challenge:
-      "A GameZone precisava de uma plataforma robusta para apresentar seu catálogo de jogos, com recursos avançados de filtragem, sistema de avaliações e integração com sua comunidade de jogadores.",
+      "A Odontologia Zorzzela precisava de uma landing page que transmitisse confiança e profissionalismo, destacando seus serviços de forma clara e atraente. O objetivo era aumentar o número de agendamentos online e melhorar a presença digital da clínica.",
     solution:
-      "Criamos um portal completo com design imersivo inspirado no universo gamer. Implementamos um sistema avançado de busca e filtragem, perfis de usuário personalizáveis, sistema de avaliação e comentários, e integrações com plataformas de streaming como Twitch e YouTube.",
+      "Desenvolvemos uma landing page otimizada para conversão, com um design clean e moderno. Utilizamos cores que transmitem confiança e aplicamos técnicas de SEO para melhorar a visibilidade nos motores de busca. A página inclui seções detalhadas sobre os serviços, depoimentos de pacientes e um formulário de agendamento fácil de usar.",
     results: [
-      { text: "Aumento de 120% no tempo médio de permanência no site", value: 120 },
-      { text: "Crescimento de 85% na base de usuários cadastrados", value: 85 },
-      { text: "Mais de 10.000 avaliações de jogos no primeiro mês", value: 10000 },
-      { text: "Redução de 60% na taxa de rejeição", value: 60 },
+      { text: "Crescimento na visibilidade da odontologia na internet 85% ", value: 85 },
+      { text: "", value: 60 },
     ],
     testimonial: {
       quote:
-        "O portal superou todas as nossas expectativas! A Cuttital conseguiu capturar perfeitamente a essência do nosso público gamer e criar uma plataforma que não só é visualmente impressionante, mas também extremamente funcional e envolvente.",
-      author: "Pedro Almeida",
-      position: "CEO, GameZone",
+        "A landing page criada pela Reverse superou nossas expectativas! O design é incrível e os resultados falam por si só. Tivemos um aumento significativo no número de agendamentos e nossos pacientes elogiam a facilidade de uso do site. Recomendo fortemente!",
+      author: "Gustavo Zorzzela",
+      position: "CEO, Odontologia Zorzzela",
     },
     images: [
       {
-        src: "/portfolio-gaming-1.png",
+        src: "/odontologia-zorzzela-home.png",
         alt: "Homepage do portal de jogos",
       },
       {
@@ -83,37 +87,35 @@ const projects = {
       },
     ],
   },
-  "fashion-campaign": {
-    title: "Campanha de Moda Sazonal",
-    client: "Elegance Boutique",
+  "laura-rossini-adv": {
+    title: "Campanha Google Ads",
+    client: "Laura Rossini Advocacia",
     category: "Google Ads",
     challenge:
-      "A Elegance Boutique precisava aumentar as vendas de sua nova coleção sazonal em um mercado altamente competitivo, com um orçamento limitado e prazo curto antes do início da temporada.",
+      "A advocacia da laura rossini precisava de uma campanha de Google Ads para promover seus serviços jurídicos especializados em direito previdenciario. O objetivo era aumentar a visibilidade online e atrair novos clientes em um mercado altamente competitivo.",
     solution:
-      "Desenvolvemos uma estratégia multicanal de Google Ads focada em segmentação precisa. Criamos campanhas de Search, Display e Shopping com anúncios altamente personalizados para diferentes segmentos de público. Implementamos remarketing dinâmico e otimizamos as campanhas diariamente com base em dados de performance.",
+      "Desenvolvemos uma campanha de Google Ads focada em palavras-chave relevantes para o nicho de direito previdenciário. Criamos anúncios atraentes e segmentados, além de otimizar a landing page para maximizar a taxa de conversão. Acompanhamos de perto o desempenho da campanha, ajustando as estratégias conforme necessário para garantir os melhores resultados.",
     results: [
-      { text: "ROI de 780% sobre o investimento em publicidade", value: 780 },
-      { text: "Redução de 35% no custo por aquisição", value: 35 },
-      { text: "Aumento de 95% no tráfego qualificado para o site", value: 95 },
-      { text: "Crescimento de 150% nas vendas da coleção em comparação com o ano anterior", value: 150 },
+      { text: "ROI de 180% sobre o investimento em publicidade ", value: 180 },
+      { text: "Aumento de 70% no tráfego qualificado para o site ", value: 70 },
     ],
     testimonial: {
       quote:
-        "A campanha de Google Ads desenvolvida pela Cuttital foi um sucesso absoluto! Conseguimos vender praticamente toda a coleção em tempo recorde e com um retorno sobre investimento que superou todas as nossas expectativas. A equipe é extremamente profissional e atenta aos detalhes.",
-      author: "Carolina Mendes",
-      position: "Proprietária, Elegance Boutique",
+        "A campanha de Google Ads desenvolvida pela Design reverse foi um sucesso absoluto! Conseguimos vender praticamente toda a coleção em tempo recorde e com um retorno sobre investimento que superou todas as nossas expectativas. A equipe é extremamente profissional e atenta aos detalhes.",
+      author: "Laura Rossini",
+      position: "CEO, Laura Rossini Advocacia",
     },
     images: [
       {
-        src: "/portfolio-fashion-1.png",
+        src: "/laura-rossini-site.png",
         alt: "Anúncios de display da campanha",
       },
       {
-        src: "/portfolio-fashion-2.png",
+        src: "/laura-rossini-adv-logo.JPG",
         alt: "Resultados da campanha no Google Ads",
       },
       {
-        src: "/portfolio-fashion-3.png",
+        src: "/laura-rossini-ads.png",
         alt: "Landing page da coleção",
       },
     ],

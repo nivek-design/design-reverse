@@ -209,10 +209,10 @@ export default function ContactPage() {
                     <div>
                       <div className="text-sm text-blue-300">Telefone</div>
                       <a
-                        href="tel:+55439840213079"
+                        href="tel:+5543988125184"
                         className="group-hover:text-blue-300 transition-colors duration-300"
                       >
-                        +55 (43) 98402-1307
+                        +55 (43) 988125184
                       </a>
                     </div>
                   </div>
@@ -248,7 +248,7 @@ export default function ContactPage() {
                 </h3>
                 <div className="space-y-4 mb-8">
                   <a
-                    href="https://wa.me/5543984021307"
+                    href="https://wa.me/5543988125184"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-blue-300 hover:text-white transition-colors"
@@ -322,7 +322,7 @@ export default function ContactPage() {
                       </svg>
                     </a>
                     <a
-                      href="https://instagram.com/designreverse"
+                      href="https://instagram.com/designreverse.br"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-blue-800/30 p-2 rounded-full hover:bg-blue-700/50 transition-colors"
@@ -365,26 +365,7 @@ export default function ContactPage() {
                         <circle cx="4" cy="4" r="2"></circle>
                       </svg>
                     </a>
-                    <a
-                      href="https://twitter.com/designreverse"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-blue-800/30 p-2 rounded-full hover:bg-blue-700/50 transition-colors"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                      </svg>
-                    </a>
+                    
                   </div>
                 </div>
               </div>

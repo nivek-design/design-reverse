@@ -179,7 +179,7 @@ export default function ServicesPage() {
                       <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg transform rotate-3 scale-105 opacity-20"></div>
                       <div className="relative bg-white rounded-lg shadow-xl overflow-hidden border border-gray-200">
                         <Image
-                          src="/website-creation.png"
+                          src="/ecommerce-google.png"
                           alt="Criação de Websites"
                           width={600}
                           height={400}
@@ -401,7 +401,7 @@ export default function ServicesPage() {
                       <div className="relative bg-white rounded-lg shadow-xl overflow-hidden border border-gray-200">
                         <div className="p-6 bg-white">
                           <div className="flex items-center gap-3 mb-6">
-                            <Image src="/google-ads-logo.png" alt="Google Ads" width={40} height={40} />
+                            <Image src="/icon-google-ads.png" alt="Google Ads" width={40} height={40} />
                             <div>
                               <h3 className="font-bold text-gray-900">Campanhas Otimizadas</h3>
                               <div className="text-sm text-gray-600">Resultados que você pode ver</div>
