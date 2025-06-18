@@ -85,7 +85,7 @@ export function Footer() {
             <h3 className="text-lg font-bold mb-4">Contato</h3>
             <ul className="space-y-2">
               <li className="text-blue-200">contato@designreverse.com</li>
-              <li className="text-blue-200">+55 (43) 9999-9999</li>
+              <li className="text-blue-200">+55 (43) 98812-5184</li>
               <li className="text-blue-200">Londrina, PR - Brasil</li>
             </ul>
             <div className="flex gap-4 mt-4">

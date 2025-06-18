@@ -197,7 +197,7 @@ export default function AboutPage() {
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">Missão, Visão e Valores</h2>
                 <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                  Os princípios que guiam nosso trabalho e definem como ajudamos pequenas empresas a crescerem.
+                  Os princípios que guiam nosso trabalho e definem como ajudamos empresas a crescerem.
                 </p>
               </FadeIn>
             </div>
@@ -223,7 +223,7 @@ export default function AboutPage() {
                   </div>
                   <h3 className="text-2xl font-bold mb-4 text-gray-900">Visão</h3>
                   <p className="text-gray-700">
-                    Ser a agência de referência para pequenas empresas que buscam crescer no digital, conhecida pela
+                    Ser a agência de referência para empresas que buscam crescer no digital, conhecida pela
                     proximidade, qualidade e resultados consistentes.
                   </p>
                 </div>
@@ -326,8 +326,9 @@ export default function AboutPage() {
 
                   <div className="flex gap-3 mt-4">
                     <a
-                      href="#"
+                      href="https://www.linkedin.com/in/nivekdesign?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                       className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-blue-100 hover:text-blue-600 transition-colors"
+                      target="_blank"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -345,35 +346,18 @@ export default function AboutPage() {
                         <circle cx="4" cy="4" r="2"></circle>
                       </svg>
                     </a>
-                    <a
-                      href="#"
-                      className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-blue-100 hover:text-blue-600 transition-colors"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                      </svg>
-                    </a>
+                    
                   </div>
                 </div>
               </div>
 
-              {/* Card 2 - André Araujo */}
+              {/* Card 2 - Junior */}
               <div className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-lg hover:translate-y-[-2px] group">
                 <div className="relative h-64 overflow-hidden">
                   <div className="absolute top-0 left-0 w-full h-1 bg-purple-600"></div>
                   <Image
                     src="/team-member-2.png"
-                    alt="André Araujo"
+                    alt="Junior "
                     width={400}
                     height={400}
                     className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -399,7 +383,7 @@ export default function AboutPage() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-gray-900">André Araujo</h3>
+                      <h3 className="text-xl font-bold text-gray-900">Lucas Junior </h3>
                       <p className="text-purple-600 font-medium">Especialista em Google Ads</p>
                     </div>
                   </div>
@@ -413,6 +397,7 @@ export default function AboutPage() {
                     <a
                       href="#"
                       className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-purple-100 hover:text-purple-600 transition-colors"
+                      target="_blank"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -430,24 +415,7 @@ export default function AboutPage() {
                         <circle cx="4" cy="4" r="2"></circle>
                       </svg>
                     </a>
-                    <a
-                      href="#"
-                      className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-purple-100 hover:text-purple-600 transition-colors"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                      </svg>
-                    </a>
+                    
                   </div>
                 </div>
               </div>
@@ -515,24 +483,7 @@ export default function AboutPage() {
                         <circle cx="4" cy="4" r="2"></circle>
                       </svg>
                     </a>
-                    <a
-                      href="#"
-                      className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-teal-100 hover:text-teal-600 transition-colors"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                      </svg>
-                    </a>
+                    
                   </div>
                 </div>
               </div>
@@ -615,7 +566,7 @@ export default function AboutPage() {
                   </div>
                   <h3 className="text-xl font-bold mb-3">Preços Justos</h3>
                   <p className="text-gray-700 mb-4">
-                    Oferecemos soluções profissionais com preços acessíveis para pequenas empresas. Qualidade sem
+                    Oferecemos soluções profissionais com preços acessíveis para empresas. Qualidade sem
                     comprometer o orçamento.
                   </p>
                   <div className="text-blue-600 font-medium">
@@ -634,7 +585,7 @@ export default function AboutPage() {
                   </div>
                   <h3 className="text-xl font-bold mb-3">Experiência Comprovada</h3>
                   <p className="text-gray-700 mb-4">
-                    Nossa equipe tem experiência prática em ajudar pequenas empresas a crescerem. Sabemos os desafios
+                    Nossa equipe tem experiência prática em ajudar empresas a crescerem. Sabemos os desafios
                     que você enfrenta.
                   </p>
                   <div className="text-blue-600 font-medium">
@@ -706,17 +657,17 @@ export default function AboutPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
               <FadeIn direction="up" delay={0.1} className="flex justify-center">
                 <Image
-                  src="/citene-logo.png"
-                  alt="Citene"
-                  width={150}
-                  height={80}
+                  src="/odontologia-zorzzela-logo.png"
+                  alt="logo Odontologia Zorzzela"
+                  width={250}
+                  height={100}
                   className="h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
                 />
               </FadeIn>
               <FadeIn direction="up" delay={0.2} className="flex justify-center">
                 <Image
-                  src="/crelire-logo.png"
-                  alt="Crelire"
+                  src="/londrina-epis-logo.jpg"
+                  alt="logo londrina epis"
                   width={150}
                   height={80}
                   className="h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
@@ -724,8 +675,8 @@ export default function AboutPage() {
               </FadeIn>
               <FadeIn direction="up" delay={0.3} className="flex justify-center">
                 <Image
-                  src="/wtark-logo.png"
-                  alt="Wtark"
+                  src="/laura-rossini-adv-logo.jpg"
+                  alt="logo advocacia laura rossini"
                   width={150}
                   height={80}
                   className="h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"

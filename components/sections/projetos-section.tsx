@@ -32,8 +32,8 @@ interface Projeto {
 // Dados dos projetos
 const projetos: Projeto[] = [
   {
-    id: "ecommerce-redesign",
-    titulo: "Redesign de E-commerce",
+    id: "ecommerce-londrina-epis",
+    titulo: "E-commerce",
     cliente: "Londrina Epi`s",
     categoria: "Website",
     descricao:
@@ -60,18 +60,18 @@ const projetos: Projeto[] = [
     tags: ["UX/UI Design", "Desenvolvimento e-commerce", "Otimização de Conversão"],
   },
   {
-    id: "gaming-portal",
-    titulo: "Portal de Jogos Online",
-    cliente: "GameZone",
+    id: "odontologia-zorzzela",
+    titulo: "Landing Page Odontologia",
+    cliente: "Odontologia Zorzzela",
     categoria: "Website",
     descricao:
-      "Desenvolvimento de um portal imersivo para comunidade gamer com sistema avançado de busca, perfis personalizáveis e integrações com plataformas de streaming.",
-    imagem: "/gaming-website.png",
+      "Criação de landing page otimizada para conversão, com foco em captação de leads qualificados para clínica odontológica, utilizando técnicas avançadas de copywriting e design responsivo.",
+    imagem: "/odontologia-zorzzela-home.png",
     imagensAdicionais: ["/portfolio-gaming-1.png", "/portfolio-gaming-2.png"],
     metricas: [
       {
         valor: "+85%",
-        label: "Aumento no tempo de permanência",
+        label: "Crescimento na visibilidade da odontologia na internet 85%",
         icone: <TrendingUp className="h-4 w-4 text-emerald-500" />,
       },
       {
@@ -85,62 +85,7 @@ const projetos: Projeto[] = [
         icone: <Award className="h-4 w-4 text-amber-500" />,
       },
     ],
-    tags: ["Design Interativo", "Desenvolvimento Web", "Comunidade Online"],
-  },
-  {
-    id: "fashion-campaign",
-    titulo: "Campanha de Moda Sazonal",
-    cliente: "Elegance Boutique",
-    categoria: "Google Ads",
-    descricao:
-      "Estratégia multicanal de Google Ads com segmentação precisa para nova coleção sazonal, incluindo campanhas de Search, Display e Shopping com remarketing dinâmico.",
-    imagem: "/woman-hat.png",
-    imagensAdicionais: ["/portfolio-fashion-1.png", "/portfolio-fashion-2.png"],
-    metricas: [
-      {
-        valor: "420%",
-        label: "ROI sobre investimento em ads",
-        icone: <TrendingUp className="h-4 w-4 text-emerald-500" />,
-      },
-      {
-        valor: "-25%",
-        label: "Redução no custo por aquisição",
-        icone: <BarChart2 className="h-4 w-4 text-blue-500" />,
-      },
-      {
-        valor: "+95%",
-        label: "Crescimento nas vendas da coleção",
-        icone: <Award className="h-4 w-4 text-amber-500" />,
-      },
-    ],
-    tags: ["Google Ads", "Remarketing", "Otimização de Campanhas"],
-  },
-  {
-    id: "restaurant-website",
-    titulo: "Website para Restaurante",
-    cliente: "Sabor Gourmet",
-    categoria: "Website",
-    descricao:
-      "Criação de website responsivo com sistema de reservas online, cardápio digital interativo e integração com plataformas de delivery para restaurante premium.",
-    imagem: "/portfolio-restaurant.png",
-    metricas: [
-      {
-        valor: "+120%",
-        label: "Aumento nas reservas online",
-        icone: <TrendingUp className="h-4 w-4 text-emerald-500" />,
-      },
-      {
-        valor: "+35%",
-        label: "Crescimento no faturamento",
-        icone: <BarChart2 className="h-4 w-4 text-blue-500" />,
-      },
-      {
-        valor: "4.9/5",
-        label: "Avaliação dos usuários",
-        icone: <Award className="h-4 w-4 text-amber-500" />,
-      },
-    ],
-    tags: ["Design Responsivo", "Sistema de Reservas", "Integração com Delivery"],
+    tags: ["Design Interativo", "Desenvolvimento Web"],
   },
   {
     id: "saas-landing",
@@ -170,32 +115,35 @@ const projetos: Projeto[] = [
     tags: ["Landing Page", "Otimização de Conversão", "Testes A/B"],
   },
   {
-    id: "fitness-ads",
-    titulo: "Campanha para Academia",
-    cliente: "FitLife",
+    id: "laura-rossini-adv",
+    titulo: "Campanha Google Ads",
+    cliente: "Laura Rossini Advocacia",
     categoria: "Google Ads",
     descricao:
-      "Campanha integrada de Google Ads e Meta Ads para rede de academias, com foco em captação de novos membros e retenção através de remarketing segmentado.",
-    imagem: "/portfolio-fitness.png",
+      "Campanha de Google Ads para escritório de advocacia, com foco em captação de leads qualificados e aumento da visibilidade online, utilizando segmentação avançada e otimização contínua.",
+    imagem: "/laura-rossini-adv-logo.jpg",
+    imagensAdicionais: ["/portfolio-fashion-1.png", "/portfolio-fashion-2.png"],
     metricas: [
       {
-        valor: "+110%",
-        label: "Aumento em novas matrículas",
+        valor: "420%",
+        label: "ROI sobre investimento em ads",
         icone: <TrendingUp className="h-4 w-4 text-emerald-500" />,
       },
       {
-        valor: "2.8x",
-        label: "Retorno sobre investimento",
+        valor: "-25%",
+        label: "Redução no custo por lead",
         icone: <BarChart2 className="h-4 w-4 text-blue-500" />,
       },
       {
-        valor: "+45%",
-        label: "Crescimento em visitas às unidades",
+        valor: "+95%",
+        label: "Crescimento na visibilidade online",
         icone: <Award className="h-4 w-4 text-amber-500" />,
       },
     ],
-    tags: ["Google Ads", "Meta Ads", "Geolocalização"],
+    tags: ["Google Ads", "Remarketing", "Otimização de Campanhas"],
   },
+  
+  
 ]
 
 // Componente de filtro de categorias
@@ -244,7 +192,7 @@ function ProjetoCard({ projeto, featured = false }: { projeto: Projeto; featured
   return (
     <motion.div
       ref={cardRef}
-      className={`group relative overflow-hidden rounded-xl bg-gradient-to-br from-blue-900/40 to-purple-900/40 backdrop-blur-sm border border-blue-800/30 ${
+      className={`group relative overflow-hidden rounded-xl bg-gradient-to-tr from-black to-black backdrop-blur-sm border border-blue-800/30 ${
         featured ? "md:col-span-2 md:row-span-2" : ""
       }`}
       initial={{ opacity: 0, y: 20 }}
@@ -257,7 +205,7 @@ function ProjetoCard({ projeto, featured = false }: { projeto: Projeto; featured
         <span
           className={`px-3 py-1 rounded-full text-xs font-medium ${
             projeto.categoria === "Website"
-              ? "bg-blue-500/80 text-white"
+              ? "bg-blue-500/80 text-"
               : projeto.categoria === "Google Ads"
                 ? "bg-red-500/80 text-white"
                 : "bg-purple-500/80 text-white"
@@ -278,7 +226,7 @@ function ProjetoCard({ projeto, featured = false }: { projeto: Projeto; featured
             featured ? "h-[400px] md:h-[500px]" : "h-[250px]"
           }`}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-blue-900/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black-900 via-slate-950/70 to-transparent" />
       </div>
 
       {/* Conteúdo */}

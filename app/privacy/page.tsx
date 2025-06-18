@@ -179,7 +179,7 @@ export default function PrivacyPolicyPage() {
                   <div className="space-y-4 mb-8">
                     <div className="flex items-center justify-center text-gray-300">
                       <Mail className="h-5 w-5 mr-2 text-blue-400" />
-                      <span>privacidade@cuttital.com</span>
+                      <span>privacidade@designreverse.com</span>
                     </div>
                     <div className="flex items-center justify-center text-gray-300">
                       <Shield className="h-5 w-5 mr-2 text-blue-400" />
