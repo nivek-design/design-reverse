@@ -95,7 +95,7 @@ export default function WebsitesServicePage() {
             <FadeIn direction="up" className="text-center">
               <h2 className="text-3xl font-bold mb-12 text-blue-900">Nosso Processo</h2>
             </FadeIn>
-            <StaggerChildren className="">
+            <StaggerChildren className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <HoverCard className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
                 <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
                   <span className="text-blue-700 font-bold text-xl">1</span>
@@ -210,7 +210,7 @@ export default function WebsitesServicePage() {
               <div className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                 <div className="h-48 overflow-hidden">
                   <Image
-                    src="/sites-responsivos.png"
+                    src="/portfolio-saas.png"
                     alt="Site Institucional"
                     width={600}
                     height={400}
@@ -273,11 +273,11 @@ export default function WebsitesServicePage() {
               <div className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                 <div className="h-48 overflow-hidden">
                   <Image
-                    src="/landingpage-image.png"
+                    src="/portfolio-fitness.png"
                     alt="Landing Page"
                     width={600}
                     height={400}
-                    className="h-full w-full object-cover object-[25%_15%] transition-transform duration-700 group-hover:scale-110"
+                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
                 <div className="p-6">
@@ -333,7 +333,7 @@ export default function WebsitesServicePage() {
               <div className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                 <div className="h-48 overflow-hidden">
                   <Image
-                    src="/ecommerce-service.PNG"
+                    src="/portfolio-ecommerce-1.png"
                     alt="E-commerce"
                     width={600}
                     height={400}
@@ -396,11 +396,11 @@ export default function WebsitesServicePage() {
               <div className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                 <div className="h-48 overflow-hidden">
                   <Image
-                    src="/blogs-services.png"
+                    src="/portfolio-fashion-2.png"
                     alt="Blog e Portal"
                     width={600}
                     height={400}
-                    className="h-full w-full object-cover object-[25%_85%] transition-transform duration-700 group-hover:scale-110"
+                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
                 <div className="p-6">
@@ -454,7 +454,7 @@ export default function WebsitesServicePage() {
               <div className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                 <div className="h-48 overflow-hidden">
                   <Image
-                    src="/web-apps-services.png"
+                    src="/dashboard-ui.png"
                     alt="Aplicação Web"
                     width={600}
                     height={400}
@@ -513,11 +513,11 @@ export default function WebsitesServicePage() {
               <div className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                 <div className="h-48 overflow-hidden">
                   <Image
-                    src="/site-mobile-app-services.png"
+                    src="/gaming-mobile.png"
                     alt="Site Responsivo"
                     width={600}
                     height={400}
-                    className="h-full w-full object-cover object-[25%_85%] transition-transform duration-700 group-hover:scale-110"
+                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
                 <div className="p-6">

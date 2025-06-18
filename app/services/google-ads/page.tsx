@@ -92,7 +92,7 @@ export default function GoogleAdsServicePage() {
                 <ScaleIn delay={0.3}>
                   <div className="bg-white p-6 rounded-lg shadow-xl border border-gray-200">
                     <div className="flex items-center gap-3 mb-6">
-                      <Image src="/icone-resultados-reais.png" alt="Google Ads" width={50} height={50} />
+                      <Image src="/google-ads-logo.png" alt="Google Ads" width={50} height={50} />
                       <div>
                         <h3 className="font-bold text-gray-900">Resultados Reais</h3>
                         <div className="text-sm text-gray-600">Média dos nossos clientes</div>
@@ -137,7 +137,7 @@ export default function GoogleAdsServicePage() {
                         <div className="text-sm text-gray-600">Impressões Gerenciadas</div>
                       </div>
                       <div className="bg-gray-50 p-4 rounded-lg text-center">
-                        <div className="text-3xl font-bold text-purple-600">R$25Mil+</div>
+                        <div className="text-3xl font-bold text-purple-600">R$50Mil+</div>
                         <div className="text-sm text-gray-600">Em Mídia Gerenciada</div>
                       </div>
                     </div>
@@ -154,7 +154,7 @@ export default function GoogleAdsServicePage() {
             <FadeIn direction="up" className="text-center">
               <h2 className="text-3xl font-bold mb-12 text-purple-900">Nossos Serviços de Google Ads</h2>
             </FadeIn>
-            <div className="grid grid-cols-3 md:grid-cols-3 gap-8">
+            <StaggerChildren className="grid grid-cols-3 md:grid-cols-3 gap-8">
               <HoverCard className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
                 <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
                   <Search className="h-8 w-8 text-purple-700" />
@@ -304,7 +304,7 @@ export default function GoogleAdsServicePage() {
                   </div>
                 </div>
               </HoverCard>
-            </div>
+            </StaggerChildren>
           </div>
         </section>
 
@@ -315,7 +315,7 @@ export default function GoogleAdsServicePage() {
               <h2 className="text-3xl font-bold mb-12 text-purple-900">Nosso Processo de Gestão</h2>
             </FadeIn>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-              <div className="col-span-1 md:col-span-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+              <StaggerChildren className="col-span-1 md:col-span-4 grid grid-cols-1 md:grid-cols-4 gap-8">
                 <HoverCard className="bg-white p-6 rounded-lg shadow-lg border border-gray-100 text-center">
                   <div className="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
                     <span className="text-purple-700 font-bold text-xl">1</span>
@@ -359,7 +359,7 @@ export default function GoogleAdsServicePage() {
                     acionáveis para contínua evolução da estratégia.
                   </p>
                 </HoverCard>
-              </div>
+              </StaggerChildren>
             </div>
           </div>
         </section>

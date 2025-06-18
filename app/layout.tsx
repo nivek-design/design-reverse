@@ -10,10 +10,9 @@ import { Suspense } from "react"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Design Reverse Marketing Agency",
+  title: "Cuttital Marketing Agency",
   description: "Professional digital marketing services for your business",
-  generator: "Next.js",
-  applicationName: "Design Reverse",
+  generator: "v0.dev",
 }
 
 // Loading fallback component
@@ -31,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-br" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <ReverseProvider>

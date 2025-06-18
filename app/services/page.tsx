@@ -179,7 +179,7 @@ export default function ServicesPage() {
                       <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg transform rotate-3 scale-105 opacity-20"></div>
                       <div className="relative bg-white rounded-lg shadow-xl overflow-hidden border border-gray-200">
                         <Image
-                          src="/ecommerce-google.png"
+                          src="/website-creation.png"
                           alt="Criação de Websites"
                           width={600}
                           height={400}
@@ -401,7 +401,7 @@ export default function ServicesPage() {
                       <div className="relative bg-white rounded-lg shadow-xl overflow-hidden border border-gray-200">
                         <div className="p-6 bg-white">
                           <div className="flex items-center gap-3 mb-6">
-                            <Image src="/icon-google-ads.png" alt="Google Ads" width={40} height={40} />
+                            <Image src="/google-ads-logo.png" alt="Google Ads" width={40} height={40} />
                             <div>
                               <h3 className="font-bold text-gray-900">Campanhas Otimizadas</h3>
                               <div className="text-sm text-gray-600">Resultados que você pode ver</div>
@@ -468,7 +468,7 @@ export default function ServicesPage() {
                   </FadeIn>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <StaggerChildren className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   <HoverCard className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
                     <div className="bg-purple-100 p-4 rounded-full inline-flex items-center justify-center mb-4">
                       <Search className="h-6 w-6 text-purple-600" />
@@ -505,7 +505,7 @@ export default function ServicesPage() {
                     </p>
                     <div className="text-sm text-purple-600 font-medium">Ideal para: Aumentar vendas e conversões</div>
                   </HoverCard>
-                </div>
+                </StaggerChildren>
               </div>
             </div>
           </section>
@@ -552,7 +552,7 @@ export default function ServicesPage() {
                   {/* Step 2 */}
                   <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 md:pr-12 order-2"></div>
-                    <div className="md:w-12 flex justify-center my-4 md:my-0 order-2 relative z-10">
+                    <div className="md:w-12 flex justify-center my-4 md:my-0 order-1 relative z-10">
                       <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
                         2
                       </div>
@@ -590,12 +590,12 @@ export default function ServicesPage() {
                   {/* Step 4 */}
                   <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 md:pr-12 order-2"></div>
-                    <div className="md:w-12 flex justify-center my-4 md:my-0 order-2 relative z-10">
+                    <div className="md:w-12 flex justify-center my-4 md:my-0 order-1 relative z-10">
                       <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
                         4
                       </div>
                     </div>
-                    <div className="md:w-1/2 md:pl-12 md:text-left order-2">
+                    <div className="md:w-1/2 md:pl-12 md:text-left order-3">
                       <FadeIn direction="left">
                         <h3 className="text-xl font-bold mb-3">4. Relatórios e Comunicação</h3>
                         <p className="text-gray-600">
