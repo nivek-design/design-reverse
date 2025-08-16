@@ -1,17 +1,16 @@
-
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
-import { 
-  Eye, 
-  TrendingUp, 
-  Star, 
-  Video, 
-  Rocket, 
-  Gem, 
-  CheckCircle2, 
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
+import {
+  Eye,
+  TrendingUp,
+  Star,
+  Video,
+  Rocket,
+  Gem,
+  CheckCircle2,
   ArrowRight,
   Play,
   Camera,
@@ -19,14 +18,19 @@ import {
   Globe,
   Users,
   BarChart3,
-  Award
-} from "lucide-react"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { FadeIn } from "@/components/animations/fade-in"
-import { StaggerChildren } from "@/components/animations/stagger-children"
-import { ScaleIn } from "@/components/animations/scale-in"
-import { HoverCard } from "@/components/animations/hover-card"
-import { PageTransition } from "@/components/page-transition"
+  Award,
+} from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { FadeIn } from "@/components/animations/fade-in";
+import { StaggerChildren } from "@/components/animations/stagger-children";
+import { ScaleIn } from "@/components/animations/scale-in";
+import { HoverCard } from "@/components/animations/hover-card";
+import { PageTransition } from "@/components/page-transition";
 
 export default function DroneMarketingPage() {
   return (
@@ -46,7 +50,10 @@ export default function DroneMarketingPage() {
                   com Imagens Aéreas 4K que Convertem
                 </h1>
                 <p className="text-xl md:text-2xl text-orange-200 mb-8 leading-relaxed">
-                  Crie campanhas de marketing digital memoráveis com a perspectiva única e impactante que só a filmagem aérea profissional pode oferecer. Aumente o engajamento, a percepção de valor da marca e, o mais importante, as conversões.
+                  Crie campanhas de marketing digital memoráveis com a
+                  perspectiva única e impactante que só a filmagem aérea
+                  profissional pode oferecer. Aumente o engajamento, a percepção
+                  de valor da marca e, o mais importante, as conversões.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link href="/contact?service=drone">
@@ -55,8 +62,8 @@ export default function DroneMarketingPage() {
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
                   </Link>
-                  <Button 
-                    variant="outline" 
+                  <Button
+                    variant="outline"
                     className="border-orange-400 text-orange-400 hover:bg-orange-500/10 rounded-full px-8 py-6 text-lg font-semibold"
                   >
                     <Play className="mr-2 h-5 w-5" />
@@ -77,10 +84,12 @@ export default function DroneMarketingPage() {
                   O Desafio do Marketing Digital Moderno
                 </h2>
                 <p className="text-lg text-gray-700 leading-relaxed mb-12">
-                  No universo do marketing digital, a atenção do público é o bem mais valioso. A cada segundo, 
-                  milhares de conteúdos disputam um espaço no feed. Como garantir que a mensagem do seu cliente 
-                  não apenas seja vista, mas também sentida e lembrada? Vídeos de baixa qualidade, ângulos 
-                  repetitivos e falta de impacto visual podem estar custando caro, resultando em baixo 
+                  No universo do marketing digital, a atenção do público é o bem
+                  mais valioso. A cada segundo, milhares de conteúdos disputam
+                  um espaço no feed. Como garantir que a mensagem do seu cliente
+                  não apenas seja vista, mas também sentida e lembrada? Vídeos
+                  de baixa qualidade, ângulos repetitivos e falta de impacto
+                  visual podem estar custando caro, resultando em baixo
                   engajamento e campanhas que não decolam.
                 </p>
               </FadeIn>
@@ -98,19 +107,25 @@ export default function DroneMarketingPage() {
                     A Solução: Captação Profissional com Drone
                   </h2>
                   <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                    Nossa captação profissional de vídeo com drone é a resposta. Transformamos a maneira como 
-                    as marcas se comunicam visualmente. Com tecnologia de ponta e um olhar cinematográfico, 
-                    capturamos imagens aéreas que geram impacto, contam histórias e, acima de tudo, impulsionam 
-                    os resultados das suas estratégias de marketing digital.
+                    Nossa captação profissional de vídeo com drone é a resposta.
+                    Transformamos a maneira como as marcas se comunicam
+                    visualmente. Com tecnologia de ponta e um olhar
+                    cinematográfico, capturamos imagens aéreas que geram
+                    impacto, contam histórias e, acima de tudo, impulsionam os
+                    resultados das suas estratégias de marketing digital.
                   </p>
                   <div className="flex flex-wrap gap-4">
                     <div className="flex items-center gap-2 bg-orange-100 px-4 py-2 rounded-full">
                       <Camera className="h-5 w-5 text-orange-600" />
-                      <span className="text-orange-800 font-medium">4K/5.3K Ultra HD</span>
+                      <span className="text-orange-800 font-medium">
+                        4K Ultra HD
+                      </span>
                     </div>
                     <div className="flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full">
                       <Award className="h-5 w-5 text-blue-600" />
-                      <span className="text-blue-800 font-medium">Qualidade Cinematográfica</span>
+                      <span className="text-blue-800 font-medium">
+                        Qualidade Cinematográfica
+                      </span>
                     </div>
                   </div>
                 </FadeIn>
@@ -142,20 +157,24 @@ export default function DroneMarketingPage() {
                   Benefícios e Diferenciais
                 </h2>
                 <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                  Traduza as características do nosso serviço em benefícios diretos para o seu marketing
+                  Traduza as características do nosso serviço em benefícios
+                  diretos para o seu marketing
                 </p>
               </FadeIn>
             </div>
 
-            <StaggerChildren className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <HoverCard className="bg-gradient-to-br from-orange-900/30 to-red-900/30 backdrop-blur-sm p-8 rounded-xl border border-orange-800/50 hover:border-orange-500/50 transition-all">
                 <div className="bg-gradient-to-r from-orange-500 to-red-500 p-3 rounded-lg inline-block mb-4">
                   <Eye className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Impacto Visual Imediato</h3>
+                <h3 className="text-xl font-bold mb-3">
+                  Impacto Visual Imediato
+                </h3>
                 <p className="text-gray-300">
-                  Prenda a atenção nos primeiros 3 segundos com imagens aéreas de tirar o fôlego. 
-                  Vídeos com drone aumentam o tempo de permanência do usuário em até 88%.
+                  Prenda a atenção nos primeiros 3 segundos com imagens aéreas
+                  de tirar o fôlego. Vídeos com drone aumentam o tempo de
+                  permanência do usuário em até 88%.
                 </p>
               </HoverCard>
 
@@ -165,8 +184,9 @@ export default function DroneMarketingPage() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">Aumento de Conversão</h3>
                 <p className="text-gray-300">
-                  Landing pages com vídeo podem aumentar as conversões em até 80%. 
-                  Conteúdos visuais dinâmicos geram mais curtidas, compartilhamentos e comentários.
+                  Landing pages com vídeo podem aumentar as conversões em até
+                  80%. Conteúdos visuais dinâmicos geram mais curtidas,
+                  compartilhamentos e comentários.
                 </p>
               </HoverCard>
 
@@ -174,10 +194,13 @@ export default function DroneMarketingPage() {
                 <div className="bg-gradient-to-r from-emerald-500 to-teal-500 p-3 rounded-lg inline-block mb-4">
                   <Star className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Percepção de Alto Valor</h3>
+                <h3 className="text-xl font-bold mb-3">
+                  Percepção de Alto Valor
+                </h3>
                 <p className="text-gray-300">
-                  Associe a marca do seu cliente à inovação, profissionalismo e qualidade. 
-                  Imagens cinematográficas elevam o status de qualquer produto ou serviço.
+                  Associe a marca do seu cliente à inovação, profissionalismo e
+                  qualidade. Imagens cinematográficas elevam o status de
+                  qualquer produto ou serviço.
                 </p>
               </HoverCard>
 
@@ -185,10 +208,13 @@ export default function DroneMarketingPage() {
                 <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-3 rounded-lg inline-block mb-4">
                   <Video className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Versatilidade para Campanhas</h3>
+                <h3 className="text-xl font-bold mb-3">
+                  Versatilidade para Campanhas
+                </h3>
                 <p className="text-gray-300">
-                  Ideal para lançamentos de produtos, vídeos institucionais, cobertura de eventos, 
-                  marketing imobiliário, turismo e muito mais. Um único voo, múltiplas possibilidades.
+                  Ideal para lançamentos de produtos, vídeos institucionais,
+                  cobertura de eventos, marketing imobiliário, turismo e muito
+                  mais. Um único voo, múltiplas possibilidades.
                 </p>
               </HoverCard>
 
@@ -196,10 +222,13 @@ export default function DroneMarketingPage() {
                 <div className="bg-gradient-to-r from-yellow-500 to-orange-500 p-3 rounded-lg inline-block mb-4">
                   <Rocket className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Destaque-se da Concorrência</h3>
+                <h3 className="text-xl font-bold mb-3">
+                  Destaque-se da Concorrência
+                </h3>
                 <p className="text-gray-300">
-                  Em um mercado saturado, ofereça ao seu cliente um diferencial competitivo claro 
-                  com conteúdo visual que a maioria ainda não utiliza.
+                  Em um mercado saturado, ofereça ao seu cliente um diferencial
+                  competitivo claro com conteúdo visual que a maioria ainda não
+                  utiliza.
                 </p>
               </HoverCard>
 
@@ -209,11 +238,12 @@ export default function DroneMarketingPage() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">Qualidade de Cinema</h3>
                 <p className="text-gray-300">
-                  Entregue material com ultra-resolução 4K/5.3K, garantindo cores vibrantes, 
-                  detalhes nítidos e acabamento profissional que impressiona em qualquer tela.
+                  Entregue material com ultra-resolução 4K, garantindo cores
+                  vibrantes, detalhes nítidos e acabamento profissional que
+                  impressiona em qualquer tela.
                 </p>
               </HoverCard>
-            </StaggerChildren>
+            </div>
           </div>
         </section>
 
@@ -226,29 +256,36 @@ export default function DroneMarketingPage() {
                   Pacotes de Serviço
                 </h2>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  Opções claras e com bom custo-benefício para diferentes necessidades
+                  Opções claras e com bom custo-benefício para diferentes
+                  necessidades
                 </p>
               </FadeIn>
             </div>
 
-            <StaggerChildren className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {/* Pacote Start */}
               <HoverCard className="bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-all">
                 <div className="text-center mb-6">
                   <div className="bg-blue-100 p-3 rounded-full inline-block mb-4">
                     <Users className="h-8 w-8 text-blue-600" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Pacote Start</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    Pacote Start
+                  </h3>
                   <p className="text-gray-600">Ideal para Redes Sociais</p>
                 </div>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Até 1 hora de captação em 1 localização</span>
+                    <span className="text-gray-700">
+                      Até 1 hora de captação em 1 localização
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Vídeo editado de até 60 segundos (vertical e horizontal)</span>
+                    <span className="text-gray-700">
+                      Vídeo editado de até 60 segundos (vertical e horizontal)
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
@@ -256,7 +293,9 @@ export default function DroneMarketingPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Ideal para Reels, Shorts e posts de alto impacto</span>
+                    <span className="text-gray-700">
+                      Ideal para Reels, Shorts e posts de alto impacto
+                    </span>
                   </li>
                 </ul>
                 <Button className="w-full bg-blue-600 hover:bg-blue-700">
@@ -275,25 +314,35 @@ export default function DroneMarketingPage() {
                   <div className="bg-orange-100 p-3 rounded-full inline-block mb-4">
                     <BarChart3 className="h-8 w-8 text-orange-600" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Pacote Pro</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    Pacote Pro
+                  </h3>
                   <p className="text-gray-600">O Mais Popular</p>
                 </div>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Até 3 horas de captação em até 2 localizações</span>
+                    <span className="text-gray-700">
+                      Até 3 horas de captação em até 2 localizações
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Vídeo institucional/promocional editado até 2 minutos</span>
+                    <span className="text-gray-700">
+                      Vídeo institucional/promocional editado até 2 minutos
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">5 clipes curtos para redes sociais</span>
+                    <span className="text-gray-700">
+                      5 clipes curtos para redes sociais
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Captura em 4K/5.3K + Color grading profissional</span>
+                    <span className="text-gray-700">
+                      Captura em 4K/ + Color grading profissional
+                    </span>
                   </li>
                 </ul>
                 <Button className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600">
@@ -307,32 +356,42 @@ export default function DroneMarketingPage() {
                   <div className="bg-purple-100 p-3 rounded-full inline-block mb-4">
                     <Award className="h-8 w-8 text-purple-600" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Pacote Premium</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    Pacote Premium
+                  </h3>
                   <p className="text-gray-600">Produção Cinematográfica</p>
                 </div>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Diária completa de captação (até 6 horas)</span>
+                    <span className="text-gray-700">
+                      Diária completa de captação (até 6 horas)
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Múltiplas localizações + Roteiro detalhado</span>
+                    <span className="text-gray-700">
+                      Múltiplas localizações + Roteiro detalhado
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Vídeo principal de até 3-5 minutos</span>
+                    <span className="text-gray-700">
+                      Vídeo principal de até 3-5 minutos
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Captura em 5.3K com máxima qualidade</span>
+                    <span className="text-gray-700">
+                      Captura em 4K com máxima qualidade
+                    </span>
                   </li>
                 </ul>
                 <Button className="w-full bg-purple-600 hover:bg-purple-700">
                   Solicitar Orçamento
                 </Button>
               </HoverCard>
-            </StaggerChildren>
+            </div>
           </div>
         </section>
 
@@ -353,53 +412,62 @@ export default function DroneMarketingPage() {
 
               <FadeIn direction="up" delay={0.2}>
                 <Accordion type="single" collapsible className="space-y-4">
-                  <AccordionItem value="licenses" className="border border-gray-200 rounded-lg px-6">
+                  <AccordionItem
+                    value="process"
+                    className="border border-gray-200 rounded-lg px-6"
+                  >
                     <AccordionTrigger className="text-left font-semibold">
-                      Vocês possuem todas as licenças e seguros necessários?
+                      Como funciona o processo, desde o briefing até a entrega
+                      final?
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-600">
-                      Sim, possuímos todas as licenças exigidas pela ANAC, seguros de responsabilidade civil e 
-                      certificações para operações comerciais com drones. Sua tranquilidade é nossa prioridade.
+                      1) Briefing detalhado e planejamento estratégico 2)
+                      Agendamento e captação no local 3) Edição profissional com
+                      color grading 4) Revisões e ajustes 5) Entrega final em
+                      até 7 dias úteis.
                     </AccordionContent>
                   </AccordionItem>
 
-                  <AccordionItem value="process" className="border border-gray-200 rounded-lg px-6">
-                    <AccordionTrigger className="text-left font-semibold">
-                      Como funciona o processo, desde o briefing até a entrega final?
-                    </AccordionTrigger>
-                    <AccordionContent className="text-gray-600">
-                      1) Briefing detalhado e planejamento estratégico 2) Agendamento e captação no local 
-                      3) Edição profissional com color grading 4) Revisões e ajustes 5) Entrega final em até 7 dias úteis.
-                    </AccordionContent>
-                  </AccordionItem>
-
-                  <AccordionItem value="delivery" className="border border-gray-200 rounded-lg px-6">
+                  <AccordionItem
+                    value="delivery"
+                    className="border border-gray-200 rounded-lg px-6"
+                  >
                     <AccordionTrigger className="text-left font-semibold">
                       Em quanto tempo recebo o material editado?
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-600">
-                      O prazo padrão é de 5 a 7 dias úteis após a captação. Para projetos urgentes, 
-                      oferecemos entrega expressa em até 48 horas (taxa adicional aplicável).
+                      O prazo padrão é de 5 a 7 dias úteis após a captação. Para
+                      projetos urgentes, oferecemos entrega expressa em até 48
+                      horas (taxa adicional aplicável).
                     </AccordionContent>
                   </AccordionItem>
 
-                  <AccordionItem value="regions" className="border border-gray-200 rounded-lg px-6">
+                  <AccordionItem
+                    value="regions"
+                    className="border border-gray-200 rounded-lg px-6"
+                  >
                     <AccordionTrigger className="text-left font-semibold">
                       Vocês atuam em quais regiões?
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-600">
-                      Atendemos todo o estado de São Paulo e principais cidades do Brasil. 
-                      Para localizações específicas, consulte nossa equipe sobre disponibilidade e custos de deslocamento.
+                      Atendemos Londrina e região. Para localizações
+                      específicas, consulte nossa equipe sobre disponibilidade e
+                      custos de deslocamento.
                     </AccordionContent>
                   </AccordionItem>
 
-                  <AccordionItem value="weather" className="border border-gray-200 rounded-lg px-6">
+                  <AccordionItem
+                    value="weather"
+                    className="border border-gray-200 rounded-lg px-6"
+                  >
                     <AccordionTrigger className="text-left font-semibold">
-                      O que acontece se as condições climáticas não forem favoráveis?
+                      O que acontece se as condições climáticas não forem
+                      favoráveis?
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-600">
-                      Reagendamos sem custos adicionais. Monitoramos as condições meteorológicas com antecedência 
-                      e sempre priorizamos a segurança e qualidade do material captado.
+                      Reagendamos sem custos adicionais. Monitoramos as
+                      condições meteorológicas com antecedência e sempre
+                      priorizamos a segurança e qualidade do material captado.
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>
@@ -417,8 +485,9 @@ export default function DroneMarketingPage() {
                   Pronto para levar sua marca a novas alturas?
                 </h2>
                 <p className="text-xl text-orange-200 mb-8 leading-relaxed">
-                  Fale com um de nossos especialistas e solicite uma proposta personalizada. 
-                  Vamos mostrar como as imagens aéreas podem transformar sua presença online e gerar resultados reais.
+                  Fale com um de nossos especialistas e solicite uma proposta
+                  personalizada. Vamos mostrar como as imagens aéreas podem
+                  transformar sua presença online e gerar resultados reais.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link href="/contact?service=drone">
@@ -428,8 +497,8 @@ export default function DroneMarketingPage() {
                     </Button>
                   </Link>
                   <Link href="/portfolio">
-                    <Button 
-                      variant="outline" 
+                    <Button
+                      variant="outline"
                       className="border-orange-400 text-orange-400 hover:bg-orange-500/10 rounded-full px-8 py-6 text-lg font-semibold"
                     >
                       Ver Portfólio Completo
@@ -444,5 +513,5 @@ export default function DroneMarketingPage() {
         <Footer />
       </div>
     </PageTransition>
-  )
+  );
 }
