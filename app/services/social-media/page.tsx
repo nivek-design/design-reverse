@@ -82,7 +82,10 @@ export default function SocialMediaServicePage() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                  <Button className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:translate-y-[-2px]">
+                  <Button 
+                    onClick={() => window.open("https://wa.me/5543988125184?text=Olá! Gostaria de solicitar uma análise gratuita das minhas redes sociais. Estou interessado no serviço de gerenciamento de mídias sociais.", "_blank")}
+                    className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:translate-y-[-2px]"
+                  >
                     <Calendar className="mr-2 h-5 w-5" />
                     Análise Gratuita das Suas Redes
                   </Button>
@@ -407,7 +410,10 @@ export default function SocialMediaServicePage() {
                     ))}
                   </ul>
 
-                  <Button className="w-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white py-3 rounded-lg">
+                  <Button 
+                    onClick={() => window.open("https://wa.me/5543988125184?text=Olá! Tenho interesse no plano Essencial de gerenciamento de mídias sociais (R$ 897/mês). Gostaria de mais informações.", "_blank")}
+                    className="w-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white py-3 rounded-lg"
+                  >
                     Começar Agora
                   </Button>
                 </HoverCard>
@@ -445,7 +451,10 @@ export default function SocialMediaServicePage() {
                     ))}
                   </ul>
 
-                  <Button className="w-full bg-white text-purple-600 hover:bg-gray-100 py-3 rounded-lg font-bold">
+                  <Button 
+                    onClick={() => window.open("https://wa.me/5543988125184?text=Olá! Tenho interesse no plano Estratégico de gerenciamento de mídias sociais (R$ 1.497/mês). Gostaria de mais informações e começar o quanto antes!", "_blank")}
+                    className="w-full bg-white text-purple-600 hover:bg-gray-100 py-3 rounded-lg font-bold"
+                  >
                     Escolher Plano Estratégico
                   </Button>
                 </HoverCard>
@@ -482,7 +491,10 @@ export default function SocialMediaServicePage() {
                     ))}
                   </ul>
 
-                  <Button className="w-full bg-gradient-to-r from-pink-600 to-pink-700 hover:from-pink-700 hover:to-pink-800 text-white py-3 rounded-lg">
+                  <Button 
+                    onClick={() => window.open("https://wa.me/5543988125184?text=Olá! Tenho interesse no plano Performance de gerenciamento de mídias sociais (R$ 2.497/mês). Quero maximizar meus resultados!", "_blank")}
+                    className="w-full bg-gradient-to-r from-pink-600 to-pink-700 hover:from-pink-700 hover:to-pink-800 text-white py-3 rounded-lg"
+                  >
                     Maximizar Resultados
                   </Button>
                 </HoverCard>
@@ -687,7 +699,10 @@ export default function SocialMediaServicePage() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <Button className="bg-white text-purple-600 hover:bg-gray-100 text-lg px-8 py-6 rounded-full font-bold shadow-xl hover:shadow-2xl transition-all duration-300 hover:translate-y-[-2px]">
+                <Button 
+                  onClick={() => window.open("https://wa.me/5543988125184?text=Olá! Quero receber uma análise gratuita das minhas redes sociais e saber como vocês podem me ajudar a transformar minha presença digital!", "_blank")}
+                  className="bg-white text-purple-600 hover:bg-gray-100 text-lg px-8 py-6 rounded-full font-bold shadow-xl hover:shadow-2xl transition-all duration-300 hover:translate-y-[-2px]"
+                >
                   <Calendar className="mr-2 h-5 w-5" />
                   Receber Análise Gratuita Agora
                 </Button>
