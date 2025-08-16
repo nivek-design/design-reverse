@@ -179,7 +179,7 @@ export default function Home() {
                 para elevar sua marca e gerar engajamento extraordinário nas suas campanhas de marketing.
               </p>
               <Link
-                href="/services#drone-services"
+                href="/services/drone-marketing"
                 className="flex items-center text-orange-400 hover:text-orange-300 font-medium group"
               >
                 Descubra o Diferencial{" "}
