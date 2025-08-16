@@ -263,11 +263,18 @@ export default function ServicesPage() {
                         <Image src={item.bgImage || "/placeholder.svg"} alt="" fill className="object-cover" />
                       </div>
 
-                      {/* Colored accent line */}
-                      <div
-                        className="h-2 w-full transition-all duration-300 group-hover:h-3"
-                        style={{ backgroundColor: item.color }}
-                      />
+                      <video
+                        src="https://videos.pexels.com/video-files/3209828/3209828-uhd_4096_2160_25fps.mp4"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="w-full h-auto"
+                        poster="https://images.pexels.com/videos/3209828/pexels-photo-3209828.jpeg"
+                      >
+                        <source src="https://videos.pexels.com/video-files/3209828/3209828-uhd_4096_2160_25fps.mp4" type="video/mp4" />
+                        Seu navegador não suporta vídeos HTML5.
+                      </video>
 
                       <div className="p-8">
                         {/* Icon with background */}
