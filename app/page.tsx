@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Navbar } from "@/components/navbar"
-import { ArrowRight, Code, BarChart2 } from "lucide-react"
+import { ArrowRight, Code, BarChart2, Users } from "lucide-react"
 import { Footer } from "@/components/footer"
 import { FadeIn } from "@/components/animations/fade-in"
 import { HoverCard } from "@/components/animations/hover-card"
@@ -122,7 +122,7 @@ export default function Home() {
           </FadeIn>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Service Card 1 */}
           <FadeIn direction="left" delay={0.2}>
             <HoverCard className="bg-blue-900/30 backdrop-blur-sm p-8 rounded-xl border border-blue-800/50 hover:border-blue-500/50 transition-all h-full">
@@ -183,6 +183,27 @@ export default function Home() {
                 className="flex items-center text-orange-400 hover:text-orange-300 font-medium group"
               >
                 Descubra o Diferencial{" "}
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </Link>
+            </HoverCard>
+          </FadeIn>
+
+          {/* Service Card 4 - Social Media Management */}
+          <FadeIn direction="left" delay={0.5}>
+            <HoverCard className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm p-8 rounded-xl border border-purple-800/50 hover:border-purple-500/50 transition-all h-full">
+              <div className="bg-gradient-to-r from-purple-600 to-pink-600 p-3 rounded-lg inline-block mb-4">
+                <Users className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold mb-3">Gerenciamento de Mídias Sociais</h3>
+              <p className="text-blue-200 mb-6">
+                Estratégias completas para Instagram, Facebook e LinkedIn. Criamos conteúdo envolvente, 
+                gerenciamos sua presença online e construímos relacionamentos que convertem seguidores em clientes fiéis.
+              </p>
+              <Link
+                href="/services/social-media"
+                className="flex items-center text-purple-400 hover:text-purple-300 font-medium group"
+              >
+                Saiba Mais{" "}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
             </HoverCard>
