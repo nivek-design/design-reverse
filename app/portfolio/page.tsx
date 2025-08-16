@@ -2,6 +2,7 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { PageTransition } from "@/components/page-transition"
 import { ProjetosSection } from "@/components/sections/projetos-section"
+import { DroneVideosSection } from "@/components/sections/drone-videos-section"
 
 export default function PortfolioPage() {
   return (
@@ -12,6 +13,9 @@ export default function PortfolioPage() {
 
           {/* Projetos Section com todos os projetos */}
           <ProjetosSection showAll={true} />
+
+          {/* Seção de Vídeos com Drone */}
+          <DroneVideosSection />
         </div>
 
         <Footer />
