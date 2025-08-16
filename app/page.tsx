@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Navbar } from "@/components/navbar"
-import { ArrowRight, Code, BarChart2, Video } from "lucide-react"
+import { ArrowRight, Code, BarChart2 } from "lucide-react"
 import { Footer } from "@/components/footer"
 import { FadeIn } from "@/components/animations/fade-in"
 import { HoverCard } from "@/components/animations/hover-card"
@@ -122,7 +122,7 @@ export default function Home() {
           </FadeIn>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Service Card 1 */}
           <FadeIn direction="left" delay={0.2}>
             <HoverCard className="bg-blue-900/30 backdrop-blur-sm p-8 rounded-xl border border-blue-800/50 hover:border-blue-500/50 transition-all h-full">
@@ -135,7 +135,7 @@ export default function Home() {
                 Criamos experiências digitais que representam sua marca com excelência.
               </p>
               <Link
-                href="/services#websites"
+                href="/services/websites"
                 className="flex items-center text-blue-400 hover:text-blue-300 font-medium group"
               >
                 Saiba Mais{" "}
@@ -145,7 +145,7 @@ export default function Home() {
           </FadeIn>
 
           {/* Service Card 2 */}
-          <FadeIn direction="up" delay={0.3}>
+          <FadeIn direction="right" delay={0.3}>
             <HoverCard className="bg-blue-900/30 backdrop-blur-sm p-8 rounded-xl border border-blue-800/50 hover:border-blue-500/50 transition-all h-full">
               <div className="bg-blue-700 p-3 rounded-lg inline-block mb-4">
                 <BarChart2 className="h-6 w-6 text-white" />
@@ -156,7 +156,7 @@ export default function Home() {
                 relatórios transparentes para você acompanhar cada resultado.
               </p>
               <Link
-                href="/services#google-ads"
+                href="/services/google-ads"
                 className="flex items-center text-blue-400 hover:text-blue-300 font-medium group"
               >
                 Saiba Mais{" "}
@@ -164,105 +164,6 @@ export default function Home() {
               </Link>
             </HoverCard>
           </FadeIn>
-
-          {/* Service Card 3 - Drone Marketing */}
-          <FadeIn direction="right" delay={0.4}>
-            <HoverCard className="bg-gradient-to-br from-orange-900/30 to-red-900/30 backdrop-blur-sm p-8 rounded-xl border border-orange-500/30 hover:border-orange-400/50 transition-all h-full relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-orange-400/10 rounded-full -translate-y-10 translate-x-10 group-hover:scale-150 transition-transform duration-500"></div>
-              <div className="bg-gradient-to-r from-orange-500 to-red-500 p-3 rounded-lg inline-block mb-4 relative z-10">
-                <svg className="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <div className="relative z-10">
-                <h3 className="text-2xl font-bold mb-3 text-white">Marketing com Drone</h3>
-                <div className="bg-orange-400/20 text-orange-300 text-xs px-3 py-1 rounded-full inline-block mb-3 font-semibold animate-pulse">
-                  🔥 NOVIDADE QUE ESTÁ BOMBANDO
-                </div>
-                <p className="text-orange-100 mb-4 text-sm">
-                  Imagens aéreas que geram <strong className="text-orange-300">3x mais engajamento</strong> nas redes sociais. 
-                  Destaque sua marca com perspectivas únicas que seus concorrentes não têm.
-                </p>
-                <div className="bg-orange-500/20 p-3 rounded-lg mb-4 border-l-4 border-orange-400">
-                  <p className="text-orange-200 text-sm">
-                    <strong>Resultados comprovados:</strong> +300% engajamento e +85% conversão em leads
-                  </p>
-                </div>
-              </div>
-              <Link
-                href="/services#drone-services"
-                className="flex items-center text-orange-300 hover:text-orange-200 font-medium group relative z-10"
-              >
-                Ver Como Funciona{" "}
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </Link>
-            </HoverCard>
-          </FadeIn>
-        </div>
-      </section>
-
-      {/* Drone Marketing CTA Section */}
-      <section className="container mx-auto px-4 py-16">
-        <div className="bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 rounded-2xl p-8 md:p-12 relative overflow-hidden">
-          {/* Background Elements */}
-          <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-20 translate-x-20"></div>
-          <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full translate-y-16 -translate-x-16"></div>
-          
-          <div className="relative z-10 text-center text-white">
-            <FadeIn direction="up">
-              <div className="bg-white/20 backdrop-blur-sm inline-block px-4 py-2 rounded-full mb-6">
-                <span className="text-sm font-bold">🎯 ESTRATÉGIA QUE ESTÁ REVOLUCIONANDO O MERCADO</span>
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Seus Concorrentes Ainda Usam Fotos Comuns.
-                <br />
-                <span className="text-yellow-300">E Você?</span>
-              </h2>
-              <p className="text-xl text-orange-100 mb-8 max-w-3xl mx-auto">
-                Enquanto sua concorrência investe milhares em anúncios tradicionais, você pode se destacar com 
-                <strong className="text-yellow-300"> imagens aéreas profissionais</strong> que geram resultados 3x superiores pelo mesmo custo.
-              </p>
-            </FadeIn>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <FadeIn direction="up" delay={0.2}>
-                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
-                  <div className="text-3xl font-bold text-yellow-300 mb-2">+300%</div>
-                  <div className="text-sm text-orange-100">Mais engajamento nas redes sociais</div>
-                </div>
-              </FadeIn>
-              <FadeIn direction="up" delay={0.3}>
-                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
-                  <div className="text-3xl font-bold text-yellow-300 mb-2">+85%</div>
-                  <div className="text-sm text-orange-100">Aumento na conversão de leads</div>
-                </div>
-              </FadeIn>
-              <FadeIn direction="up" delay={0.4}>
-                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
-                  <div className="text-3xl font-bold text-yellow-300 mb-2">+200%</div>
-                  <div className="text-sm text-orange-100">Mais compartilhamentos orgânicos</div>
-                </div>
-              </FadeIn>
-            </div>
-
-            <FadeIn direction="up" delay={0.5}>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Link href="/contact?service=drone">
-                  <button className="bg-white text-orange-600 hover:bg-orange-50 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg">
-                    🚁 Quero Imagens Aéreas Profissionais
-                  </button>
-                </Link>
-                <Link href="/services#drone-services">
-                  <button className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300">
-                    Ver Exemplos de Projetos
-                  </button>
-                </Link>
-              </div>
-              <p className="text-sm text-orange-200 mt-4">
-                ⚡ Consulta gratuita • Piloto certificado ANAC • Resultados garantidos
-              </p>
-            </FadeIn>
-          </div>
         </div>
       </section>
 
