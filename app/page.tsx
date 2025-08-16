@@ -122,7 +122,7 @@ export default function Home() {
           </FadeIn>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Service Card 1 */}
           <FadeIn direction="left" delay={0.2}>
             <HoverCard className="bg-blue-900/30 backdrop-blur-sm p-8 rounded-xl border border-blue-800/50 hover:border-blue-500/50 transition-all h-full">
@@ -145,7 +145,7 @@ export default function Home() {
           </FadeIn>
 
           {/* Service Card 2 */}
-          <FadeIn direction="right" delay={0.3}>
+          <FadeIn direction="up" delay={0.3}>
             <HoverCard className="bg-blue-900/30 backdrop-blur-sm p-8 rounded-xl border border-blue-800/50 hover:border-blue-500/50 transition-all h-full">
               <div className="bg-blue-700 p-3 rounded-lg inline-block mb-4">
                 <BarChart2 className="h-6 w-6 text-white" />
@@ -160,6 +160,29 @@ export default function Home() {
                 className="flex items-center text-blue-400 hover:text-blue-300 font-medium group"
               >
                 Saiba Mais{" "}
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </Link>
+            </HoverCard>
+          </FadeIn>
+
+          {/* Service Card 3 - Drone Marketing */}
+          <FadeIn direction="right" delay={0.4}>
+            <HoverCard className="bg-gradient-to-br from-orange-900/30 to-red-900/30 backdrop-blur-sm p-8 rounded-xl border border-orange-800/50 hover:border-orange-500/50 transition-all h-full">
+              <div className="bg-gradient-to-r from-orange-600 to-red-600 p-3 rounded-lg inline-block mb-4">
+                <svg className="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2L13.09 8.26L19 7L14.74 11.26L21 12L14.74 12.74L19 17L13.09 15.74L12 22L10.91 15.74L5 17L9.26 12.74L3 12L9.26 11.26L5 7L10.91 8.26L12 2Z"/>
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-3">Marketing com Drone</h3>
+              <p className="text-blue-200 mb-6">
+                Imagens aéreas profissionais que destacam seu negócio. Criamos conteúdo visual impactante com drones 
+                para elevar sua marca e gerar engajamento extraordinário nas suas campanhas de marketing.
+              </p>
+              <Link
+                href="/services#drone-services"
+                className="flex items-center text-orange-400 hover:text-orange-300 font-medium group"
+              >
+                Descubra o Diferencial{" "}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
             </HoverCard>
