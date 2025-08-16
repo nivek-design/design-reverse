@@ -895,6 +895,243 @@ export default function ServicesPage() {
             </div>
           </section>
 
+          {/* Google Ads Detailed Section */}
+          <section className="py-20 bg-gradient-to-br from-purple-50 to-blue-50">
+            <div className="container mx-auto px-4">
+              <div className="text-center mb-16">
+                <FadeIn direction="up">
+                  <span className="inline-block px-4 py-2 bg-purple-100 text-purple-600 rounded-full text-sm font-medium mb-4">
+                    Gestão Especializada
+                  </span>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+                    Google Ads que Geram Resultados Reais
+                  </h2>
+                  <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Transformamos cada clique em oportunidade de negócio. Nossa gestão estratégica de campanhas 
+                    Google Ads maximiza seu investimento e acelera o crescimento da sua empresa.
+                  </p>
+                </FadeIn>
+              </div>
+
+              {/* Main Benefits Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <HoverCard className="bg-white p-8 rounded-xl shadow-lg border border-purple-100">
+                  <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <Search className="h-8 w-8 text-purple-600" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">Visibilidade Imediata</h3>
+                  <p className="text-gray-600 mb-4">
+                    Apareça no topo do Google quando seus clientes estão procurando exatamente o que você oferece.
+                  </p>
+                  <div className="text-purple-600 font-semibold">
+                    ✓ Resultados desde o primeiro dia
+                  </div>
+                </HoverCard>
+
+                <HoverCard className="bg-white p-8 rounded-xl shadow-lg border border-purple-100">
+                  <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <BarChart3 className="h-8 w-8 text-purple-600" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">ROI Otimizado</h3>
+                  <p className="text-gray-600 mb-4">
+                    Cada real investido é monitorado e otimizado para gerar o máximo retorno possível.
+                  </p>
+                  <div className="text-purple-600 font-semibold">
+                    ✓ Média de 280% de ROI
+                  </div>
+                </HoverCard>
+
+                <HoverCard className="bg-white p-8 rounded-xl shadow-lg border border-purple-100">
+                  <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <Users className="h-8 w-8 text-purple-600" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">Público Qualificado</h3>
+                  <p className="text-gray-600 mb-4">
+                    Direcionamos seus anúncios para pessoas que realmente têm interesse no seu produto ou serviço.
+                  </p>
+                  <div className="text-purple-600 font-semibold">
+                    ✓ Segmentação avançada
+                  </div>
+                </HoverCard>
+              </div>
+
+              {/* Detailed Features */}
+              <div className="bg-white rounded-2xl p-8 md:p-12 shadow-xl border border-purple-100">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                  <div>
+                    <h3 className="text-2xl font-bold mb-6 text-gray-900">
+                      O que está incluído na nossa gestão:
+                    </h3>
+                    
+                    <div className="space-y-6">
+                      <div className="flex items-start gap-4">
+                        <div className="bg-purple-100 p-2 rounded-full flex-shrink-0">
+                          <CheckCircle2 className="h-5 w-5 text-purple-600" />
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-gray-900 mb-1">Análise e Planejamento Estratégico</h4>
+                          <p className="text-gray-600">
+                            Estudamos seu mercado, concorrência e público-alvo para criar campanhas certeiras.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-4">
+                        <div className="bg-purple-100 p-2 rounded-full flex-shrink-0">
+                          <CheckCircle2 className="h-5 w-5 text-purple-600" />
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-gray-900 mb-1">Criação de Anúncios Persuasivos</h4>
+                          <p className="text-gray-600">
+                            Textos e criativos que chamam atenção e geram cliques qualificados.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-4">
+                        <div className="bg-purple-100 p-2 rounded-full flex-shrink-0">
+                          <CheckCircle2 className="h-5 w-5 text-purple-600" />
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-gray-900 mb-1">Otimização Contínua</h4>
+                          <p className="text-gray-600">
+                            Monitoramento diário e ajustes constantes para melhorar resultados.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-4">
+                        <div className="bg-purple-100 p-2 rounded-full flex-shrink-0">
+                          <CheckCircle2 className="h-5 w-5 text-purple-600" />
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-gray-900 mb-1">Relatórios Transparentes</h4>
+                          <p className="text-gray-600">
+                            Relatórios claros mostrando exatamente quantos leads e vendas geramos.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="relative">
+                    <div className="bg-gradient-to-br from-purple-600 to-blue-600 rounded-xl p-8 text-white">
+                      <h4 className="text-xl font-bold mb-6">Resultados Médios dos Nossos Clientes</h4>
+                      
+                      <div className="space-y-6">
+                        <div className="flex justify-between items-center">
+                          <span>Aumento em Conversões</span>
+                          <span className="text-2xl font-bold">+135%</span>
+                        </div>
+                        <div className="w-full bg-white/20 rounded-full h-3">
+                          <div className="bg-white h-3 rounded-full" style={{ width: "85%" }}></div>
+                        </div>
+
+                        <div className="flex justify-between items-center">
+                          <span>Redução no Custo por Cliente</span>
+                          <span className="text-2xl font-bold">-42%</span>
+                        </div>
+                        <div className="w-full bg-white/20 rounded-full h-3">
+                          <div className="bg-white h-3 rounded-full" style={{ width: "65%" }}></div>
+                        </div>
+
+                        <div className="flex justify-between items-center">
+                          <span>Retorno sobre Investimento</span>
+                          <span className="text-2xl font-bold">280%</span>
+                        </div>
+                        <div className="w-full bg-white/20 rounded-full h-3">
+                          <div className="bg-white h-3 rounded-full" style={{ width: "90%" }}></div>
+                        </div>
+                      </div>
+
+                      <div className="mt-8 p-4 bg-white/10 rounded-lg">
+                        <div className="text-center">
+                          <div className="text-3xl font-bold">R$ 25mil+</div>
+                          <div className="text-sm opacity-90">em investimento gerenciado mensalmente</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Campaign Types */}
+              <div className="mt-20">
+                <div className="text-center mb-12">
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900">
+                    Tipos de Campanhas que Gerenciamos
+                  </h3>
+                  <p className="text-gray-600 max-w-2xl mx-auto">
+                    Cada tipo de campanha tem seu objetivo específico para maximizar seus resultados.
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100 text-center">
+                    <div className="bg-blue-100 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Search className="h-7 w-7 text-blue-600" />
+                    </div>
+                    <h4 className="font-bold mb-2">Rede de Pesquisa</h4>
+                    <p className="text-gray-600 text-sm">Anúncios de texto nos resultados do Google</p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100 text-center">
+                    <div className="bg-green-100 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <ShoppingCart className="h-7 w-7 text-green-600" />
+                    </div>
+                    <h4 className="font-bold mb-2">Google Shopping</h4>
+                    <p className="text-gray-600 text-sm">Produtos com imagem, preço e avaliações</p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100 text-center">
+                    <div className="bg-orange-100 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Layers className="h-7 w-7 text-orange-600" />
+                    </div>
+                    <h4 className="font-bold mb-2">Rede Display</h4>
+                    <p className="text-gray-600 text-sm">Banners visuais em sites parceiros</p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100 text-center">
+                    <div className="bg-purple-100 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <MousePointerClick className="h-7 w-7 text-purple-600" />
+                    </div>
+                    <h4 className="font-bold mb-2">Remarketing</h4>
+                    <p className="text-gray-600 text-sm">Reconquiste quem já visitou seu site</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* CTA */}
+              <div className="mt-16 text-center">
+                <div className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl p-8 text-white">
+                  <h3 className="text-2xl font-bold mb-4">
+                    Pronto para multiplicar seus resultados com Google Ads?
+                  </h3>
+                  <p className="text-purple-100 mb-8 max-w-2xl mx-auto">
+                    Fale conosco e descubra como podemos colocar sua empresa no topo do Google 
+                    e gerar mais leads e vendas para seu negócio.
+                  </p>
+                  <div className="flex flex-wrap gap-4 justify-center">
+                    <Link href="/services/google-ads">
+                      <Button className="bg-white text-purple-600 hover:bg-purple-50 rounded-full px-8 py-6 text-lg transition-all duration-300 hover:translate-y-[-2px] hover:shadow-lg">
+                        Ver Detalhes Completos
+                        <ArrowRight className="ml-2 h-5 w-5" />
+                      </Button>
+                    </Link>
+                    <Link href="/contact?service=google-ads">
+                      <Button
+                        variant="outline"
+                        className="bg-transparent border-white text-white hover:bg-white/10 rounded-full px-8 py-6 text-lg transition-all duration-300 hover:translate-y-[-2px]"
+                      >
+                        Solicitar Análise Gratuita
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* Process Section */}
           <section className="py-20">
             <div className="container mx-auto px-4">
