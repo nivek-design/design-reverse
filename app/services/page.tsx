@@ -1,6 +1,40 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+
+export const metadata: Metadata = {
+  title: "Serviços de Marketing Digital Londrina | Sites, Google Ads, Drone, Redes Sociais - Design Reverse",
+  description: "Serviços completos de marketing digital em Londrina. Criação de sites, Google Ads, drone marketing, gerenciamento de redes sociais e SEO. Resultados comprovados desde 2019.",
+  keywords: [
+    "serviços marketing digital londrina",
+    "agência digital londrina", 
+    "marketing online londrina",
+    "publicidade digital londrina",
+    "consultoria marketing londrina",
+    "estratégia digital paraná",
+    "soluções digitais londrina",
+    "marketing 360 londrina",
+    "transformação digital londrina",
+    "crescimento digital londrina"
+  ],
+  openGraph: {
+    title: "Serviços de Marketing Digital Londrina | Design Reverse",
+    description: "Soluções completas de marketing digital em Londrina. Sites, Google Ads, Drone Marketing e Redes Sociais.",
+    url: "https://designreverse.com.br/services",
+    images: [
+      {
+        url: "/design-reverse-logo.PNG",
+        width: 1200,
+        height: 630,
+        alt: "Serviços Marketing Digital Londrina",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://designreverse.com.br/services",
+  },
+}
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { PageTransition } from "@/components/page-transition"

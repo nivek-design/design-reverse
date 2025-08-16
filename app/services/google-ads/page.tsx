@@ -1,6 +1,40 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+
+export const metadata: Metadata = {
+  title: "Google Ads Londrina | Gestão de Campanhas e Anúncios Pagos - Design Reverse",
+  description: "Gestão profissional de Google Ads em Londrina. Campanhas otimizadas, ROI maximizado e resultados mensuráveis. +135% aumento em conversões. Análise gratuita!",
+  keywords: [
+    "google ads londrina",
+    "campanhas google londrina", 
+    "anúncios pagos londrina",
+    "gestão google ads paraná",
+    "marketing pago londrina",
+    "tráfego pago londrina",
+    "campanhas adwords londrina",
+    "publicidade online londrina",
+    "google shopping londrina",
+    "remarketing londrina"
+  ],
+  openGraph: {
+    title: "Google Ads Londrina | Gestão Profissional de Campanhas",
+    description: "Campanhas de Google Ads otimizadas em Londrina. ROI maximizado, +135% aumento em conversões. Resultados comprovados.",
+    url: "https://designreverse.com.br/services/google-ads",
+    images: [
+      {
+        url: "/google-ads-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Google Ads Londrina - Gestão de Campanhas",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://designreverse.com.br/services/google-ads",
+  },
+}
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { PageTransition } from "@/components/page-transition"

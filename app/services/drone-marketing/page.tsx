@@ -1,6 +1,40 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+
+export const metadata: Metadata = {
+  title: "Drone Marketing Londrina | Filmagem Aérea 4K para Marketing Digital - Design Reverse",
+  description: "Serviços de drone marketing em Londrina. Filmagem aérea profissional 4K, fotos aéreas para marketing digital. Aumente o engajamento com imagens cinematográficas únicas!",
+  keywords: [
+    "drone marketing londrina",
+    "filmagem aérea londrina", 
+    "fotos drone londrina",
+    "vídeo aéreo londrina",
+    "drone 4k londrina",
+    "marketing aéreo paraná",
+    "filmagem drone profissional",
+    "imagens aéreas londrina",
+    "drone publicitário londrina",
+    "captação aérea londrina"
+  ],
+  openGraph: {
+    title: "Drone Marketing Londrina | Filmagem Aérea Profissional 4K",
+    description: "Imagens aéreas cinematográficas para seu marketing. Drone 4K, qualidade profissional em Londrina e região.",
+    url: "https://designreverse.com.br/services/drone-marketing",
+    images: [
+      {
+        url: "/drone-marketing-showcase.png",
+        width: 1200,
+        height: 630,
+        alt: "Drone Marketing Londrina - Filmagem Aérea 4K",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://designreverse.com.br/services/drone-marketing",
+  },
+};
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import {

@@ -9,6 +9,7 @@ import { TextReveal } from "@/components/animations/text-reveal"
 import { AnimatedBackground } from "@/components/animations/animated-background"
 import { DiferenciaisSection } from "@/components/sections/diferenciais-section"
 import { ProjetosSection } from "@/components/sections/projetos-section"
+import { StructuredData } from "@/components/seo/structured-data"
 
 export default function Home() {
   return (
@@ -236,6 +237,30 @@ export default function Home() {
       </section>
 
       <Footer />
+
+      {/* Dados Estruturados para SEO */}
+      <StructuredData 
+        type="Organization" 
+        data={{
+          "services": [
+            "Criação de Sites",
+            "Google Ads", 
+            "Drone Marketing",
+            "Gerenciamento de Redes Sociais",
+            "SEO"
+          ]
+        }}
+      />
+      <StructuredData 
+        type="LocalBusiness" 
+        data={{
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "50"
+          }
+        }}
+      />
     </div>
   )
 }

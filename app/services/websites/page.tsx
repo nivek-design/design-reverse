@@ -1,6 +1,40 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+
+export const metadata: Metadata = {
+  title: "Criação de Sites Profissionais em Londrina | Responsivos e Otimizados - Design Reverse",
+  description: "Criação de sites profissionais em Londrina e região. Sites responsivos, e-commerce, landing pages e aplicações web. SEO otimizado, design moderno e alta conversão. Orçamento gratuito!",
+  keywords: [
+    "criação sites londrina",
+    "desenvolvimento web londrina", 
+    "sites responsivos londrina",
+    "e-commerce londrina",
+    "landing pages londrina",
+    "sites profissionais paraná",
+    "web design londrina",
+    "sites otimizados seo londrina",
+    "criação loja virtual londrina",
+    "desenvolvimento website londrina"
+  ],
+  openGraph: {
+    title: "Criação de Sites Profissionais em Londrina | Design Reverse",
+    description: "Sites responsivos, e-commerce e landing pages em Londrina. Design moderno, SEO otimizado e alta conversão.",
+    url: "https://designreverse.com.br/services/websites",
+    images: [
+      {
+        url: "/sites-responsivos.png",
+        width: 1200,
+        height: 630,
+        alt: "Criação de Sites Profissionais Londrina",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://designreverse.com.br/services/websites",
+  },
+}
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { Code, Smartphone, Search, Zap, ShoppingCart, Building, FileText } from "lucide-react"
@@ -10,6 +44,7 @@ import { StaggerChildren } from "@/components/animations/stagger-children"
 import { ScaleIn } from "@/components/animations/scale-in"
 import { HoverCard } from "@/components/animations/hover-card"
 import { PageTransition } from "@/components/page-transition"
+import { BreadcrumbSchema } from "@/components/seo/breadcrumb-schema"
 
 export default function WebsitesServicePage() {
   return (
@@ -667,6 +702,14 @@ export default function WebsitesServicePage() {
         </section>
 
         <Footer />
+        
+        <BreadcrumbSchema 
+          items={[
+            { name: "Home", url: "https://designreverse.com.br" },
+            { name: "Serviços", url: "https://designreverse.com.br/services" },
+            { name: "Criação de Sites", url: "https://designreverse.com.br/services/websites" }
+          ]}
+        />
       </div>
     </PageTransition>
   )
