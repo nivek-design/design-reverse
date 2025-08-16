@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -25,86 +24,101 @@ const droneVideos: DroneVideo[] = [
   {
     id: "1",
     title: "Condomínio Residencial Premium",
-    description: "Vídeo promocional aéreo destacando a arquitetura moderna e área de lazer completa do empreendimento.",
+    description:
+      "Vídeo promocional aéreo destacando a arquitetura moderna e área de lazer completa do empreendimento.",
     thumbnail: "/drone-video-1.jpg",
     videoUrl: "#",
     duration: "2:15",
     location: "Londrina, PR",
     date: "Dezembro 2024",
     category: "Imobiliário",
-    views: "1.2K"
+    views: "1.2K",
   },
   {
     id: "2",
     title: "Evento Corporativo - Tech Summit",
-    description: "Cobertura aérea completa do maior evento de tecnologia da região, capturando a grandiosidade do evento.",
+    description:
+      "Cobertura aérea completa do maior evento de tecnologia da região, capturando a grandiosidade do evento.",
     thumbnail: "/drone-video-2.jpg",
     videoUrl: "#",
     duration: "3:45",
     location: "Centro de Convenções",
     date: "Novembro 2024",
     category: "Eventos",
-    views: "2.8K"
+    views: "2.8K",
   },
   {
     id: "3",
     title: "Resort de Luxo - Vista Panorâmica",
-    description: "Filmagem cinematográfica mostrando as instalações premium e paisagens deslumbrantes do resort.",
+    description:
+      "Filmagem cinematográfica mostrando as instalações premium e paisagens deslumbrantes do resort.",
     thumbnail: "/drone-video-3.jpg",
     videoUrl: "#",
     duration: "4:20",
     location: "Interior do Paraná",
     date: "Outubro 2024",
     category: "Turismo",
-    views: "3.5K"
+    views: "3.5K",
   },
   {
     id: "4",
     title: "Indústria Sustentável",
-    description: "Documentário aéreo sobre práticas sustentáveis e inovação tecnológica na indústria moderna.",
+    description:
+      "Documentário aéreo sobre práticas sustentáveis e inovação tecnológica na indústria moderna.",
     thumbnail: "/drone-video-4.jpg",
     videoUrl: "#",
     duration: "5:30",
     location: "Distrito Industrial",
     date: "Setembro 2024",
     category: "Industrial",
-    views: "1.9K"
+    views: "1.9K",
   },
   {
     id: "5",
     title: "Campus Universitário",
-    description: "Tour aéreo completo apresentando toda a infraestrutura e beleza arquitetônica do campus.",
+    description:
+      "Tour aéreo completo apresentando toda a infraestrutura e beleza arquitetônica do campus.",
     thumbnail: "/drone-video-5.jpg",
     videoUrl: "#",
     duration: "3:10",
     location: "Universidade Estadual",
     date: "Agosto 2024",
     category: "Institucional",
-    views: "4.1K"
+    views: "4.1K",
   },
   {
     id: "6",
     title: "Shopping Center Grand Opening",
-    description: "Cobertura aérea da inauguração do maior shopping da região com imagens espetaculares da multidão.",
+    description:
+      "Cobertura aérea da inauguração do maior shopping da região com imagens espetaculares da multidão.",
     thumbnail: "/drone-video-6.jpg",
     videoUrl: "#",
     duration: "2:45",
     location: "Novo Shopping Londrina",
     date: "Julho 2024",
     category: "Comercial",
-    views: "5.2K"
-  }
+    views: "5.2K",
+  },
 ];
 
-const categories = ["Todos", "Imobiliário", "Eventos", "Turismo", "Industrial", "Institucional", "Comercial"];
+const categories = [
+  "Todos",
+  "Imobiliário",
+  "Eventos",
+  "Turismo",
+  "Industrial",
+  "Institucional",
+  "Comercial",
+];
 
 export function DroneVideosSection() {
   const [selectedCategory, setSelectedCategory] = useState("Todos");
   const [selectedVideo, setSelectedVideo] = useState<DroneVideo | null>(null);
 
-  const filteredVideos = selectedCategory === "Todos" 
-    ? droneVideos 
-    : droneVideos.filter(video => video.category === selectedCategory);
+  const filteredVideos =
+    selectedCategory === "Todos"
+      ? droneVideos
+      : droneVideos.filter((video) => video.category === selectedCategory);
 
   const handlePlayVideo = (video: DroneVideo) => {
     setSelectedVideo(video);
@@ -123,8 +137,9 @@ export function DroneVideosSection() {
               Vídeos Profissionais com Drone
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Descubra nossa coleção de vídeos aéreos cinematográficos que elevam marcas e contam histórias únicas. 
-              Cada projeto é uma obra de arte visual criada para gerar impacto e resultados.
+              Descubra nossa coleção de vídeos aéreos cinematográficos que
+              elevam marcas e contam histórias únicas. Cada projeto é uma obra
+              de arte visual criada para gerar impacto e resultados.
             </p>
           </FadeIn>
         </div>
@@ -149,7 +164,7 @@ export function DroneVideosSection() {
         </FadeIn>
 
         {/* Videos Grid */}
-        <StaggerChildren className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredVideos.map((video, index) => (
             <FadeIn key={video.id} direction="up" delay={0.1 * index}>
               <HoverCard className="group relative bg-gray-900/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-800/50 hover:border-orange-500/50 transition-all duration-500">
@@ -160,17 +175,20 @@ export function DroneVideosSection() {
                     alt={video.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  
+
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  
+
                   {/* Play Button */}
                   <button
                     onClick={() => handlePlayVideo(video)}
                     className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   >
                     <div className="bg-orange-500/90 backdrop-blur-sm rounded-full p-4 transform scale-75 group-hover:scale-100 transition-transform duration-300 hover:bg-orange-600">
-                      <Play className="h-8 w-8 text-white ml-1" fill="currentColor" />
+                      <Play
+                        className="h-8 w-8 text-white ml-1"
+                        fill="currentColor"
+                      />
                     </div>
                   </button>
 
@@ -225,7 +243,7 @@ export function DroneVideosSection() {
               </HoverCard>
             </FadeIn>
           ))}
-        </StaggerChildren>
+        </div>
 
         {/* CTA Section */}
         <div className="mt-20 text-center">
@@ -235,8 +253,9 @@ export function DroneVideosSection() {
                 Pronto para criar seu próximo vídeo aéreo?
               </h3>
               <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-                Transforme sua visão em realidade com nossa expertise em filmagem aérea profissional. 
-                Vamos criar conteúdo que eleva sua marca e gera resultados extraordinários.
+                Transforme sua visão em realidade com nossa expertise em
+                filmagem aérea profissional. Vamos criar conteúdo que eleva sua
+                marca e gera resultados extraordinários.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 rounded-full px-8 py-6 text-lg font-semibold transition-all duration-300 hover:translate-y-[-2px] hover:shadow-xl">
