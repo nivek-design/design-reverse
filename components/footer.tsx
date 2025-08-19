@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
 
 export function Footer() {
@@ -10,10 +11,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Logo and About */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="size-6 rounded-full bg-white/20 flex items-center justify-center">
-                <div className="size-3 rounded-full bg-white"></div>
-              </div>
+            <div className="flex items-center gap-3 mb-4">
+              <Image 
+                src="/design-reverse-logo.png" 
+                alt="Design Reverse Logo" 
+                width={32}
+                height={32}
+                className="w-8 h-8"
+              />
               <span className="font-bold text-lg">DESIGN REVERSE</span>
             </div>
             <p className="text-blue-200 mb-4">
