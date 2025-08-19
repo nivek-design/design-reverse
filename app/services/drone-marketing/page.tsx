@@ -4,11 +4,13 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Drone Marketing Londrina | Filmagem Aérea 4K para Marketing Digital - Design Reverse",
-  description: "Serviços de drone marketing em Londrina. Filmagem aérea profissional 4K, fotos aéreas para marketing digital. Aumente o engajamento com imagens cinematográficas únicas!",
+  title:
+    "Drone Marketing Londrina | Filmagem Aérea 4K para Marketing Digital - Design Reverse",
+  description:
+    "Serviços de drone marketing em Londrina. Filmagem aérea profissional 4K, fotos aéreas para marketing digital. Aumente o engajamento com imagens cinematográficas únicas!",
   keywords: [
     "drone marketing londrina",
-    "filmagem aérea londrina", 
+    "filmagem aérea londrina",
     "fotos drone londrina",
     "vídeo aéreo londrina",
     "drone 4k londrina",
@@ -16,11 +18,12 @@ export const metadata: Metadata = {
     "filmagem drone profissional",
     "imagens aéreas londrina",
     "drone publicitário londrina",
-    "captação aérea londrina"
+    "captação aérea londrina",
   ],
   openGraph: {
     title: "Drone Marketing Londrina | Filmagem Aérea Profissional 4K",
-    description: "Imagens aéreas cinematográficas para seu marketing. Drone 4K, qualidade profissional em Londrina e região.",
+    description:
+      "Imagens aéreas cinematográficas para seu marketing. Drone 4K, qualidade profissional em Londrina e região.",
     url: "https://designreverse.com.br/services/drone-marketing",
     images: [
       {
@@ -307,6 +310,9 @@ export default function DroneMarketingPage() {
                     Pacote Start
                   </h3>
                   <p className="text-gray-600">Ideal para Redes Sociais</p>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    A partir de <span className="text-blue-600">R$ 500,00</span>
+                  </h3>
                 </div>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3">
@@ -352,6 +358,10 @@ export default function DroneMarketingPage() {
                     Pacote Pro
                   </h3>
                   <p className="text-gray-600">O Mais Popular</p>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    A partir de{" "}
+                    <span className="text-orange-600">R$ 1.200,00</span>
+                  </h3>
                 </div>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3">
@@ -393,7 +403,11 @@ export default function DroneMarketingPage() {
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">
                     Pacote Premium
                   </h3>
-                  <p className="text-gray-600">Produção Cinematográfica</p>
+                  <p className="text-gray-600">Produção Premium</p>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    A partir de{" "}
+                    <span className="text-purple-600">R$ 2.800,00</span>
+                  </h3>
                 </div>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3">
