@@ -70,7 +70,7 @@ export default function ServicesPage() {
             <div className="max-w-4xl mx-auto text-center">
               <FadeIn direction="up">
                 <span className="inline-block px-3 py-1 bg-blue-600/30 text-blue-300 rounded-full text-sm font-medium mb-4">
-                  Soluções para Pequenas Empresas
+                  Soluções para Pequenas, Médias e Grandes Empresas
                 </span>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                   Marketing digital que cabe no seu orçamento e gera resultados reais
@@ -875,7 +875,7 @@ export default function ServicesPage() {
                       <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg transform rotate-3 scale-105 opacity-20"></div>
                       <div className="relative bg-white rounded-lg shadow-xl overflow-hidden border border-gray-200">
                         <Image
-                          src="/drone-marketing-showcase.png"
+                          src="/drone-dji-4-mini-2.png"
                           alt="Marketing com Drone"
                           width={600}
                           height={400}

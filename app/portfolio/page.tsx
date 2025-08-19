@@ -870,7 +870,7 @@ export default function PortfolioPage() {
 
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-orange-500/20 p-4 rounded-lg text-center">
-                      <div className="text-orange-400 font-bold text-2xl">50+</div>
+                      <div className="text-orange-400 font-bold text-2xl">10+</div>
                       <div className="text-orange-300 text-sm">Vídeos Produzidos</div>
                     </div>
                     <div className="bg-red-500/20 p-4 rounded-lg text-center">
@@ -962,12 +962,12 @@ export default function PortfolioPage() {
                   <h4 className="text-xl font-bold mb-4 text-center">Equipamentos Profissionais</h4>
                   <div className="space-y-3 text-sm">
                     <div className="flex justify-between">
-                      <span>DJI Mavic Pro 3</span>
+                      <span>DJI 4 mini pro</span>
                       <span className="text-orange-400">4K/60fps</span>
                     </div>
                     <div className="flex justify-between">
                       <span>Gimbal Estabilizado</span>
-                      <span className="text-orange-400">Ultra Smooth</span>
+                      <span className="text-orange-400">DJI 4 mini pro</span>
                     </div>
                     <div className="flex justify-between">
                       <span>Edição Profissional</span>

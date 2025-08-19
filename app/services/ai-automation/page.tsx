@@ -341,7 +341,7 @@ export default function AIAutomationPage() {
                   <div className="relative">
                     <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-lg transform rotate-3 scale-105 opacity-20"></div>
                     <Image
-                      src="/ai-automation-showcase.png"
+                      src="/automação-ia.png"
                       alt="Automação com IA Showcase"
                       width={600}
                       height={400}
