@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { usePathname, useRouter } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
@@ -164,17 +165,21 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
 
   return (
     <header className="container mx-auto px-4 py-6 flex items-center justify-between relative z-50">
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-3">
         <motion.div
-          className="size-6 rounded-full bg-white/20 flex items-center justify-center"
-          whileHover={{ scale: 1.2 }}
+          className="flex-shrink-0"
+          whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
         >
-          <div className="size-3 rounded-full bg-white"></div>
+          <img 
+            src="/design-reverse-logotipo-sem-fundo.png" 
+            alt="Design Reverse Logo" 
+            className="h-12 w-auto"
+          />
         </motion.div>
-        <div className="flex flex-wrap items-center justify-center ">
+        <div className="flex flex-col">
           <motion.div
-            className="font-bold text-lg w-full"
+            className="font-bold text-lg leading-tight"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
@@ -182,10 +187,10 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
             {logoName}
           </motion.div>
           <motion.div
-            className="font-bold text-xs w-full"
+            className="font-bold text-xs leading-tight"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
           >
             {logoDescription}
           </motion.div>
@@ -275,7 +280,14 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
             >
               {/* Cabeçalho do menu mobile */}
               <div className="flex items-center justify-between p-6 border-b border-gray-800">
-                <span className="font-bold text-xl">{logoName}</span>
+                <div className="flex items-center gap-2">
+                  <img 
+                    src="/design-reverse-logotipo-sem-fundo.png" 
+                    alt="Design Reverse Logo" 
+                    className="h-8 w-auto"
+                  />
+                  <span className="font-bold text-lg">{logoName}</span>
+                </div>
                 <button
                   onClick={() => setMobileMenuOpen(false)}
                   className="p-2 rounded-full hover:bg-gray-800"
