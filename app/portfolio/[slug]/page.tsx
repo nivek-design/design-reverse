@@ -26,6 +26,7 @@ import { StaggerChildren } from "@/components/animations/stagger-children"
 import { ScaleIn } from "@/components/animations/scale-in"
 import { AnimatedCounter } from "@/components/animations/animated-counter"
 import { PageTransition } from "@/components/page-transition"
+import { use } from "react"
 
 // Enhanced project data with updated content
 const projects = {
@@ -185,8 +186,9 @@ const projects = {
   }
 }
 
-export default function ProjectDetailPage({ params }: { params: { slug: string } }) {
-  const project = projects[params.slug as keyof typeof projects]
+export default function ProjectDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = use(params)
+  const project = projects[slug as keyof typeof projects]
 
   if (!project) {
     return <div>Projeto não encontrado</div>
