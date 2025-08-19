@@ -1165,6 +1165,265 @@ export default function ServicesPage() {
             </div>
           </section>
 
+          {/* Social Media Management Section */}
+          <section className="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
+            <div className="container mx-auto px-4">
+              <div className="flex flex-col md:flex-row gap-16 items-center">
+                <div className="md:w-1/2">
+                  <FadeIn direction="left">
+                    <span className="inline-block px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm font-medium mb-4">
+                      Redes Sociais
+                    </span>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+                      Transforme suas redes sociais em máquinas de vendas
+                    </h2>
+                    <p className="text-lg text-gray-700 mb-8">
+                      Deixe a gestão de mídias sociais com quem entende do assunto. Gerenciamento completo 
+                      para negócios que querem resultados reais e crescimento consistente nas redes sociais.
+                    </p>
+
+                    <div className="space-y-4 mb-8">
+                      <div className="flex items-start gap-3">
+                        <div className="mt-1 text-purple-600">
+                          <CheckCircle2 className="h-5 w-5" />
+                        </div>
+                        <div>
+                          <h3 className="font-semibold text-gray-900">Conteúdo Estratégico</h3>
+                          <p className="text-gray-600">
+                            Criamos posts que geram engajamento e conectam com sua audiência de forma autêntica.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-3">
+                        <div className="mt-1 text-purple-600">
+                          <CheckCircle2 className="h-5 w-5" />
+                        </div>
+                        <div>
+                          <h3 className="font-semibold text-gray-900">Gestão Completa</h3>
+                          <p className="text-gray-600">
+                            Planejamento, criação, publicação e interação. Cuidamos de tudo para você focar no seu negócio.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-3">
+                        <div className="mt-1 text-purple-600">
+                          <CheckCircle2 className="h-5 w-5" />
+                        </div>
+                        <div>
+                          <h3 className="font-semibold text-gray-900">Resultados Mensuráveis</h3>
+                          <p className="text-gray-600">
+                            Relatórios detalhados mostrando crescimento de seguidores, engajamento e conversões.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <Link href="/services/social-media">
+                      <Button className="bg-purple-600 hover:bg-purple-700 rounded-md px-6 py-3 text-white">
+                        Ver Planos de Redes Sociais
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
+                    </Link>
+                  </FadeIn>
+                </div>
+
+                <div className="md:w-1/2 relative">
+                  <ScaleIn delay={0.3}>
+                    <div className="relative">
+                      <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg transform -rotate-3 scale-105 opacity-20"></div>
+                      <div className="relative bg-white rounded-lg shadow-xl overflow-hidden border border-gray-200">
+                        <div className="p-8">
+                          <div className="grid grid-cols-1 gap-6">
+                            {/* Instagram Post Mockup */}
+                            <div className="bg-gradient-to-br from-purple-100 to-pink-100 p-6 rounded-xl">
+                              <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                                  <Users className="h-6 w-6 text-white" />
+                                </div>
+                                <div>
+                                  <h3 className="font-bold text-gray-900">Instagram</h3>
+                                  <p className="text-sm text-gray-600">Engajamento: +150%</p>
+                                </div>
+                              </div>
+                              <div className="bg-white p-4 rounded-lg">
+                                <p className="text-sm text-gray-700 mb-3">
+                                  "Conteúdo que conecta e converte! ✨"
+                                </p>
+                                <div className="flex items-center gap-4 text-xs text-gray-500">
+                                  <span>❤️ 1,2k</span>
+                                  <span>💬 89</span>
+                                  <span>📤 45</span>
+                                </div>
+                              </div>
+                            </div>
+
+                            {/* Facebook Post Mockup */}
+                            <div className="bg-gradient-to-br from-blue-100 to-purple-100 p-6 rounded-xl">
+                              <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
+                                  <Globe className="h-6 w-6 text-white" />
+                                </div>
+                                <div>
+                                  <h3 className="font-bold text-gray-900">Facebook</h3>
+                                  <p className="text-sm text-gray-600">Alcance: +85%</p>
+                                </div>
+                              </div>
+                              <div className="bg-white p-4 rounded-lg">
+                                <p className="text-sm text-gray-700 mb-3">
+                                  Posts estratégicos que geram leads qualificados
+                                </p>
+                                <div className="flex items-center gap-4 text-xs text-gray-500">
+                                  <span>👍 892</span>
+                                  <span>💬 67</span>
+                                  <span>📤 23</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ScaleIn>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* AI Automation Section */}
+          <section className="py-20 bg-gradient-to-br from-emerald-900 to-cyan-900 text-white">
+            <div className="container mx-auto px-4">
+              <div className="flex flex-col md:flex-row-reverse gap-16 items-center">
+                <div className="md:w-1/2">
+                  <FadeIn direction="right">
+                    <span className="inline-block px-3 py-1 bg-emerald-100 text-emerald-600 rounded-full text-sm font-medium mb-4">
+                      Automação com IA
+                    </span>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+                      Sua empresa operando 24/7 com Inteligência Artificial
+                    </h2>
+                    <p className="text-lg text-emerald-100 mb-8">
+                      Transforme conversas em vendas com chatbots alimentados por IA. Automatize atendimento 
+                      no WhatsApp, Instagram, Telegram e mais. Menos tarefas repetitivas, mais resultados.
+                    </p>
+
+                    <div className="space-y-4 mb-8">
+                      <div className="flex items-start gap-3">
+                        <div className="mt-1 text-emerald-400">
+                          <CheckCircle2 className="h-5 w-5" />
+                        </div>
+                        <div>
+                          <h3 className="font-semibold text-white">Atendimento 24/7</h3>
+                          <p className="text-emerald-100">
+                            Chatbots inteligentes que respondem clientes a qualquer hora, qualificando leads automaticamente.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-3">
+                        <div className="mt-1 text-emerald-400">
+                          <CheckCircle2 className="h-5 w-5" />
+                        </div>
+                        <div>
+                          <h3 className="font-semibold text-white">Múltiplas Plataformas</h3>
+                          <p className="text-emerald-100">
+                            Integração com WhatsApp, Instagram, Telegram, Facebook e seu site. Tudo centralizado.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-3">
+                        <div className="mt-1 text-emerald-400">
+                          <CheckCircle2 className="h-5 w-5" />
+                        </div>
+                        <div>
+                          <h3 className="font-semibold text-white">IA Conversacional</h3>
+                          <p className="text-emerald-100">
+                            Bots que entendem perguntas naturais e respondem como um humano experiente.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <Link href="/services/ai-automation">
+                      <Button className="bg-emerald-500 hover:bg-emerald-600 rounded-md px-6 py-3 text-white">
+                        Ver Pacotes de Automação
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
+                    </Link>
+                  </FadeIn>
+                </div>
+
+                <div className="md:w-1/2 relative">
+                  <ScaleIn delay={0.3}>
+                    <div className="relative">
+                      <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-lg transform rotate-3 scale-105 opacity-20"></div>
+                      <div className="relative bg-white rounded-lg shadow-xl overflow-hidden border border-gray-200">
+                        <div className="p-8">
+                          {/* Chat Interface Mockup */}
+                          <div className="bg-gray-100 rounded-lg p-4 mb-4">
+                            <div className="flex items-center gap-3 mb-4">
+                              <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                                <MessageCircle className="h-4 w-4 text-white" />
+                              </div>
+                              <span className="font-semibold text-gray-900">ChatBot IA</span>
+                              <div className="ml-auto w-3 h-3 bg-green-500 rounded-full"></div>
+                            </div>
+
+                            <div className="space-y-3">
+                              {/* User message */}
+                              <div className="flex justify-end">
+                                <div className="bg-blue-500 text-white p-3 rounded-lg max-w-xs">
+                                  <p className="text-sm">Olá! Gostaria de saber sobre seus serviços</p>
+                                </div>
+                              </div>
+
+                              {/* Bot response */}
+                              <div className="flex justify-start">
+                                <div className="bg-white border p-3 rounded-lg max-w-xs">
+                                  <p className="text-sm text-gray-800">
+                                    Olá! 😊 Claro! Oferecemos criação de sites, Google Ads, redes sociais e automação. 
+                                    Qual serviço te interessa mais?
+                                  </p>
+                                </div>
+                              </div>
+
+                              {/* Quick reply buttons */}
+                              <div className="flex flex-wrap gap-2">
+                                <button className="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs">
+                                  Sites
+                                </button>
+                                <button className="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs">
+                                  Google Ads
+                                </button>
+                                <button className="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs">
+                                  Orçamento
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* Stats */}
+                          <div className="grid grid-cols-2 gap-4">
+                            <div className="bg-emerald-50 p-3 rounded-lg text-center">
+                              <div className="text-2xl font-bold text-emerald-600">24/7</div>
+                              <div className="text-xs text-gray-600">Atendimento</div>
+                            </div>
+                            <div className="bg-cyan-50 p-3 rounded-lg text-center">
+                              <div className="text-2xl font-bold text-cyan-600">85%</div>
+                              <div className="text-xs text-gray-600">+ Conversões</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ScaleIn>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* Google Ads Detailed Section */}
           
           {/* Process Section */}
