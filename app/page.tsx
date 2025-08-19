@@ -254,6 +254,38 @@ export default function Home() {
             </HoverCard>
           </FadeIn>
         </div>
+
+        {/* Second row with AI Automation */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6 max-w-4xl mx-auto mt-6">
+          {/* Service Card 5 - AI Automation */}
+          <FadeIn direction="up" delay={0.6}>
+            <HoverCard className="bg-gradient-to-br from-emerald-900/30 to-cyan-900/30 backdrop-blur-sm p-8 rounded-xl border border-emerald-800/50 hover:border-emerald-500/50 transition-all h-full">
+              <div className="bg-gradient-to-r from-emerald-600 to-cyan-600 p-3 rounded-lg inline-block mb-4">
+                <svg
+                  className="h-6 w-6 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  <circle cx="12" cy="12" r="3" opacity="0.6"/>
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-3">
+                Automação com Inteligência Artificial
+              </h3>
+              <p className="text-blue-200 mb-6">
+                Chatbots inteligentes para WhatsApp, Instagram e mais. Automatize atendimento, qualifique leads e venda 24/7. Sua empresa operando no piloto automático com IA que converte conversas em vendas.
+              </p>
+              <Link
+                href="/services/ai-automation"
+                className="flex items-center text-emerald-400 hover:text-emerald-300 font-medium group"
+              >
+                Descobrir Automação IA{" "}
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </Link>
+            </HoverCard>
+          </FadeIn>
+        </div>
       </section>
 
       {/* Diferenciais Section */}
