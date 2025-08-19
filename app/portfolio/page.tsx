@@ -1,16 +1,15 @@
-
-import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
-import { PageTransition } from "@/components/page-transition"
-import { FadeIn } from "@/components/animations/fade-in"
-import { HoverCard } from "@/components/animations/hover-card"
-import { ScaleIn } from "@/components/animations/scale-in"
-import { 
-  Code, 
-  BarChart2, 
-  Camera, 
-  Users, 
-  Bot, 
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
+import { PageTransition } from "@/components/page-transition";
+import { FadeIn } from "@/components/animations/fade-in";
+import { HoverCard } from "@/components/animations/hover-card";
+import { ScaleIn } from "@/components/animations/scale-in";
+import {
+  Code,
+  BarChart2,
+  Camera,
+  Users,
+  Bot,
   MessageCircle,
   ArrowRight,
   Star,
@@ -28,12 +27,12 @@ import {
   User,
   Calendar,
   Phone,
-  Rocket
-} from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { ScrollVideo } from "@/components/animations/scroll-video"
-import Link from "next/link"
-import Image from "next/image"
+  Rocket,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ScrollVideo } from "@/components/animations/scroll-video";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function PortfolioPage() {
   return (
@@ -53,27 +52,40 @@ export default function PortfolioPage() {
                 Projetos que Transformaram Negócios
               </h1>
               <p className="text-xl text-blue-200 mb-12 max-w-3xl mx-auto leading-relaxed">
-                Conheça os casos de sucesso que mudaram a realidade de nossos clientes. 
-                Cada projeto é uma história de crescimento, inovação e resultados mensuráveis.
+                Conheça os casos de sucesso que mudaram a realidade de nossos
+                clientes. Cada projeto é uma história de crescimento, inovação e
+                resultados mensuráveis.
               </p>
             </FadeIn>
 
             <FadeIn direction="up" delay={0.3}>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-400 mb-2">50+</div>
-                  <div className="text-blue-200 text-sm">Projetos Entregues</div>
+                  <div className="text-3xl font-bold text-blue-400 mb-2">
+                    50+
+                  </div>
+                  <div className="text-blue-200 text-sm">
+                    Projetos Entregues
+                  </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-green-400 mb-2">280%</div>
+                  <div className="text-3xl font-bold text-green-400 mb-2">
+                    280%
+                  </div>
                   <div className="text-blue-200 text-sm">ROI Médio</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-400 mb-2">100%</div>
-                  <div className="text-blue-200 text-sm">Clientes Satisfeitos</div>
+                  <div className="text-3xl font-bold text-purple-400 mb-2">
+                    100%
+                  </div>
+                  <div className="text-blue-200 text-sm">
+                    Clientes Satisfeitos
+                  </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-cyan-400 mb-2">3 anos</div>
+                  <div className="text-3xl font-bold text-cyan-400 mb-2">
+                    3 anos
+                  </div>
                   <div className="text-blue-200 text-sm">de Experiência</div>
                 </div>
               </div>
@@ -94,7 +106,8 @@ export default function PortfolioPage() {
                   Sites que <span className="text-blue-400">Vendem 24/7</span>
                 </h2>
                 <p className="text-xl text-blue-200 max-w-3xl mx-auto">
-                  Cada site desenvolvido é uma máquina de vendas otimizada para conversão
+                  Cada site desenvolvido é uma máquina de vendas otimizada para
+                  conversão
                 </p>
               </FadeIn>
             </div>
@@ -123,22 +136,35 @@ export default function PortfolioPage() {
                         className="rounded-full"
                       />
                       <div>
-                        <h3 className="text-xl font-bold">Laura Rossini Advocacia</h3>
-                        <p className="text-blue-300 text-sm">Landing Page Institucional</p>
+                        <h3 className="text-xl font-bold">
+                          Laura Rossini Advocacia
+                        </h3>
+                        <p className="text-blue-300 text-sm">
+                          Landing Page Institucional
+                        </p>
                       </div>
                     </div>
                     <p className="text-blue-200 mb-6 leading-relaxed">
-                      Site institucional moderno e profissional que transmite confiança e autoridade, 
-                      aumentando a credibilidade da advocacia no mercado digital.
+                      Site institucional moderno e profissional que transmite
+                      confiança e autoridade, aumentando a credibilidade da
+                      advocacia no mercado digital.
                     </p>
                     <div className="grid grid-cols-2 gap-4 mb-6">
                       <div className="bg-green-500/20 p-3 rounded-lg text-center">
-                        <div className="text-green-400 font-bold text-lg">+85%</div>
-                        <div className="text-green-300 text-sm">Visibilidade Online</div>
+                        <div className="text-green-400 font-bold text-lg">
+                          +85%
+                        </div>
+                        <div className="text-green-300 text-sm">
+                          Visibilidade Online
+                        </div>
                       </div>
                       <div className="bg-blue-500/20 p-3 rounded-lg text-center">
-                        <div className="text-blue-400 font-bold text-lg">+60%</div>
-                        <div className="text-blue-300 text-sm">Novos Clientes</div>
+                        <div className="text-blue-400 font-bold text-lg">
+                          +60%
+                        </div>
+                        <div className="text-blue-300 text-sm">
+                          Novos Clientes
+                        </div>
                       </div>
                     </div>
                     <Link href="/portfolio/laura-rossini-adv">
@@ -174,21 +200,32 @@ export default function PortfolioPage() {
                         className="rounded-full"
                       />
                       <div>
-                        <h3 className="text-xl font-bold">Odontologia Zorzzela</h3>
-                        <p className="text-green-300 text-sm">Landing Page Médica</p>
+                        <h3 className="text-xl font-bold">
+                          Odontologia Zorzzela
+                        </h3>
+                        <p className="text-green-300 text-sm">
+                          Landing Page Médica
+                        </p>
                       </div>
                     </div>
                     <p className="text-blue-200 mb-6 leading-relaxed">
-                      Landing page otimizada para conversão de agendamentos, com design clean e 
-                      foco na experiência do paciente, resultando em crescimento excepcional.
+                      Landing page otimizada para conversão de agendamentos, com
+                      design clean e foco na experiência do paciente, resultando
+                      em crescimento excepcional.
                     </p>
                     <div className="grid grid-cols-2 gap-4 mb-6">
                       <div className="bg-green-500/20 p-3 rounded-lg text-center">
-                        <div className="text-green-400 font-bold text-lg">+150%</div>
-                        <div className="text-green-300 text-sm">Agendamentos</div>
+                        <div className="text-green-400 font-bold text-lg">
+                          +150%
+                        </div>
+                        <div className="text-green-300 text-sm">
+                          Agendamentos
+                        </div>
                       </div>
                       <div className="bg-purple-500/20 p-3 rounded-lg text-center">
-                        <div className="text-purple-400 font-bold text-lg">+85%</div>
+                        <div className="text-purple-400 font-bold text-lg">
+                          +85%
+                        </div>
                         <div className="text-purple-300 text-sm">Conversão</div>
                       </div>
                     </div>
@@ -226,20 +263,29 @@ export default function PortfolioPage() {
                       />
                       <div>
                         <h3 className="text-xl font-bold">Londrina EPIs</h3>
-                        <p className="text-orange-300 text-sm">E-commerce Completo</p>
+                        <p className="text-orange-300 text-sm">
+                          E-commerce Completo
+                        </p>
                       </div>
                     </div>
                     <p className="text-blue-200 mb-6 leading-relaxed">
-                      Plataforma de e-commerce robusta e otimizada que transformou vendas online, 
-                      superando as vendas físicas em apenas 2 meses de operação.
+                      Plataforma de e-commerce robusta e otimizada que
+                      transformou vendas online, superando as vendas físicas em
+                      apenas 2 meses de operação.
                     </p>
                     <div className="grid grid-cols-2 gap-4 mb-6">
                       <div className="bg-orange-500/20 p-3 rounded-lg text-center">
-                        <div className="text-orange-400 font-bold text-lg">+320%</div>
-                        <div className="text-orange-300 text-sm">Vendas Online</div>
+                        <div className="text-orange-400 font-bold text-lg">
+                          +320%
+                        </div>
+                        <div className="text-orange-300 text-sm">
+                          Vendas Online
+                        </div>
                       </div>
                       <div className="bg-red-500/20 p-3 rounded-lg text-center">
-                        <div className="text-red-400 font-bold text-lg">+180%</div>
+                        <div className="text-red-400 font-bold text-lg">
+                          +180%
+                        </div>
                         <div className="text-red-300 text-sm">Faturamento</div>
                       </div>
                     </div>
@@ -272,21 +318,32 @@ export default function PortfolioPage() {
                         <Globe className="h-5 w-5 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-bold">Portal Gaming Elite</h3>
-                        <p className="text-purple-300 text-sm">Portal de Entretenimento</p>
+                        <h3 className="text-xl font-bold">
+                          Portal Gaming Elite
+                        </h3>
+                        <p className="text-purple-300 text-sm">
+                          Portal de Entretenimento
+                        </p>
                       </div>
                     </div>
                     <p className="text-blue-200 mb-6 leading-relaxed">
-                      Portal moderno e interativo para comunidade gamer, com sistema de reviews, 
-                      rankings e integração social que engaja milhares de usuários.
+                      Portal moderno e interativo para comunidade gamer, com
+                      sistema de reviews, rankings e integração social que
+                      engaja milhares de usuários.
                     </p>
                     <div className="grid grid-cols-2 gap-4 mb-6">
                       <div className="bg-purple-500/20 p-3 rounded-lg text-center">
-                        <div className="text-purple-400 font-bold text-lg">10k+</div>
-                        <div className="text-purple-300 text-sm">Usuários Ativos</div>
+                        <div className="text-purple-400 font-bold text-lg">
+                          10k+
+                        </div>
+                        <div className="text-purple-300 text-sm">
+                          Usuários Ativos
+                        </div>
                       </div>
                       <div className="bg-pink-500/20 p-3 rounded-lg text-center">
-                        <div className="text-pink-400 font-bold text-lg">+250%</div>
+                        <div className="text-pink-400 font-bold text-lg">
+                          +250%
+                        </div>
                         <div className="text-pink-300 text-sm">Engajamento</div>
                       </div>
                     </div>
@@ -313,10 +370,12 @@ export default function PortfolioPage() {
                   Google Ads Campaigns
                 </div>
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                  Campanhas que <span className="text-green-400">Multiplicam Vendas</span>
+                  Campanhas que{" "}
+                  <span className="text-green-400">Multiplicam Vendas</span>
                 </h2>
                 <p className="text-xl text-blue-200 max-w-3xl mx-auto">
-                  Resultados científicos e mensuráveis que transformam investimento em lucro
+                  Resultados científicos e mensuráveis que transformam
+                  investimento em lucro
                 </p>
               </FadeIn>
             </div>
@@ -327,17 +386,24 @@ export default function PortfolioPage() {
                   <div className="bg-gradient-to-r from-green-600 to-emerald-600 p-4 rounded-xl inline-block mb-6">
                     <TrendingUp className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-4">Laura Rossini Advocacia</h3>
+                  <h3 className="text-2xl font-bold mb-4">
+                    Laura Rossini Advocacia
+                  </h3>
                   <p className="text-blue-200 mb-6">
-                    Campanha focada em captação de clientes para serviços jurídicos especializados
+                    Campanha focada em captação de clientes para serviços
+                    jurídicos especializados
                   </p>
                   <div className="space-y-4 mb-8">
                     <div className="bg-green-500/20 p-4 rounded-lg">
-                      <div className="text-green-400 font-bold text-2xl">480%</div>
+                      <div className="text-green-400 font-bold text-2xl">
+                        480%
+                      </div>
                       <div className="text-green-300">ROI</div>
                     </div>
                     <div className="bg-blue-500/20 p-4 rounded-lg">
-                      <div className="text-blue-400 font-bold text-2xl">+180%</div>
+                      <div className="text-blue-400 font-bold text-2xl">
+                        +180%
+                      </div>
                       <div className="text-blue-300">Novos Clientes</div>
                     </div>
                   </div>
@@ -354,17 +420,24 @@ export default function PortfolioPage() {
                   <div className="bg-gradient-to-r from-blue-600 to-cyan-600 p-4 rounded-xl inline-block mb-6">
                     <Target className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-4">Odontologia Zorzzela</h3>
+                  <h3 className="text-2xl font-bold mb-4">
+                    Odontologia Zorzzela
+                  </h3>
                   <p className="text-blue-200 mb-6">
-                    Campanha de agendamentos para tratamentos odontológicos especializados
+                    Campanha de agendamentos para tratamentos odontológicos
+                    especializados
                   </p>
                   <div className="space-y-4 mb-8">
                     <div className="bg-blue-500/20 p-4 rounded-lg">
-                      <div className="text-blue-400 font-bold text-2xl">320%</div>
+                      <div className="text-blue-400 font-bold text-2xl">
+                        320%
+                      </div>
                       <div className="text-blue-300">ROI</div>
                     </div>
                     <div className="bg-cyan-500/20 p-4 rounded-lg">
-                      <div className="text-cyan-400 font-bold text-2xl">+250%</div>
+                      <div className="text-cyan-400 font-bold text-2xl">
+                        +250%
+                      </div>
                       <div className="text-cyan-300">Agendamentos</div>
                     </div>
                   </div>
@@ -383,15 +456,20 @@ export default function PortfolioPage() {
                   </div>
                   <h3 className="text-2xl font-bold mb-4">Londrina EPIs</h3>
                   <p className="text-blue-200 mb-6">
-                    Campanha para e-commerce de equipamentos de proteção individual
+                    Campanha para e-commerce de equipamentos de proteção
+                    individual
                   </p>
                   <div className="space-y-4 mb-8">
                     <div className="bg-orange-500/20 p-4 rounded-lg">
-                      <div className="text-orange-400 font-bold text-2xl">420%</div>
+                      <div className="text-orange-400 font-bold text-2xl">
+                        420%
+                      </div>
                       <div className="text-orange-300">ROI</div>
                     </div>
                     <div className="bg-yellow-500/20 p-4 rounded-lg">
-                      <div className="text-yellow-400 font-bold text-2xl">+300%</div>
+                      <div className="text-yellow-400 font-bold text-2xl">
+                        +300%
+                      </div>
                       <div className="text-yellow-300">Vendas Online</div>
                     </div>
                   </div>
@@ -416,10 +494,12 @@ export default function PortfolioPage() {
                   Gerenciamento de Mídias Sociais
                 </div>
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                  Redes Sociais que <span className="text-purple-400">Convertem</span>
+                  Redes Sociais que{" "}
+                  <span className="text-purple-400">Convertem</span>
                 </h2>
                 <p className="text-xl text-blue-200 max-w-3xl mx-auto">
-                  Transformamos seguidores em clientes fiéis através de estratégias comprovadas
+                  Transformamos seguidores em clientes fiéis através de
+                  estratégias comprovadas
                 </p>
               </FadeIn>
             </div>
@@ -433,21 +513,33 @@ export default function PortfolioPage() {
                         <Instagram className="h-6 w-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-bold">Estratégia Instagram</h3>
-                        <p className="text-purple-300">Conteúdo viral e vendas diretas</p>
+                        <h3 className="text-xl font-bold">
+                          Estratégia Instagram
+                        </h3>
+                        <p className="text-purple-300">
+                          Conteúdo viral e vendas diretas
+                        </p>
                       </div>
                     </div>
                     <div className="grid grid-cols-3 gap-4">
                       <div className="text-center">
-                        <div className="text-purple-400 font-bold text-lg">+250%</div>
-                        <div className="text-purple-300 text-sm">Engajamento</div>
+                        <div className="text-purple-400 font-bold text-lg">
+                          +250%
+                        </div>
+                        <div className="text-purple-300 text-sm">
+                          Engajamento
+                        </div>
                       </div>
                       <div className="text-center">
-                        <div className="text-pink-400 font-bold text-lg">+180%</div>
+                        <div className="text-pink-400 font-bold text-lg">
+                          +180%
+                        </div>
                         <div className="text-pink-300 text-sm">Seguidores</div>
                       </div>
                       <div className="text-center">
-                        <div className="text-cyan-400 font-bold text-lg">+320%</div>
+                        <div className="text-cyan-400 font-bold text-lg">
+                          +320%
+                        </div>
                         <div className="text-cyan-300 text-sm">Conversões</div>
                       </div>
                     </div>
@@ -460,20 +552,28 @@ export default function PortfolioPage() {
                       </div>
                       <div>
                         <h3 className="text-xl font-bold">Facebook Ads</h3>
-                        <p className="text-blue-300">Campanhas de alta conversão</p>
+                        <p className="text-blue-300">
+                          Campanhas de alta conversão
+                        </p>
                       </div>
                     </div>
                     <div className="grid grid-cols-3 gap-4">
                       <div className="text-center">
-                        <div className="text-blue-400 font-bold text-lg">450%</div>
+                        <div className="text-blue-400 font-bold text-lg">
+                          450%
+                        </div>
                         <div className="text-blue-300 text-sm">ROI</div>
                       </div>
                       <div className="text-center">
-                        <div className="text-cyan-400 font-bold text-lg">+200%</div>
+                        <div className="text-cyan-400 font-bold text-lg">
+                          +200%
+                        </div>
                         <div className="text-cyan-300 text-sm">Leads</div>
                       </div>
                       <div className="text-center">
-                        <div className="text-green-400 font-bold text-lg">+150%</div>
+                        <div className="text-green-400 font-bold text-lg">
+                          +150%
+                        </div>
                         <div className="text-green-300 text-sm">Vendas</div>
                       </div>
                     </div>
@@ -486,21 +586,33 @@ export default function PortfolioPage() {
                       </div>
                       <div>
                         <h3 className="text-xl font-bold">YouTube Marketing</h3>
-                        <p className="text-red-300">Vídeos que geram autoridade</p>
+                        <p className="text-red-300">
+                          Vídeos que geram autoridade
+                        </p>
                       </div>
                     </div>
                     <div className="grid grid-cols-3 gap-4">
                       <div className="text-center">
-                        <div className="text-red-400 font-bold text-lg">1M+</div>
-                        <div className="text-red-300 text-sm">Visualizações</div>
+                        <div className="text-red-400 font-bold text-lg">
+                          1M+
+                        </div>
+                        <div className="text-red-300 text-sm">
+                          Visualizações
+                        </div>
                       </div>
                       <div className="text-center">
-                        <div className="text-orange-400 font-bold text-lg">+300%</div>
+                        <div className="text-orange-400 font-bold text-lg">
+                          +300%
+                        </div>
                         <div className="text-orange-300 text-sm">Inscritos</div>
                       </div>
                       <div className="text-center">
-                        <div className="text-yellow-400 font-bold text-lg">+180%</div>
-                        <div className="text-yellow-300 text-sm">Autoridade</div>
+                        <div className="text-yellow-400 font-bold text-lg">
+                          +180%
+                        </div>
+                        <div className="text-yellow-300 text-sm">
+                          Autoridade
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -509,43 +621,66 @@ export default function PortfolioPage() {
 
               <FadeIn direction="right" delay={0.3}>
                 <div className="bg-gradient-to-br from-purple-900/60 to-pink-900/60 backdrop-blur-sm p-8 rounded-3xl border border-purple-800/50">
-                  <h3 className="text-3xl font-bold mb-6 text-center">Resultados dos Nossos Clientes</h3>
-                  
+                  <h3 className="text-3xl font-bold mb-6 text-center">
+                    Resultados dos Nossos Clientes
+                  </h3>
+
                   <div className="space-y-6">
                     <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
                       <div className="flex items-center gap-1 mb-3">
                         {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
+                          <Star
+                            key={i}
+                            className="h-4 w-4 text-yellow-400 fill-current"
+                          />
                         ))}
                       </div>
                       <p className="text-blue-200 mb-3">
-                        "Nossa presença nas redes sociais aumentou drasticamente. Agora temos uma comunidade engajada que realmente converte em vendas!"
+                        "Nossa presença nas redes sociais aumentou
+                        drasticamente. Agora temos uma comunidade engajada que
+                        realmente converte em vendas!"
                       </p>
                       <div className="font-semibold">Maria Silva</div>
-                      <div className="text-sm text-purple-300">CEO, Boutique Elegance</div>
+                      <div className="text-sm text-purple-300">
+                        CEO, Boutique Elegance
+                      </div>
                     </div>
 
                     <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
                       <div className="flex items-center gap-1 mb-3">
                         {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
+                          <Star
+                            key={i}
+                            className="h-4 w-4 text-yellow-400 fill-current"
+                          />
                         ))}
                       </div>
                       <p className="text-blue-200 mb-3">
-                        "O engajamento das nossas redes sociais triplicou em 3 meses. Os resultados são impressionantes!"
+                        "O engajamento das nossas redes sociais triplicou em 3
+                        meses. Os resultados são impressionantes!"
                       </p>
                       <div className="font-semibold">João Santos</div>
-                      <div className="text-sm text-purple-300">Diretor, Fitness Center Pro</div>
+                      <div className="text-sm text-purple-300">
+                        Diretor, Fitness Center Pro
+                      </div>
                     </div>
 
                     <div className="grid grid-cols-2 gap-4 mt-8">
                       <div className="bg-purple-500/20 p-4 rounded-lg text-center">
-                        <div className="text-purple-400 font-bold text-2xl">25+</div>
-                        <div className="text-purple-300 text-sm">Contas Gerenciadas</div>
+                        <div className="text-purple-400 font-bold text-2xl">
+                          25+
+                        </div>
+                        <div className="text-purple-300 text-sm">
+                          Contas Gerenciadas
+                        </div>
                       </div>
                       <div className="bg-pink-500/20 p-4 rounded-lg text-center">
-                        <div className="text-pink-400 font-bold text-2xl">5M+</div>
-                        <div className="text-pink-300 text-sm">Impressões/Mês</div>
+                        <div className="text-pink-400 font-bold text-2xl">
+                          5M+
+                        </div>
+                        <div className="text-pink-300 text-sm">
+                          Impressões/Mês
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -576,10 +711,12 @@ export default function PortfolioPage() {
                   Automação com Inteligência Artificial
                 </div>
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                  IA que <span className="text-emerald-400">Vende por Você</span>
+                  IA que{" "}
+                  <span className="text-emerald-400">Vende por Você</span>
                 </h2>
                 <p className="text-xl text-blue-200 max-w-3xl mx-auto">
-                  Chatbots inteligentes e automações que trabalham 24/7 para seu negócio
+                  Chatbots inteligentes e automações que trabalham 24/7 para seu
+                  negócio
                 </p>
               </FadeIn>
             </div>
@@ -592,23 +729,38 @@ export default function PortfolioPage() {
                     <div className="bg-gradient-to-r from-emerald-600 to-green-600 p-4 rounded-xl inline-block mb-6">
                       <MessageCircle className="h-8 w-8 text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold mb-4">ChatBot Inteligente</h3>
+                    <h3 className="text-2xl font-bold mb-4">
+                      ChatBot Inteligente
+                    </h3>
                     <p className="text-blue-200 mb-6">
-                      Atendimento automatizado que qualifica leads e agenda consultas 24/7
+                      Atendimento automatizado que qualifica leads e agenda
+                      consultas 24/7
                     </p>
-                    
+
                     <div className="space-y-4 mb-8">
                       <div className="bg-emerald-500/20 p-4 rounded-lg">
-                        <div className="text-emerald-400 font-bold text-xl">98%</div>
-                        <div className="text-emerald-300 text-sm">Taxa de Resposta</div>
+                        <div className="text-emerald-400 font-bold text-xl">
+                          98%
+                        </div>
+                        <div className="text-emerald-300 text-sm">
+                          Taxa de Resposta
+                        </div>
                       </div>
                       <div className="bg-green-500/20 p-4 rounded-lg">
-                        <div className="text-green-400 font-bold text-xl">+180%</div>
-                        <div className="text-green-300 text-sm">Leads Qualificados</div>
+                        <div className="text-green-400 font-bold text-xl">
+                          +180%
+                        </div>
+                        <div className="text-green-300 text-sm">
+                          Leads Qualificados
+                        </div>
                       </div>
                       <div className="bg-cyan-500/20 p-4 rounded-lg">
-                        <div className="text-cyan-400 font-bold text-xl">24/7</div>
-                        <div className="text-cyan-300 text-sm">Disponibilidade</div>
+                        <div className="text-cyan-400 font-bold text-xl">
+                          24/7
+                        </div>
+                        <div className="text-cyan-300 text-sm">
+                          Disponibilidade
+                        </div>
                       </div>
                     </div>
 
@@ -644,22 +796,35 @@ export default function PortfolioPage() {
                     <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-4 rounded-xl inline-block mb-6">
                       <Zap className="h-8 w-8 text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold mb-4">Email Marketing IA</h3>
+                    <h3 className="text-2xl font-bold mb-4">
+                      Email Marketing IA
+                    </h3>
                     <p className="text-blue-200 mb-6">
-                      Sequências inteligentes que nutrem leads e convertem automaticamente
+                      Sequências inteligentes que nutrem leads e convertem
+                      automaticamente
                     </p>
-                    
+
                     <div className="space-y-4 mb-8">
                       <div className="bg-blue-500/20 p-4 rounded-lg">
-                        <div className="text-blue-400 font-bold text-xl">45%</div>
-                        <div className="text-blue-300 text-sm">Taxa de Abertura</div>
+                        <div className="text-blue-400 font-bold text-xl">
+                          45%
+                        </div>
+                        <div className="text-blue-300 text-sm">
+                          Taxa de Abertura
+                        </div>
                       </div>
                       <div className="bg-purple-500/20 p-4 rounded-lg">
-                        <div className="text-purple-400 font-bold text-xl">+250%</div>
-                        <div className="text-purple-300 text-sm">Conversões</div>
+                        <div className="text-purple-400 font-bold text-xl">
+                          +250%
+                        </div>
+                        <div className="text-purple-300 text-sm">
+                          Conversões
+                        </div>
                       </div>
                       <div className="bg-cyan-500/20 p-4 rounded-lg">
-                        <div className="text-cyan-400 font-bold text-xl">Auto</div>
+                        <div className="text-cyan-400 font-bold text-xl">
+                          Auto
+                        </div>
                         <div className="text-cyan-300 text-sm">Segmentação</div>
                       </div>
                     </div>
@@ -698,21 +863,34 @@ export default function PortfolioPage() {
                     </div>
                     <h3 className="text-2xl font-bold mb-4">CRM Inteligente</h3>
                     <p className="text-blue-200 mb-6">
-                      Sistema que gerencia leads, vendas e relacionamento automaticamente
+                      Sistema que gerencia leads, vendas e relacionamento
+                      automaticamente
                     </p>
-                    
+
                     <div className="space-y-4 mb-8">
                       <div className="bg-orange-500/20 p-4 rounded-lg">
-                        <div className="text-orange-400 font-bold text-xl">+300%</div>
-                        <div className="text-orange-300 text-sm">Produtividade</div>
+                        <div className="text-orange-400 font-bold text-xl">
+                          +300%
+                        </div>
+                        <div className="text-orange-300 text-sm">
+                          Produtividade
+                        </div>
                       </div>
                       <div className="bg-yellow-500/20 p-4 rounded-lg">
-                        <div className="text-yellow-400 font-bold text-xl">95%</div>
-                        <div className="text-yellow-300 text-sm">Leads Capturados</div>
+                        <div className="text-yellow-400 font-bold text-xl">
+                          95%
+                        </div>
+                        <div className="text-yellow-300 text-sm">
+                          Leads Capturados
+                        </div>
                       </div>
                       <div className="bg-red-500/20 p-4 rounded-lg">
-                        <div className="text-red-400 font-bold text-xl">Zero</div>
-                        <div className="text-red-300 text-sm">Leads Perdidos</div>
+                        <div className="text-red-400 font-bold text-xl">
+                          Zero
+                        </div>
+                        <div className="text-red-300 text-sm">
+                          Leads Perdidos
+                        </div>
                       </div>
                     </div>
 
@@ -747,9 +925,12 @@ export default function PortfolioPage() {
               <FadeIn direction="up" delay={0.5}>
                 <div className="bg-gradient-to-br from-emerald-900/60 to-cyan-900/60 backdrop-blur-sm p-8 rounded-3xl border border-emerald-800/50 max-w-4xl mx-auto">
                   <div className="text-center mb-8">
-                    <h3 className="text-3xl font-bold mb-4">Case de Sucesso: Automação Completa</h3>
+                    <h3 className="text-3xl font-bold mb-4">
+                      Case de Sucesso: Automação Completa
+                    </h3>
                     <p className="text-xl text-emerald-200">
-                      Como a automação IA transformou o atendimento de uma empresa em Londrina
+                      Como a automação IA transformou o atendimento de uma
+                      empresa em Londrina
                     </p>
                   </div>
 
@@ -762,17 +943,19 @@ export default function PortfolioPage() {
                             Problema Identificado
                           </h4>
                           <p className="text-sm text-blue-200">
-                            Empresa perdia 60% dos leads por falta de atendimento imediato
+                            Empresa perdia 60% dos leads por falta de
+                            atendimento imediato
                           </p>
                         </div>
-                        
+
                         <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
                           <h4 className="font-semibold mb-2 flex items-center gap-2">
                             <Zap className="h-4 w-4 text-yellow-400" />
                             Solução Implementada
                           </h4>
                           <p className="text-sm text-blue-200">
-                            ChatBot IA + CRM automatizado + Email Marketing inteligente
+                            ChatBot IA + CRM automatizado + Email Marketing
+                            inteligente
                           </p>
                         </div>
 
@@ -794,33 +977,55 @@ export default function PortfolioPage() {
                       <div className="bg-gradient-to-br from-emerald-500/20 to-cyan-500/20 p-6 rounded-2xl border border-emerald-500/30">
                         <div className="grid grid-cols-2 gap-4 mb-6">
                           <div>
-                            <div className="text-emerald-400 font-bold text-3xl">280%</div>
-                            <div className="text-emerald-300 text-sm">Aumento de Vendas</div>
+                            <div className="text-emerald-400 font-bold text-3xl">
+                              280%
+                            </div>
+                            <div className="text-emerald-300 text-sm">
+                              Aumento de Vendas
+                            </div>
                           </div>
                           <div>
-                            <div className="text-cyan-400 font-bold text-3xl">95%</div>
-                            <div className="text-cyan-300 text-sm">Leads Capturados</div>
+                            <div className="text-cyan-400 font-bold text-3xl">
+                              95%
+                            </div>
+                            <div className="text-cyan-300 text-sm">
+                              Leads Capturados
+                            </div>
                           </div>
                           <div>
-                            <div className="text-green-400 font-bold text-3xl">24/7</div>
-                            <div className="text-green-300 text-sm">Atendimento</div>
+                            <div className="text-green-400 font-bold text-3xl">
+                              24/7
+                            </div>
+                            <div className="text-green-300 text-sm">
+                              Atendimento
+                            </div>
                           </div>
                           <div>
-                            <div className="text-blue-400 font-bold text-3xl">70%</div>
-                            <div className="text-blue-300 text-sm">Economia de Tempo</div>
+                            <div className="text-blue-400 font-bold text-3xl">
+                              70%
+                            </div>
+                            <div className="text-blue-300 text-sm">
+                              Economia de Tempo
+                            </div>
                           </div>
                         </div>
-                        
+
                         <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
                           <div className="flex items-center gap-1 mb-3 justify-center">
                             {[...Array(5)].map((_, i) => (
-                              <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
+                              <Star
+                                key={i}
+                                className="h-4 w-4 text-yellow-400 fill-current"
+                              />
                             ))}
                           </div>
                           <p className="text-sm text-blue-200 italic">
-                            "A automação mudou completamente nosso negócio. Agora vendemos até dormindo!"
+                            "A automação mudou completamente nosso negócio.
+                            Agora vendemos até dormindo!"
                           </p>
-                          <div className="text-sm font-semibold mt-2">Carlos Mendes, CEO</div>
+                          <div className="text-sm font-semibold mt-2">
+                            Carlos Mendes, CEO
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -852,10 +1057,12 @@ export default function PortfolioPage() {
                   Drone Marketing
                 </div>
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                  Imagens que <span className="text-orange-400">Param o Scroll</span>
+                  Imagens que{" "}
+                  <span className="text-orange-400">Param o Scroll</span>
                 </h2>
                 <p className="text-xl text-blue-200 max-w-3xl mx-auto">
-                  Conteúdo visual cinematográfico que eleva sua marca ao próximo nível
+                  Conteúdo visual cinematográfico que eleva sua marca ao próximo
+                  nível
                 </p>
               </FadeIn>
             </div>
@@ -863,33 +1070,48 @@ export default function PortfolioPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <FadeIn direction="left" delay={0.2}>
                 <div className="space-y-6">
-                  <h3 className="text-3xl font-bold">Portfólio de Vídeos Profissionais</h3>
+                  <h3 className="text-3xl font-bold">
+                    Portfólio de Vídeos Profissionais
+                  </h3>
                   <p className="text-xl text-blue-200 leading-relaxed">
-                    Nossa coleção de vídeos aéreos cinematográficos que transformam a 
-                    percepção da sua marca e geram impacto visual incomparável.
+                    Nossa coleção de vídeos aéreos cinematográficos que
+                    transformam a percepção da sua marca e geram impacto visual
+                    incomparável.
                   </p>
 
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-orange-500/20 p-4 rounded-lg text-center">
-                      <div className="text-orange-400 font-bold text-2xl">10+</div>
-                      <div className="text-orange-300 text-sm">Vídeos Produzidos</div>
+                      <div className="text-orange-400 font-bold text-2xl">
+                        10+
+                      </div>
+                      <div className="text-orange-300 text-sm">
+                        Vídeos Produzidos
+                      </div>
                     </div>
                     <div className="bg-red-500/20 p-4 rounded-lg text-center">
                       <div className="text-red-400 font-bold text-2xl">4K</div>
-                      <div className="text-red-300 text-sm">Ultra HD Quality</div>
+                      <div className="text-red-300 text-sm">
+                        Ultra HD Quality
+                      </div>
                     </div>
                     <div className="bg-yellow-500/20 p-4 rounded-lg text-center">
-                      <div className="text-yellow-400 font-bold text-2xl">+300%</div>
+                      <div className="text-yellow-400 font-bold text-2xl">
+                        +300%
+                      </div>
                       <div className="text-yellow-300 text-sm">Engajamento</div>
                     </div>
                     <div className="bg-pink-500/20 p-4 rounded-lg text-center">
-                      <div className="text-pink-400 font-bold text-2xl">Cinema</div>
+                      <div className="text-pink-400 font-bold text-2xl">
+                        Cinema
+                      </div>
                       <div className="text-pink-300 text-sm">Quality Level</div>
                     </div>
                   </div>
 
                   <div className="space-y-4">
-                    <h4 className="text-xl font-semibold">Tipos de Conteúdo:</h4>
+                    <h4 className="text-xl font-semibold">
+                      Tipos de Conteúdo:
+                    </h4>
                     <div className="space-y-3">
                       <div className="flex items-center gap-3">
                         <CheckCircle2 className="h-5 w-5 text-green-400" />
@@ -921,8 +1143,31 @@ export default function PortfolioPage() {
                   <ScaleIn delay={0.1}>
                     <div className="bg-gradient-to-br from-orange-900/60 to-red-900/60 backdrop-blur-sm rounded-xl border border-orange-800/50 aspect-square overflow-hidden relative">
                       <ScrollVideo
-                        src="/Roteiro_de_Vídeo_Institucional_Cinematográfico.mp4"
-                        className="w-full h-full"
+                        src="/Roteiro_de_Vídeo_Institucional_Cinematográfico-2.mp4"
+                        className=" h-full object-cover "
+                        muted={true}
+                        loop={true}
+                        controls={false}
+                        threshold={1}
+                      />
+                      <div className="absolute bottom-3 left-3 right-3">
+                        <div className="bg-black/70 backdrop-blur-sm p-2 rounded-lg">
+                          <div className="text-orange-400 font-bold text-sm">
+                            Vídeo Institucional
+                          </div>
+                          <div className="text-orange-300 text-xs">
+                            Cinematográfico
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ScaleIn>
+
+                  <ScaleIn delay={0.2}>
+                    <div className="bg-gradient-to-br from-orange-900/60 to-red-900/60 backdrop-blur-sm rounded-xl border border-orange-800/50 aspect-square overflow-hidden relative">
+                      <ScrollVideo
+                        src="/Roteiro_de_Vídeo_Institucional_Cinematográfico-2.mp4"
+                        className="w-full h-full object-contain "
                         muted={true}
                         loop={true}
                         controls={false}
@@ -930,46 +1175,66 @@ export default function PortfolioPage() {
                       />
                       <div className="absolute bottom-3 left-3 right-3">
                         <div className="bg-black/70 backdrop-blur-sm p-2 rounded-lg">
-                          <div className="text-orange-400 font-bold text-sm">Vídeo Institucional</div>
-                          <div className="text-orange-300 text-xs">Cinematográfico</div>
+                          <div className="text-orange-400 font-bold text-sm">
+                            Vídeo de Casamento
+                          </div>
+                          <div className="text-orange-300 text-xs">Evento</div>
                         </div>
                       </div>
                     </div>
                   </ScaleIn>
 
-                  <ScaleIn delay={0.2}>
-                    <div className="bg-gradient-to-br from-red-900/60 to-pink-900/60 backdrop-blur-sm p-4 rounded-xl border border-red-800/50 aspect-square flex items-center justify-center">
-                      <div className="text-center">
-                        <Camera className="h-12 w-12 text-red-400 mx-auto mb-3" />
-                        <div className="text-red-400 font-bold text-lg">Video 2</div>
-                        <div className="text-red-300 text-sm">Evento</div>
-                      </div>
-                    </div>
-                  </ScaleIn>
-
                   <ScaleIn delay={0.3}>
-                    <div className="bg-gradient-to-br from-yellow-900/60 to-orange-900/60 backdrop-blur-sm p-4 rounded-xl border border-yellow-800/50 aspect-square flex items-center justify-center">
-                      <div className="text-center">
-                        <Camera className="h-12 w-12 text-yellow-400 mx-auto mb-3" />
-                        <div className="text-yellow-400 font-bold text-lg">Video 3</div>
-                        <div className="text-yellow-300 text-sm">Produto</div>
+                    <div className="bg-gradient-to-br from-orange-900/60 to-red-900/60 backdrop-blur-sm rounded-xl border border-orange-800/50 aspect-square overflow-hidden relative">
+                      <ScrollVideo
+                        src="/Roteiro_de_Vídeo_Institucional_Cinematográfico.mp4"
+                        className="w-full h-full object-contain "
+                        muted={true}
+                        loop={true}
+                        controls={false}
+                        threshold={0.5}
+                      />
+                      <div className="absolute bottom-3 left-3 right-3">
+                        <div className="bg-black/70 backdrop-blur-sm p-2 rounded-lg">
+                          <div className="text-orange-400 font-bold text-sm">
+                            Vídeo para Mídia Sociais
+                          </div>
+                          <div className="text-orange-300 text-xs">
+                            Feed Instagram, TikTok, Facebook, etc.
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </ScaleIn>
 
                   <ScaleIn delay={0.4}>
-                    <div className="bg-gradient-to-br from-pink-900/60 to-purple-900/60 backdrop-blur-sm p-4 rounded-xl border border-pink-800/50 aspect-square flex items-center justify-center">
-                      <div className="text-center">
-                        <Camera className="h-12 w-12 text-pink-400 mx-auto mb-3" />
-                        <div className="text-pink-400 font-bold text-lg">Video 4</div>
-                        <div className="text-pink-300 text-sm">Social</div>
+                    <div className="bg-gradient-to-br from-orange-900/60 to-red-900/60 backdrop-blur-sm rounded-xl border border-orange-800/50 aspect-square overflow-hidden relative">
+                      <ScrollVideo
+                        src="/Roteiro_de_Vídeo_Institucional_Cinematográfico.mp4"
+                        className="w-full h-full object-contain "
+                        muted={true}
+                        loop={true}
+                        controls={false}
+                        threshold={0.5}
+                      />
+                      <div className="absolute bottom-3 left-3 right-3">
+                        <div className="bg-black/70 backdrop-blur-sm p-2 rounded-lg">
+                          <div className="text-orange-400 font-bold text-sm">
+                            Vídeo Empresarial
+                          </div>
+                          <div className="text-orange-300 text-xs">
+                            Empresas e Negócios de todos tamanhos
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </ScaleIn>
                 </div>
 
                 <div className="mt-8 bg-gradient-to-br from-orange-900/60 to-red-900/60 backdrop-blur-sm p-6 rounded-2xl border border-orange-800/50">
-                  <h4 className="text-xl font-bold mb-4 text-center">Equipamentos Profissionais</h4>
+                  <h4 className="text-xl font-bold mb-4 text-center">
+                    Equipamentos Profissionais
+                  </h4>
                   <div className="space-y-3 text-sm">
                     <div className="flex justify-between">
                       <span>DJI 4 mini pro</span>
@@ -1013,8 +1278,9 @@ export default function PortfolioPage() {
                 Pronto para Ter Resultados como Estes?
               </h2>
               <p className="text-xl text-blue-100 mb-8 max-w-4xl mx-auto">
-                Cada projeto em nosso portfólio representa uma história de sucesso real. 
-                Sua empresa pode ser a próxima a alcançar resultados extraordinários.
+                Cada projeto em nosso portfólio representa uma história de
+                sucesso real. Sua empresa pode ser a próxima a alcançar
+                resultados extraordinários.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact">
@@ -1039,5 +1305,5 @@ export default function PortfolioPage() {
         <Footer />
       </div>
     </PageTransition>
-  )
+  );
 }
