@@ -286,6 +286,27 @@ export default function Home() {
             </HoverCard>
           </FadeIn>
         </div>
+
+        {/* Additional Service Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
+          <FadeIn direction="left" delay={0.7}>
+            <Link href="/services/social-media">
+              <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 rounded-full px-8 py-6 text-lg transition-all duration-300 hover:translate-y-[-2px] hover:shadow-lg">
+                Gerenciamento de Mídias Sociais
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+          </FadeIn>
+          
+          <FadeIn direction="right" delay={0.8}>
+            <Link href="/services/ai-automation">
+              <Button className="bg-gradient-to-r from-emerald-600 to-cyan-600 hover:from-emerald-700 hover:to-cyan-700 rounded-full px-8 py-6 text-lg transition-all duration-300 hover:translate-y-[-2px] hover:shadow-lg">
+                Automação com IA
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+          </FadeIn>
+        </div>
       </section>
 
       {/* Diferenciais Section */}
