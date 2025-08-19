@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -36,17 +35,18 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { FadeIn } from "@/components/animations/fade-in";
-import { StaggerChildren } from "@/components/animations/stagger-children";
 import { ScaleIn } from "@/components/animations/scale-in";
 import { HoverCard } from "@/components/animations/hover-card";
 import { PageTransition } from "@/components/page-transition";
 
 export const metadata: Metadata = {
-  title: "Automação com IA Londrina | Chatbots WhatsApp, Instagram - Design Reverse",
-  description: "Automação inteligente com IA para sua empresa em Londrina. Chatbots para WhatsApp, Instagram, Telegram. Atendimento 24/7, qualificação de leads automatizada. Aumente vendas!",
+  title:
+    "Automação com IA Londrina | Chatbots WhatsApp, Instagram - Design Reverse",
+  description:
+    "Automação inteligente com IA para sua empresa em Londrina. Chatbots para WhatsApp, Instagram, Telegram. Atendimento 24/7, qualificação de leads automatizada. Aumente vendas!",
   keywords: [
     "automação com ia londrina",
-    "chatbot whatsapp londrina", 
+    "chatbot whatsapp londrina",
     "bot instagram londrina",
     "automação atendimento londrina",
     "inteligência artificial londrina",
@@ -54,11 +54,12 @@ export const metadata: Metadata = {
     "automação vendas londrina",
     "bot telegram londrina",
     "ai automation londrina",
-    "marketing automation londrina"
+    "marketing automation londrina",
   ],
   openGraph: {
     title: "Automação com IA Londrina | Chatbots Inteligentes 24/7",
-    description: "Transforme conversas em vendas com automação inteligente. Chatbots para WhatsApp, Instagram e mais em Londrina.",
+    description:
+      "Transforme conversas em vendas com automação inteligente. Chatbots para WhatsApp, Instagram e mais em Londrina.",
     url: "https://designreverse.com.br/services/ai-automation",
     images: [
       {
@@ -92,9 +93,14 @@ export default function AIAutomationPage() {
                   : Automações Inteligentes que Vendem e Atendem por Você
                 </h1>
                 <p className="text-xl md:text-2xl text-emerald-200 mb-8 leading-relaxed">
-                  Transforme conversas em vendas com chatbots alimentados por IA. 
-                  Automatize atendimento no WhatsApp, Instagram, Telegram e mais. 
-                  <strong> Menos tarefas repetitivas, mais resultados</strong> para empresas em Londrina e região.
+                  Transforme conversas em vendas com chatbots alimentados por
+                  IA. Automatize atendimento no WhatsApp, Instagram, Telegram e
+                  mais.
+                  <strong>
+                    {" "}
+                    Menos tarefas repetitivas, mais resultados
+                  </strong>{" "}
+                  para empresas em Londrina e região.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link href="/contact?service=ai-automation">
@@ -125,7 +131,8 @@ export default function AIAutomationPage() {
                   Plataformas que Integramos
                 </h2>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  Conecte todos os seus canais de atendimento em uma automação inteligente
+                  Conecte todos os seus canais de atendimento em uma automação
+                  inteligente
                 </p>
               </FadeIn>
             </div>
@@ -197,57 +204,94 @@ export default function AIAutomationPage() {
                   Você está perdendo tempo e dinheiro?
                 </h2>
               </FadeIn>
-              
-              <div className="grid md:grid-cols-2 gap-8 mt-12">
-                <StaggerChildren>
-                  <FadeIn direction="left" className="bg-red-50 p-6 rounded-xl border-l-4 border-red-500">
-                    <div className="flex items-start gap-4">
+
+              <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
+                <div className="flex flex-wrap">
+                  <FadeIn
+                    direction="left"
+                    className="bg-red-50 p-6 rounded-xl border-l-4 border-red-500  "
+                  >
+                    <div className="flex items-start gap-4 ">
                       <div className="bg-red-100 p-2 rounded-lg flex-shrink-0">
                         <Clock className="h-5 w-5 text-red-600" />
                       </div>
                       <div className="text-left">
-                        <h3 className="font-semibold text-gray-900 mb-2">Respondendo as mesmas perguntas?</h3>
-                        <p className="text-gray-600">Cansado de responder "qual o horário de funcionamento?" e "quais serviços vocês oferecem?" dezenas de vezes por dia?</p>
+                        <h3 className="font-semibold text-gray-900 mb-2">
+                          Respondendo as mesmas perguntas?
+                        </h3>
+                        <p className="text-gray-600">
+                          Cansado de responder "qual o horário de
+                          funcionamento?" e "quais serviços vocês oferecem?"
+                          dezenas de vezes por dia?
+                        </p>
                       </div>
                     </div>
                   </FadeIn>
 
-                  <FadeIn direction="left" delay={0.1} className="bg-orange-50 p-6 rounded-xl border-l-4 border-orange-500">
+                  <FadeIn
+                    direction="left"
+                    delay={0.1}
+                    className="bg-orange-50 p-6 rounded-xl border-l-4 border-orange-500 "
+                  >
                     <div className="flex items-start gap-4">
                       <div className="bg-orange-100 p-2 rounded-lg flex-shrink-0">
                         <Users className="h-5 w-5 text-orange-600" />
                       </div>
                       <div className="text-left">
-                        <h3 className="font-semibold text-gray-900 mb-2">Equipe sobrecarregada?</h3>
-                        <p className="text-gray-600">Sua equipe de vendas não consegue atender todos os contatos imediatamente e você está perdendo oportunidades?</p>
+                        <h3 className="font-semibold text-gray-900 mb-2">
+                          Equipe sobrecarregada?
+                        </h3>
+                        <p className="text-gray-600">
+                          Sua equipe de vendas não consegue atender todos os
+                          contatos imediatamente e você está perdendo
+                          oportunidades?
+                        </p>
                       </div>
                     </div>
                   </FadeIn>
 
-                  <FadeIn direction="left" delay={0.2} className="bg-yellow-50 p-6 rounded-xl border-l-4 border-yellow-500">
+                  <FadeIn
+                    direction="left"
+                    delay={0.2}
+                    className="bg-yellow-50 p-6 rounded-xl border-l-4 border-yellow-500"
+                  >
                     <div className="flex items-start gap-4">
                       <div className="bg-yellow-100 p-2 rounded-lg flex-shrink-0">
                         <Clock className="h-5 w-5 text-yellow-600" />
                       </div>
                       <div className="text-left">
-                        <h3 className="font-semibold text-gray-900 mb-2">Perdendo clientes fora do horário?</h3>
-                        <p className="text-gray-600">Quantos clientes em potencial desistiram porque ninguém respondeu à noite ou no fim de semana?</p>
+                        <h3 className="font-semibold text-gray-900 mb-2">
+                          Perdendo clientes fora do horário?
+                        </h3>
+                        <p className="text-gray-600">
+                          Quantos clientes em potencial desistiram porque
+                          ninguém respondeu à noite ou no fim de semana?
+                        </p>
                       </div>
                     </div>
                   </FadeIn>
 
-                  <FadeIn direction="left" delay={0.3} className="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500">
+                  <FadeIn
+                    direction="left"
+                    delay={0.3}
+                    className="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500"
+                  >
                     <div className="flex items-start gap-4">
                       <div className="bg-blue-100 p-2 rounded-lg flex-shrink-0">
                         <Target className="h-5 w-5 text-blue-600" />
                       </div>
                       <div className="text-left">
-                        <h3 className="font-semibold text-gray-900 mb-2">Dificuldade para qualificar leads?</h3>
-                        <p className="text-gray-600">Gostaria de qualificar leads de forma automática antes de passá-los para um vendedor especializado?</p>
+                        <h3 className="font-semibold text-gray-900 mb-2">
+                          Dificuldade para qualificar leads?
+                        </h3>
+                        <p className="text-gray-600">
+                          Gostaria de qualificar leads de forma automática antes
+                          de passá-los para um vendedor especializado?
+                        </p>
                       </div>
                     </div>
                   </FadeIn>
-                </StaggerChildren>
+                </div>
               </div>
             </div>
           </div>
@@ -263,11 +307,15 @@ export default function AIAutomationPage() {
                     A Solução é a Automação Inteligente
                   </h2>
                   <p className="text-lg text-emerald-100 mb-8 leading-relaxed">
-                    Nossos chatbots com Inteligência Artificial transformam sua forma de atender. 
-                    Eles entendem perguntas naturais, qualificam leads automaticamente e direcionam 
-                    clientes qualificados para sua equipe. <strong>Resultado: mais vendas, menos trabalho repetitivo.</strong>
+                    Nossos chatbots com Inteligência Artificial transformam sua
+                    forma de atender. Eles entendem perguntas naturais,
+                    qualificam leads automaticamente e direcionam clientes
+                    qualificados para sua equipe.{" "}
+                    <strong>
+                      Resultado: mais vendas, menos trabalho repetitivo.
+                    </strong>
                   </p>
-                  
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                     <div className="flex items-center gap-3 bg-emerald-800/30 p-4 rounded-lg">
                       <Bot className="h-6 w-6 text-emerald-400" />
@@ -315,7 +363,8 @@ export default function AIAutomationPage() {
                   Pacotes de Automação
                 </h2>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  Escolha o pacote ideal para o seu negócio e comece a automatizar hoje mesmo
+                  Escolha o pacote ideal para o seu negócio e comece a
+                  automatizar hoje mesmo
                 </p>
               </FadeIn>
             </div>
@@ -327,43 +376,63 @@ export default function AIAutomationPage() {
                   <div className="bg-blue-100 p-3 rounded-full inline-block mb-4">
                     <Bot className="h-8 w-8 text-blue-600" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Automação Start</h3>
-                  <p className="text-gray-600 mb-4">Ideal para profissionais autônomos e negócios locais</p>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    Automação Start
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    Ideal para profissionais autônomos e negócios locais
+                  </p>
                   <div className="text-center">
                     <span className="text-sm text-gray-500">Setup</span>
-                    <div className="text-3xl font-bold text-blue-600">R$ 997</div>
+                    <div className="text-3xl font-bold text-blue-600">
+                      R$ 997
+                    </div>
                     <span className="text-sm text-gray-500">+ R$ 147/mês</span>
                   </div>
                 </div>
                 <div className="mb-6">
                   <p className="text-gray-700 text-sm mb-4">
-                    Comece a automatizar seu atendimento em um canal principal, qualificando contatos e respondendo às dúvidas mais comuns 24h por dia.
+                    Comece a automatizar seu atendimento em um canal principal,
+                    qualificando contatos e respondendo às dúvidas mais comuns
+                    24h por dia.
                   </p>
                 </div>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">1 Canal de Automação (WhatsApp ou Instagram)</span>
+                    <span className="text-gray-700">
+                      1 Canal de Automação (WhatsApp ou Instagram)
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Fluxo de Conversa Básico (até 10 etapas)</span>
+                    <span className="text-gray-700">
+                      Fluxo de Conversa Básico (até 10 etapas)
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Menu de Opções personalizável</span>
+                    <span className="text-gray-700">
+                      Menu de Opções personalizável
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Captura de Dados do Cliente</span>
+                    <span className="text-gray-700">
+                      Captura de Dados do Cliente
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Mensagem de Boas-Vindas Automática</span>
+                    <span className="text-gray-700">
+                      Mensagem de Boas-Vindas Automática
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Treinamento para uso da plataforma</span>
+                    <span className="text-gray-700">
+                      Treinamento para uso da plataforma
+                    </span>
                   </li>
                 </ul>
                 <Button className="w-full bg-blue-600 hover:bg-blue-700">
@@ -382,17 +451,25 @@ export default function AIAutomationPage() {
                   <div className="bg-emerald-100 p-3 rounded-full inline-block mb-4">
                     <Brain className="h-8 w-8 text-emerald-600" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Automação Pro</h3>
-                  <p className="text-gray-600 mb-4">Para empresas que buscam crescimento e integração</p>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    Automação Pro
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    Para empresas que buscam crescimento e integração
+                  </p>
                   <div className="text-center">
                     <span className="text-sm text-gray-500">Setup</span>
-                    <div className="text-3xl font-bold text-emerald-600">R$ 1.897</div>
+                    <div className="text-3xl font-bold text-emerald-600">
+                      R$ 1.897
+                    </div>
                     <span className="text-sm text-gray-500">+ R$ 297/mês</span>
                   </div>
                 </div>
                 <div className="mb-6">
                   <p className="text-gray-700 text-sm mb-4">
-                    A solução mais popular. Integre múltiplos canais e crie fluxos inteligentes que nutrem, qualificam e direcionam seus clientes, otimizando o trabalho da sua equipe.
+                    A solução mais popular. Integre múltiplos canais e crie
+                    fluxos inteligentes que nutrem, qualificam e direcionam seus
+                    clientes, otimizando o trabalho da sua equipe.
                   </p>
                 </div>
                 <ul className="space-y-3 mb-8">
@@ -402,15 +479,21 @@ export default function AIAutomationPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Até 2 Canais de Automação</span>
+                    <span className="text-gray-700">
+                      Até 2 Canais de Automação
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Fluxos Avançados (até 25 etapas)</span>
+                    <span className="text-gray-700">
+                      Fluxos Avançados (até 25 etapas)
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Integração com Planilhas Google</span>
+                    <span className="text-gray-700">
+                      Integração com Planilhas Google
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
@@ -418,7 +501,9 @@ export default function AIAutomationPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Relatório Mensal de Performance</span>
+                    <span className="text-gray-700">
+                      Relatório Mensal de Performance
+                    </span>
                   </li>
                 </ul>
                 <Button className="w-full bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600">
@@ -432,17 +517,29 @@ export default function AIAutomationPage() {
                   <div className="bg-purple-100 p-3 rounded-full inline-block mb-4">
                     <Sparkles className="h-8 w-8 text-purple-600" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Automação Premium</h3>
-                  <p className="text-gray-600 mb-4">A máxima performance com IA</p>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    Automação Premium
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    A máxima performance com IA
+                  </p>
                   <div className="text-center">
-                    <span className="text-sm text-gray-500">Setup a partir de</span>
-                    <div className="text-3xl font-bold text-purple-600">R$ 3.497</div>
-                    <span className="text-sm text-gray-500">+ Mensalidade Personalizada</span>
+                    <span className="text-sm text-gray-500">
+                      Setup a partir de
+                    </span>
+                    <div className="text-3xl font-bold text-purple-600">
+                      R$ 3.497
+                    </div>
+                    <span className="text-sm text-gray-500">
+                      + Mensalidade Personalizada
+                    </span>
                   </div>
                 </div>
                 <div className="mb-6">
                   <p className="text-gray-700 text-sm mb-4">
-                    Uma solução completa e personalizada. Usamos IA para entender a intenção do cliente, oferecendo respostas naturais e integrando com seu CRM.
+                    Uma solução completa e personalizada. Usamos IA para
+                    entender a intenção do cliente, oferecendo respostas
+                    naturais e integrando com seu CRM.
                   </p>
                 </div>
                 <ul className="space-y-3 mb-8">
@@ -452,7 +549,9 @@ export default function AIAutomationPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Até 4 Canais de Automação</span>
+                    <span className="text-gray-700">
+                      Até 4 Canais de Automação
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
@@ -460,7 +559,9 @@ export default function AIAutomationPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">IA Conversacional (ChatGPT/Gemini)</span>
+                    <span className="text-gray-700">
+                      IA Conversacional (ChatGPT/Gemini)
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
@@ -468,7 +569,9 @@ export default function AIAutomationPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Dashboard em Tempo Real</span>
+                    <span className="text-gray-700">
+                      Dashboard em Tempo Real
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
@@ -492,13 +595,14 @@ export default function AIAutomationPage() {
                   Como Funciona?
                 </h2>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  Um processo simples e transparente para colocar sua automação no ar
+                  Um processo simples e transparente para colocar sua automação
+                  no ar
                 </p>
               </FadeIn>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-              <StaggerChildren>
+            <div className=" grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+              <div>
                 <ScaleIn delay={0.1}>
                   <div className="text-center">
                     <div className="bg-emerald-100 p-6 rounded-full inline-block mb-6">
@@ -506,7 +610,8 @@ export default function AIAutomationPage() {
                     </div>
                     <h3 className="text-xl font-bold mb-4">1. Diagnóstico</h3>
                     <p className="text-gray-600">
-                      Entendemos suas necessidades e objetivos em uma reunião rápida e estratégica.
+                      Entendemos suas necessidades e objetivos em uma reunião
+                      rápida e estratégica.
                     </p>
                   </div>
                 </ScaleIn>
@@ -516,9 +621,12 @@ export default function AIAutomationPage() {
                     <div className="bg-blue-100 p-6 rounded-full inline-block mb-6">
                       <Settings className="h-8 w-8 text-blue-600" />
                     </div>
-                    <h3 className="text-xl font-bold mb-4">2. Desenvolvimento</h3>
+                    <h3 className="text-xl font-bold mb-4">
+                      2. Desenvolvimento
+                    </h3>
                     <p className="text-gray-600">
-                      Criamos e configuramos toda a automação personalizada para o seu negócio.
+                      Criamos e configuramos toda a automação personalizada para
+                      o seu negócio.
                     </p>
                   </div>
                 </ScaleIn>
@@ -530,7 +638,8 @@ export default function AIAutomationPage() {
                     </div>
                     <h3 className="text-xl font-bold mb-4">3. Lançamento</h3>
                     <p className="text-gray-600">
-                      Ativamos o bot e acompanhamos os primeiros dias de operação para garantir perfeito funcionamento.
+                      Ativamos o bot e acompanhamos os primeiros dias de
+                      operação para garantir perfeito funcionamento.
                     </p>
                   </div>
                 </ScaleIn>
@@ -542,11 +651,12 @@ export default function AIAutomationPage() {
                     </div>
                     <h3 className="text-xl font-bold mb-4">4. Otimização</h3>
                     <p className="text-gray-600">
-                      Analisamos os dados e propomos melhorias contínuas para maximizar resultados.
+                      Analisamos os dados e propomos melhorias contínuas para
+                      maximizar resultados.
                     </p>
                   </div>
                 </ScaleIn>
-              </StaggerChildren>
+              </div>
             </div>
           </div>
         </section>
@@ -576,7 +686,11 @@ export default function AIAutomationPage() {
                       Vou perder o contato humano com meu cliente?
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-600">
-                      Não! A automação filtra e qualifica os contatos, passando apenas leads qualificados para sua equipe. Isso significa que seus vendedores gastam mais tempo com clientes prontos para comprar, melhorando a qualidade do atendimento humano.
+                      Não! A automação filtra e qualifica os contatos, passando
+                      apenas leads qualificados para sua equipe. Isso significa
+                      que seus vendedores gastam mais tempo com clientes prontos
+                      para comprar, melhorando a qualidade do atendimento
+                      humano.
                     </AccordionContent>
                   </AccordionItem>
 
@@ -588,7 +702,10 @@ export default function AIAutomationPage() {
                       É muito difícil de usar depois de pronto?
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-600">
-                      Não. Entregamos tudo funcionando e fornecemos treinamento completo. A interface é intuitiva e você pode fazer ajustes simples sem conhecimento técnico. Para mudanças mais complexas, nossa equipe está sempre disponível.
+                      Não. Entregamos tudo funcionando e fornecemos treinamento
+                      completo. A interface é intuitiva e você pode fazer
+                      ajustes simples sem conhecimento técnico. Para mudanças
+                      mais complexas, nossa equipe está sempre disponível.
                     </AccordionContent>
                   </AccordionItem>
 
@@ -600,7 +717,9 @@ export default function AIAutomationPage() {
                       Em quanto tempo a automação fica pronta?
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-600">
-                      Depende da complexidade: Pacote Start (5-7 dias), Pacote Pro (7-10 dias), Pacote Premium (10-15 dias). Incluímos testes, ajustes e treinamento nestes prazos.
+                      Depende da complexidade: Pacote Start (5-7 dias), Pacote
+                      Pro (7-10 dias), Pacote Premium (10-15 dias). Incluímos
+                      testes, ajustes e treinamento nestes prazos.
                     </AccordionContent>
                   </AccordionItem>
 
@@ -612,7 +731,10 @@ export default function AIAutomationPage() {
                       Eu preciso ter conhecimento técnico?
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-600">
-                      Absolutamente não. Cuidamos de toda a parte técnica: configuração, integração, programação e manutenção. Você só precisa focar no seu negócio enquanto a automação trabalha para você.
+                      Absolutamente não. Cuidamos de toda a parte técnica:
+                      configuração, integração, programação e manutenção. Você
+                      só precisa focar no seu negócio enquanto a automação
+                      trabalha para você.
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>
@@ -630,8 +752,9 @@ export default function AIAutomationPage() {
                   Pronto para colocar sua empresa no piloto automático?
                 </h2>
                 <p className="text-xl text-emerald-200 mb-8 leading-relaxed">
-                  Não deixe seus concorrentes saírem na frente. Fale com um de nossos especialistas 
-                  em Londrina e descubra o plano de automação ideal para o seu negócio. 
+                  Não deixe seus concorrentes saírem na frente. Fale com um de
+                  nossos especialistas em Londrina e descubra o plano de
+                  automação ideal para o seu negócio.
                   <strong>A primeira consultoria é gratuita.</strong>
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
