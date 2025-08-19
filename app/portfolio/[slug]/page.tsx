@@ -19,7 +19,8 @@ import {
   BarChart2,
   Zap,
   Star,
-  ArrowRight
+  ArrowRight,
+  Rocket
 } from "lucide-react"
 import { FadeIn } from "@/components/animations/fade-in"
 import { StaggerChildren } from "@/components/animations/stagger-children"
