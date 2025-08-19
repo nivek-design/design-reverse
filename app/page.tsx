@@ -104,7 +104,8 @@ export default function Home() {
               </div>
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-cyan-400 mb-2">
-                  <AnimatedCounter from={0} to={24} />/7
+                  <AnimatedCounter from={0} to={24} />
+                  /7
                 </div>
                 <div className="text-blue-200">Suporte Especializado</div>
               </div>
@@ -467,30 +468,13 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <FadeIn direction="up">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-red-300">
-              ⚠️ Cada Dia de Atraso São R$ 1.000+ Perdidos
+              Cada Dia de Atraso São R$ 1.000+ Perdidos
             </h2>
             <p className="text-xl text-orange-200 mb-8 max-w-4xl mx-auto">
               Enquanto você pensa, seus concorrentes estão conquistando seus
               clientes. Não deixe para amanhã o que pode transformar seu negócio
               hoje.
             </p>
-            <div className="bg-black/40 backdrop-blur-sm border border-red-400/30 p-6 rounded-xl max-w-2xl mx-auto mb-8">
-              <div className="text-red-400 font-bold text-lg mb-2">
-                🔥 OFERTA LIMITADA - APENAS 5 VAGAS
-              </div>
-              <div className="text-white text-xl">
-                Consultoria Estratégica GRATUITA
-              </div>
-              <div className="text-orange-200 text-sm">
-                (Valor normal: R$ 2.500)
-              </div>
-            </div>
-            <Link href="/contact">
-              <Button className="bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 rounded-full px-12 py-6 text-xl font-bold transition-all duration-300 hover:translate-y-[-2px] hover:shadow-2xl animate-pulse">
-                QUERO MINHA VAGA GRATUITA AGORA
-                <Rocket className="ml-2 h-6 w-6" />
-              </Button>
-            </Link>
           </FadeIn>
         </div>
       </section>
