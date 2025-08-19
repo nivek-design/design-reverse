@@ -92,25 +92,41 @@ export default function Home() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">
-                  <AnimatedCounter end={150} suffix="%" />
+                  <AnimatedCounter 
+                    from={0} 
+                    to={150} 
+                    formatter={(value) => Math.round(value).toString() + "%"} 
+                  />
                 </div>
                 <div className="text-blue-200">Aumento Médio em Vendas</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-purple-400 mb-2">
-                  <AnimatedCounter end={50} suffix="+" />
+                  <AnimatedCounter 
+                    from={0} 
+                    to={50} 
+                    formatter={(value) => Math.round(value).toString() + "+"} 
+                  />
                 </div>
                 <div className="text-blue-200">Empresas Transformadas</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-cyan-400 mb-2">
-                  <AnimatedCounter end={24} suffix="/7" />
+                  <AnimatedCounter 
+                    from={0} 
+                    to={24} 
+                    formatter={(value) => Math.round(value).toString() + "/7"} 
+                  />
                 </div>
                 <div className="text-blue-200">Suporte Especializado</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-green-400 mb-2">
-                  <AnimatedCounter end={280} suffix="%" />
+                  <AnimatedCounter 
+                    from={0} 
+                    to={280} 
+                    formatter={(value) => Math.round(value).toString() + "%"} 
+                  />
                 </div>
                 <div className="text-blue-200">ROI Médio</div>
               </div>
