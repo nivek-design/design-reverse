@@ -95,6 +95,16 @@ export default function ServicesPage() {
                       Marketing com Drone
                     </Button>
                   </Link>
+                  <Link href="/services/social-media">
+                    <Button className="bg-purple-600 hover:bg-purple-700 rounded-full px-6 py-6 text-lg transition-all duration-300 hover:translate-y-[-2px] hover:shadow-lg">
+                      Mídias Sociais
+                    </Button>
+                  </Link>
+                  <Link href="/services/ai-automation">
+                    <Button className="bg-emerald-600 hover:bg-emerald-700 rounded-full px-6 py-6 text-lg transition-all duration-300 hover:translate-y-[-2px] hover:shadow-lg">
+                      Automação com IA
+                    </Button>
+                  </Link>
                 </div>
               </FadeIn>
             </div>
