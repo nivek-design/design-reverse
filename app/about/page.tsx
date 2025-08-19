@@ -74,7 +74,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 bg-black/20 backdrop-blur-lg rounded-3xl p-8 border border-white/10 mb-12">
                 <div className="text-center">
                   <div className="text-4xl md:text-5xl font-bold text-yellow-400 mb-2">
-                    <AnimatedCounter end={280} suffix="%" />
+                    <AnimatedCounter from={0} to={280} />%
                   </div>
                   <div className="text-blue-200 text-sm">
                     ROI Médio Garantido
@@ -82,7 +82,7 @@ export default function AboutPage() {
                 </div>
                 <div className="text-center">
                   <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">
-                    <AnimatedCounter end={50} suffix="+" />
+                    <AnimatedCounter from={0} to={50} />+
                   </div>
                   <div className="text-blue-200 text-sm">
                     Empresas Dominando
@@ -90,13 +90,13 @@ export default function AboutPage() {
                 </div>
                 <div className="text-center">
                   <div className="text-4xl md:text-5xl font-bold text-purple-400 mb-2">
-                    <AnimatedCounter end={24} suffix="/7" />
+                    <AnimatedCounter from={0} to={24} />/7
                   </div>
                   <div className="text-blue-200 text-sm">Suporte Premium</div>
                 </div>
                 <div className="text-center">
                   <div className="text-4xl md:text-5xl font-bold text-cyan-400 mb-2">
-                    <AnimatedCounter end={98} suffix="%" />
+                    <AnimatedCounter from={0} to={98} />%
                   </div>
                   <div className="text-blue-200 text-sm">Taxa de Sucesso</div>
                 </div>
