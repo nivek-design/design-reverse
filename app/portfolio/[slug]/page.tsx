@@ -39,7 +39,7 @@ const projects = {
     duration: "3 meses",
     challenge: `A Advocacia Laura Rossini, especializada em Direito Previdenciário, enfrentava o desafio de aumentar sua visibilidade digital e atrair novos clientes em um mercado jurídico altamente competitivo. O escritório precisava de uma presença online profissional que transmitisse confiança e autoridade, além de campanhas de marketing digital estratégicas para alcançar pessoas que necessitam de seus serviços especializados.`,
     solution: `Desenvolvemos uma solução completa que incluiu:
-    
+
     • **Website Profissional**: Criação de um site institucional moderno e responsivo que reflete a seriedade e profissionalismo do escritório
     • **Otimização para Conversão**: Implementação de formulários estratégicos e call-to-actions para facilitar o contato de potenciais clientes
     • **Campanhas Google Ads**: Desenvolvimento de campanhas segmentadas focadas em palavras-chave relevantes para Direito Previdenciário
@@ -96,7 +96,7 @@ const projects = {
     duration: "2 meses",
     challenge: `A Odontologia Zorzzela, clínica odontológica de referência, precisava modernizar sua presença digital para atrair novos pacientes e facilitar o agendamento de consultas. O desafio era criar uma experiência online que transmitisse a qualidade dos serviços prestados, destacando os tratamentos especializados e a expertise da equipe, além de implementar um sistema eficiente de agendamentos online.`,
     solution: `Criamos uma solução digital completa:
-    
+
     • **Website Responsivo**: Desenvolvimento de um site moderno e otimizado para dispositivos móveis
     • **Sistema de Agendamentos**: Implementação de ferramenta online para agendamento de consultas
     • **Showcase de Tratamentos**: Apresentação detalhada dos serviços oferecidos com antes e depois
@@ -153,7 +153,7 @@ const projects = {
     duration: "4 meses",
     challenge: `A Londrina EPIs, empresa especializada em Equipamentos de Proteção Individual, precisava expandir suas vendas para o ambiente digital. O desafio era criar um e-commerce robusto que facilitasse a compra de EPIs por empresas e profissionais, com um catálogo organizado por categorias, certificações de qualidade visíveis e integração com diversos meios de pagamento e entrega.`,
     solution: `Desenvolvemos uma plataforma e-commerce completa:
-    
+
     • **E-commerce Profissional**: Plataforma robusta com mais de 1000 produtos catalogados
     • **Organização por Categorias**: Sistema intuitivo de navegação por tipo de EPI
     • **Certificações Visíveis**: Exibição clara de certificados de aprovação dos produtos
