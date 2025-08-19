@@ -31,6 +31,7 @@ import {
   Rocket
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { ScrollVideo } from "@/components/animations/scroll-video"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -918,11 +919,20 @@ export default function PortfolioPage() {
               <FadeIn direction="right" delay={0.3}>
                 <div className="grid grid-cols-2 gap-4">
                   <ScaleIn delay={0.1}>
-                    <div className="bg-gradient-to-br from-orange-900/60 to-red-900/60 backdrop-blur-sm p-4 rounded-xl border border-orange-800/50 aspect-square flex items-center justify-center">
-                      <div className="text-center">
-                        <Camera className="h-12 w-12 text-orange-400 mx-auto mb-3" />
-                        <div className="text-orange-400 font-bold text-lg">Video 1</div>
-                        <div className="text-orange-300 text-sm">Institucional</div>
+                    <div className="bg-gradient-to-br from-orange-900/60 to-red-900/60 backdrop-blur-sm rounded-xl border border-orange-800/50 aspect-square overflow-hidden relative">
+                      <ScrollVideo
+                        src="/Roteiro_de_Vídeo_Institucional_Cinematográfico.mp4"
+                        className="w-full h-full"
+                        muted={true}
+                        loop={true}
+                        controls={false}
+                        threshold={0.5}
+                      />
+                      <div className="absolute bottom-3 left-3 right-3">
+                        <div className="bg-black/70 backdrop-blur-sm p-2 rounded-lg">
+                          <div className="text-orange-400 font-bold text-sm">Vídeo Institucional</div>
+                          <div className="text-orange-300 text-xs">Cinematográfico</div>
+                        </div>
                       </div>
                     </div>
                   </ScaleIn>
