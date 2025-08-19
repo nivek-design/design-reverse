@@ -1,8 +1,24 @@
-
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/navbar";
-import { ArrowRight, Code, BarChart2, Users, CheckCircle2, Star, Zap, Rocket, TrendingUp, Eye, Target, Globe, MessageCircle, Bot, Camera, Play } from "lucide-react";
+import {
+  ArrowRight,
+  Code,
+  BarChart2,
+  Users,
+  CheckCircle2,
+  Star,
+  Zap,
+  Rocket,
+  TrendingUp,
+  Eye,
+  Target,
+  Globe,
+  MessageCircle,
+  Bot,
+  Camera,
+  Play,
+} from "lucide-react";
 import { Footer } from "@/components/footer";
 import { FadeIn } from "@/components/animations/fade-in";
 import { HoverCard } from "@/components/animations/hover-card";
@@ -32,10 +48,10 @@ export default function Home() {
               </span>
             </div>
           </FadeIn>
-          
+
           <FadeIn direction="up" delay={0.2}>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-8">
-              <TextReveal text="Desconstruindo" />
+              <TextReveal text="Desconstruindo o comum, projetando o extraordinário." />
               <br />
               <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
                 <TextReveal text="o Extraordinário" delay={0.5} />
@@ -45,8 +61,9 @@ export default function Home() {
 
           <FadeIn direction="up" delay={0.6}>
             <p className="text-xl md:text-2xl text-blue-200 mb-12 max-w-4xl mx-auto leading-relaxed">
-              Marketing digital que quebra padrões. Criamos estratégias focadas em conversão, 
-              visibilidade e crescimento extraordinário que seus concorrentes não conseguem igualar.
+              Marketing digital que quebra padrões. Criamos estratégias focadas
+              em conversão, visibilidade e crescimento extraordinário que seus
+              concorrentes não conseguem igualar.
             </p>
           </FadeIn>
 
@@ -59,7 +76,10 @@ export default function Home() {
                 </Button>
               </Link>
               <Link href="/portfolio">
-                <Button variant="outline" className="border-2 border-blue-400 text-blue-400 hover:bg-blue-600/10 rounded-full px-10 py-6 text-xl font-semibold">
+                <Button
+                  variant="outline"
+                  className="border-2 border-blue-400 text-blue-400 hover:bg-blue-600/10 rounded-full px-10 py-6 text-xl font-semibold"
+                >
                   <Play className="mr-2 h-6 w-6" />
                   Ver Cases de Sucesso
                 </Button>
@@ -105,10 +125,13 @@ export default function Home() {
           <div className="text-center mb-16">
             <FadeIn direction="up">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Seu Negócio Está <span className="text-red-400">Perdendo Dinheiro</span> Todos os Dias
+                Seu Negócio Está{" "}
+                <span className="text-red-400">Perdendo Dinheiro</span> Todos os
+                Dias
               </h2>
               <p className="text-xl text-blue-200 max-w-4xl mx-auto">
-                Enquanto você não investe em marketing digital estratégico, seus concorrentes estão conquistando seus clientes
+                Enquanto você não investe em marketing digital estratégico, seus
+                concorrentes estão conquistando seus clientes
               </p>
             </FadeIn>
           </div>
@@ -117,19 +140,31 @@ export default function Home() {
             <FadeIn direction="left" delay={0.2}>
               <div className="bg-red-900/20 border border-red-500/30 p-8 rounded-xl text-center">
                 <div className="text-red-400 text-6xl font-bold mb-4">73%</div>
-                <p className="text-red-200">das empresas perdem clientes por não ter presença digital forte</p>
+                <p className="text-red-200">
+                  das empresas perdem clientes por não ter presença digital
+                  forte
+                </p>
               </div>
             </FadeIn>
             <FadeIn direction="up" delay={0.4}>
               <div className="bg-orange-900/20 border border-orange-500/30 p-8 rounded-xl text-center">
-                <div className="text-orange-400 text-6xl font-bold mb-4">R$ 50k</div>
-                <p className="text-orange-200">é o valor médio perdido por ano sem estratégia digital adequada</p>
+                <div className="text-orange-400 text-6xl font-bold mb-4">
+                  R$ 50k
+                </div>
+                <p className="text-orange-200">
+                  é o valor médio perdido por ano sem estratégia digital
+                  adequada
+                </p>
               </div>
             </FadeIn>
             <FadeIn direction="right" delay={0.6}>
               <div className="bg-yellow-900/20 border border-yellow-500/30 p-8 rounded-xl text-center">
-                <div className="text-yellow-400 text-6xl font-bold mb-4">3 seg</div>
-                <p className="text-yellow-200">é o tempo que você tem para impressionar um cliente online</p>
+                <div className="text-yellow-400 text-6xl font-bold mb-4">
+                  3 seg
+                </div>
+                <p className="text-yellow-200">
+                  é o tempo que você tem para impressionar um cliente online
+                </p>
               </div>
             </FadeIn>
           </div>
@@ -140,7 +175,8 @@ export default function Home() {
                 Mas há uma solução...
               </h3>
               <p className="text-xl text-blue-200 mb-8 max-w-3xl mx-auto">
-                Com nossa metodologia proprietária, transformamos sua presença digital em uma máquina de vendas que trabalha 24/7 para você
+                Com nossa metodologia proprietária, transformamos sua presença
+                digital em uma máquina de vendas que trabalha 24/7 para você
               </p>
               <Link href="/contact">
                 <Button className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 rounded-full px-8 py-4 text-lg font-semibold">
@@ -159,10 +195,14 @@ export default function Home() {
           <div className="text-center mb-16">
             <FadeIn direction="up">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Nossos <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Serviços Exclusivos</span>
+                Nossos{" "}
+                <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                  Serviços Exclusivos
+                </span>
               </h2>
               <p className="text-xl text-blue-200 max-w-3xl mx-auto">
-                Cada serviço é uma arma poderosa para dominar seu mercado e deixar a concorrência para trás
+                Cada serviço é uma arma poderosa para dominar seu mercado e
+                deixar a concorrência para trás
               </p>
             </FadeIn>
           </div>
@@ -176,10 +216,13 @@ export default function Home() {
                     <Code className="h-8 w-8 text-white" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-3">Websites que Vendem 24/7</h3>
+                    <h3 className="text-2xl font-bold mb-3">
+                      Websites que Vendem 24/7
+                    </h3>
                     <p className="text-blue-200 mb-4 leading-relaxed">
-                      Sites que não apenas impressionam, mas convertem visitantes em clientes pagantes. 
-                      Design estratégico + otimização para conversão = Mais vendas automáticas.
+                      Sites que não apenas impressionam, mas convertem
+                      visitantes em clientes pagantes. Design estratégico +
+                      otimização para conversão = Mais vendas automáticas.
                     </p>
                     <ul className="space-y-2 mb-6">
                       <li className="flex items-center gap-2 text-sm">
@@ -195,7 +238,10 @@ export default function Home() {
                         <span>SEO que Domina o Google</span>
                       </li>
                     </ul>
-                    <Link href="/services/websites" className="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium group">
+                    <Link
+                      href="/services/websites"
+                      className="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium group"
+                    >
                       Descobrir Como Vender Mais
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </Link>
@@ -212,10 +258,13 @@ export default function Home() {
                     <BarChart2 className="h-8 w-8 text-white" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-3">Google Ads que Multiplicam Vendas</h3>
+                    <h3 className="text-2xl font-bold mb-3">
+                      Google Ads que Multiplicam Vendas
+                    </h3>
                     <p className="text-blue-200 mb-4 leading-relaxed">
-                      Campanhas científicas que garantem mais clientes com menor investimento. 
-                      Cada clique é calculado para gerar resultado real no seu faturamento.
+                      Campanhas científicas que garantem mais clientes com menor
+                      investimento. Cada clique é calculado para gerar resultado
+                      real no seu faturamento.
                     </p>
                     <ul className="space-y-2 mb-6">
                       <li className="flex items-center gap-2 text-sm">
@@ -231,7 +280,10 @@ export default function Home() {
                         <span>Relatórios Transparentes</span>
                       </li>
                     </ul>
-                    <Link href="/services/google-ads" className="inline-flex items-center text-green-400 hover:text-green-300 font-medium group">
+                    <Link
+                      href="/services/google-ads"
+                      className="inline-flex items-center text-green-400 hover:text-green-300 font-medium group"
+                    >
                       Multiplicar Vendas Agora
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </Link>
@@ -249,12 +301,20 @@ export default function Home() {
                   <div className="bg-gradient-to-r from-orange-600 to-red-600 p-4 rounded-xl inline-block mb-4 group-hover:scale-110 transition-transform">
                     <Camera className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3">Marketing Aéreo Cinematográfico</h3>
+                  <h3 className="text-xl font-bold mb-3">
+                    Marketing Aéreo Cinematográfico
+                  </h3>
                   <p className="text-blue-200 mb-4 text-sm leading-relaxed">
-                    Imagens que fazem seus clientes pararem o scroll. Conteúdo visual de cinema que eleva sua marca ao próximo nível.
+                    Imagens que fazem seus clientes pararem o scroll. Conteúdo
+                    visual de cinema que eleva sua marca ao próximo nível.
                   </p>
-                  <div className="text-orange-400 font-bold mb-4">Filmagem 4K Ultra HD</div>
-                  <Link href="/services/drone-marketing" className="inline-flex items-center text-orange-400 hover:text-orange-300 font-medium group text-sm">
+                  <div className="text-orange-400 font-bold mb-4">
+                    Filmagem 4K Ultra HD
+                  </div>
+                  <Link
+                    href="/services/drone-marketing"
+                    className="inline-flex items-center text-orange-400 hover:text-orange-300 font-medium group text-sm"
+                  >
                     Ver o Diferencial
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </Link>
@@ -269,12 +329,20 @@ export default function Home() {
                   <div className="bg-gradient-to-r from-purple-600 to-pink-600 p-4 rounded-xl inline-block mb-4 group-hover:scale-110 transition-transform">
                     <Users className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3">Redes Sociais que Convertem</h3>
+                  <h3 className="text-xl font-bold mb-3">
+                    Redes Sociais que Convertem
+                  </h3>
                   <p className="text-blue-200 mb-4 text-sm leading-relaxed">
-                    Transformamos seguidores em clientes fiéis. Estratégia + conteúdo viral + vendas automáticas.
+                    Transformamos seguidores em clientes fiéis. Estratégia +
+                    conteúdo viral + vendas automáticas.
                   </p>
-                  <div className="text-purple-400 font-bold mb-4">+200% Engajamento</div>
-                  <Link href="/services/social-media" className="inline-flex items-center text-purple-400 hover:text-purple-300 font-medium group text-sm">
+                  <div className="text-purple-400 font-bold mb-4">
+                    +200% Engajamento
+                  </div>
+                  <Link
+                    href="/services/social-media"
+                    className="inline-flex items-center text-purple-400 hover:text-purple-300 font-medium group text-sm"
+                  >
                     Viralizar Agora
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </Link>
@@ -289,12 +357,20 @@ export default function Home() {
                   <div className="bg-gradient-to-r from-emerald-600 to-cyan-600 p-4 rounded-xl inline-block mb-4 group-hover:scale-110 transition-transform">
                     <Bot className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3">IA que Vende por Você</h3>
+                  <h3 className="text-xl font-bold mb-3">
+                    IA que Vende por Você
+                  </h3>
                   <p className="text-blue-200 mb-4 text-sm leading-relaxed">
-                    Chatbots inteligentes que atendem, qualificam e vendem 24/7. Sua empresa no piloto automático.
+                    Chatbots inteligentes que atendem, qualificam e vendem 24/7.
+                    Sua empresa no piloto automático.
                   </p>
-                  <div className="text-emerald-400 font-bold mb-4">Atendimento 24/7</div>
-                  <Link href="/services/ai-automation" className="inline-flex items-center text-emerald-400 hover:text-emerald-300 font-medium group text-sm">
+                  <div className="text-emerald-400 font-bold mb-4">
+                    Atendimento 24/7
+                  </div>
+                  <Link
+                    href="/services/ai-automation"
+                    className="inline-flex items-center text-emerald-400 hover:text-emerald-300 font-medium group text-sm"
+                  >
                     Automatizar Vendas
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </Link>
@@ -311,10 +387,12 @@ export default function Home() {
           <div className="text-center mb-16">
             <FadeIn direction="up">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Mais de <span className="text-green-400">50 Empresas</span> Já Transformaram Seus Resultados
+                Mais de <span className="text-green-400">50 Empresas</span> Já
+                Transformaram Seus Resultados
               </h2>
               <p className="text-xl text-blue-200">
-                Veja o que nossos clientes estão dizendo sobre os resultados extraordinários
+                Veja o que nossos clientes estão dizendo sobre os resultados
+                extraordinários
               </p>
             </FadeIn>
           </div>
@@ -324,14 +402,20 @@ export default function Home() {
               <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                    <Star
+                      key={i}
+                      className="h-5 w-5 text-yellow-400 fill-current"
+                    />
                   ))}
                 </div>
                 <p className="text-blue-200 mb-4">
-                  "Nosso faturamento aumentou 180% em apenas 3 meses. O investimento se pagou na primeira semana!"
+                  "Nosso faturamento aumentou 180% em apenas 3 meses. O
+                  investimento se pagou na primeira semana!"
                 </p>
                 <div className="font-semibold">Laura Rossini</div>
-                <div className="text-sm text-blue-300">CEO, Laura Rossini Advocacia</div>
+                <div className="text-sm text-blue-300">
+                  CEO, Laura Rossini Advocacia
+                </div>
               </div>
             </FadeIn>
 
@@ -339,14 +423,20 @@ export default function Home() {
               <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                    <Star
+                      key={i}
+                      className="h-5 w-5 text-yellow-400 fill-current"
+                    />
                   ))}
                 </div>
                 <p className="text-blue-200 mb-4">
-                  "Nunca vi resultados tão rápidos. Em 15 dias já estávamos tendo mais agendamentos que conseguíamos atender."
+                  "Nunca vi resultados tão rápidos. Em 15 dias já estávamos
+                  tendo mais agendamentos que conseguíamos atender."
                 </p>
                 <div className="font-semibold">Gustavo Zorzzela</div>
-                <div className="text-sm text-blue-300">CEO, Odontologia Zorzzela</div>
+                <div className="text-sm text-blue-300">
+                  CEO, Odontologia Zorzzela
+                </div>
               </div>
             </FadeIn>
 
@@ -354,11 +444,15 @@ export default function Home() {
               <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                    <Star
+                      key={i}
+                      className="h-5 w-5 text-yellow-400 fill-current"
+                    />
                   ))}
                 </div>
                 <p className="text-blue-200 mb-4">
-                  "O e-commerce transformou nosso negócio. Vendas online superaram as vendas físicas em apenas 2 meses."
+                  "O e-commerce transformou nosso negócio. Vendas online
+                  superaram as vendas físicas em apenas 2 meses."
                 </p>
                 <div className="font-semibold">Ademir Santos</div>
                 <div className="text-sm text-blue-300">CEO, Londrina EPI's</div>
@@ -376,13 +470,20 @@ export default function Home() {
               ⚠️ Cada Dia de Atraso São R$ 1.000+ Perdidos
             </h2>
             <p className="text-xl text-orange-200 mb-8 max-w-4xl mx-auto">
-              Enquanto você pensa, seus concorrentes estão conquistando seus clientes. 
-              Não deixe para amanhã o que pode transformar seu negócio hoje.
+              Enquanto você pensa, seus concorrentes estão conquistando seus
+              clientes. Não deixe para amanhã o que pode transformar seu negócio
+              hoje.
             </p>
             <div className="bg-black/40 backdrop-blur-sm border border-red-400/30 p-6 rounded-xl max-w-2xl mx-auto mb-8">
-              <div className="text-red-400 font-bold text-lg mb-2">🔥 OFERTA LIMITADA - APENAS 5 VAGAS</div>
-              <div className="text-white text-xl">Consultoria Estratégica GRATUITA</div>
-              <div className="text-orange-200 text-sm">(Valor normal: R$ 2.500)</div>
+              <div className="text-red-400 font-bold text-lg mb-2">
+                🔥 OFERTA LIMITADA - APENAS 5 VAGAS
+              </div>
+              <div className="text-white text-xl">
+                Consultoria Estratégica GRATUITA
+              </div>
+              <div className="text-orange-200 text-sm">
+                (Valor normal: R$ 2.500)
+              </div>
             </div>
             <Link href="/contact">
               <Button className="bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 rounded-full px-12 py-6 text-xl font-bold transition-all duration-300 hover:translate-y-[-2px] hover:shadow-2xl animate-pulse">
@@ -408,8 +509,9 @@ export default function Home() {
               Pronto para Dominar seu Mercado?
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-4xl mx-auto">
-              Não perca mais tempo competindo por migalhas. Torne-se o líder absoluto do seu segmento 
-              com nossas estratégias exclusivas de marketing digital.
+              Não perca mais tempo competindo por migalhas. Torne-se o líder
+              absoluto do seu segmento com nossas estratégias exclusivas de
+              marketing digital.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
@@ -419,7 +521,10 @@ export default function Home() {
                 </Button>
               </Link>
               <Link href="/services">
-                <Button variant="outline" className="border-2 border-white text-white hover:bg-white/10 text-xl px-12 py-6 rounded-full font-semibold">
+                <Button
+                  variant="outline"
+                  className="border-2 border-white text-white hover:bg-white/10 text-xl px-12 py-6 rounded-full font-semibold"
+                >
                   Ver Todos os Serviços
                 </Button>
               </Link>
