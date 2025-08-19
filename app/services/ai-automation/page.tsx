@@ -601,62 +601,60 @@ export default function AIAutomationPage() {
               </FadeIn>
             </div>
 
-            <div className=" grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-              <div>
-                <ScaleIn delay={0.1}>
-                  <div className="text-center">
-                    <div className="bg-emerald-100 p-6 rounded-full inline-block mb-6">
-                      <Users className="h-8 w-8 text-emerald-600" />
-                    </div>
-                    <h3 className="text-xl font-bold mb-4">1. Diagnóstico</h3>
-                    <p className="text-gray-600">
-                      Entendemos suas necessidades e objetivos em uma reunião
-                      rápida e estratégica.
-                    </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+              <ScaleIn delay={0.1}>
+                <div className="text-center">
+                  <div className="bg-emerald-100 p-6 rounded-full inline-block mb-6">
+                    <Users className="h-8 w-8 text-emerald-600" />
                   </div>
-                </ScaleIn>
+                  <h3 className="text-xl font-bold mb-4">1. Diagnóstico</h3>
+                  <p className="text-gray-600">
+                    Entendemos suas necessidades e objetivos em uma reunião
+                    rápida e estratégica.
+                  </p>
+                </div>
+              </ScaleIn>
 
-                <ScaleIn delay={0.2}>
-                  <div className="text-center">
-                    <div className="bg-blue-100 p-6 rounded-full inline-block mb-6">
-                      <Settings className="h-8 w-8 text-blue-600" />
-                    </div>
-                    <h3 className="text-xl font-bold mb-4">
-                      2. Desenvolvimento
-                    </h3>
-                    <p className="text-gray-600">
-                      Criamos e configuramos toda a automação personalizada para
-                      o seu negócio.
-                    </p>
+              <ScaleIn delay={0.2}>
+                <div className="text-center">
+                  <div className="bg-blue-100 p-6 rounded-full inline-block mb-6">
+                    <Settings className="h-8 w-8 text-blue-600" />
                   </div>
-                </ScaleIn>
+                  <h3 className="text-xl font-bold mb-4">
+                    2. Desenvolvimento
+                  </h3>
+                  <p className="text-gray-600">
+                    Criamos e configuramos toda a automação personalizada para
+                    o seu negócio.
+                  </p>
+                </div>
+              </ScaleIn>
 
-                <ScaleIn delay={0.3}>
-                  <div className="text-center">
-                    <div className="bg-green-100 p-6 rounded-full inline-block mb-6">
-                      <Rocket className="h-8 w-8 text-green-600" />
-                    </div>
-                    <h3 className="text-xl font-bold mb-4">3. Lançamento</h3>
-                    <p className="text-gray-600">
-                      Ativamos o bot e acompanhamos os primeiros dias de
-                      operação para garantir perfeito funcionamento.
-                    </p>
+              <ScaleIn delay={0.3}>
+                <div className="text-center">
+                  <div className="bg-green-100 p-6 rounded-full inline-block mb-6">
+                    <Rocket className="h-8 w-8 text-green-600" />
                   </div>
-                </ScaleIn>
+                  <h3 className="text-xl font-bold mb-4">3. Lançamento</h3>
+                  <p className="text-gray-600">
+                    Ativamos o bot e acompanhamos os primeiros dias de
+                    operação para garantir perfeito funcionamento.
+                  </p>
+                </div>
+              </ScaleIn>
 
-                <ScaleIn delay={0.4}>
-                  <div className="text-center">
-                    <div className="bg-purple-100 p-6 rounded-full inline-block mb-6">
-                      <TrendingUp className="h-8 w-8 text-purple-600" />
-                    </div>
-                    <h3 className="text-xl font-bold mb-4">4. Otimização</h3>
-                    <p className="text-gray-600">
-                      Analisamos os dados e propomos melhorias contínuas para
-                      maximizar resultados.
-                    </p>
+              <ScaleIn delay={0.4}>
+                <div className="text-center">
+                  <div className="bg-purple-100 p-6 rounded-full inline-block mb-6">
+                    <TrendingUp className="h-8 w-8 text-purple-600" />
                   </div>
-                </ScaleIn>
-              </div>
+                  <h3 className="text-xl font-bold mb-4">4. Otimização</h3>
+                  <p className="text-gray-600">
+                    Analisamos os dados e propomos melhorias contínuas para
+                    maximizar resultados.
+                  </p>
+                </div>
+              </ScaleIn>
             </div>
           </div>
         </section>
