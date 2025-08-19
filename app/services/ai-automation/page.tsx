@@ -205,7 +205,7 @@ export default function AIAutomationPage() {
                 </h2>
               </FadeIn>
 
-              <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
+              <div className="grid grid-cols-1   gap-8">
                 <div className="flex flex-wrap">
                   <FadeIn
                     direction="left"
@@ -231,7 +231,7 @@ export default function AIAutomationPage() {
                   <FadeIn
                     direction="left"
                     delay={0.1}
-                    className="bg-orange-50 p-6 rounded-xl border-l-4 border-orange-500 "
+                    className="bg-orange-50 p-6 rounded-xl border-l-4 border-orange-500 mt-8"
                   >
                     <div className="flex items-start gap-4">
                       <div className="bg-orange-100 p-2 rounded-lg flex-shrink-0">
@@ -253,7 +253,7 @@ export default function AIAutomationPage() {
                   <FadeIn
                     direction="left"
                     delay={0.2}
-                    className="bg-yellow-50 p-6 rounded-xl border-l-4 border-yellow-500"
+                    className="bg-yellow-50 p-6 rounded-xl border-l-4 border-yellow-500 mt-8"
                   >
                     <div className="flex items-start gap-4">
                       <div className="bg-yellow-100 p-2 rounded-lg flex-shrink-0">
@@ -274,7 +274,7 @@ export default function AIAutomationPage() {
                   <FadeIn
                     direction="left"
                     delay={0.3}
-                    className="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500"
+                    className="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500 mt-8"
                   >
                     <div className="flex items-start gap-4">
                       <div className="bg-blue-100 p-2 rounded-lg flex-shrink-0">
@@ -620,12 +620,10 @@ export default function AIAutomationPage() {
                   <div className="bg-blue-100 p-6 rounded-full inline-block mb-6">
                     <Settings className="h-8 w-8 text-blue-600" />
                   </div>
-                  <h3 className="text-xl font-bold mb-4">
-                    2. Desenvolvimento
-                  </h3>
+                  <h3 className="text-xl font-bold mb-4">2. Desenvolvimento</h3>
                   <p className="text-gray-600">
-                    Criamos e configuramos toda a automação personalizada para
-                    o seu negócio.
+                    Criamos e configuramos toda a automação personalizada para o
+                    seu negócio.
                   </p>
                 </div>
               </ScaleIn>
@@ -637,8 +635,8 @@ export default function AIAutomationPage() {
                   </div>
                   <h3 className="text-xl font-bold mb-4">3. Lançamento</h3>
                   <p className="text-gray-600">
-                    Ativamos o bot e acompanhamos os primeiros dias de
-                    operação para garantir perfeito funcionamento.
+                    Ativamos o bot e acompanhamos os primeiros dias de operação
+                    para garantir perfeito funcionamento.
                   </p>
                 </div>
               </ScaleIn>
