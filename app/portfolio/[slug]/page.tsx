@@ -329,9 +329,9 @@ export default function ProjectDetailPage({
                     <AnimatedCounter
                       from={0}
                       to={result.value}
-                      formatter={(value) => Math.round(value).toString() + (result.suffix || '')}
                       delay={0.5 + index * 0.1}
                     />
+                    {result.suffix}
                   </div>
                   <div className="text-blue-200 text-sm">{result.text}</div>
                 </ScaleIn>

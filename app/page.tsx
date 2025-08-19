@@ -104,8 +104,7 @@ export default function Home() {
               </div>
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-cyan-400 mb-2">
-                  <AnimatedCounter from={0} to={24} />
-                  /7
+                  <AnimatedCounter from={0} to={24} />/7
                 </div>
                 <div className="text-blue-200">Suporte Especializado</div>
               </div>
@@ -114,6 +113,49 @@ export default function Home() {
                   <AnimatedCounter from={0} to={280} />%
                 </div>
                 <div className="text-blue-200">ROI Médio</div>
+              </div>
+            </div>
+          </FadeIn>
+
+          {/* Premium Stats Section */}
+          <FadeIn direction="up" delay={1.2}>
+            <div className="mt-16 text-center">
+              <h3 className="text-3xl md:text-4xl font-bold mb-4">
+                Não somos apenas uma agência de marketing digital.
+              </h3>
+              <p className="text-xl text-blue-200 mb-12 max-w-4xl mx-auto">
+                Somos arquitetos do sucesso, especialistas em transformar empresas comuns em líderes extraordinários de mercado.
+              </p>
+              
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 bg-black/20 backdrop-blur-lg rounded-3xl p-8 border border-white/10">
+                <div className="text-center">
+                  <div className="text-4xl md:text-5xl font-bold text-yellow-400 mb-2">
+                    <AnimatedCounter from={0} to={280} />%
+                  </div>
+                  <div className="text-blue-200 text-sm">
+                    ROI Médio Garantido
+                  </div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">
+                    <AnimatedCounter from={0} to={50} />+
+                  </div>
+                  <div className="text-blue-200 text-sm">
+                    Empresas Dominando
+                  </div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl md:text-5xl font-bold text-purple-400 mb-2">
+                    <AnimatedCounter from={0} to={24} />/7
+                  </div>
+                  <div className="text-blue-200 text-sm">Suporte Premium</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl md:text-5xl font-bold text-cyan-400 mb-2">
+                    <AnimatedCounter from={0} to={98} />%
+                  </div>
+                  <div className="text-blue-200 text-sm">Taxa de Sucesso</div>
+                </div>
               </div>
             </div>
           </FadeIn>
