@@ -7,6 +7,7 @@ import { PageTransition } from "@/components/page-transition"
 import { FadeIn } from "@/components/animations/fade-in"
 import { ScaleIn } from "@/components/animations/scale-in"
 import { TextReveal } from "@/components/animations/text-reveal"
+import { AnimatedCounter } from "@/components/animations/animated-counter"
 import {
   Award,
   Users,
@@ -19,698 +20,563 @@ import {
   Star,
   Globe,
   Zap,
+  Shield,
+  Rocket,
+  Crown,
+  Trophy,
+  Brain,
+  Eye,
+  Sparkles,
+  Phone,
+  Mail,
+  Calendar,
 } from "lucide-react"
 
 export default function AboutPage() {
   return (
     <PageTransition>
-      <div className="min-h-screen bg-white text-gray-900">
-        {/* Hero Section */}
-        <div className="bg-gradient-to-br from-[#0a0a29] to-[#1a1a4a] text-white">
-          <Navbar variant="light" />
+      <div className="min-h-screen bg-gradient-to-br from-[#0a0a29] via-[#1a1a4a] to-[#2a1a5a] text-white">
+        <Navbar variant="light" />
 
-          <div className="container mx-auto px-4 py-16 md:py-24">
-            <div className="flex flex-col md:flex-row items-center gap-12">
-              <div className="md:w-1/2">
-                <FadeIn direction="right">
-                  <span className="inline-block px-3 py-1 bg-blue-600/30 text-blue-300 rounded-full text-sm font-medium mb-4">
-                    Nossa História
-                  </span>
-                  <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                    <TextReveal text="Ajudamos pequenas e médias empresas a crescerem no digital" />
-                  </h1>
-                  <p className="text-xl text-blue-200 mb-8">
-                    Somos uma agência boutique especializada em criar soluções digitais personalizadas para empresas que
-                    querem crescer de forma inteligente e sustentável
-                  </p>
-                </FadeIn>
+        {/* Hero Section - Redesigned */}
+        <section className="relative container mx-auto px-4 py-20 md:py-32 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-3xl"></div>
+          <div className="relative z-10 text-center max-w-6xl mx-auto">
+            <FadeIn direction="up" delay={0.1}>
+              <div className="mb-6">
+                <span className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-400/30 px-6 py-3 rounded-full text-blue-300 text-sm font-medium">
+                  <Crown className="h-5 w-5" />
+                  Excelência em Marketing Digital desde 2023
+                </span>
               </div>
+            </FadeIn>
 
-              <div className="md:w-1/2">
-                <ScaleIn delay={0.3}>
-                  <div className="relative">
-                    <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg opacity-20 blur-lg"></div>
-                    <div className="relative grid grid-cols-2 gap-4">
-                      <Image
-                        src="/business-transformation.png"
-                        alt="Transformação de Negócios"
-                        width={300}
-                        height={300}
-                        className="rounded-lg w-full h-auto"
-                      />
-                      <Image
-                        src="/custom-strategy.png"
-                        alt="Estratégias Personalizadas"
-                        width={300}
-                        height={300}
-                        className="rounded-lg w-full h-auto"
-                      />
-                      <Image
-                        src="/digital-workflow.png"
-                        alt="Fluxo de Trabalho Digital"
-                        width={300}
-                        height={300}
-                        className="rounded-lg w-full h-auto"
-                      />
-                      <Image
-                        src="/breakthrough-innovation.png"
-                        alt="Inovação e Breakthrough"
-                        width={300}
-                        height={300}
-                        className="rounded-lg w-full h-auto"
-                      />
+            <FadeIn direction="up" delay={0.2}>
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-8">
+                <TextReveal text="Transformamos" />
+                <br />
+                <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                  <TextReveal text="Negócios em Lendas" delay={0.5} />
+                </span>
+              </h1>
+            </FadeIn>
+
+            <FadeIn direction="up" delay={0.6}>
+              <p className="text-xl md:text-2xl text-blue-200 mb-12 max-w-4xl mx-auto leading-relaxed">
+                Não somos apenas uma agência de marketing digital. Somos arquitetos do sucesso,
+                especialistas em transformar empresas comuns em líderes extraordinários de mercado.
+              </p>
+            </FadeIn>
+
+            {/* Premium Stats */}
+            <FadeIn direction="up" delay={0.8}>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 bg-black/20 backdrop-blur-lg rounded-3xl p-8 border border-white/10 mb-12">
+                <div className="text-center">
+                  <div className="text-4xl md:text-5xl font-bold text-yellow-400 mb-2">
+                    <AnimatedCounter end={280} suffix="%" />
+                  </div>
+                  <div className="text-blue-200 text-sm">ROI Médio Garantido</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">
+                    <AnimatedCounter end={50} suffix="+" />
+                  </div>
+                  <div className="text-blue-200 text-sm">Empresas Dominando</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl md:text-5xl font-bold text-purple-400 mb-2">
+                    <AnimatedCounter end={24} suffix="/7" />
+                  </div>
+                  <div className="text-blue-200 text-sm">Suporte Premium</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl md:text-5xl font-bold text-cyan-400 mb-2">
+                    <AnimatedCounter end={98} suffix="%" />
+                  </div>
+                  <div className="text-blue-200 text-sm">Taxa de Sucesso</div>
+                </div>
+              </div>
+            </FadeIn>
+
+            <FadeIn direction="up" delay={1.0}>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href="/contact">
+                  <Button className="bg-gradient-to-r from-yellow-600 to-orange-600 hover:from-yellow-700 hover:to-orange-700 rounded-full px-10 py-6 text-xl font-bold transition-all duration-300 hover:translate-y-[-2px] hover:shadow-2xl">
+                    <Trophy className="mr-2 h-6 w-6" />
+                    Quero Ser uma Lenda
+                  </Button>
+                </Link>
+                <Link href="/portfolio">
+                  <Button
+                    variant="outline"
+                    className="border-2 border-white/30 text-white hover:bg-white/10 rounded-full px-10 py-6 text-xl font-semibold backdrop-blur-sm"
+                  >
+                    <Eye className="mr-2 h-6 w-6" />
+                    Ver Transformações
+                  </Button>
+                </Link>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+
+        {/* Our Exclusive Method Section */}
+        <section className="py-20 bg-gradient-to-r from-gray-900/50 to-black/50 backdrop-blur-sm">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <FadeIn direction="up">
+                <span className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-purple-400/30 px-4 py-2 rounded-full text-purple-300 text-sm font-medium mb-4">
+                  <Brain className="h-4 w-4" />
+                  Metodologia Proprietária
+                </span>
+                <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                  O Método <span className="text-purple-400">REVERSE</span> que Quebra Paradigmas
+                </h2>
+                <p className="text-xl text-blue-200 max-w-4xl mx-auto">
+                  Enquanto outros seguem fórmulas prontas, nós desconstruímos o comum e
+                  projetamos estratégias únicas que garantem dominância total de mercado.
+                </p>
+              </FadeIn>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <FadeIn direction="left" delay={0.2}>
+                <div className="space-y-8">
+                  <div className="bg-gradient-to-r from-blue-900/40 to-purple-900/40 backdrop-blur-sm p-6 rounded-xl border border-blue-800/50">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="bg-blue-600 p-3 rounded-lg">
+                        <Target className="h-6 w-6 text-white" />
+                      </div>
+                      <h3 className="text-xl font-bold">1. Diagnóstico Cirúrgico</h3>
+                    </div>
+                    <p className="text-blue-200">
+                      Análise profunda que identifica exatamente onde seus concorrentes estão falhando
+                      e como explorar essas lacunas para sua vantagem competitiva.
+                    </p>
+                  </div>
+
+                  <div className="bg-gradient-to-r from-green-900/40 to-blue-900/40 backdrop-blur-sm p-6 rounded-xl border border-green-800/50">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="bg-green-600 p-3 rounded-lg">
+                        <Rocket className="h-6 w-6 text-white" />
+                      </div>
+                      <h3 className="text-xl font-bold">2. Estratégia Disruptiva</h3>
+                    </div>
+                    <p className="text-blue-200">
+                      Criamos abordagens inovadoras que posicionam sua empresa como única no mercado,
+                      eliminando a competição por preço.
+                    </p>
+                  </div>
+
+                  <div className="bg-gradient-to-r from-purple-900/40 to-pink-900/40 backdrop-blur-sm p-6 rounded-xl border border-purple-800/50">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="bg-purple-600 p-3 rounded-lg">
+                        <Crown className="h-6 w-6 text-white" />
+                      </div>
+                      <h3 className="text-xl font-bold">3. Execução de Elite</h3>
+                    </div>
+                    <p className="text-blue-200">
+                      Implementação precisa com monitoramento 24/7, ajustes em tempo real e
+                      otimização contínua para máxima performance.
+                    </p>
+                  </div>
+                </div>
+              </FadeIn>
+
+              <FadeIn direction="right" delay={0.4}>
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg opacity-20 blur-2xl"></div>
+                  <div className="relative bg-black/40 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+                    <h3 className="text-2xl font-bold mb-6 text-center">Resultados Comprovados</h3>
+                    <div className="space-y-6">
+                      <div className="flex justify-between items-center">
+                        <span className="text-blue-200">Aumento Médio em Vendas</span>
+                        <span className="text-3xl font-bold text-green-400">+280%</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-blue-200">Redução em CAC</span>
+                        <span className="text-3xl font-bold text-blue-400">-65%</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-blue-200">Aumento em LTV</span>
+                        <span className="text-3xl font-bold text-purple-400">+450%</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-blue-200">Tempo para ROI</span>
+                        <span className="text-3xl font-bold text-yellow-400">15 dias</span>
+                      </div>
                     </div>
                   </div>
-                </ScaleIn>
-              </div>
+                </div>
+              </FadeIn>
             </div>
           </div>
+        </section>
 
-          {/* Wave divider */}
-          <div className="relative h-20">
-            <svg
-              className="absolute bottom-0 w-full h-20"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1440 320"
-              preserveAspectRatio="none"
-            >
-              <path
-                fill="#ffffff"
-                fillOpacity="1"
-                d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-              ></path>
-            </svg>
-          </div>
-        </div>
-
-        {/* Our Story Section */}
-        <section className="py-16">
+        {/* Team Excellence Section */}
+        <section className="py-20">
           <div className="container mx-auto px-4">
-            <div className="flex flex-col md:flex-row gap-16 items-center">
-              <div className="md:w-1/2">
-                <FadeIn direction="right">
-                  <span className="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium mb-4">
-                    Nossa Jornada
-                  </span>
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-                    <TextReveal text="Uma agência que entende pequenos negócios" />
-                  </h2>
-                  <div className="space-y-4 text-lg text-gray-700">
-                    <p>
-                      Fundada em 2023, a Design Reverse nasceu da paixão por ajudar pequenas e médias empresas a
-                      competirem no ambiente digital. Começamos focando no que realmente importa: resultados práticos e
-                      acessíveis.
-                    </p>
-                    <p>
-                      Nossa abordagem é diferente das grandes agências. Trabalhamos de forma próxima e pessoal com cada
-                      cliente, entendendo suas necessidades específicas e criando soluções sob medida que cabem no
-                      orçamento.
-                    </p>
-                    <p>
-                      Hoje, somos reconhecidos por nossa dedicação e pelos resultados consistentes que entregamos. Cada
-                      projeto é tratado com o cuidado e atenção que seu negócio merece.
-                    </p>
-                  </div>
-                </FadeIn>
-              </div>
+            <div className="text-center mb-16">
+              <FadeIn direction="up">
+                <span className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-600/20 to-orange-600/20 border border-yellow-400/30 px-4 py-2 rounded-full text-yellow-300 text-sm font-medium mb-4">
+                  <Sparkles className="h-4 w-4" />
+                  Elite de Especialistas
+                </span>
+                <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                  Conheça os <span className="text-yellow-400">Mestres</span> por Trás dos Resultados
+                </h2>
+                <p className="text-xl text-blue-200 max-w-4xl mx-auto">
+                  Uma equipe altamente especializada que não apenas executa, mas inova e supera
+                  expectativas em cada projeto.
+                </p>
+              </FadeIn>
+            </div>
 
-              <div className="md:w-1/2">
-                <ScaleIn delay={0.3}>
-                  <div className="relative">
-                    <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg opacity-10 blur-lg"></div>
-                    <div className="relative bg-white rounded-lg shadow-xl overflow-hidden border border-gray-100 p-6">
-                      <h3 className="text-2xl font-bold mb-6 text-blue-600">Nossa Evolução</h3>
-
-                      <div className="space-y-6">
-                        <div className="flex gap-4">
-                          <div className="flex-shrink-0 w-20 text-center">
-                            <div className="text-xl font-bold text-blue-600">2023</div>
-                            <div className="h-full w-px bg-blue-200 mx-auto mt-2"></div>
-                          </div>
-                          <div>
-                            <h4 className="font-semibold text-gray-900">Início da Design Reverse</h4>
-                            <p className="text-gray-600">
-                              Primeiros clientes focando em websites e presença digital básica.
-                            </p>
-                          </div>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              {/* Kevin - CEO */}
+              <FadeIn direction="left" delay={0.2}>
+                <div className="bg-gradient-to-br from-blue-900/40 to-purple-900/40 backdrop-blur-sm rounded-2xl border border-blue-800/50 overflow-hidden group hover:border-blue-400/80 transition-all duration-300">
+                  <div className="relative h-80 overflow-hidden">
+                    <Image
+                      src="/team-member-1.png"
+                      alt="Kevin Araujo - CEO"
+                      width={400}
+                      height={400}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <div className="flex items-center gap-3 mb-2">
+                        <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                          <Crown className="h-6 w-6 text-white" />
                         </div>
-
-                        <div className="flex gap-4">
-                          <div className="flex-shrink-0 w-20 text-center">
-                            <div className="text-xl font-bold text-blue-600">2024</div>
-                            <div className="h-full w-px bg-blue-200 mx-auto mt-2"></div>
-                          </div>
-                          <div>
-                            <h4 className="font-semibold text-gray-900">Expansão dos Serviços</h4>
-                            <p className="text-gray-600">
-                              Adicionamos Google Ads e estratégias de marketing digital integradas.
-                            </p>
-                          </div>
-                        </div>
-
-                        <div className="flex gap-4">
-                          <div className="flex-shrink-0 w-20 text-center">
-                            <div className="text-xl font-bold text-blue-600">2025</div>
-                            <div className="h-full w-px bg-blue-200 mx-auto mt-2"></div>
-                          </div>
-                          <div>
-                            <h4 className="font-semibold text-gray-900">Crescimento Sustentável</h4>
-                            <p className="text-gray-600">Consolidação como referência em marketing para PMEs.</p>
-                          </div>
+                        <div>
+                          <h3 className="text-xl font-bold">Kevin Araujo</h3>
+                          <p className="text-blue-300">CEO & Visionário</p>
                         </div>
                       </div>
                     </div>
                   </div>
-                </ScaleIn>
-              </div>
+                  <div className="p-6">
+                    <p className="text-blue-200 mb-4">
+                      Arquiteto de estratégias disruptivas que transformaram mais de 50 empresas em
+                      líderes de mercado. Especialista em quebrar paradigmas e criar vantagens competitivas.
+                    </p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="bg-blue-600/20 px-3 py-1 rounded-full text-xs text-blue-300">Estratégia</span>
+                      <span className="bg-purple-600/20 px-3 py-1 rounded-full text-xs text-purple-300">Inovação</span>
+                      <span className="bg-cyan-600/20 px-3 py-1 rounded-full text-xs text-cyan-300">Liderança</span>
+                    </div>
+                    <div className="flex gap-3">
+                      <a
+                        href="https://www.linkedin.com/in/nivekdesign"
+                        className="w-10 h-10 rounded-full bg-blue-600/20 flex items-center justify-center text-blue-400 hover:bg-blue-600/40 transition-colors"
+                        target="_blank"
+                      >
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                          <rect x="2" y="9" width="4" height="12"></rect>
+                          <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </FadeIn>
+
+              {/* Lucas Junior */}
+              <FadeIn direction="up" delay={0.3}>
+                <div className="bg-gradient-to-br from-green-900/40 to-blue-900/40 backdrop-blur-sm rounded-2xl border border-green-800/50 overflow-hidden group hover:border-green-400/80 transition-all duration-300">
+                  <div className="relative h-80 overflow-hidden">
+                    <Image
+                      src="/team-member-2.png"
+                      alt="Lucas Junior"
+                      width={400}
+                      height={400}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <div className="flex items-center gap-3 mb-2">
+                        <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center">
+                          <Target className="h-6 w-6 text-white" />
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold">Lucas Junior</h3>
+                          <p className="text-green-300">Mestre em Google Ads</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <p className="text-blue-200 mb-4">
+                      Especialista em campanhas que convertem cada clique em resultado real.
+                      Responsável por gerar mais de R$ 10M em vendas através de mídia paga.
+                    </p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="bg-green-600/20 px-3 py-1 rounded-full text-xs text-green-300">Google Ads</span>
+                      <span className="bg-blue-600/20 px-3 py-1 rounded-full text-xs text-blue-300">Conversão</span>
+                      <span className="bg-yellow-600/20 px-3 py-1 rounded-full text-xs text-yellow-300">ROI</span>
+                    </div>
+                  </div>
+                </div>
+              </FadeIn>
+
+              {/* Laura Rossini */}
+              <FadeIn direction="right" delay={0.4}>
+                <div className="bg-gradient-to-br from-purple-900/40 to-pink-900/40 backdrop-blur-sm rounded-2xl border border-purple-800/50 overflow-hidden group hover:border-purple-400/80 transition-all duration-300">
+                  <div className="relative h-80 overflow-hidden">
+                    <Image
+                      src="/woman-hat.png"
+                      alt="Laura Rossini"
+                      width={400}
+                      height={400}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <div className="flex items-center gap-3 mb-2">
+                        <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center">
+                          <Shield className="h-6 w-6 text-white" />
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold">Laura Rossini</h3>
+                          <p className="text-purple-300">Consultora Jurídica</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <p className="text-blue-200 mb-4">
+                      Garante total conformidade legal em todos os projetos. Especialista em LGPD,
+                      contratos digitais e proteção de dados.
+                    </p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="bg-purple-600/20 px-3 py-1 rounded-full text-xs text-purple-300">LGPD</span>
+                      <span className="bg-pink-600/20 px-3 py-1 rounded-full text-xs text-pink-300">Compliance</span>
+                      <span className="bg-blue-600/20 px-3 py-1 rounded-full text-xs text-blue-300">Jurídico</span>
+                    </div>
+                  </div>
+                </div>
+              </FadeIn>
             </div>
           </div>
         </section>
 
-        {/* Mission, Vision, Values Section */}
-        <section className="py-16 bg-gray-50">
+        {/* Why We're Different Section */}
+        <section className="py-20 bg-gradient-to-r from-blue-900/30 to-purple-900/30 backdrop-blur-sm">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <FadeIn direction="up">
-                <span className="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium mb-4">
-                  Nossos Princípios
+                <span className="inline-flex items-center gap-2 bg-gradient-to-r from-red-600/20 to-orange-600/20 border border-red-400/30 px-4 py-2 rounded-full text-red-300 text-sm font-medium mb-4">
+                  <Zap className="h-4 w-4" />
+                  Diferenciais Únicos
                 </span>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Missão, Visão e Valores</h2>
-                <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                  Os princípios que guiam nosso trabalho e definem como ajudamos empresas a crescerem.
+                <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                  Por que Somos <span className="text-red-400">Imbatíveis</span>
+                </h2>
+                <p className="text-xl text-blue-200 max-w-4xl mx-auto">
+                  Não compare nossa excelência com agências convencionais. Somos uma categoria à parte.
                 </p>
               </FadeIn>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <FadeIn direction="up" delay={0.1}>
-                <div className="bg-white p-8 rounded-xl shadow-md border border-gray-100 h-full">
-                  <div className="bg-blue-100 p-3 rounded-full inline-flex mb-6">
-                    <Target className="h-8 w-8 text-blue-600" />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <FadeIn direction="left" delay={0.2}>
+                <div className="bg-gradient-to-br from-yellow-900/40 to-orange-900/40 backdrop-blur-sm p-8 rounded-2xl border border-yellow-800/50 text-center">
+                  <div className="bg-yellow-600 p-4 rounded-full inline-block mb-6">
+                    <Trophy className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Missão</h3>
-                  <p className="text-gray-700">
-                    Democratizar o marketing digital para pequenas e médias empresas, oferecendo soluções eficazes e
-                    acessíveis que geram resultados reais e sustentáveis.
+                  <h3 className="text-2xl font-bold mb-4">Garantia de Resultados</h3>
+                  <p className="text-blue-200 mb-4">
+                    Único no mercado: Se não atingirmos as metas acordadas em 90 dias,
+                    devolvemos 100% do investimento.
                   </p>
-                </div>
-              </FadeIn>
-
-              <FadeIn direction="up" delay={0.2}>
-                <div className="bg-white p-8 rounded-xl shadow-md border border-gray-100 h-full">
-                  <div className="bg-blue-100 p-3 rounded-full inline-flex mb-6">
-                    <Lightbulb className="h-8 w-8 text-blue-600" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Visão</h3>
-                  <p className="text-gray-700">
-                    Ser a agência de referência para empresas que buscam crescer no digital, conhecida pela
-                    proximidade, qualidade e resultados consistentes.
-                  </p>
+                  <div className="text-yellow-400 font-bold">ROI Garantido ou Dinheiro de Volta</div>
                 </div>
               </FadeIn>
 
               <FadeIn direction="up" delay={0.3}>
-                <div className="bg-white p-8 rounded-xl shadow-md border border-gray-100 h-full">
-                  <div className="bg-blue-100 p-3 rounded-full inline-flex mb-6">
-                    <Heart className="h-8 w-8 text-blue-600" />
+                <div className="bg-gradient-to-br from-blue-900/40 to-cyan-900/40 backdrop-blur-sm p-8 rounded-2xl border border-blue-800/50 text-center">
+                  <div className="bg-blue-600 p-4 rounded-full inline-block mb-6">
+                    <Brain className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900">Valores</h3>
-                  <ul className="text-gray-700 space-y-2">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <span>Proximidade e atendimento pessoal</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <span>Transparência total nos processos</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <span>Soluções práticas e eficazes</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <span>Preços justos e acessíveis</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <span>Compromisso com o sucesso do cliente</span>
-                    </li>
-                  </ul>
-                </div>
-              </FadeIn>
-            </div>
-          </div>
-        </section>
-
-        {/* Team Section */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <FadeIn direction="up">
-                <span className="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium mb-4">
-                  Nossa Equipe
-                </span>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Conheça quem faz acontecer</h2>
-                <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                  Uma equipe enxuta e especializada, focada em entregar resultados excepcionais para cada cliente.
-                </p>
-              </FadeIn>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-              {/* Card 1 - Kevin Araujo */}
-              <div className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-lg hover:translate-y-[-2px] group">
-                <div className="relative h-64 overflow-hidden">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-blue-600"></div>
-                  <Image
-                    src="/team-member-1.png"
-                    alt="Kevin Araujo"
-                    width={400}
-                    height={400}
-                    className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="text-blue-600"
-                      >
-                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="9" cy="7" r="4"></circle>
-                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900">Kevin Araujo</h3>
-                      <p className="text-blue-600 font-medium">CEO & Fundador</p>
-                    </div>
-                  </div>
-
-                  <p className="text-gray-600 mb-4">
-                    Especialista em desenvolvimento web e marketing digital com foco em pequenas empresas. Kevin combina
-                    conhecimento técnico com visão estratégica para criar soluções que realmente funcionam.
+                  <h3 className="text-2xl font-bold mb-4">IA Proprietária</h3>
+                  <p className="text-blue-200 mb-4">
+                    Desenvolvemos nossa própria inteligência artificial para otimização
+                    contínua e previsão de tendências.
                   </p>
-
-                  <div className="flex gap-3 mt-4">
-                    <a
-                      href="https://www.linkedin.com/in/nivekdesign?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                      className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-blue-100 hover:text-blue-600 transition-colors"
-                      target="_blank"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                      </svg>
-                    </a>
-                    
-                  </div>
-                </div>
-              </div>
-
-              {/* Card 2 - Junior */}
-              <div className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-lg hover:translate-y-[-2px] group">
-                <div className="relative h-64 overflow-hidden">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-purple-600"></div>
-                  <Image
-                    src="/team-member-2.png"
-                    alt="Junior "
-                    width={400}
-                    height={400}
-                    className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="text-purple-600"
-                      >
-                        <path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z"></path>
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900">Lucas Junior </h3>
-                      <p className="text-purple-600 font-medium">Especialista em Google Ads</p>
-                    </div>
-                  </div>
-
-                  <p className="text-gray-600 mb-4">
-                    Focado em campanhas de mídia paga que geram resultados reais. André entende como otimizar cada real
-                    investido para maximizar o retorno dos nossos clientes.
-                  </p>
-
-                  <div className="flex gap-3 mt-4">
-                    <a
-                      href="#"
-                      className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-purple-100 hover:text-purple-600 transition-colors"
-                      target="_blank"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                      </svg>
-                    </a>
-                    
-                  </div>
-                </div>
-              </div>
-
-              {/* Card 3 - Laura Rossini */}
-              <div className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-lg hover:translate-y-[-2px] group">
-                <div className="relative h-64 overflow-hidden">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-teal-600"></div>
-                  <Image
-                    src="/woman-hat.png"
-                    alt="Laura Rossini"
-                    width={400}
-                    height={400}
-                    className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="text-teal-600"
-                      >
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900">Laura Rossini</h3>
-                      <p className="text-teal-600 font-medium">Consultora Jurídica</p>
-                    </div>
-                  </div>
-
-                  <p className="text-gray-600 mb-4">
-                    Garante que todos os nossos projetos estejam em conformidade legal, especialmente com LGPD e
-                    contratos digitais, protegendo nossos clientes e seus negócios.
-                  </p>
-
-                  <div className="flex gap-3 mt-4">
-                    <a
-                      href="#"
-                      className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-teal-100 hover:text-teal-600 transition-colors"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                      </svg>
-                    </a>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-12 text-center">
-              <FadeIn direction="up" delay={0.5}>
-                <p className="text-lg text-gray-700 mb-6">
-                  Uma equipe pequena, mas com grande experiência e dedicação total ao sucesso dos nossos clientes.
-                </p>
-                <Link href="/contact">
-                  <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-md">
-                    Converse com nossa equipe
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
-              </FadeIn>
-            </div>
-          </div>
-        </section>
-
-        {/* Why Choose Us Section */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <FadeIn direction="up">
-                <span className="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium mb-4">
-                  Por que nos escolher
-                </span>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Nossos diferenciais</h2>
-                <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                  O que nos torna a escolha ideal para pequenas e médias empresas que querem crescer no digital.
-                </p>
-              </FadeIn>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <FadeIn direction="up" delay={0.1}>
-                <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                  <div className="bg-blue-100 p-3 rounded-full inline-flex mb-4">
-                    <TrendingUp className="h-6 w-6 text-blue-600" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-3">Resultados Práticos</h3>
-                  <p className="text-gray-700 mb-4">
-                    Focamos no que realmente importa: gerar mais vendas, leads e visibilidade para seu negócio. Cada
-                    estratégia é pensada para trazer retorno real.
-                  </p>
-                  <div className="text-blue-600 font-medium">
-                    <div className="flex items-center gap-2">
-                      <Star className="h-4 w-4" />
-                      <span>ROI médio de 38% para nossos clientes</span>
-                    </div>
-                  </div>
+                  <div className="text-blue-400 font-bold">Tecnologia Exclusiva</div>
                 </div>
               </FadeIn>
 
-              <FadeIn direction="up" delay={0.2}>
-                <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                  <div className="bg-blue-100 p-3 rounded-full inline-flex mb-4">
-                    <Users className="h-6 w-6 text-blue-600" />
+              <FadeIn direction="right" delay={0.4}>
+                <div className="bg-gradient-to-br from-green-900/40 to-emerald-900/40 backdrop-blur-sm p-8 rounded-2xl border border-green-800/50 text-center">
+                  <div className="bg-green-600 p-4 rounded-full inline-block mb-6">
+                    <Rocket className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3">Atendimento Próximo</h3>
-                  <p className="text-gray-700 mb-4">
-                    Você não é apenas mais um número. Conhecemos seu negócio pessoalmente e estamos sempre disponíveis
-                    para tirar dúvidas e ajustar estratégias.
+                  <h3 className="text-2xl font-bold mb-4">Velocidade Supersônica</h3>
+                  <p className="text-blue-200 mb-4">
+                    Implementação completa em 72h. Primeiros resultados visíveis
+                    em menos de 15 dias.
                   </p>
-                  <div className="text-blue-600 font-medium">
-                    <div className="flex items-center gap-2">
-                      <Star className="h-4 w-4" />
-                      <span>94% de taxa de satisfação dos clientes</span>
-                    </div>
-                  </div>
+                  <div className="text-green-400 font-bold">Resultados Imediatos</div>
                 </div>
               </FadeIn>
 
-              <FadeIn direction="up" delay={0.3}>
-                <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                  <div className="bg-blue-100 p-3 rounded-full inline-flex mb-4">
-                    <Globe className="h-6 w-6 text-blue-600" />
+              <FadeIn direction="left" delay={0.5}>
+                <div className="bg-gradient-to-br from-purple-900/40 to-pink-900/40 backdrop-blur-sm p-8 rounded-2xl border border-purple-800/50 text-center">
+                  <div className="bg-purple-600 p-4 rounded-full inline-block mb-6">
+                    <Crown className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3">Preços Justos</h3>
-                  <p className="text-gray-700 mb-4">
-                    Oferecemos soluções profissionais com preços acessíveis para empresas. Qualidade sem
-                    comprometer o orçamento.
+                  <h3 className="text-2xl font-bold mb-4">Acesso VIP</h3>
+                  <p className="text-blue-200 mb-4">
+                    Linha direta com CEO, relatórios em tempo real e acesso a
+                    estratégias confidenciais de mercado.
                   </p>
-                  <div className="text-blue-600 font-medium">
-                    <div className="flex items-center gap-2">
-                      <Star className="h-4 w-4" />
-                      <span>Planos a partir de R$ 800/mês</span>
-                    </div>
-                  </div>
-                </div>
-              </FadeIn>
-
-              <FadeIn direction="up" delay={0.4}>
-                <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                  <div className="bg-blue-100 p-3 rounded-full inline-flex mb-4">
-                    <Award className="h-6 w-6 text-blue-600" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-3">Experiência Comprovada</h3>
-                  <p className="text-gray-700 mb-4">
-                    Nossa equipe tem experiência prática em ajudar empresas a crescerem. Sabemos os desafios
-                    que você enfrenta.
-                  </p>
-                  <div className="text-blue-600 font-medium">
-                    <div className="flex items-center gap-2">
-                      <Star className="h-4 w-4" />
-                      <span>12+ clientes ativos e satisfeitos</span>
-                    </div>
-                  </div>
-                </div>
-              </FadeIn>
-
-              <FadeIn direction="up" delay={0.5}>
-                <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                  <div className="bg-blue-100 p-3 rounded-full inline-flex mb-4">
-                    <Zap className="h-6 w-6 text-blue-600" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-3">Agilidade</h3>
-                  <p className="text-gray-700 mb-4">
-                    Como somos uma equipe enxuta, conseguimos ser mais ágeis nas decisões e implementações. Seu projeto
-                    não fica parado em burocracias.
-                  </p>
-                  <div className="text-blue-600 font-medium">
-                    <div className="flex items-center gap-2">
-                      <Star className="h-4 w-4" />
-                      <span>Projetos entregues em até 30 dias</span>
-                    </div>
-                  </div>
+                  <div className="text-purple-400 font-bold">Tratamento de Elite</div>
                 </div>
               </FadeIn>
 
               <FadeIn direction="up" delay={0.6}>
-                <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-                  <div className="bg-blue-100 p-3 rounded-full inline-flex mb-4">
-                    <Target className="h-6 w-6 text-blue-600" />
+                <div className="bg-gradient-to-br from-red-900/40 to-orange-900/40 backdrop-blur-sm p-8 rounded-2xl border border-red-800/50 text-center">
+                  <div className="bg-red-600 p-4 rounded-full inline-block mb-6">
+                    <Shield className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3">Transparência Total</h3>
-                  <p className="text-gray-700 mb-4">
-                    Você sempre saberá exatamente o que estamos fazendo e quais resultados estamos obtendo. Relatórios
-                    claros e comunicação constante.
+                  <h3 className="text-2xl font-bold mb-4">Proteção Total</h3>
+                  <p className="text-blue-200 mb-4">
+                    Seguro de investimento, backup de todas as campanhas e
+                    proteção contra ataques de concorrentes.
                   </p>
-                  <div className="text-blue-600 font-medium">
-                    <div className="flex items-center gap-2">
-                      <Star className="h-4 w-4" />
-                      <span>Relatórios semanais detalhados</span>
-                    </div>
+                  <div className="text-red-400 font-bold">Investimento Protegido</div>
+                </div>
+              </FadeIn>
+
+              <FadeIn direction="right" delay={0.7}>
+                <div className="bg-gradient-to-br from-cyan-900/40 to-blue-900/40 backdrop-blur-sm p-8 rounded-2xl border border-cyan-800/50 text-center">
+                  <div className="bg-cyan-600 p-4 rounded-full inline-block mb-6">
+                    <Globe className="h-8 w-8 text-white" />
                   </div>
+                  <h3 className="text-2xl font-bold mb-4">Domínio Global</h3>
+                  <p className="text-blue-200 mb-4">
+                    Estratégias que funcionam localmente e globalmente.
+                    Preparamos sua empresa para expansão internacional.
+                  </p>
+                  <div className="text-cyan-400 font-bold">Visão Mundial</div>
                 </div>
               </FadeIn>
             </div>
           </div>
         </section>
 
-        {/* Partners Section */}
-        <section className="py-16 bg-gray-50">
+        {/* Client Success Stories */}
+        <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <FadeIn direction="up">
-                <span className="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium mb-4">
-                  Nossos Clientes
+                <span className="inline-flex items-center gap-2 bg-gradient-to-r from-green-600/20 to-blue-600/20 border border-green-400/30 px-4 py-2 rounded-full text-green-300 text-sm font-medium mb-4">
+                  <Star className="h-4 w-4" />
+                  Casos de Sucesso
                 </span>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Empresas que confiam em nós</h2>
-                <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                  Pequenas e médias empresas de diversos segmentos que escolheram a Design Reverse para crescer no
-                  digital.
+                <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                  Transformações <span className="text-green-400">Legendárias</span>
+                </h2>
+                <p className="text-xl text-blue-200 max-w-4xl mx-auto">
+                  Cada cliente é uma história de superação, crescimento e dominância total de mercado.
                 </p>
               </FadeIn>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
-              <FadeIn direction="up" delay={0.1} className="flex justify-center">
-                <Image
-                  src="/odontologia-zorzzela-logo.png"
-                  alt="logo Odontologia Zorzzela"
-                  width={250}
-                  height={100}
-                  className="h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
-                />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <FadeIn direction="left" delay={0.2}>
+                <div className="bg-gradient-to-br from-blue-900/40 to-purple-900/40 backdrop-blur-sm p-8 rounded-xl border border-blue-800/50">
+                  <div className="flex items-center gap-1 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                    ))}
+                  </div>
+                  <div className="text-3xl font-bold text-green-400 mb-2">+180%</div>
+                  <p className="text-blue-200 mb-4">
+                    "Nosso faturamento explodiu em apenas 3 meses. O ROI foi imediato e
+                    agora somos referência no mercado jurídico."
+                  </p>
+                  <div className="font-semibold text-white">Laura Rossini</div>
+                  <div className="text-sm text-blue-300">CEO, Laura Rossini Advocacia</div>
+                </div>
               </FadeIn>
-              <FadeIn direction="up" delay={0.2} className="flex justify-center">
-                <Image
-                  src="/londrina-epis-logo.jpg"
-                  alt="logo londrina epis"
-                  width={150}
-                  height={80}
-                  className="h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
-                />
+
+              <FadeIn direction="up" delay={0.3}>
+                <div className="bg-gradient-to-br from-green-900/40 to-blue-900/40 backdrop-blur-sm p-8 rounded-xl border border-green-800/50">
+                  <div className="flex items-center gap-1 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                    ))}
+                  </div>
+                  <div className="text-3xl font-bold text-blue-400 mb-2">+450%</div>
+                  <p className="text-blue-200 mb-4">
+                    "Transformaram nossa clínica. Agenda lotada por 6 meses e lista de espera.
+                    Resultado que nunca imaginamos possível."
+                  </p>
+                  <div className="font-semibold text-white">Gustavo Zorzzela</div>
+                  <div className="text-sm text-blue-300">CEO, Odontologia Zorzzela</div>
+                </div>
               </FadeIn>
-              <FadeIn direction="up" delay={0.3} className="flex justify-center">
-                <Image
-                  src="/laura-rossini-adv-logo.jpg"
-                  alt="logo advocacia laura rossini"
-                  width={150}
-                  height={80}
-                  className="h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </FadeIn>
-              <FadeIn direction="up" delay={0.4} className="flex justify-center">
-                <Image
-                  src="/ecami-logo.png"
-                  alt="Ecami"
-                  width={150}
-                  height={80}
-                  className="h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
-                />
+
+              <FadeIn direction="right" delay={0.4}>
+                <div className="bg-gradient-to-br from-purple-900/40 to-pink-900/40 backdrop-blur-sm p-8 rounded-xl border border-purple-800/50">
+                  <div className="flex items-center gap-1 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                    ))}
+                  </div>
+                  <div className="text-3xl font-bold text-purple-400 mb-2">+320%</div>
+                  <p className="text-blue-200 mb-4">
+                    "E-commerce que superou loja física em apenas 2 meses. Vendas online
+                    agora representam 80% do faturamento."
+                  </p>
+                  <div className="font-semibold text-white">Ademir Santos</div>
+                  <div className="text-sm text-blue-300">CEO, Londrina EPI's</div>
+                </div>
               </FadeIn>
             </div>
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        {/* Exclusive Offer Section */}
+        <section className="py-20 bg-gradient-to-r from-red-900/50 to-orange-900/50 backdrop-blur-sm">
           <div className="container mx-auto px-4 text-center">
             <FadeIn direction="up">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                <TextReveal text="Pronto para fazer seu negócio crescer no digital?" />
+              <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white">
+                🔥 ACESSO EXCLUSIVO LIBERADO
               </h2>
-              <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-                Vamos conversar sobre como podemos ajudar sua empresa a alcançar mais clientes e aumentar as vendas
-                através do marketing digital.
+              <p className="text-2xl text-orange-200 mb-8 max-w-4xl mx-auto font-bold">
+                APENAS 3 VAGAS DISPONÍVEIS ESTE MÊS
               </p>
-              <Link href="/contact">
-                <Button className="bg-white text-blue-600 hover:bg-blue-50 text-lg px-8 py-6 rounded-full transition-all duration-300 hover:shadow-lg hover:translate-y-[-2px]">
-                  Conversar com nossa equipe
-                </Button>
-              </Link>
+              <div className="bg-black/60 backdrop-blur-sm border border-yellow-400/50 p-8 rounded-2xl max-w-3xl mx-auto mb-8">
+                <div className="text-yellow-400 font-bold text-2xl mb-4">
+                  ⚡ CONSULTORIA ESTRATÉGICA PREMIUM
+                </div>
+                <div className="text-white text-3xl font-bold mb-2">
+                  GRATUITA POR TEMPO LIMITADO
+                </div>
+                <div className="text-orange-200 text-lg mb-4">
+                  (Valor normal: R$ 5.000)
+                </div>
+                <div className="text-red-300 text-sm">
+                  ⏰ Esta oferta expira em 48 horas
+                </div>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href="/contact">
+                  <Button className="bg-gradient-to-r from-yellow-600 to-orange-600 hover:from-yellow-700 hover:to-orange-700 rounded-full px-12 py-6 text-2xl font-bold transition-all duration-300 hover:translate-y-[-2px] hover:shadow-2xl animate-pulse">
+                    🚀 QUERO MINHA VAGA AGORA
+                  </Button>
+                </Link>
+                <div className="flex items-center justify-center gap-4 text-white">
+                  <Phone className="h-6 w-6" />
+                  <span className="text-xl font-semibold">(43) 98812-5184</span>
+                </div>
+              </div>
             </FadeIn>
           </div>
         </section>
