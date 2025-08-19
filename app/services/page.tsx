@@ -55,6 +55,7 @@ import {
   ShoppingCart,
   Rocket,
   Users,
+  MessageCircle,
 } from "lucide-react"
 
 export default function ServicesPage() {
