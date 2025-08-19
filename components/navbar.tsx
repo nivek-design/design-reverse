@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { usePathname } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
 import { useEffect, useState } from "react"
 import { Menu, X } from "lucide-react"
@@ -12,9 +12,19 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
   const logoName = variant === "dark" ? "DESIGN REVERSE" : "DESIGN REVERSE"
   const logoDescription = variant === "dark" ? "MARKETING AGENCY" : "MARKETING AGENCY"
   const pathname = usePathname()
+  const router = useRouter()
   const [activeItem, setActiveItem] = useState("")
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const { isReversed, toggleReverse } = useReverse()
+
+  // Handle navigation with refresh
+  const handleNavigation = (href: string) => {
+    setMobileMenuOpen(false)
+    if (pathname !== href) {
+      router.push(href)
+      router.refresh()
+    }
+  }
 
   // Fechar o menu mobile quando a rota mudar
   useEffect(() => {
@@ -188,9 +198,9 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
           const isActive = activeItem === item.name
 
           return (
-            <Link
+            <button
               key={item.name}
-              href={item.href}
+              onClick={() => handleNavigation(item.href)}
               className="relative text-sm hover:text-white/80 group"
               aria-current={isActive ? "page" : undefined}
             >
@@ -212,7 +222,7 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
                 whileHover={{ scaleX: isActive ? 0 : 1 }}
                 transition={{ duration: 0.3 }}
               />
-            </Link>
+            </button>
           )
         })}
       </nav>
@@ -282,9 +292,9 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
 
                   return (
                     <motion.div key={item.name} variants={menuItemVariants}>
-                      <Link
-                        href={item.href}
-                        className={`text-lg font-medium relative ${
+                      <button
+                        onClick={() => handleNavigation(item.href)}
+                        className={`text-lg font-medium relative w-full text-left ${
                           isActive ? "text-blue-400" : "text-white hover:text-blue-300"
                         }`}
                         aria-current={isActive ? "page" : undefined}
@@ -293,7 +303,7 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
                         {isActive && (
                           <span className="absolute -left-4 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-blue-400" />
                         )}
-                      </Link>
+                      </button>
                     </motion.div>
                   )
                 })}
