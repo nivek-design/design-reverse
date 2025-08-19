@@ -22,7 +22,6 @@ import {
   Rocket,
 } from "lucide-react";
 import { FadeIn } from "@/components/animations/fade-in";
-import { StaggerChildren } from "@/components/animations/stagger-children";
 import { ScaleIn } from "@/components/animations/scale-in";
 import { AnimatedCounter } from "@/components/animations/animated-counter";
 import { PageTransition } from "@/components/page-transition";
@@ -46,12 +45,12 @@ const projects = {
     • **SEO Jurídico**: Otimização do site para mecanismos de busca com foco em termos jurídicos específicos
     • **Landing Pages**: Criação de páginas específicas para diferentes serviços oferecidos pelo escritório`,
     results: [
-      { text: "Aumento no faturamento mensal ", value: 180, suffix: "%" },
-      { text: "Crescimento em novos clientes", value: 250, suffix: "%" },
-      { text: "Aumento no tráfego qualificado", value: 320, suffix: "%" },
+      { text: "Aumento no faturamento mensal ", value: 20, suffix: "%" },
+      { text: "Crescimento em novos clientes", value: 40, suffix: "%" },
+      { text: "Aumento no tráfego qualificado", value: 100, suffix: "%" },
       { text: "Taxa de conversão de leads", value: 15, suffix: "%" },
-      { text: "ROI em campanhas Google Ads", value: 420, suffix: "%" },
-      { text: "Posicionamento no Google (top 3)", value: 95, suffix: "%" },
+      { text: "ROI em campanhas Google Ads", value: 200, suffix: "%" },
+      { text: "Posicionamento no Google (top 20)", value: 100, suffix: "%" },
     ],
     testimonial: {
       quote:
@@ -94,22 +93,19 @@ const projects = {
     category: "Website ",
     website: "www.odontologiazorzzela.com.br",
     duration: "2 meses",
-    challenge: `A Odontologia Zorzzela, clínica odontológica de referência, precisava modernizar sua presença digital para atrair novos pacientes e facilitar o agendamento de consultas. O desafio era criar uma experiência online que transmitisse a qualidade dos serviços prestados, destacando os tratamentos especializados e a expertise da equipe, além de implementar um sistema eficiente de agendamentos online.`,
+    challenge: `A Odontologia Zorzzela, clínica odontológica de referência, precisava modernizar sua presença digital para atrair novos pacientes. O desafio era criar uma experiência online que transmitisse a qualidade dos serviços prestados, destacando os tratamentos especializados e a expertise da equipe, além de implementar um sistema eficiente de agendamentos online.`,
     solution: `Criamos uma solução digital completa:
 
     • **Website Responsivo**: Desenvolvimento de um site moderno e otimizado para dispositivos móveis
-    • **Sistema de Agendamentos**: Implementação de ferramenta online para agendamento de consultas
     • **Showcase de Tratamentos**: Apresentação detalhada dos serviços oferecidos com antes e depois
     • **SEO Local**: Otimização para buscas locais e Google Meu Negócio
-    • **Marketing de Conteúdo**: Criação de conteúdo educativo sobre saúde bucal
     • **Integração Social**: Conectividade com redes sociais para ampliar o alcance`,
     results: [
-      { text: "Aumento em agendamentos online", value: 280, suffix: "%" },
-      { text: "Crescimento em novos pacientes", value: 150, suffix: "%" },
-      { text: "Melhoria na taxa de conversão", value: 85, suffix: "%" },
-      { text: "Aumento no tráfego do site", value: 200, suffix: "%" },
-      { text: "Engajamento nas redes sociais", value: 180, suffix: "%" },
-      { text: "Satisfação dos pacientes", value: 95, suffix: "%" },
+      { text: "Aumento em agendamentos online", value: 30, suffix: "%" },
+      { text: "Crescimento em novos pacientes", value: 20, suffix: "%" },
+      { text: "Melhoria na taxa de conversão", value: 50, suffix: "%" },
+      { text: "Engajamento nas redes sociais", value: 30, suffix: "%" },
+      { text: "Satisfação dos pacientes", value: 100, suffix: "%" },
     ],
     testimonial: {
       quote:
@@ -129,9 +125,14 @@ const projects = {
         caption: "Identidade visual profissional e moderna",
       },
       {
-        src: "/portfolio-gaming-2.png",
+        src: "/mockup-site-iphone-odontologia-zorzzela.png",
         alt: "Página de serviços odontológicos",
-        caption: "Apresentação clara dos tratamentos oferecidos",
+        caption: "Apresentação mockup mobile",
+      },
+      {
+        src: "/mockup-site-macbook-odontologia-zorzzela.png",
+        alt: "Página de serviços odontológicos",
+        caption: "Mockup notebook site ",
       },
     ],
     technologies: ["Next.JS", "SEO", "Google Analytics"],
@@ -162,12 +163,11 @@ const projects = {
     • **SEO E-commerce**: Otimização para vendas online e busca de produtos
     • **B2B Features**: Funcionalidades específicas para vendas corporativas`,
     results: [
-      { text: "Crescimento nas vendas online", value: 450, suffix: "%" },
-      { text: "Aumento no faturamento total", value: 280, suffix: "%" },
-      { text: "Novos clientes corporativos", value: 180, suffix: "%" },
-      { text: "Melhoria na conversão", value: 95, suffix: "%" },
-      { text: "Produtos catalogados", value: 1000, suffix: "+" },
-      { text: "Satisfação dos clientes", value: 98, suffix: "%" },
+      { text: "Crescimento nas vendas online", value: 100, suffix: "%" },
+      { text: "Aumento no faturamento total", value: 20, suffix: "%" },
+      { text: "Melhoria na conversão", value: 80, suffix: "%" },
+      { text: "Produtos catalogados", value: 100, suffix: "+" },
+      { text: "Satisfação dos clientes", value: 100, suffix: "%" },
     ],
     testimonial: {
       quote:

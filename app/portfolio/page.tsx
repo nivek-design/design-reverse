@@ -299,13 +299,12 @@ export default function PortfolioPage() {
                 </HoverCard>
               </FadeIn>
 
-              {/* Portal Gaming */}
               <FadeIn direction="right" delay={0.5}>
                 <HoverCard className="bg-gradient-to-br from-purple-900/40 to-pink-900/40 backdrop-blur-sm rounded-2xl overflow-hidden border border-purple-800/50">
                   <div className="relative h-64 overflow-hidden">
                     <Image
-                      src="/gaming-website.png"
-                      alt="Portal Gaming"
+                      src="/site-speedy-serralheria.png"
+                      alt="Landing Page Speedy Serralheria"
                       width={600}
                       height={400}
                       className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
@@ -315,34 +314,38 @@ export default function PortfolioPage() {
                   <div className="p-8">
                     <div className="flex items-center gap-3 mb-4">
                       <div className="w-10 h-10 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center">
-                        <Globe className="h-5 w-5 text-white" />
+                        <Image
+                          src="/logo speedy.png"
+                          alt="Speddy Seralheria Logo"
+                          width={40}
+                          height={40}
+                          className="rounded-full"
+                        />
                       </div>
                       <div>
                         <h3 className="text-xl font-bold">
-                          Portal Gaming Elite
+                          Speedy Serralheria
                         </h3>
-                        <p className="text-purple-300 text-sm">
-                          Portal de Entretenimento
-                        </p>
+                        <p className="text-purple-300 text-sm">Landingpage</p>
                       </div>
                     </div>
                     <p className="text-blue-200 mb-6 leading-relaxed">
-                      Portal moderno e interativo para comunidade gamer, com
-                      sistema de reviews, rankings e integração social que
-                      engaja milhares de usuários.
+                      Speedy Serralheria & Comunicação Visual Criamos estruturas
+                      metálicas e soluções visuais que combinam engenharia de
+                      precisão com design inovador.
                     </p>
                     <div className="grid grid-cols-2 gap-4 mb-6">
                       <div className="bg-purple-500/20 p-3 rounded-lg text-center">
                         <div className="text-purple-400 font-bold text-lg">
-                          10k+
+                          30%
                         </div>
                         <div className="text-purple-300 text-sm">
-                          Usuários Ativos
+                          Serviços fechados
                         </div>
                       </div>
                       <div className="bg-pink-500/20 p-3 rounded-lg text-center">
                         <div className="text-pink-400 font-bold text-lg">
-                          +250%
+                          +90%
                         </div>
                         <div className="text-pink-300 text-sm">Engajamento</div>
                       </div>
@@ -1187,7 +1190,7 @@ export default function PortfolioPage() {
                   <ScaleIn delay={0.3}>
                     <div className="bg-gradient-to-br from-orange-900/60 to-red-900/60 backdrop-blur-sm rounded-xl border border-orange-800/50 aspect-square overflow-hidden relative">
                       <ScrollVideo
-                        src="/Roteiro_de_Vídeo_Institucional_Cinematográfico.mp4"
+                        src="/Roteiro_de_Vídeo_Institucional_Cinematográfico-2.mp4"
                         className="w-full h-full object-contain "
                         muted={true}
                         loop={true}
@@ -1210,7 +1213,7 @@ export default function PortfolioPage() {
                   <ScaleIn delay={0.4}>
                     <div className="bg-gradient-to-br from-orange-900/60 to-red-900/60 backdrop-blur-sm rounded-xl border border-orange-800/50 aspect-square overflow-hidden relative">
                       <ScrollVideo
-                        src="/Roteiro_de_Vídeo_Institucional_Cinematográfico.mp4"
+                        src="/Roteiro_de_Vídeo_Institucional_Cinematográfico-2.mp4"
                         className="w-full h-full object-contain "
                         muted={true}
                         loop={true}

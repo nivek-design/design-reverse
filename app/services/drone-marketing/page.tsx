@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { ScrollVideo } from "@/components/animations/scroll-video";
 
 export const metadata: Metadata = {
   title:
@@ -171,12 +172,13 @@ export default function DroneMarketingPage() {
                 <ScaleIn delay={0.3}>
                   <div className="relative">
                     <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg transform rotate-3 scale-105 opacity-20"></div>
-                    <Image
-                      src="/drone-marketing-showcase.png"
-                      alt="Drone Marketing Showcase"
-                      width={600}
-                      height={400}
-                      className="relative rounded-lg shadow-2xl"
+                    <ScrollVideo
+                      src="/Roteiro_de_Vídeo_Institucional_Cinematográfico.mp4"
+                      className=" h-full object-cover "
+                      muted={true}
+                      loop={true}
+                      controls={false}
+                      threshold={1}
                     />
                   </div>
                 </ScaleIn>
