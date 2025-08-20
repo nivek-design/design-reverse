@@ -17,6 +17,7 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
   const router = useRouter();
   const [activeItem, setActiveItem] = useState("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   const { isReversed, toggleReverse } = useReverse();
 
   // Handle navigation with refresh
@@ -55,7 +56,15 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
     {
       name: "SERVIÇOS",
       href: "/services",
-      subRoutes: ["/services/websites", "/services/google-ads"], // Subrotas que também ativam este item
+      subRoutes: ["/services/websites", "/services/google-ads", "/services/drone-marketing", "/services/social-media", "/services/ai-automation"], // Subrotas que também ativam este item
+      hasDropdown: true,
+      dropdownItems: [
+        { name: "Criação de Sites", href: "/services/websites" },
+        { name: "Google Ads", href: "/services/google-ads" },
+        { name: "Marketing com Drone", href: "/services/drone-marketing" },
+        { name: "Mídias Sociais", href: "/services/social-media" },
+        { name: "Automação com IA", href: "/services/ai-automation" },
+      ],
     },
     {
       name: "PORTFOLIO",
@@ -197,6 +206,79 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
         {navItems.map((item) => {
           const isActive = activeItem === item.name;
 
+          if (item.hasDropdown) {
+            return (
+              <div
+                key={item.name}
+                className="relative"
+                onMouseEnter={() => setDropdownOpen(true)}
+                onMouseLeave={() => setDropdownOpen(false)}
+              >
+                <button
+                  onClick={() => handleNavigation(item.href)}
+                  className="relative text-sm hover:text-white/80 group flex items-center gap-1"
+                  aria-current={isActive ? "page" : undefined}
+                >
+                  {item.name}
+                  <svg
+                    className={`w-4 h-4 transition-transform duration-200 ${
+                      dropdownOpen ? "rotate-180" : ""
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                  {isActive && (
+                    <motion.div
+                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-blue-400"
+                      layoutId="navbar-indicator"
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 30,
+                      }}
+                    />
+                  )}
+                  <motion.div
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-blue-400 scale-x-0 origin-left"
+                    initial={false}
+                    whileHover={{ scaleX: isActive ? 0 : 1 }}
+                    transition={{ duration: 0.3 }}
+                  />
+                </button>
+
+                <AnimatePresence>
+                  {dropdownOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      transition={{ duration: 0.2 }}
+                      className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50"
+                    >
+                      {item.dropdownItems?.map((dropdownItem) => (
+                        <button
+                          key={dropdownItem.href}
+                          onClick={() => handleNavigation(dropdownItem.href)}
+                          className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                        >
+                          {dropdownItem.name}
+                        </button>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            );
+          }
+
           return (
             <button
               key={item.name}
@@ -317,6 +399,21 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
                           <span className="absolute -left-4 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-blue-400" />
                         )}
                       </button>
+                      
+                      {/* Submenu para mobile */}
+                      {item.hasDropdown && (
+                        <div className="ml-4 mt-3 space-y-2">
+                          {item.dropdownItems?.map((dropdownItem) => (
+                            <button
+                              key={dropdownItem.href}
+                              onClick={() => handleNavigation(dropdownItem.href)}
+                              className="block text-sm text-gray-300 hover:text-blue-300 transition-colors w-full text-left py-1"
+                            >
+                              {dropdownItem.name}
+                            </button>
+                          ))}
+                        </div>
+                      )}
                     </motion.div>
                   );
                 })}
