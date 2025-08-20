@@ -188,7 +188,7 @@ export default function GoogleAdsServicePage() {
             <FadeIn direction="up" className="text-center">
               <h2 className="text-3xl font-bold mb-12 text-purple-900">Nossos Serviços de Google Ads</h2>
             </FadeIn>
-            <div className="grid grid-cols-3 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <HoverCard className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
                 <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
                   <Search className="h-8 w-8 text-purple-700" />
