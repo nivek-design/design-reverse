@@ -95,8 +95,8 @@ export default function DroneMarketingPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link href="/contact?service=drone">
-                    <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 rounded-full px-10 py-7 text-xl font-bold transition-all duration-300 hover:translate-y-[-3px] hover:shadow-2xl shadow-orange-500/25 border border-orange-400/30">
-                      🚁 SOLICITAR ORÇAMENTO GRÁTIS
+                    <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 rounded-full px-5 py-7 text-xl font-bold transition-all duration-300 hover:translate-y-[-3px] hover:shadow-2xl shadow-orange-500/25 border border-orange-400/30">
+                      SOLICITAR ORÇAMENTO GRÁTIS
                       <ArrowRight className="ml-3 h-6 w-6" />
                     </Button>
                   </Link>
