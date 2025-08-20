@@ -1,5 +1,48 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+
+export const metadata: Metadata = {
+  title: "Design Reverse - Agência de Marketing Digital Londrina | Sites, Google Ads, Drone Marketing",
+  description: "Agência de marketing digital em Londrina especializada em criação de sites, Google Ads, drone marketing e automação com IA. Aumente suas vendas em 150%+ com estratégias comprovadas.",
+  keywords: [
+    "marketing digital londrina",
+    "agência marketing digital",
+    "criação sites londrina",
+    "google ads londrina",
+    "drone marketing",
+    "automação ia",
+    "gerenciamento redes sociais",
+    "seo londrina",
+    "sites responsivos",
+    "landing pages"
+  ],
+  openGraph: {
+    title: "Design Reverse - Marketing Digital que Transforma Negócios",
+    description: "Transforme seu negócio com nossa metodologia proprietária. +150% aumento em vendas, +50 empresas transformadas, ROI de 280%.",
+    url: "https://designreverse.com.br",
+    siteName: "Design Reverse",
+    images: [
+      {
+        url: "/design-reverse-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Design Reverse - Agência de Marketing Digital Londrina",
+      },
+    ],
+    locale: "pt_BR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Design Reverse - Marketing Digital Extraordinário",
+    description: "Desconstruindo o comum, projetando o extraordinário. Marketing digital focado em conversão e crescimento.",
+    images: ["/design-reverse-logo.png"],
+  },
+  alternates: {
+    canonical: "https://designreverse.com.br",
+  },
+};
 import { Navbar } from "@/components/navbar";
 import {
   ArrowRight,

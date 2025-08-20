@@ -81,11 +81,11 @@ export default function DroneMarketingPage() {
             <div className="max-w-4xl mx-auto text-center">
               <FadeIn direction="up">
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                  Leve o Marketing Digital do seu Cliente a{" "}
+                  Drone Marketing Londrina - Filmagem Aérea 4K que{" "}
                   <span className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
-                    Outro Nível
+                    Multiplica Conversões
                   </span>{" "}
-                  com Imagens Aéreas 4K que Convertem
+                  no Marketing Digital
                 </h1>
                 <p className="text-xl md:text-2xl text-orange-200 mb-8 leading-relaxed">
                   Crie campanhas de marketing digital memoráveis com a
@@ -95,9 +95,9 @@ export default function DroneMarketingPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link href="/contact?service=drone">
-                    <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 rounded-full px-8 py-6 text-lg font-semibold transition-all duration-300 hover:translate-y-[-2px] hover:shadow-xl">
-                      Solicite um Orçamento Personalizado
-                      <ArrowRight className="ml-2 h-5 w-5" />
+                    <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 rounded-full px-10 py-7 text-xl font-bold transition-all duration-300 hover:translate-y-[-3px] hover:shadow-2xl shadow-orange-500/25 border border-orange-400/30">
+                      🚁 SOLICITAR ORÇAMENTO GRÁTIS
+                      <ArrowRight className="ml-3 h-6 w-6" />
                     </Button>
                   </Link>
                   <Button
@@ -179,6 +179,7 @@ export default function DroneMarketingPage() {
                       loop={true}
                       controls={false}
                       threshold={1}
+                      loading="lazy"
                     />
                   </div>
                 </ScaleIn>
