@@ -90,7 +90,8 @@ export default function AboutPage() {
                 </div>
                 <div className="text-center">
                   <div className="text-4xl md:text-5xl font-bold text-purple-400 mb-2">
-                    <AnimatedCounter from={0} to={24} />/7
+                    <AnimatedCounter from={0} to={24} />
+                    /7
                   </div>
                   <div className="text-blue-200 text-sm">Suporte Premium</div>
                 </div>
@@ -269,7 +270,7 @@ export default function AboutPage() {
                       alt="Kevin Araujo - CEO"
                       width={400}
                       height={400}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="w-full h-full object-cover transition-transform object-[55%_15%] duration-500 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                     <div className="absolute bottom-4 left-4 right-4">
