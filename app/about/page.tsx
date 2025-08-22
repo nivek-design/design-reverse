@@ -265,7 +265,7 @@ export default function AboutPage() {
                 <div className="bg-gradient-to-br from-blue-900/40 to-purple-900/40 backdrop-blur-sm rounded-2xl border border-blue-800/50 overflow-hidden group hover:border-blue-400/80 transition-all duration-300">
                   <div className="relative h-80 overflow-hidden">
                     <Image
-                      src="/team-member-1.png"
+                      src="/kevin-perfil.png"
                       alt="Kevin Araujo - CEO"
                       width={400}
                       height={400}
