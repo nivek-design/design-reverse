@@ -344,7 +344,7 @@ export default function ContactPage() {
                       </svg>
                     </a>
                     <a
-                      href="https://linkedin.com/company/designreverse-br"
+                      href="https://linkedin.com/designreverse"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-blue-800/30 p-2 rounded-full hover:bg-blue-700/50 transition-colors"

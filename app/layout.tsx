@@ -34,11 +34,6 @@ export default function RootLayout({
   return (
     <html lang="pt-br" suppressHydrationWarning>
       <head>
-        {/* Preload critical assets */}
-        <link rel="preload" href="/design-reverse-logo.png" as="image" />
-        <link rel="preload" href="/drone-marketing-showcase.png" as="image" />
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         {/* Google Analytics */}
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-RHDPR14XZ7" strategy="afterInteractive" />
         <Script
@@ -49,41 +44,7 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-RHDPR14XZ7', {
-                page_title: document.title,
-                page_location: window.location.href,
-                send_page_view: true,
-                custom_map: {
-                  'custom_parameter_1': 'service_interest',
-                  'custom_parameter_2': 'conversion_source'
-                }
-              });
-              
-              // Track scroll depth
-              let scrollDepth = 0;
-              window.addEventListener('scroll', function() {
-                const currentScroll = Math.round((window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100);
-                if (currentScroll > scrollDepth && currentScroll % 25 === 0) {
-                  scrollDepth = currentScroll;
-                  gtag('event', 'scroll_depth', {
-                    event_category: 'engagement',
-                    event_label: scrollDepth + '%',
-                    value: scrollDepth
-                  });
-                }
-              });
-              
-              // Track CTA clicks
-              window.addEventListener('click', function(e) {
-                if (e.target.tagName === 'BUTTON' || e.target.closest('button')) {
-                  const buttonText = e.target.textContent || e.target.closest('button').textContent;
-                  gtag('event', 'cta_click', {
-                    event_category: 'conversion',
-                    event_label: buttonText.trim(),
-                    page_location: window.location.href
-                  });
-                }
-              });
+              gtag('config', 'G-RHDPR14XZ7');
             `,
           }}
         />

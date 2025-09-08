@@ -9,6 +9,7 @@ interface AnimatedCounterProps {
   duration?: number
   delay?: number
   className?: string
+  formatter?: (value: number) => string
 }
 
 export function AnimatedCounter({
@@ -17,12 +18,13 @@ export function AnimatedCounter({
   duration = 2,
   delay = 0,
   className = "",
+  formatter = (value) => Math.round(value).toString(),
 }: AnimatedCounterProps) {
   const nodeRef = useRef<HTMLSpanElement>(null)
   const inView = useInView(nodeRef, { once: true, amount: 0.3 })
   const motionValue = useMotionValue(from)
   const springValue = useSpring(motionValue, { duration: duration * 1000, delay: delay * 1000 })
-  const [displayValue, setDisplayValue] = useState(Math.round(from).toString())
+  const [displayValue, setDisplayValue] = useState(formatter(from))
 
   useEffect(() => {
     if (inView) {
@@ -32,11 +34,11 @@ export function AnimatedCounter({
 
   useEffect(() => {
     const unsubscribe = springValue.onChange((latest) => {
-      setDisplayValue(Math.round(latest).toString())
+      setDisplayValue(formatter(latest))
     })
 
     return unsubscribe
-  }, [springValue])
+  }, [formatter, springValue])
 
   return (
     <span ref={nodeRef} className={className}>
