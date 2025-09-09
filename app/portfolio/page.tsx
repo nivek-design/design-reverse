@@ -418,40 +418,6 @@ export default function PortfolioPage() {
                 </HoverCard>
               </FadeIn>
 
-              <FadeIn direction="up" delay={0.3}>
-                <HoverCard className="bg-gradient-to-br from-blue-900/40 to-cyan-900/40 backdrop-blur-sm p-8 rounded-2xl border border-blue-800/50 text-center">
-                  <div className="bg-gradient-to-r from-blue-600 to-cyan-600 p-4 rounded-xl inline-block mb-6">
-                    <Target className="h-8 w-8 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-4">
-                    Odontologia Zorzzela
-                  </h3>
-                  <p className="text-blue-200 mb-6">
-                    Campanha de agendamentos para tratamentos odontológicos
-                    especializados
-                  </p>
-                  <div className="space-y-4 mb-8">
-                    <div className="bg-blue-500/20 p-4 rounded-lg">
-                      <div className="text-blue-400 font-bold text-2xl">
-                        320%
-                      </div>
-                      <div className="text-blue-300">ROI</div>
-                    </div>
-                    <div className="bg-cyan-500/20 p-4 rounded-lg">
-                      <div className="text-cyan-400 font-bold text-2xl">
-                        +250%
-                      </div>
-                      <div className="text-cyan-300">Agendamentos</div>
-                    </div>
-                  </div>
-                  <Link href="/portfolio/odontologia-zorzzela">
-                    <Button className="w-full bg-gradient-to-r from-blue-600 to-cyan-600">
-                      Ver Resultados
-                    </Button>
-                  </Link>
-                </HoverCard>
-              </FadeIn>
-
               <FadeIn direction="right" delay={0.4}>
                 <HoverCard className="bg-gradient-to-br from-orange-900/40 to-yellow-900/40 backdrop-blur-sm p-8 rounded-2xl border border-orange-800/50 text-center">
                   <div className="bg-gradient-to-r from-orange-600 to-yellow-600 p-4 rounded-xl inline-block mb-6">
@@ -1169,7 +1135,7 @@ export default function PortfolioPage() {
                   <ScaleIn delay={0.2}>
                     <div className="bg-gradient-to-br from-orange-900/60 to-red-900/60 backdrop-blur-sm rounded-xl border border-orange-800/50 aspect-square overflow-hidden relative">
                       <ScrollVideo
-                        src="/Roteiro_de_Vídeo_Institucional_Cinematográfico-2.mp4"
+                        src="/lago-igapo-ponte-kl.mp4"
                         className="w-full h-full object-contain "
                         muted={true}
                         loop={true}
@@ -1190,7 +1156,7 @@ export default function PortfolioPage() {
                   <ScaleIn delay={0.3}>
                     <div className="bg-gradient-to-br from-orange-900/60 to-red-900/60 backdrop-blur-sm rounded-xl border border-orange-800/50 aspect-square overflow-hidden relative">
                       <ScrollVideo
-                        src="/Roteiro_de_Vídeo_Institucional_Cinematográfico-2.mp4"
+                        src="/lago-igapo-2.mp4"
                         className="w-full h-full object-contain "
                         muted={true}
                         loop={true}
@@ -1203,7 +1169,7 @@ export default function PortfolioPage() {
                             Vídeo para Mídia Sociais
                           </div>
                           <div className="text-orange-300 text-xs">
-                            Feed Instagram, TikTok, Facebook, etc.
+                            Youtube, Instagram, TikTok, Facebook, etc.
                           </div>
                         </div>
                       </div>

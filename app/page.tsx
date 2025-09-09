@@ -3,8 +3,10 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Design Reverse - Agência de Marketing Digital Londrina | Sites, Google Ads, Drone Marketing",
-  description: "Agência de marketing digital em Londrina especializada em criação de sites, Google Ads, drone marketing e automação com IA. Aumente suas vendas em 150%+ com estratégias comprovadas.",
+  title:
+    "Design Reverse - Agência de Marketing Digital Londrina | Sites, Google Ads, Drone Marketing",
+  description:
+    "Agência de marketing digital em Londrina especializada em criação de sites, Google Ads, drone marketing e automação com IA. Aumente suas vendas em 150%+ com estratégias comprovadas.",
   keywords: [
     "marketing digital londrina",
     "agência marketing digital",
@@ -15,11 +17,12 @@ export const metadata: Metadata = {
     "gerenciamento redes sociais",
     "seo londrina",
     "sites responsivos",
-    "landing pages"
+    "landing pages",
   ],
   openGraph: {
     title: "Design Reverse - Marketing Digital que Transforma Negócios",
-    description: "Transforme seu negócio com nossa metodologia proprietária. +150% aumento em vendas, +50 empresas transformadas, ROI de 280%.",
+    description:
+      "Transforme seu negócio com nossa metodologia proprietária. +150% aumento em vendas, +50 empresas transformadas, ROI de 280%.",
     url: "https://designreverse.com.br",
     siteName: "Design Reverse",
     images: [
@@ -36,7 +39,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Design Reverse - Marketing Digital Extraordinário",
-    description: "Desconstruindo o comum, projetando o extraordinário. Marketing digital focado em conversão e crescimento.",
+    description:
+      "Desconstruindo o comum, projetando o extraordinário. Marketing digital focado em conversão e crescimento.",
     images: ["/design-reverse-logo.png"],
   },
   alternates: {
@@ -466,8 +470,8 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="text-blue-200 mb-4">
-                  "Nosso faturamento aumentou 180% em apenas 3 meses. O
-                  investimento se pagou na primeira semana!"
+                  "Nosso faturamento aumentou 50% em apenas 3 meses. O
+                  investimento se pagou!"
                 </p>
                 <div className="font-semibold">Laura Rossini</div>
                 <div className="text-sm text-blue-300">
@@ -487,7 +491,7 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="text-blue-200 mb-4">
-                  "Nunca vi resultados tão rápidos. Em 15 dias já estávamos
+                  "Nunca vi resultados tão rápidos. Em 30 dias já estávamos
                   tendo mais agendamentos que conseguíamos atender."
                 </p>
                 <div className="font-semibold">Gustavo Zorzzela</div>
@@ -509,9 +513,9 @@ export default function Home() {
                 </div>
                 <p className="text-blue-200 mb-4">
                   "O e-commerce transformou nosso negócio. Vendas online
-                  superaram as vendas físicas em apenas 2 meses."
+                  superaram as vendas físicas em apenas 6 meses."
                 </p>
-                <div className="font-semibold">Ademir Santos</div>
+                <div className="font-semibold">Ademir Batista</div>
                 <div className="text-sm text-blue-300">CEO, Londrina EPI's</div>
               </div>
             </FadeIn>
