@@ -1,50 +1,37 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { usePathname, useRouter } from "next/navigation";
-import { motion, AnimatePresence } from "framer-motion";
-import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
-import { useReverse } from "@/contexts/reverse-context";
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { usePathname } from "next/navigation"
+import { motion, AnimatePresence } from "framer-motion"
+import { useEffect, useState } from "react"
+import { Menu, X } from "lucide-react"
+import { useReverse } from "@/contexts/reverse-context"
 
 export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
-  const logoName = variant === "dark" ? "DESIGN REVERSE" : "DESIGN REVERSE";
-  const logoDescription =
-    variant === "dark" ? "MARKETING AGENCY" : "MARKETING AGENCY";
-  const pathname = usePathname();
-  const router = useRouter();
-  const [activeItem, setActiveItem] = useState("");
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const { isReversed, toggleReverse } = useReverse();
-
-  // Handle navigation with refresh
-  const handleNavigation = (href: string) => {
-    setMobileMenuOpen(false);
-    if (pathname !== href) {
-      router.push(href);
-      router.refresh();
-    }
-  };
+  const logoName = variant === "dark" ? "DESIGN REVERSE" : "DESIGN REVERSE"
+  const logoDescription = variant === "dark" ? "MARKETING AGENCY" : "MARKETING AGENCY"
+  const pathname = usePathname()
+  const [activeItem, setActiveItem] = useState("")
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const { isReversed, toggleReverse } = useReverse()
 
   // Fechar o menu mobile quando a rota mudar
   useEffect(() => {
-    setMobileMenuOpen(false);
-  }, [pathname]);
+    setMobileMenuOpen(false)
+  }, [pathname])
 
   // Impedir a rolagem do body quando o menu mobile estiver aberto
   useEffect(() => {
     if (mobileMenuOpen) {
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = "hidden"
     } else {
-      document.body.style.overflow = "";
+      document.body.style.overflow = ""
     }
     return () => {
-      document.body.style.overflow = "";
-    };
-  }, [mobileMenuOpen]);
+      document.body.style.overflow = ""
+    }
+  }, [mobileMenuOpen])
 
   // Array de itens de navegação com suas rotas e subrotas
   const navItems = [
@@ -56,15 +43,7 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
     {
       name: "SERVIÇOS",
       href: "/services",
-      subRoutes: ["/services/websites", "/services/google-ads", "/services/drone-marketing", "/services/social-media", "/services/ai-automation"], // Subrotas que também ativam este item
-      hasDropdown: true,
-      dropdownItems: [
-        { name: "Criação de Sites", href: "/services/websites" },
-        { name: "Google Ads", href: "/services/google-ads" },
-        { name: "Marketing com Drone", href: "/services/drone-marketing" },
-        { name: "Mídias Sociais", href: "/services/social-media" },
-        { name: "Automação com IA", href: "/services/ai-automation" },
-      ],
+      subRoutes: ["/services/websites", "/services/google-ads"], // Subrotas que também ativam este item
     },
     {
       name: "PORTFOLIO",
@@ -79,18 +58,18 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
       name: "CONTATO",
       href: "/contact",
     },
-  ];
+  ]
 
   // Função para verificar se uma rota está ativa
   const isRouteActive = (item: (typeof navItems)[0]) => {
     // Caso exato (apenas para a rota raiz "/")
     if (item.exact && pathname === item.href) {
-      return true;
+      return true
     }
 
     // Verificar se o pathname corresponde exatamente à rota
     if (pathname === item.href) {
-      return true;
+      return true
     }
 
     // Verificar se o pathname começa com a rota (para subrotas)
@@ -102,11 +81,11 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
           otherItem.href !== "/" &&
           pathname.startsWith(otherItem.href) &&
           otherItem.href.length > item.href.length,
-      );
+      )
 
       // Se não houver correspondência mais específica, esta rota está ativa
       if (!moreSpecificMatch) {
-        return true;
+        return true
       }
     }
 
@@ -114,28 +93,28 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
     if (item.subRoutes) {
       // Verificar correspondências exatas
       if (item.subRoutes.includes(pathname)) {
-        return true;
+        return true
       }
 
       // Verificar padrões de rota dinâmica (como [slug])
       return item.subRoutes.some((subRoute) => {
         if (subRoute.includes("[") && subRoute.includes("]")) {
-          const pattern = subRoute.replace(/\[\w+\]/g, "[^/]+");
-          const regex = new RegExp(`^${pattern.replace(/\//g, "\\/")}$`);
-          return regex.test(pathname);
+          const pattern = subRoute.replace(/\[\w+\]/g, "[^/]+")
+          const regex = new RegExp(`^${pattern.replace(/\//g, "\\/")}$`)
+          return regex.test(pathname)
         }
-        return false;
-      });
+        return false
+      })
     }
 
-    return false;
-  };
+    return false
+  }
 
   // Atualizar o item ativo quando o pathname mudar
   useEffect(() => {
-    const active = navItems.find((item) => isRouteActive(item));
-    setActiveItem(active?.name || "");
-  }, [pathname]);
+    const active = navItems.find((item) => isRouteActive(item))
+    setActiveItem(active?.name || "")
+  }, [pathname])
 
   // Variantes de animação para o menu mobile
   const menuVariants = {
@@ -159,31 +138,33 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
         delayChildren: 0.2,
       },
     },
-  };
+  }
 
   // Variantes de animação para os itens do menu mobile
   const menuItemVariants = {
     closed: { opacity: 0, y: 20 },
     open: { opacity: 1, y: 0 },
-  };
+  }
 
   // Variantes de animação para o backdrop
   const backdropVariants = {
     closed: { opacity: 0 },
     open: { opacity: 1 },
-  };
+  }
 
   return (
     <header className="container mx-auto px-4 py-6 flex items-center justify-between relative z-50">
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-2">
         <motion.div
-          className="flex-shrink-0"
-          whileHover={{ scale: 1.05 }}
+          className="size-6 rounded-full bg-white/20 flex items-center justify-center"
+          whileHover={{ scale: 1.2 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
-        ></motion.div>
-        <div className="flex flex-col">
+        >
+          <div className="size-3 rounded-full bg-white"></div>
+        </motion.div>
+        <div className="flex flex-wrap items-center justify-center ">
           <motion.div
-            className="font-bold text-lg leading-tight"
+            className="font-bold text-lg w-full"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
@@ -191,10 +172,10 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
             {logoName}
           </motion.div>
           <motion.div
-            className="font-bold text-xs leading-tight"
+            className="font-bold text-xs w-full"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ duration: 0.5 }}
           >
             {logoDescription}
           </motion.div>
@@ -204,85 +185,12 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
       {/* Menu de navegação para desktop */}
       <nav className="hidden md:flex items-center gap-8">
         {navItems.map((item) => {
-          const isActive = activeItem === item.name;
-
-          if (item.hasDropdown) {
-            return (
-              <div
-                key={item.name}
-                className="relative"
-                onMouseEnter={() => setDropdownOpen(true)}
-                onMouseLeave={() => setDropdownOpen(false)}
-              >
-                <button
-                  onClick={() => handleNavigation(item.href)}
-                  className="relative text-sm hover:text-white/80 group flex items-center gap-1"
-                  aria-current={isActive ? "page" : undefined}
-                >
-                  {item.name}
-                  <svg
-                    className={`w-4 h-4 transition-transform duration-200 ${
-                      dropdownOpen ? "rotate-180" : ""
-                    }`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                  {isActive && (
-                    <motion.div
-                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-blue-400"
-                      layoutId="navbar-indicator"
-                      transition={{
-                        type: "spring",
-                        stiffness: 400,
-                        damping: 30,
-                      }}
-                    />
-                  )}
-                  <motion.div
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-blue-400 scale-x-0 origin-left"
-                    initial={false}
-                    whileHover={{ scaleX: isActive ? 0 : 1 }}
-                    transition={{ duration: 0.3 }}
-                  />
-                </button>
-
-                <AnimatePresence>
-                  {dropdownOpen && (
-                    <motion.div
-                      initial={{ opacity: 0, y: -10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      transition={{ duration: 0.2 }}
-                      className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50"
-                    >
-                      {item.dropdownItems?.map((dropdownItem) => (
-                        <button
-                          key={dropdownItem.href}
-                          onClick={() => handleNavigation(dropdownItem.href)}
-                          className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
-                        >
-                          {dropdownItem.name}
-                        </button>
-                      ))}
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-            );
-          }
+          const isActive = activeItem === item.name
 
           return (
-            <button
+            <Link
               key={item.name}
-              onClick={() => handleNavigation(item.href)}
+              href={item.href}
               className="relative text-sm hover:text-white/80 group"
               aria-current={isActive ? "page" : undefined}
             >
@@ -304,17 +212,13 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
                 whileHover={{ scaleX: isActive ? 0 : 1 }}
                 transition={{ duration: 0.3 }}
               />
-            </button>
-          );
+            </Link>
+          )
         })}
       </nav>
 
       {/* Botão de contato para desktop */}
-      <motion.div
-        className="hidden md:block"
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
+      <motion.div className="hidden md:block" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
         <Button
           onClick={toggleReverse}
           className={`${
@@ -361,14 +265,7 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
             >
               {/* Cabeçalho do menu mobile */}
               <div className="flex items-center justify-between p-6 border-b border-gray-800">
-                <div className="flex items-center gap-2">
-                  <img
-                    src="/design-reverse-logotipo-sem-fundo.png"
-                    alt="Design Reverse Logo"
-                    className="h-8 w-auto"
-                  />
-                  <span className="font-bold text-lg">{logoName}</span>
-                </div>
+                <span className="font-bold text-xl">{logoName}</span>
                 <button
                   onClick={() => setMobileMenuOpen(false)}
                   className="p-2 rounded-full hover:bg-gray-800"
@@ -381,16 +278,14 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
               {/* Links do menu mobile */}
               <nav className="flex flex-col p-6 space-y-6 flex-1">
                 {navItems.map((item) => {
-                  const isActive = activeItem === item.name;
+                  const isActive = activeItem === item.name
 
                   return (
                     <motion.div key={item.name} variants={menuItemVariants}>
-                      <button
-                        onClick={() => handleNavigation(item.href)}
-                        className={`text-lg font-medium relative w-full text-left ${
-                          isActive
-                            ? "text-blue-400"
-                            : "text-white hover:text-blue-300"
+                      <Link
+                        href={item.href}
+                        className={`text-lg font-medium relative ${
+                          isActive ? "text-blue-400" : "text-white hover:text-blue-300"
                         }`}
                         aria-current={isActive ? "page" : undefined}
                       >
@@ -398,24 +293,9 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
                         {isActive && (
                           <span className="absolute -left-4 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-blue-400" />
                         )}
-                      </button>
-                      
-                      {/* Submenu para mobile */}
-                      {item.hasDropdown && (
-                        <div className="ml-4 mt-3 space-y-2">
-                          {item.dropdownItems?.map((dropdownItem) => (
-                            <button
-                              key={dropdownItem.href}
-                              onClick={() => handleNavigation(dropdownItem.href)}
-                              className="block text-sm text-gray-300 hover:text-blue-300 transition-colors w-full text-left py-1"
-                            >
-                              {dropdownItem.name}
-                            </button>
-                          ))}
-                        </div>
-                      )}
+                      </Link>
                     </motion.div>
-                  );
+                  )
                 })}
               </nav>
 
@@ -423,13 +303,11 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
               <div className="p-6 border-t border-gray-800">
                 <Button
                   className={`w-full ${
-                    isReversed
-                      ? "bg-orange-500 hover:bg-orange-600"
-                      : "bg-blue-600 hover:bg-blue-700"
+                    isReversed ? "bg-orange-500 hover:bg-orange-600" : "bg-blue-600 hover:bg-blue-700"
                   } text-white rounded-md py-6 transition-all duration-300`}
                   onClick={() => {
-                    setMobileMenuOpen(false);
-                    toggleReverse();
+                    setMobileMenuOpen(false)
+                    toggleReverse()
                   }}
                 >
                   {isReversed ? "MODO NORMAL" : "MODO REVERSE"}
@@ -440,5 +318,5 @@ export function Navbar({ variant = "dark" }: { variant?: "dark" | "light" }) {
         )}
       </AnimatePresence>
     </header>
-  );
+  )
 }

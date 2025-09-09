@@ -1,44 +1,15 @@
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
-import { PageTransition } from "@/components/page-transition";
-import { FadeIn } from "@/components/animations/fade-in";
-import { HoverCard } from "@/components/animations/hover-card";
-import { ScaleIn } from "@/components/animations/scale-in";
-import {
-  Code,
-  BarChart2,
-  Camera,
-  Users,
-  Bot,
-  MessageCircle,
-  ArrowRight,
-  Star,
-  TrendingUp,
-  Target,
-  Zap,
-  Globe,
-  Heart,
-  Instagram,
-  Facebook,
-  Youtube,
-  Twitter,
-  CheckCircle2,
-  Eye,
-  User,
-  Calendar,
-  Phone,
-  Rocket,
-} from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { ScrollVideo } from "@/components/animations/scroll-video";
-import Link from "next/link";
-import Image from "next/image";
+import { Navbar } from "@/components/navbar"
+import { Footer } from "@/components/footer"
+import { PageTransition } from "@/components/page-transition"
+import { ProjetosSection } from "@/components/sections/projetos-section"
 
 export default function PortfolioPage() {
   return (
     <PageTransition>
-      <div className="min-h-screen bg-gradient-to-br from-[#0a0a1a] via-[#1a1a3a] to-[#0f0f2a] text-white">
-        <Navbar variant="dark" />
+      <div className="min-h-screen bg-[#050518] text-white relative overflow-hidden">
+        <div className="container mx-auto px-4 relative z-10 pb-20">
+          <Navbar variant="dark" />
+
 
         {/* Hero Section */}
         <section className="container mx-auto px-4 py-20 md:py-32">
@@ -1271,8 +1242,9 @@ export default function PortfolioPage() {
           </div>
         </section>
 
+
         <Footer />
       </div>
     </PageTransition>
-  );
+  )
 }
