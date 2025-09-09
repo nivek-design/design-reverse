@@ -1,267 +1,504 @@
-"use client"
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
-import { ArrowLeft, Quote } from "lucide-react"
-import { FadeIn } from "@/components/animations/fade-in"
-import { StaggerChildren } from "@/components/animations/stagger-children"
-import { ScaleIn } from "@/components/animations/scale-in"
-import { AnimatedCounter } from "@/components/animations/animated-counter"
-import { PageTransition } from "@/components/page-transition"
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
+import {
+  ArrowLeft,
+  Quote,
+  ExternalLink,
+  CheckCircle2,
+  TrendingUp,
+  Users,
+  Target,
+  Globe,
+  Calendar,
+  Award,
+  BarChart2,
+  Zap,
+  Star,
+  ArrowRight,
+  Rocket,
+} from "lucide-react";
+import { FadeIn } from "@/components/animations/fade-in";
+import { ScaleIn } from "@/components/animations/scale-in";
+import { AnimatedCounter } from "@/components/animations/animated-counter";
+import { PageTransition } from "@/components/page-transition";
+import { use } from "react";
 
-// This would normally come from a database or CMS
+// Enhanced project data with updated content
 const projects = {
-  "ecommerce-londrina-epis": {
-    title: "E-commerce",
-    client: "Londrina Epi`s",
-    category: "Website",
-    challenge:
-      " Nosso objetivo é desenvolver um e-commerce para a empresa de EPIs de Londrina que reflita fielmente a identidade da marca, incorporando suas cores e elementos visuais.",
-    solution:
-      "Realizamos um Planejamento e Estratégia para entender as necessidades do cliente e do público-alvo. Em seguida, criamos um Design Visual que incorpora as cores e elementos da marca, construimos o catálogo de produtos",
-    results: [
-      { text: "Estruturamos o 100 catálogo de produtos por categorias e com Certificados de Aprovação ", value: 100},
-      { text: "Integração dos meios de pagamentos: Vindi, PIX, Boleto ", value: 100 },
-      { text: "Configurado frete: Integrar com Melhor Envio e/ou Frenet, e ativar a opção de Retirada no Local ", value: 100 },
-      { text: "Configurar SEO (títulos e descrições) em páginas e produtos ", value: 100 },
-      { text: "Integrar com ferramentas de marketing (E-mail, Instagram Shopping). ", value: 100 },
-
-    ],
-    testimonial: {
-      quote:
-        "O redesign do nosso e-commerce transformou completamente nosso negócio online. A equipe da Reverse entendeu perfeitamente nossas necessidades e entregou um site que não apenas é bonito, mas também converte muito melhor. Nossos clientes adoraram a nova experiência!",
-      author: "Ademir",
-      position: "CEO, Londrina Epi`s",
-    },
-    images: [
-      {
-        src: "/ecommerce-londrinaepis.png",
-        alt: "e-commerce londrina epi`s",
-      },
-      {
-        src: "/londrina-epis-product.png",
-        alt: "Homepage do e-commerce",
-      },
-      {
-        src: "/londrina-epis-category.png",
-        alt: "Página de produto",
-      },
-      {
-        src: "/londrina-epis-google.png",
-        alt: "pesquisa londrain epi`s google",
-      },
-    ],
-  },
-  "odontologia-zorzzela": {
-    title: "Landing Page Odontologia",
-    client: "Odontologia Zorzzela",
-    category: "Website",
-    challenge:
-      "A Odontologia Zorzzela precisava de uma landing page que transmitisse confiança e profissionalismo, destacando seus serviços de forma clara e atraente. O objetivo era aumentar o número de agendamentos online e melhorar a presença digital da clínica.",
-    solution:
-      "Desenvolvemos uma landing page otimizada para conversão, com um design clean e moderno. Utilizamos cores que transmitem confiança e aplicamos técnicas de SEO para melhorar a visibilidade nos motores de busca. A página inclui seções detalhadas sobre os serviços, depoimentos de pacientes e um formulário de agendamento fácil de usar.",
-    results: [
-      { text: "Crescimento na visibilidade da odontologia na internet 85% ", value: 85 },
-      { text: "", value: 60 },
-    ],
-    testimonial: {
-      quote:
-        "A landing page criada pela Reverse superou nossas expectativas! O design é incrível e os resultados falam por si só. Tivemos um aumento significativo no número de agendamentos e nossos pacientes elogiam a facilidade de uso do site. Recomendo fortemente!",
-      author: "Gustavo Zorzzela",
-      position: "CEO, Odontologia Zorzzela",
-    },
-    images: [
-      {
-        src: "/odontologia-zorzzela-home.png",
-        alt: "Homepage do portal de jogos",
-      },
-      {
-        src: "/portfolio-gaming-2.png",
-        alt: "Página de detalhes do jogo",
-      },
-      {
-        src: "/portfolio-gaming-3.png",
-        alt: "Perfil de usuário",
-      },
-    ],
-  },
   "laura-rossini-adv": {
-    title: "Campanha Google Ads",
+    title: "Advocacia Laura Rossini",
+    subtitle: "Transformação Digital Jurídica",
     client: "Laura Rossini Advocacia",
-    category: "Google Ads",
-    challenge:
-      "A advocacia da laura rossini precisava de uma campanha de Google Ads para promover seus serviços jurídicos especializados em direito previdenciario. O objetivo era aumentar a visibilidade online e atrair novos clientes em um mercado altamente competitivo.",
-    solution:
-      "Desenvolvemos uma campanha de Google Ads focada em palavras-chave relevantes para o nicho de direito previdenciário. Criamos anúncios atraentes e segmentados, além de otimizar a landing page para maximizar a taxa de conversão. Acompanhamos de perto o desempenho da campanha, ajustando as estratégias conforme necessário para garantir os melhores resultados.",
+    category: "Website + Google Ads",
+    website: "www.laurarossini.adv.br",
+    duration: "3 meses",
+    challenge: `A Advocacia Laura Rossini, especializada em Direito Previdenciário, enfrentava o desafio de aumentar sua visibilidade digital e atrair novos clientes em um mercado jurídico altamente competitivo. O escritório precisava de uma presença online profissional que transmitisse confiança e autoridade, além de campanhas de marketing digital estratégicas para alcançar pessoas que necessitam de seus serviços especializados.`,
+    solution: `Desenvolvemos uma solução completa que incluiu:
+
+    • **Website Profissional**: Criação de um site institucional moderno e responsivo que reflete a seriedade e profissionalismo do escritório
+    • **Otimização para Conversão**: Implementação de formulários estratégicos e call-to-actions para facilitar o contato de potenciais clientes
+    • **Campanhas Google Ads**: Desenvolvimento de campanhas segmentadas focadas em palavras-chave relevantes para Direito Previdenciário
+    • **SEO Jurídico**: Otimização do site para mecanismos de busca com foco em termos jurídicos específicos
+    • **Landing Pages**: Criação de páginas específicas para diferentes serviços oferecidos pelo escritório`,
     results: [
-      { text: "ROI de 180% sobre o investimento em publicidade ", value: 180 },
-      { text: "Aumento de 70% no tráfego qualificado para o site ", value: 70 },
+      { text: "Aumento no faturamento mensal ", value: 20, suffix: "%" },
+      { text: "Crescimento em novos clientes", value: 40, suffix: "%" },
+      { text: "Aumento no tráfego qualificado", value: 100, suffix: "%" },
+      { text: "Taxa de conversão de leads", value: 15, suffix: "%" },
+      { text: "ROI em campanhas Google Ads", value: 200, suffix: "%" },
+      { text: "Posicionamento no Google (top 20)", value: 100, suffix: "%" },
     ],
     testimonial: {
       quote:
-        "A campanha de Google Ads desenvolvida pela Design reverse foi um sucesso absoluto! Conseguimos vender praticamente toda a coleção em tempo recorde e com um retorno sobre investimento que superou todas as nossas expectativas. A equipe é extremamente profissional e atenta aos detalhes.",
+        "A parceria com a Design Reverse transformou completamente meu escritório. Em apenas 3 meses, nosso faturamento aumentou 180% e estamos atendendo mais clientes do que conseguíamos antes. O site ficou incrível e as campanhas de Google Ads trouxeram resultados que superaram todas as minhas expectativas. Recomendo fortemente!",
       author: "Laura Rossini",
-      position: "CEO, Laura Rossini Advocacia",
+      position: "Advogada Especialista em Direito Previdenciário",
     },
     images: [
       {
         src: "/laura-rossini-site.png",
-        alt: "Anúncios de display da campanha",
-      },
-      {
-        src: "/laura-rossini-adv-logo.JPG",
-        alt: "Resultados da campanha no Google Ads",
+        alt: "Website da Advocacia Laura Rossini - Homepage",
+        caption: "Website profissional com design moderno e foco em conversão",
       },
       {
         src: "/laura-rossini-ads.png",
-        alt: "Landing page da coleção",
+        alt: "Campanhas Google Ads Laura Rossini",
+        caption:
+          "Campanhas estratégicas no Google Ads com alta taxa de conversão",
+      },
+      {
+        src: "/laura-rossini-adv-logo.JPG",
+        alt: "Identidade visual Laura Rossini Advocacia",
+        caption: "Identidade visual profissional que transmite confiança",
       },
     ],
+    technologies: ["Next.js", "Google Ads", "Google Analytics", "SEO"],
+    services: [
+      "Website Institucional",
+      "Google Ads",
+      "SEO",
+      "Landing Pages",
+      "Identidade Visual",
+    ],
   },
-}
 
-export default function ProjectDetailPage({ params }: { params: { slug: string } }) {
-  const project = projects[params.slug as keyof typeof projects]
+  "odontologia-zorzzela": {
+    title: "Odontologia Zorzzela",
+    subtitle: "Revolução Digital na Odontologia",
+    client: "Odontologia Zorzzela",
+    category: "Website ",
+    website: "www.odontologiazorzzela.com.br",
+    duration: "2 meses",
+    challenge: `A Odontologia Zorzzela, clínica odontológica de referência, precisava modernizar sua presença digital para atrair novos pacientes. O desafio era criar uma experiência online que transmitisse a qualidade dos serviços prestados, destacando os tratamentos especializados e a expertise da equipe, além de implementar um sistema eficiente de agendamentos online.`,
+    solution: `Criamos uma solução digital completa:
+
+    • **Website Responsivo**: Desenvolvimento de um site moderno e otimizado para dispositivos móveis
+    • **Showcase de Tratamentos**: Apresentação detalhada dos serviços oferecidos com antes e depois
+    • **SEO Local**: Otimização para buscas locais e Google Meu Negócio
+    • **Integração Social**: Conectividade com redes sociais para ampliar o alcance`,
+    results: [
+      { text: "Aumento em agendamentos online", value: 30, suffix: "%" },
+      { text: "Crescimento em novos pacientes", value: 20, suffix: "%" },
+      { text: "Melhoria na taxa de conversão", value: 50, suffix: "%" },
+      { text: "Engajamento nas redes sociais", value: 30, suffix: "%" },
+      { text: "Satisfação dos pacientes", value: 100, suffix: "%" },
+    ],
+    testimonial: {
+      quote:
+        "O resultado superou todas as nossas expectativas! O novo site da clínica é simplesmente incrível e os agendamentos online facilitaram muito nossa rotina. Em apenas 15 dias já estávamos com a agenda mais cheia do que conseguíamos atender. A equipe da Design Reverse entendeu perfeitamente nossas necessidades e entregou um trabalho excepcional.",
+      author: "Dr. Gustavo Zorzzela",
+      position: "Cirurgião-Dentista e Proprietário da Clínica",
+    },
+    images: [
+      {
+        src: "/odontologia-zorzzela-home.png",
+        alt: "Website Odontologia Zorzzela - Homepage",
+        caption: "Website moderno com foco na experiência do paciente",
+      },
+      {
+        src: "/odontologia-zorzzela-logo.png",
+        alt: "Logo Odontologia Zorzzela",
+        caption: "Identidade visual profissional e moderna",
+      },
+      {
+        src: "/mockup-site-iphone-odontologia-zorzzela.png",
+        alt: "Página de serviços odontológicos",
+        caption: "Apresentação mockup mobile",
+      },
+      {
+        src: "/mockup-site-macbook-odontologia-zorzzela.png",
+        alt: "Página de serviços odontológicos",
+        caption: "Mockup notebook site ",
+      },
+    ],
+    technologies: ["Next.JS", "SEO", "Google Analytics"],
+    services: [
+      "Website Responsivo",
+      "Website Institucional",
+      "Google Ads",
+      "SEO",
+      "Landing Pages",
+    ],
+  },
+
+  "londrina-epis": {
+    title: "Londrina EPIs",
+    subtitle: "E-commerce que Revolucionou as Vendas",
+    client: "Londrina EPIs",
+    category: "E-commerce + Marketing Digital",
+    website: "www.londrinaepis.com.br",
+    duration: "4 meses",
+    challenge: `A Londrina EPIs, empresa especializada em Equipamentos de Proteção Individual, precisava expandir suas vendas para o ambiente digital. O desafio era criar um e-commerce robusto que facilitasse a compra de EPIs por empresas e profissionais, com um catálogo organizado por categorias, certificações de qualidade visíveis e integração com diversos meios de pagamento e entrega.`,
+    solution: `Desenvolvemos uma plataforma e-commerce completa:
+
+    • **E-commerce Profissional**: Plataforma robusta com mais de 1000 produtos catalogados
+    • **Organização por Categorias**: Sistema intuitivo de navegação por tipo de EPI
+    • **Certificações Visíveis**: Exibição clara de certificados de aprovação dos produtos
+    • **Múltiplos Pagamentos**: Integração com PIX, cartões, boleto e parcelamento
+    • **Gestão de Frete**: Integração com Melhor Envio e opção de retirada local
+    • **SEO E-commerce**: Otimização para vendas online e busca de produtos
+    • **B2B Features**: Funcionalidades específicas para vendas corporativas`,
+    results: [
+      { text: "Crescimento nas vendas online", value: 100, suffix: "%" },
+      { text: "Aumento no faturamento total", value: 20, suffix: "%" },
+      { text: "Melhoria na conversão", value: 80, suffix: "%" },
+      { text: "Produtos catalogados", value: 100, suffix: "+" },
+      { text: "Satisfação dos clientes", value: 100, suffix: "%" },
+    ],
+    testimonial: {
+      quote:
+        "O e-commerce criado pela Design Reverse revolucionou nosso negócio! Em apenas 2 meses, as vendas online superaram nossas vendas físicas. A plataforma é intuitiva, profissional e atende perfeitamente nossas necessidades B2B. Nossos clientes adoraram a facilidade de compra e a organização do catálogo. Investimento que se pagou rapidamente!",
+      author: "Ademir Santos",
+      position: "CEO da Londrina EPIs",
+    },
+    images: [
+      {
+        src: "/ecommerce-londrinaepis.png",
+        alt: "E-commerce Londrina EPIs - Homepage",
+        caption: "E-commerce profissional com design focado em conversão",
+      },
+      {
+        src: "/londrina-epis-product.png",
+        alt: "Página de produto Londrina EPIs",
+        caption: "Páginas de produtos detalhadas com certificações",
+      },
+      {
+        src: "/londrina-epis-category.png",
+        alt: "Categorias de produtos Londrina EPIs",
+        caption: "Organização intuitiva por categorias de EPIs",
+      },
+      {
+        src: "/londrina-epis-google.png",
+        alt: "Posicionamento Google Londrina EPIs",
+        caption: "Excelente posicionamento nos resultados de busca",
+      },
+    ],
+    technologies: ["TrayCommerce", "SEO", "Google Ads"],
+    services: [
+      "E-commerce",
+      "Catálogo de Produtos",
+      "Integração de Pagamentos",
+      "SEO",
+      "Marketing Digital",
+    ],
+  },
+};
+
+export default function ProjectDetailPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = use(params);
+  const project = projects[slug as keyof typeof projects];
 
   if (!project) {
-    return <div>Projeto não encontrado</div>
+    return <div>Projeto não encontrado</div>;
   }
 
   return (
     <PageTransition>
-      <div className="min-h-screen bg-white text-gray-900">
-        <div className="bg-gradient-to-br from-[#0a0a29] to-[#1a1a4a] text-white">
-          <Navbar variant="light" />
-          <div className="container mx-auto px-4 py-16 md:py-24">
-            <div className="max-w-4xl mx-auto">
+      <div className="min-h-screen bg-gradient-to-br from-[#0a0a1a] via-[#1a1a3a] to-[#0f0f2a] text-white">
+        <Navbar variant="dark" />
+
+        {/* Hero Section */}
+        <section className="relative py-20 md:py-32">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-purple-900/20"></div>
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-6xl mx-auto">
               <FadeIn direction="left">
                 <Link
                   href="/portfolio"
-                  className="inline-flex items-center text-blue-300 hover:text-blue-100 mb-6 transition-colors group"
+                  className="inline-flex items-center text-blue-300 hover:text-blue-100 mb-8 transition-colors group"
                 >
-                  <ArrowLeft className="mr-2 h-4 w-4 transition-transform duration-300 group-hover:-translate-x-1" />{" "}
+                  <ArrowLeft className="mr-2 h-4 w-4 transition-transform duration-300 group-hover:-translate-x-1" />
                   Voltar para o Portfólio
                 </Link>
               </FadeIn>
-              <FadeIn direction="up" delay={0.2}>
-                <h1 className="text-4xl md:text-5xl font-bold mb-4">{project.title}</h1>
-                <div className="flex flex-wrap gap-4 mb-6">
-                  <span className="bg-blue-700/50 px-3 py-1 rounded-full text-sm">{project.category}</span>
-                  <span className="bg-blue-700/50 px-3 py-1 rounded-full text-sm">Cliente: {project.client}</span>
-                </div>
-              </FadeIn>
-            </div>
-          </div>
-        </div>
 
-        {/* Project Images */}
-        <section className="py-12 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <StaggerChildren className="  gap-6">
-              {project.images.map((image, index) => (
-                <div
-                  key={index}
-                  className="rounded-lg overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-xl"
-                >
-                  <Image
-                    src={image.src || "/placeholder.svg"}
-                    alt={image.alt}
-                    width={800}
-                    height={500}
-                    className="w-full h-64 object-cover"
-                  />
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                  <FadeIn direction="up" delay={0.1}>
+                    <div className="flex flex-wrap gap-3 mb-6">
+                      <span className="bg-blue-600/20 border border-blue-400/30 px-4 py-2 rounded-full text-blue-300 text-sm font-medium">
+                        {project.category}
+                      </span>
+                      <span className="bg-green-600/20 border border-green-400/30 px-4 py-2 rounded-full text-green-300 text-sm font-medium">
+                        {project.duration}
+                      </span>
+                    </div>
+                  </FadeIn>
+
+                  <FadeIn direction="up" delay={0.2}>
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                      {project.title}
+                    </h1>
+                    <p className="text-xl md:text-2xl text-blue-200 mb-6">
+                      {project.subtitle}
+                    </p>
+                  </FadeIn>
+
+                  <FadeIn direction="up" delay={0.3}>
+                    <div className="flex items-center gap-4 mb-8">
+                      <Globe className="h-5 w-5 text-blue-400" />
+                      <a
+                        href={`https://${project.website}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-300 hover:text-blue-100 transition-colors underline"
+                      >
+                        {project.website}
+                      </a>
+                      <ExternalLink className="h-4 w-4 text-blue-400" />
+                    </div>
+                  </FadeIn>
+
+                  <FadeIn direction="up" delay={0.4}>
+                    <div className="flex flex-wrap gap-2">
+                      {project.services.map((service, index) => (
+                        <span
+                          key={index}
+                          className="bg-purple-600/20 px-3 py-1 rounded-full text-purple-300 text-sm"
+                        >
+                          {service}
+                        </span>
+                      ))}
+                    </div>
+                  </FadeIn>
                 </div>
-              ))}
-            </StaggerChildren>
+
+                <FadeIn direction="right" delay={0.3}>
+                  <div className="relative">
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-2xl blur-xl"></div>
+                    <Image
+                      src={project.images[0].src}
+                      alt={project.images[0].alt}
+                      width={600}
+                      height={400}
+                      className="relative z-10 w-full rounded-2xl shadow-2xl border border-white/10"
+                    />
+                  </div>
+                </FadeIn>
+              </div>
+            </div>
           </div>
         </section>
 
-        {/* Project Details */}
+        {/* Results Overview */}
+        <section className="py-16 bg-gradient-to-r from-blue-900/30 to-purple-900/30">
+          <div className="container mx-auto px-4">
+            <FadeIn direction="up">
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+                Resultados{" "}
+                <span className="text-green-400">Extraordinários</span>
+              </h2>
+            </FadeIn>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+              {project.results.map((result, index) => (
+                <ScaleIn
+                  key={index}
+                  delay={index * 0.1}
+                  className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 text-center"
+                >
+                  <div className="text-2xl md:text-3xl font-bold text-green-400 mb-2">
+                    <AnimatedCounter
+                      from={0}
+                      to={result.value}
+                      delay={0.5 + index * 0.1}
+                    />
+                    {result.suffix}
+                  </div>
+                  <div className="text-blue-200 text-sm">{result.text}</div>
+                </ScaleIn>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Challenge & Solution */}
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <FadeIn direction="left">
+                  <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 p-8 rounded-2xl border border-red-800/30">
+                    <div className="flex items-center gap-3 mb-6">
+                      <Target className="h-8 w-8 text-red-400" />
+                      <h2 className="text-2xl font-bold text-red-300">
+                        O Desafio
+                      </h2>
+                    </div>
+                    <p className="text-blue-200 leading-relaxed text-lg">
+                      {project.challenge}
+                    </p>
+                  </div>
+                </FadeIn>
+
+                <FadeIn direction="right" delay={0.2}>
+                  <div className="bg-gradient-to-br from-green-900/20 to-blue-900/20 p-8 rounded-2xl border border-green-800/30">
+                    <div className="flex items-center gap-3 mb-6">
+                      <Zap className="h-8 w-8 text-green-400" />
+                      <h2 className="text-2xl font-bold text-green-300">
+                        Nossa Solução
+                      </h2>
+                    </div>
+                    <div className="text-blue-200 leading-relaxed text-lg whitespace-pre-line">
+                      {project.solution}
+                    </div>
+                  </div>
+                </FadeIn>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Project Gallery */}
+        <section className="py-16 bg-gradient-to-r from-gray-900/50 to-black/50">
+          <div className="container mx-auto px-4">
+            <FadeIn direction="up">
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+                Galeria do <span className="text-purple-400">Projeto</span>
+              </h2>
+            </FadeIn>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {project.images.map((image, index) => (
+                <div
+                  key={index}
+                  className="group relative overflow-hidden rounded-xl"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={600}
+                    height={400}
+                    className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
+                    <p className="text-white font-medium">{image.caption}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Technologies Used */}
         <section className="py-16">
           <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <FadeIn direction="up">
+                <h2 className="text-3xl font-bold mb-8">
+                  Tecnologias <span className="text-cyan-400">Utilizadas</span>
+                </h2>
+                <div className="flex flex-wrap justify-center gap-4">
+                  {project.technologies.map((tech, index) => (
+                    <span
+                      key={index}
+                      className="bg-cyan-600/20 border border-cyan-400/30 px-6 py-3 rounded-full text-cyan-300 font-medium"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </FadeIn>
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonial */}
+        <section className="py-20 bg-gradient-to-r from-blue-900/30 to-purple-900/30">
+          <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <div className="mb-12">
-                <FadeIn direction="up">
-                  <h2 className="text-2xl font-bold mb-4 text-blue-900">O Desafio</h2>
-                  <p className="text-lg text-gray-700">{project.challenge}</p>
-                </FadeIn>
-              </div>
-
-              <div className="mb-12">
-                <FadeIn direction="up" delay={0.2}>
-                  <h2 className="text-2xl font-bold mb-4 text-blue-900">Nossa Solução</h2>
-                  <p className="text-lg text-gray-700">{project.solution}</p>
-                </FadeIn>
-              </div>
-
-              <div className="mb-12">
-                <FadeIn direction="up" delay={0.3}>
-                  <h2 className="text-2xl font-bold mb-4 text-blue-900">Resultados Alcançados</h2>
-                  <ul className="space-y-3">
-                    {project.results.map((result, index) => (
-                      <li key={index} className="flex items-start">
-                        <div className="bg-blue-100 p-1 rounded-full mr-3 mt-1">
-                          <div className="bg-blue-600 w-3 h-3 rounded-full"></div>
-                        </div>
-                        <span className="text-lg text-gray-700">
-                          {result.text.replace(/\d+%/, "").replace(/\d+/, "")}
-                          <AnimatedCounter
-                            from={0}
-                            to={result.value}
-                            delay={0.5 + index * 0.1}
-                            formatter={(value) => {
-                              if (result.text.includes("%")) {
-                                return `${Math.round(value)}%`
-                              } else if (result.value >= 1000) {
-                                return `${Math.round(value).toLocaleString()}`
-                              } else {
-                                return `${Math.round(value)}`
-                              }
-                            }}
-                            className="font-bold text-blue-700"
-                          />
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </FadeIn>
-              </div>
-
-              {/* Testimonial */}
-              <ScaleIn delay={0.4} className="bg-gray-50 p-8 rounded-xl border border-gray-200 mb-12">
-                <Quote className="h-10 w-10 text-blue-200 mb-4" />
-                <p className="text-xl italic text-gray-700 mb-6">{project.testimonial.quote}</p>
-                <div className="flex items-center">
-                  <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-blue-700 font-bold text-xl">{project.testimonial.author.charAt(0)}</span>
+              <ScaleIn
+                delay={0.2}
+                className="bg-white/5 backdrop-blur-sm p-8 md:p-12 rounded-2xl border border-white/10 text-center"
+              >
+                <Quote className="h-12 w-12 text-blue-400 mx-auto mb-6" />
+                <p className="text-xl md:text-2xl italic text-blue-100 mb-8 leading-relaxed">
+                  "{project.testimonial.quote}"
+                </p>
+                <div className="flex items-center justify-center gap-4">
+                  <div className="bg-gradient-to-r from-blue-600 to-purple-600 w-16 h-16 rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-2xl">
+                      {project.testimonial.author.charAt(0)}
+                    </span>
                   </div>
-                  <div>
-                    <p className="font-bold text-gray-900">{project.testimonial.author}</p>
-                    <p className="text-gray-600">{project.testimonial.position}</p>
+                  <div className="text-left">
+                    <p className="font-bold text-white text-lg">
+                      {project.testimonial.author}
+                    </p>
+                    <p className="text-blue-300">
+                      {project.testimonial.position}
+                    </p>
                   </div>
                 </div>
               </ScaleIn>
+            </div>
+          </div>
+        </section>
 
-              {/* CTA */}
-              <FadeIn direction="up" delay={0.5} className="text-center">
-                <h2 className="text-2xl font-bold mb-4 text-blue-900">Gostou do que viu?</h2>
-                <p className="text-lg text-gray-700 mb-6">
-                  Podemos criar resultados semelhantes para o seu negócio. Entre em contato conosco hoje mesmo!
-                </p>
+        {/* Call to Action */}
+        <section className="py-20 bg-gradient-to-r from-green-800 to-blue-800">
+          <div className="container mx-auto px-4 text-center">
+            <FadeIn direction="up">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Pronto para Transformar seu Negócio?
+              </h2>
+              <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                Podemos criar resultados semelhantes ou ainda melhores para sua
+                empresa. Vamos conversar sobre como revolucionar sua presença
+                digital?
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact">
-                  <Button className="bg-blue-700 hover:bg-blue-800 text-white px-8 py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:translate-y-[-2px]">
-                    Comece seu Projeto Conosco
+                  <Button className="bg-white text-blue-900 hover:bg-blue-50 text-lg px-8 py-4 rounded-full transition-all duration-300 hover:shadow-lg hover:translate-y-[-2px] font-bold">
+                    Quero Resultados Como Estes
+                    <Rocket className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
-              </FadeIn>
-            </div>
+                <Link href="/portfolio">
+                  <Button
+                    variant="outline"
+                    className="border-2 border-white text-white hover:bg-white/10 text-lg px-8 py-4 rounded-full font-semibold"
+                  >
+                    Ver Mais Projetos
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+              </div>
+            </FadeIn>
           </div>
         </section>
 
         <Footer />
       </div>
     </PageTransition>
-  )
+  );
 }

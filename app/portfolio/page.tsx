@@ -1,15 +1,44 @@
-import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
-import { PageTransition } from "@/components/page-transition"
-import { ProjetosSection } from "@/components/sections/projetos-section"
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
+import { PageTransition } from "@/components/page-transition";
+import { FadeIn } from "@/components/animations/fade-in";
+import { HoverCard } from "@/components/animations/hover-card";
+import { ScaleIn } from "@/components/animations/scale-in";
+import {
+  Code,
+  BarChart2,
+  Camera,
+  Users,
+  Bot,
+  MessageCircle,
+  ArrowRight,
+  Star,
+  TrendingUp,
+  Target,
+  Zap,
+  Globe,
+  Heart,
+  Instagram,
+  Facebook,
+  Youtube,
+  Twitter,
+  CheckCircle2,
+  Eye,
+  User,
+  Calendar,
+  Phone,
+  Rocket,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ScrollVideo } from "@/components/animations/scroll-video";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function PortfolioPage() {
   return (
     <PageTransition>
-      <div className="min-h-screen bg-[#050518] text-white relative overflow-hidden">
-        <div className="container mx-auto px-4 relative z-10 pb-20">
-          <Navbar variant="dark" />
-
+      <div className="min-h-screen bg-gradient-to-br from-[#0a0a1a] via-[#1a1a3a] to-[#0f0f2a] text-white">
+        <Navbar variant="dark" />
 
         {/* Hero Section */}
         <section className="container mx-auto px-4 py-20 md:py-32">
@@ -383,6 +412,40 @@ export default function PortfolioPage() {
                   </div>
                   <Link href="/portfolio/laura-rossini-adv">
                     <Button className="w-full bg-gradient-to-r from-green-600 to-emerald-600">
+                      Ver Resultados
+                    </Button>
+                  </Link>
+                </HoverCard>
+              </FadeIn>
+
+              <FadeIn direction="up" delay={0.3}>
+                <HoverCard className="bg-gradient-to-br from-blue-900/40 to-cyan-900/40 backdrop-blur-sm p-8 rounded-2xl border border-blue-800/50 text-center">
+                  <div className="bg-gradient-to-r from-blue-600 to-cyan-600 p-4 rounded-xl inline-block mb-6">
+                    <Target className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">
+                    Odontologia Zorzzela
+                  </h3>
+                  <p className="text-blue-200 mb-6">
+                    Campanha de agendamentos para tratamentos odontológicos
+                    especializados
+                  </p>
+                  <div className="space-y-4 mb-8">
+                    <div className="bg-blue-500/20 p-4 rounded-lg">
+                      <div className="text-blue-400 font-bold text-2xl">
+                        320%
+                      </div>
+                      <div className="text-blue-300">ROI</div>
+                    </div>
+                    <div className="bg-cyan-500/20 p-4 rounded-lg">
+                      <div className="text-cyan-400 font-bold text-2xl">
+                        +250%
+                      </div>
+                      <div className="text-cyan-300">Agendamentos</div>
+                    </div>
+                  </div>
+                  <Link href="/portfolio/odontologia-zorzzela">
+                    <Button className="w-full bg-gradient-to-r from-blue-600 to-cyan-600">
                       Ver Resultados
                     </Button>
                   </Link>
@@ -1106,7 +1169,7 @@ export default function PortfolioPage() {
                   <ScaleIn delay={0.2}>
                     <div className="bg-gradient-to-br from-orange-900/60 to-red-900/60 backdrop-blur-sm rounded-xl border border-orange-800/50 aspect-square overflow-hidden relative">
                       <ScrollVideo
-                        src="/lago-igapo-ponte-kl.mp4"
+                        src="/Roteiro_de_Vídeo_Institucional_Cinematográfico-2.mp4"
                         className="w-full h-full object-contain "
                         muted={true}
                         loop={true}
@@ -1127,7 +1190,7 @@ export default function PortfolioPage() {
                   <ScaleIn delay={0.3}>
                     <div className="bg-gradient-to-br from-orange-900/60 to-red-900/60 backdrop-blur-sm rounded-xl border border-orange-800/50 aspect-square overflow-hidden relative">
                       <ScrollVideo
-                        src="/lago-igapo-2.mp4"
+                        src="/Roteiro_de_Vídeo_Institucional_Cinematográfico-2.mp4"
                         className="w-full h-full object-contain "
                         muted={true}
                         loop={true}
@@ -1140,7 +1203,7 @@ export default function PortfolioPage() {
                             Vídeo para Mídia Sociais
                           </div>
                           <div className="text-orange-300 text-xs">
-                            Youtube, Instagram, TikTok, Facebook, etc.
+                            Feed Instagram, TikTok, Facebook, etc.
                           </div>
                         </div>
                       </div>
@@ -1242,9 +1305,8 @@ export default function PortfolioPage() {
           </div>
         </section>
 
-
         <Footer />
       </div>
     </PageTransition>
-  )
+  );
 }
