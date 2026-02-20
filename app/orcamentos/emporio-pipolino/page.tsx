@@ -105,7 +105,7 @@ export default function OrcamentoEmporioPipolino() {
       color: "from-blue-600 to-cyan-600",
       borderColor: "border-blue-500/30",
       bgColor: "bg-blue-900/20",
-      value: 3000,
+      value: 3500,
       items: [
         "Configuracoes tecnicas, apontamento de dominio e certificado de seguranca (SSL)",
         "Integracao de meios de pagamento transparentes (PIX, Cartao de Credito e Boleto)",
@@ -120,9 +120,9 @@ export default function OrcamentoEmporioPipolino() {
       color: "from-purple-600 to-pink-600",
       borderColor: "border-purple-500/30",
       bgColor: "bg-purple-900/20",
-      value: 1600,
+      value: 1200,
       items: [
-        "Ensaio fotografico profissional de 40 produtos (R$ 40,00/foto)",
+        "Ensaio fotografico profissional de 40 produtos (R$ 30,00/foto)",
         "Tratamento de imagem e otimizacao para web",
         "Cadastro completo na plataforma Tray",
         "Configuracao de variacoes (pesos, sabores, tamanhos)",
