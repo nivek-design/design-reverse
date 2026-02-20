@@ -138,7 +138,7 @@ export default function OrcamentoEmporioPipolino() {
       bgColor: "bg-green-900/20",
       value: 1000,
       items: [
-        "Sincronizacao nativa da Tray com Mercado Livre (R$ 500,00) e Shopee (R$ 500,00)",
+        "Sincronizacao nativa da Tray com Mercado Livre R$ 500,00 e Shopee R$ 500,00",
         "Mapeamento de categorias e regras de precificacao por canal",
         "Sincronizacao de estoque centralizado",
       ],
