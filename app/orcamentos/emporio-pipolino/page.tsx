@@ -172,7 +172,7 @@ export default function OrcamentoEmporioPipolino() {
   const optionB = {
     label: "Opcao B - Completa",
     subtitle: "Fases 1 + 2 + 3 + 4",
-    value: 6800,
+    value: 6900,
     description: "Tudo da Opcao A + o impulso inicial com trafego pago para gerar as primeiras vendas rapidamente.",
     phases: [1, 2, 3, 4],
     highlight: true,
