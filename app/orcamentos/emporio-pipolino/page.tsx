@@ -256,7 +256,7 @@ export default function OrcamentoEmporioPipolino() {
             </div>
             <div className="flex items-center gap-3 justify-center sm:justify-start">
               <Globe className="h-5 w-5 text-blue-400 flex-shrink-0" />
-              <span className="text-blue-200 text-sm">designreverse.com.br</span>
+              <span className="text-blue-200 text-sm">{"www.pipolinolondrina.com.br\n"}</span>
             </div>
           </div>
         </motion.div>
