@@ -71,27 +71,27 @@ export default function OrcamentoEmporioPipolino() {
     setApproved(true)
 
     const baseValue = selectedOption === "A" ? optionA.value : optionB.value
-    const optionLabel = selectedOption === "A" ? "Opcao A - Essencial" : "Opcao B - Completa"
+    const optionLabel = selectedOption === "A" ? "Opção A - Essencial" : "Opção B - Completa"
 
     let paymentInfo = ""
     if (paymentMethod === "vista") {
       const discounted = getDiscountedValue(baseValue)
-      paymentInfo = `Pagamento: A vista com 10% de desconto\nValor original: ${formatCurrency(baseValue)}\nValor com desconto: ${formatCurrency(discounted)}`
+      paymentInfo = `Pagamento: À vista com 10% de desconto\nValor original: ${formatCurrency(baseValue)}\nValor com desconto: ${formatCurrency(discounted)}`
     } else {
       const installment = getInstallmentValue(baseValue, 10)
-      paymentInfo = `Pagamento: Parcelado em 10x sem juros no cartao de credito\nValor total: ${formatCurrency(baseValue)}\nParcela: 10x de ${formatCurrency(installment)}`
+      paymentInfo = `Pagamento: Parcelado em 10x sem juros no cartão de crédito\nValor total: ${formatCurrency(baseValue)}\nParcela: 10x de ${formatCurrency(installment)}`
     }
 
     const message = encodeURIComponent(
-      `*APROVACAO DE ORCAMENTO*\n\n` +
-      `Empresa: Emporio Pipolino\n` +
+      `*APROVAÇÃO DE ORÇAMENTO*\n\n` +
+      `Empresa: Empório Pipolino\n` +
       `Data: ${new Date().toLocaleDateString("pt-BR")}\n\n` +
-      `Opcao escolhida: ${optionLabel}\n` +
+      `Opção escolhida: ${optionLabel}\n` +
       `${paymentInfo}\n\n` +
-      `Prazo estimado de entrega: 10 a 20 dias uteis\n\n` +
+      `Prazo estimado de entrega: 10 a 20 dias úteis\n\n` +
       `Confirmo a aprovação desta proposta comercial conforme apresentado no link:\n` +
       `${typeof window !== "undefined" ? window.location.href : ""}\n\n` +
-      `Aguardo proximo passo para iniciar o projeto.`
+      `Aguardo próximo passo para iniciar o projeto.`
     )
 
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank")
@@ -100,16 +100,16 @@ export default function OrcamentoEmporioPipolino() {
   const phases = [
     {
       number: 1,
-      title: "Implementacao do E-commerce (Plataforma Tray)",
+      title: "Implementação do E-commerce (Plataforma Tray)",
       icon: <ShoppingCart className="h-6 w-6" />,
       color: "from-blue-600 to-cyan-600",
       borderColor: "border-blue-500/30",
       bgColor: "bg-blue-900/20",
       value: 3500,
       items: [
-        "Configurações técnicas, apontamento de dominio e certificado de segurança (SSL)",
-        "Integração de meios de pagamento transparentes (PIX, Cartao de Credito e Boleto)",
-        "Configuracao de logistica e tabelas de frete",
+        "Configurações técnicas, apontamento de domínio e certificado de segurança (SSL)",
+        "Integração de meios de pagamento transparentes (PIX, Cartão de Crédito e Boleto)",
+        "Configuração de logística e tabelas de frete",
         "Aplicação da identidade visual da marca no layout da plataforma",
       ],
     },
