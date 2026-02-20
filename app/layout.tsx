@@ -7,6 +7,7 @@ import { ReverseProvider } from "@/contexts/reverse-context"
 import { ReverseEffects } from "@/components/reverse-effects"
 import { Suspense } from "react"
 import Script from "next/script"
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -124,6 +125,7 @@ export default function RootLayout({
             </Suspense>
           </ReverseProvider>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
