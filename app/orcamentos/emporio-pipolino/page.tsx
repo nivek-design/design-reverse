@@ -236,8 +236,7 @@ export default function OrcamentoEmporioPipolino() {
           </h1>
 
           <p className="text-xl text-blue-200 mb-10 max-w-3xl mx-auto leading-relaxed">
-            Proposta personalizada para digitalizar a tradicao do Emporio Pipolino,
-            criando um canal de vendas online proprio, robusto e integrado aos maiores marketplaces do Brasil.
+            Proposta personalizada para digitalizar a tradição do Emporio Pipolino, criando um canal de vendas online proprio, robusto e integrado aos maiores marketplaces do Brasil.
           </p>
 
           {/* Info do cliente */}
