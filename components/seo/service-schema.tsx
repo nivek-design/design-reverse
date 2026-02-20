@@ -1,4 +1,3 @@
-
 interface ServiceSchemaProps {
   serviceName: string;
   description: string;
