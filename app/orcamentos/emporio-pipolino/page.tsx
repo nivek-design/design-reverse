@@ -89,7 +89,7 @@ export default function OrcamentoEmporioPipolino() {
       `Opcao escolhida: ${optionLabel}\n` +
       `${paymentInfo}\n\n` +
       `Prazo estimado de entrega: 10 a 20 dias uteis\n\n` +
-      `Confirmo a aprovacao desta proposta comercial conforme apresentado no link:\n` +
+      `Confirmo a aprovação desta proposta comercial conforme apresentado no link:\n` +
       `${typeof window !== "undefined" ? window.location.href : ""}\n\n` +
       `Aguardo proximo passo para iniciar o projeto.`
     )
@@ -107,10 +107,10 @@ export default function OrcamentoEmporioPipolino() {
       bgColor: "bg-blue-900/20",
       value: 3500,
       items: [
-        "Configuracoes tecnicas, apontamento de dominio e certificado de seguranca (SSL)",
-        "Integracao de meios de pagamento transparentes (PIX, Cartao de Credito e Boleto)",
+        "Configurações técnicas, apontamento de dominio e certificado de segurança (SSL)",
+        "Integração de meios de pagamento transparentes (PIX, Cartao de Credito e Boleto)",
         "Configuracao de logistica e tabelas de frete",
-        "Aplicacao da identidade visual da marca no layout da plataforma",
+        "Aplicação da identidade visual da marca no layout da plataforma",
       ],
     },
     {
