@@ -1,4 +1,3 @@
-
 export interface StructuredDataProps {
   type: 'Organization' | 'LocalBusiness' | 'Service' | 'WebPage'
   data: any

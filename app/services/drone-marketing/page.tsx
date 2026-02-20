@@ -173,7 +173,7 @@ export default function DroneMarketingPage() {
                   <div className="relative">
                     <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg transform rotate-3 scale-105 opacity-20"></div>
                     <ScrollVideo
-                      src="/Roteiro_de_Vídeo_Institucional_Cinematográfico.mp4"
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_SLdBNnG79wKXhtvOcwhTyYDY9A27/_25zXEDXEzip1FD3oSeRbg/public/Roteiro_de_V%C3%ADdeo_Institucional_Cinematogr%C3%A1fico.mp4"
                       className=" h-full object-cover "
                       muted={true}
                       loop={true}
