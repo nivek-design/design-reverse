@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { TransitionProvider } from "@/components/transition-provider"
 import { ReverseProvider } from "@/contexts/reverse-context"
 import { ReverseEffects } from "@/components/reverse-effects"
+import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import Script from "next/script"
 
@@ -124,6 +125,7 @@ export default function RootLayout({
             </Suspense>
           </ReverseProvider>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
