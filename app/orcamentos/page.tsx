@@ -17,6 +17,16 @@ import { Button } from "@/components/ui/button"
 
 const orcamentos = [
   {
+    id: "dr-giovanne-felipe",
+    empresa: "Dr. Giovanne Felipe",
+    tipo: "Landing Page + Marca + Identidade Visual + Papelaria",
+    data: "23/03/2026",
+    valorMin: 4300,
+    valorMax: 4800,
+    status: "pendente",
+    slug: "/orcamentos/dr-giovanne-felipe",
+  },
+  {
     id: "emporio-pipolino",
     empresa: "Emporio Pipolino",
     tipo: "E-Commerce & Expansao Digital",
