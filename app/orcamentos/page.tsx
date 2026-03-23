@@ -19,10 +19,10 @@ const orcamentos = [
   {
     id: "dr-giovanne-felipe",
     empresa: "Dr. Giovanne Felipe",
-    tipo: "Site + Marca + Identidade Visual + Papelaria",
+    tipo: "Landing Page + Marca + Identidade Visual + Papelaria",
     data: "23/03/2026",
-    valorMin: 7000,
-    valorMax: 8300,
+    valorMin: 4300,
+    valorMax: 4800,
     status: "pendente",
     slug: "/orcamentos/dr-giovanne-felipe",
   },
