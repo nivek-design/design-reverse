@@ -10,6 +10,7 @@ import {
   Globe,
   Palette,
   FileText,
+  Mail,
   ArrowRight,
   MapPin,
   Calendar,
